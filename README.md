@@ -103,15 +103,6 @@ The team leader coordinates integration, reviews pull requests, and helps mainta
 
 This project is an opportunity to apply practical web development skills, learn collaborative workflows, and build a structured application as a team.
 
-## 🔮 Future Improvements
-
-- Backend integration and database support
-- Secure user authentication and authorization
-- Real-time order management
-- Online payment integration
-- Customer profiles and order history
-- Enhanced admin analytics
-
 ---
 
 **FoodFlow — Eat. Order. Enjoy.** 🍔
