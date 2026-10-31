@@ -47,33 +47,6 @@ The project aims to provide a modern, responsive, and user-friendly experience f
 
 ## 📁 Project Structure
 
-```text
-FoodFlow/
-├── index.html
-├── pages/
-│   └── admin/
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-├── css/
-│   ├── base/
-│   ├── components/
-│   ├── pages/
-│   ├── admin/
-│   └── responsive/
-├── js/
-│   ├── components/
-│   ├── data/
-│   ├── services/
-│   ├── utils/
-│   ├── pages/
-│   └── admin/
-├── docs/
-├── .gitignore
-└── README.md
-```
-
 *The structure may evolve as development progresses.*
 
 ## 🚀 Getting Started
