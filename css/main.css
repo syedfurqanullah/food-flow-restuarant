@@ -200,3 +200,619 @@ ul {
     outline: 2px solid var(--color-brand);
     outline-offset: 4px;
 }
+
+/* =========================================
+   9. HERO SECTION
+   Purpose: Create a premium two-column layout
+========================================= */
+
+.hero-section {
+    padding-block: 80px 96px;
+    overflow: hidden;
+    background-color: var(--color-background);
+}
+
+
+/* =========================================
+   HERO LAYOUT
+========================================= */
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-eyebrow {
+    margin: 0 0 20px;
+
+    color: #A96308;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   HERO HEADING
+========================================= */
+
+.hero-title {
+    margin: 0 0 24px;
+
+    color: var(--color-text-primary);
+
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.hero-highlight {
+    display: block;
+    color: var(--color-brand);
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-description {
+    max-width: 480px;
+    margin: 0 0 32px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO ACTIONS
+========================================= */
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 32px;
+}
+
+
+/* Shared button styles */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 12px 24px;
+
+    border: 1px solid transparent;
+    border-radius: 999px;
+
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+
+/* Primary action */
+
+.button-primary {
+    background-color: var(--color-brand);
+    color: var(--color-dark);
+}
+
+.button-primary:hover {
+    background-color: var(--color-brand-hover);
+}
+
+
+/* Secondary action */
+
+.button-secondary {
+    border-color: var(--color-border);
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
+.button-secondary:hover {
+    border-color: var(--color-brand);
+    color: #A96308;
+}
+
+
+/* Visible keyboard focus */
+
+.button:focus-visible {
+    outline: 3px solid #A96308;
+    outline-offset: 4px;
+}
+
+
+/* =========================================
+   HERO HIGHLIGHTS
+========================================= */
+
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.hero-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.highlight-icon {
+    display: inline-grid;
+    place-items: center;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    background-color: #FCE9C8;
+    color: #8B5100;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-visual {
+    position: relative;
+    min-width: 0;
+}
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-card);
+}
+
+
+/* =========================================
+   IMAGE BADGE
+========================================= */
+
+.hero-badge {
+    position: absolute;
+    right: -16px;
+    bottom: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 18px 22px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-card);
+}
+
+.hero-badge-title {
+    color: var(--color-text-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.hero-badge-description {
+    color: var(--color-text-secondary);
+    font-size: 0.82rem;
+}
+
+/* =========================================
+   HOME: REFINED NAVIGATION AND HERO
+========================================= */
+
+.site-header {
+    background: rgba(255, 249, 240, 0.96);
+}
+
+.header-container {
+    min-height: 88px;
+}
+
+.brand {
+    gap: 11px;
+}
+
+.brand-logo-frame {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid rgba(169, 99, 8, 0.68);
+    border-radius: 50%;
+    background: #171411;
+    box-shadow: 0 5px 14px rgba(169, 99, 8, 0.13);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.brand:hover .brand-logo-frame {
+    transform: scale(1.05);
+    box-shadow: 0 7px 18px rgba(169, 99, 8, 0.22);
+}
+
+.brand-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.brand-wordmark {
+    color: var(--color-text-primary);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+.brand-wordmark span {
+    color: #A96308;
+}
+
+.brand-mark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid rgba(169, 99, 8, 0.32);
+    border-radius: 50%;
+    color: #8B5100;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.brand-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 2px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.45rem;
+    letter-spacing: -0.7px;
+}
+
+.brand-tagline {
+    flex-basis: 100%;
+    margin-top: 1px;
+    color: var(--color-text-secondary);
+    font-family: var(--font-family-base);
+    font-size: 0.52rem;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+}
+
+.navigation-list {
+    gap: clamp(20px, 2.5vw, 36px);
+}
+
+.navigation-link {
+    font-size: 0.9rem;
+}
+
+.navigation-link::after {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    left: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-brand);
+    content: '';
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-fast);
+}
+
+.navigation-link:hover::after,
+.navigation-link:focus-visible::after,
+.navigation-link.is-active::after {
+    transform: scaleX(1);
+}
+
+.header-actions {
+    gap: 14px;
+}
+
+.cart-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 7px;
+    border-radius: 999px;
+}
+
+.cart-link svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.7;
+}
+
+.cart-count {
+    display: inline-grid;
+    min-width: 21px;
+    height: 21px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-surface-soft);
+    color: #8B5100;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.order-button {
+    min-height: 46px;
+    padding-inline: 21px;
+}
+
+.signup-button {
+    min-height: 46px;
+    padding-inline: 18px;
+    border-color: rgba(139, 81, 0, 0.42);
+    color: #8B5100;
+}
+
+.signup-button:hover {
+    border-color: #8B5100;
+    background: var(--color-surface-soft);
+}
+
+.mobile-signup-link { display: none; }
+
+.menu-toggle {
+    display: none;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+    min-height: min(620px, calc(100svh - 88px));
+    padding-block: clamp(64px, 8vw, 96px);
+    display: flex;
+    align-items: center;
+    background: var(--color-background);
+}
+
+.hero-section::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(23, 23, 19, 0.96) 0%, rgba(23, 23, 19, 0.87) 34%, rgba(23, 23, 19, 0.56) 62%, rgba(23, 23, 19, 0.2) 100%),
+        linear-gradient(0deg, rgba(23, 23, 19, 0.28), transparent 48%);
+    content: '';
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-content,
+.hero-content .hero-description,
+.hero-content .hero-highlight-item {
+    color: #fffaf2;
+}
+
+.hero-title { color: #fffaf2; }
+
+.hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #F5C46E;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.eyebrow-rule {
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+}
+
+.hero-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 680px;
+    font-weight: 500;
+    font-size: clamp(2.75rem, 5.8vw, 5.2rem);
+    line-height: 1.04;
+    letter-spacing: -2.4px;
+}
+
+.hero-highlight {
+    display: block;
+    margin-top: 10px;
+    color: #F5C46E;
+    text-wrap: balance;
+}
+
+.hero-description {
+    max-width: 540px;
+    color: rgba(255, 250, 242, 0.82);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    gap: 12px;
+}
+
+.hero-actions .button-primary {
+    min-height: 54px;
+    padding-inline: 25px;
+    gap: 12px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+}
+
+.hero-actions .button-secondary {
+    min-height: 54px;
+    padding-inline: 24px;
+}
+
+.hero-actions .button {
+    transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hero-actions .button:hover { transform: translateY(-2px); }
+
+.button-secondary {
+    border-color: var(--color-border);
+    background: transparent;
+    color: var(--color-text-primary);
+}
+
+.hero-content .button-secondary {
+    border-color: rgba(255, 250, 242, 0.48);
+    background: rgba(255, 250, 242, 0.04);
+    color: #fffaf2;
+}
+
+.hero-content .button-secondary:hover {
+    border-color: #F5C46E;
+    background: rgba(245, 196, 110, 0.12);
+    color: #fffaf2;
+}
+
+.hero-highlights {
+    gap: 10px 26px;
+    margin-top: 4px;
+}
+
+.hero-highlight-item {
+    color: rgba(255, 250, 242, 0.76);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+}
+
+.hero-content .hero-highlight-item { color: rgba(255, 250, 242, 0.76); }
+
+.highlight-icon {
+    width: 21px;
+    height: 21px;
+    background: rgba(245, 196, 110, 0.17);
+    color: #F5C46E;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    border-radius: 0;
+    object-position: 60% center;
+    filter: saturate(1.06) contrast(1.03);
+    box-shadow: none;
+}
+
+.hero-visual {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    overflow: hidden;
+}
+
+.hero-badge {
+    right: -20px;
+    bottom: 25px;
+    min-width: 205px;
+    padding: 17px 20px 17px 48px;
+}
+
+.badge-star {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    display: grid;
+    width: 23px;
+    height: 23px;
+    place-items: center;
+    transform: translateY(-50%);
+    color: #A96308;
+}
+
+.hero-badge-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.98rem;
+}
+
+.hero-badge-description {
+    font-size: 0.78rem;
+}
+
+.menu-toggle:focus-visible,
+.cart-link:focus-visible {
+    outline: 2px solid #8B5100;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

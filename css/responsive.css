@@ -1,0 +1,235 @@
+
+/* =========================================
+   HERO SECTION: TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-section {
+        padding-block: 64px 72px;
+    }
+
+    .hero-container {
+        gap: 36px;
+    }
+
+    .hero-title {
+        letter-spacing: -1px;
+    }
+
+    .hero-badge {
+        right: -8px;
+    }
+
+}
+
+
+/* =========================================
+   HERO SECTION: MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+    .hero-section {
+        padding-block: 44px 56px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .hero-content {
+        max-width: none;
+    }
+
+    .hero-title {
+        font-size: clamp(2.25rem, 9vw, 3.25rem);
+        line-height: 1.15;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        gap: 12px;
+    }
+
+    .hero-highlights {
+        gap: 14px 20px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 480px;
+        margin-inline: auto;
+    }
+
+    .hero-badge {
+        right: 10px;
+        bottom: 12px;
+
+        padding: 14px 16px;
+    }
+
+}
+
+/* Home header and hero breakpoints */
+@media (max-width: 960px) {
+    .header-container { gap: 18px; }
+    .brand-tagline { display: none; }
+    .navigation-list { gap: 18px; }
+    .hero-container { gap: 38px; }
+    .hero-badge { right: -10px; }
+}
+
+@media (max-width: 760px) {
+    .header-container {
+        position: relative;
+        min-height: 72px;
+    }
+
+    .site-navigation {
+        position: absolute;
+        z-index: 20;
+        top: calc(100% - 1px);
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 8px 24px 20px;
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background);
+        box-shadow: 0 16px 22px rgba(41, 35, 31, 0.07);
+    }
+
+    .site-navigation.is-open { display: block; }
+
+    .navigation-list {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .navigation-link {
+        display: block;
+        padding: 13px 4px;
+        font-size: 0.98rem;
+    }
+
+    .navigation-link.is-active::after {
+        right: auto;
+        bottom: 7px;
+        width: 24px;
+    }
+
+    .signup-button { display: none; }
+    .mobile-signup-link { display: block; padding-top: 8px; }
+    .mobile-signup-link .button { min-height: 44px; padding-inline: 17px; }
+
+    .header-actions { gap: 8px; margin-left: auto; }
+    .cart-label { display: none; }
+    .cart-link { gap: 4px; padding-inline: 8px; }
+    .order-button { min-height: 42px; padding: 9px 15px; font-size: 0.82rem; }
+
+    .menu-toggle {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+        border: 1px solid var(--color-border);
+        border-radius: 50%;
+        background: var(--color-surface);
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 17px;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--color-text-primary);
+        transition: transform var(--transition-fast), opacity var(--transition-fast);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-7px) rotate(-45deg); }
+
+    .hero-container { grid-template-columns: 1fr; gap: 38px; }
+    .hero-content { max-width: 620px; }
+    .hero-title { max-width: 620px; }
+    .hero-description { max-width: 540px; }
+    .hero-visual { width: 100%; max-width: 590px; margin-inline: auto; }
+    .hero-image { aspect-ratio: 1.2 / 1; border-radius: 42% 42% 18px 18px; }
+}
+
+@media (max-width: 420px) {
+    .container { width: min(var(--container-width), calc(100% - 32px)); }
+    .header-container { gap: 8px; }
+    .brand { gap: 7px; }
+    .brand-logo-frame { width: 42px; height: 42px; flex-basis: 42px; }
+    .brand-wordmark { font-size: 1.25rem; }
+    .brand-mark { width: 36px; height: 36px; font-size: 1.2rem; }
+    .brand-name { font-size: 1.25rem; }
+    .order-button { padding-inline: 11px; font-size: 0.76rem; }
+    .cart-link { padding-inline: 5px; }
+    .hero-section { padding-block: 42px 54px; }
+    .hero-title { font-size: clamp(2.25rem, 10vw, 2.85rem); letter-spacing: -1px; }
+    .hero-eyebrow { font-size: 0.67rem; letter-spacing: 1.35px; }
+    .hero-actions { align-items: stretch; }
+    .hero-actions .button { padding-inline: 16px; font-size: 0.85rem; }
+    .hero-badge { right: 8px; bottom: 12px; min-width: 0; padding: 13px 15px 13px 41px; }
+    .badge-star { left: 12px; }
+}
+
+/* Full-bleed hero image remains behind the copy at every viewport size. */
+.hero-section {
+    min-height: min(620px, calc(100svh - 88px));
+}
+
+.hero-visual {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    width: auto;
+    max-width: none;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    border-radius: 0;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+@media (max-width: 760px) {
+    .hero-section {
+        min-height: 560px;
+        align-items: flex-start;
+        padding-block: 56px 64px;
+    }
+
+    .hero-section::before {
+        background: linear-gradient(180deg, rgba(23, 23, 19, 0.88) 0%, rgba(23, 23, 19, 0.78) 56%, rgba(23, 23, 19, 0.38) 100%);
+    }
+
+    .hero-container { display: block; }
+    .hero-content { max-width: 600px; padding: 0; }
+    .hero-visual { max-width: none; }
+    .hero-image { object-position: 58% center; }
+    .hero-badge { right: 12px; bottom: 14px; }
+}
+
+@media (max-width: 420px) {
+    .hero-section { min-height: 540px; }
+}
