@@ -7,7 +7,6 @@
     <meta name="description" content="Freshly prepared FoodFlow favorites, made to order and delivered with care.">
     <meta name="theme-color" content="#fff9f0">
     <title>FoodFlow | Fresh food, made to order</title>
-    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -44,19 +43,12 @@
                 <a class="button button-secondary signup-button" href="pages/signup.html">Sign Up</a>
             </div>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
-                aria-label="Open navigation menu">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </header>
 
     <main id="main-content">
         <section class="hero-section" aria-labelledby="hero-title">
-            <div class="hero-visual" aria-hidden="true">
-                <img class="hero-image" src="assets/images/hero/hero-food.jpg" alt="" width="700" height="700"
-                    fetchpriority="high">
-            </div>
+            <div class="hero-visual" aria-hidden="true"></div>
             <div class="container hero-container">
                 <div class="hero-content">
                     <p class="hero-eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> FOODFLOW KITCHEN</p>
@@ -73,7 +65,93 @@
             </div>
         </section>
     </main>
+<!-- Food Categories Section -->
+<section class="categories-section" aria-labelledby="categories-title">
 
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading">
+            <h2 id="categories-title">Explore Our Menu</h2>
+
+            <p>
+                Discover delicious meals prepared with fresh ingredients.
+            </p>
+        </div>
+
+        <!-- Categories List -->
+        <div class="categories-grid">
+
+            <!-- Burger Category -->
+            <a href="pages/menu.html" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="assets/images/categories/burger.jpg"
+                        alt="Delicious burger"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Burgers</h3>
+            </a>
+
+            <!-- Pizza Category -->
+            <a href="pages/menu.html" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="assets/images/categories/pizza.jpg"
+                        alt="Freshly baked pizza"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Pizza</h3>
+            </a>
+
+            <!-- Pasta Category -->
+            <a href="pages/menu.html" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="assets/images/categories/pasta.jpg"
+                        alt="Creamy pasta"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Pasta</h3>
+            </a>
+
+            <!-- Drinks Category -->
+            <a href="pages/menu.html" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="assets/images/categories/drinks.jpg"
+                        alt="Refreshing drinks"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Drinks</h3>
+            </a>
+
+            <!-- Desserts Category -->
+            <a href="pages/menu.html" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="assets/images/categories/dessert.jpg"
+                        alt="Delicious dessert"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Desserts</h3>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 
