@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Freshly prepared FoodFlow favorites, made to order and delivered with care.">
-    <meta name="theme-color" content="#fff9f0">
+    <meta name="theme-color" content="#171713">
     <title>FoodFlow | Fresh food, made to order</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <div class="container header-container">
             <a class="brand" href="index.html" aria-label="FoodFlow home">
@@ -19,6 +20,12 @@
                         width="298" height="208"></span>
                 <span class="brand-wordmark">Food<span>Flow.</span></span>
             </a>
+
+            <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-controls="site-navigation">
+            <label class="nav-toggle-label" for="nav-toggle">
+                <span class="menu-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Toggle navigation</span>
+            </label>
 
             <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
                 <ul class="navigation-list">
@@ -58,25 +65,25 @@
                         for sharing.</p>
                     <div class="hero-actions">
                         <a class="button button-primary" href="pages/menu.html">View the Menu <span
-                                aria-hidden="true">→</span></a>
-                        <a class="button button-secondary" href="pages/contact.html">Reserve a Table</a>
+                                aria-hidden="true">&rarr;</span></a>
+                        <a class="button button-secondary" href="pages/contact.html">Contact Us</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 <!-- Food Categories Section -->
 <section class="categories-section" aria-labelledby="categories-title">
 
     <div class="container">
 
         <!-- Section Heading -->
-        <div class="section-heading">
-            <h2 id="categories-title">Explore Our Menu</h2>
-
-            <p>
-                Discover delicious meals prepared with fresh ingredients.
-            </p>
+        <div class="section-heading section-heading-feature">
+            <div>
+                <p class="section-subtitle">DISCOVER OUR FOOD</p>
+                <h2 id="categories-title">Explore Our Menu</h2>
+                <p>Choose a category and find your next favorite.</p>
+            </div>
+            <a class="section-link" href="pages/menu.html">View Full Menu <span aria-hidden="true">&rarr;</span></a>
         </div>
 
         <!-- Categories List -->
@@ -153,32 +160,36 @@
 
 </section>
 
-```html
-<section class="popular-section">
+<section class="popular-section" aria-labelledby="popular-title">
     <div class="container">
 
-        <div class="section-heading">
-            <p class="section-subtitle">CUSTOMER FAVORITES</p>
-            <h2>Our Popular Dishes</h2>
-            <p>Explore the dishes our customers love the most.</p>
+        <div class="section-heading section-heading-feature">
+            <div>
+                <p class="section-subtitle">SIGNATURE PLATES</p>
+                <h2 id="popular-title">Popular Dishes</h2>
+                <p>A few FoodFlow favorites, made fresh to order.</p>
+            </div>
+            <a class="section-link" href="pages/menu.html">Browse the Menu <span aria-hidden="true">&rarr;</span></a>
         </div>
 
         <div class="popular-grid">
 
             <article class="food-card">
                 <img
-                    src="assets/images/food/cheese-burger.jpg"
-                    alt="Juicy cheese burger"
+                    src="assets/images/food/classic-burger.jpg"
+                    alt="Classic burger"
                     class="food-image"
+                    loading="lazy"
+                    decoding="async"
                 >
 
                 <div class="food-info">
-                    <h3>Cheese Burger</h3>
-                    <p>Juicy burger with melted cheese and fresh vegetables.</p>
+                    <h3>Classic Burger</h3>
+                    <p>Delicious burger with fresh ingredients and a juicy patty.</p>
 
                     <div class="food-bottom">
                         <span class="food-price">$8.99</span>
-                        <a href="pages/menu.html" class="order-button">
+                        <a href="pages/menu.html" class="card-order-link">
                             Order Now
                         </a>
                     </div>
@@ -187,18 +198,20 @@
 
             <article class="food-card">
                 <img
-                    src="assets/images/food/pepperoni-pizza.jpg"
-                    alt="Fresh pepperoni pizza"
+                    src="assets/images/food/margherita-pizza.jpg"
+                    alt="Fresh margherita pizza"
                     class="food-image"
+                    loading="lazy"
+                    decoding="async"
                 >
 
                 <div class="food-info">
-                    <h3>Pepperoni Pizza</h3>
-                    <p>Classic pizza topped with cheese and pepperoni.</p>
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza topped with cheese and fresh tomatoes.</p>
 
                     <div class="food-bottom">
                         <span class="food-price">$12.99</span>
-                        <a href="pages/menu.html" class="order-button">
+                        <a href="pages/menu.html" class="card-order-link">
                             Order Now
                         </a>
                     </div>
@@ -210,6 +223,8 @@
                     src="assets/images/food/creamy-pasta.jpg"
                     alt="Creamy pasta served fresh"
                     class="food-image"
+                    loading="lazy"
+                    decoding="async"
                 >
 
                 <div class="food-info">
@@ -218,7 +233,7 @@
 
                     <div class="food-bottom">
                         <span class="food-price">$10.50</span>
-                        <a href="pages/menu.html" class="order-button">
+                        <a href="pages/menu.html" class="card-order-link">
                             Order Now
                         </a>
                     </div>
@@ -230,6 +245,8 @@
                     src="assets/images/food/chocolate-cake.jpg"
                     alt="Rich chocolate cake"
                     class="food-image"
+                    loading="lazy"
+                    decoding="async"
                 >
 
                 <div class="food-info">
@@ -238,7 +255,7 @@
 
                     <div class="food-bottom">
                         <span class="food-price">$6.50</span>
-                        <a href="pages/menu.html" class="order-button">
+                        <a href="pages/menu.html" class="card-order-link">
                             Order Now
                         </a>
                     </div>
@@ -249,8 +266,7 @@
 
     </div>
 </section>
-```
 
+</main>
 </body>
-
 </html>
