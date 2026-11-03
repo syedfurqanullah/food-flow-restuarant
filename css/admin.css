@@ -1,0 +1,206 @@
+/* =========================================================
+   ADD THIS TO THE BOTTOM OF css/admin.css
+   (do not replace what is already in the file)
+   ========================================================= */
+
+/* ---------- Admin theme variables ----------
+   Estimated from the design images. If main.css has the real
+   brand colors, change the values here to match. */
+:root {
+  --admin-accent: #f97316;
+  --admin-accent-hover: #ea6a0a;
+  --admin-dark: #1a1a1a;
+  --admin-bg: #f5f5f5;
+  --admin-card: #ffffff;
+  --admin-text: #1f2937;
+  --admin-muted: #6b7280;
+  --admin-border: #e5e7eb;
+  --admin-radius: 12px;
+  --admin-font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- Shared buttons (reused on every admin page) ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  font-family: var(--admin-font);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--admin-accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--admin-accent-hover);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.4);
+  outline-offset: 2px;
+}
+
+/* ---------- Admin Login ---------- */
+.admin-login-body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--admin-dark);
+  font-family: var(--admin-font);
+  color: var(--admin-text);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px;
+  background: var(--admin-card);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.login-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--admin-accent);
+  color: #fff;
+}
+
+.login-brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--admin-dark);
+}
+
+.login-brand-role {
+  font-weight: 500;
+  color: var(--admin-muted);
+}
+
+.login-title {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.login-subtitle {
+  margin: 0 0 28px;
+  font-size: 14px;
+  color: var(--admin-muted);
+}
+
+/* ---------- Form fields (reused by Menu and Customers forms) ---------- */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--admin-font);
+  font-size: 15px;
+  color: var(--admin-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.18);
+}
+
+/* Password field with the show/hide icon inside */
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 46px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--admin-muted);
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: var(--admin-accent);
+}
+
+.password-toggle:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.4);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remember-me input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--admin-accent);
+}
