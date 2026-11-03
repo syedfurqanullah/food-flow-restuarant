@@ -430,3 +430,136 @@
         padding: 16px;
     }
 }
+
+
+@media (max-width: 900px) {
+    .special-offers {
+        margin: 48px 24px;
+        padding: clamp(26px, 5vw, 44px);
+        gap: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-section {
+        min-height: 510px;
+        padding-block: 56px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.6rem, 11vw, 3.8rem);
+        letter-spacing: -0.04em;
+    }
+
+    .hero-visual {
+        background-image:
+            linear-gradient(90deg, rgba(23, 23, 19, 0.9), rgba(23, 23, 19, 0.52)),
+            linear-gradient(0deg, rgba(23, 23, 19, 0.56), transparent 70%),
+            url("../assets/images/hero/hero-food.jpg");
+        background-position: center, center, 62% center;
+    }
+
+    .header-container {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 4px 8px;
+    }
+
+    .brand-wordmark {
+        font-size: 1.12rem;
+    }
+
+    .header-actions .order-button {
+        padding-inline: 9px;
+        font-size: 0.72rem;
+    }
+
+    .special-offers {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 32px 16px;
+        padding: 24px;
+        gap: 24px;
+        border-radius: 17px;
+    }
+
+    .offer-discount {
+        width: 76px;
+        height: 76px;
+    }
+
+    .discount-number {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand-logo-frame {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+    }
+
+    .brand-wordmark {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        column-gap: 5px;
+    }
+
+    .header-actions .order-button {
+        padding-inline: 6px;
+        font-size: 0.66rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-actions .button,
+    .card-order-link,
+    .offer-button {
+        transition: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .categories-section .category-card {
+        aspect-ratio: 1 / 1.05;
+    }
+
+    .categories-section .category-card h3 {
+        right: 10px;
+        bottom: 10px;
+        left: 12px;
+        font-size: 1rem;
+    }
+
+    .categories-section .category-card h3::after {
+        width: 26px;
+        height: 26px;
+        flex-basis: 26px;
+    }
+
+    .popular-section .food-image {
+        aspect-ratio: 1.45 / 1;
+    }
+
+    .special-offers {
+        gap: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .categories-section .category-image img,
+    .categories-section .category-card h3::after,
+    .popular-section .food-image,
+    .offer-visual img {
+        transition: none;
+    }
+
+    .categories-section .category-image img,
+    .popular-section .food-image,
+    .offer-visual img {
+        transform: none;
+        filter: none;
+    }
+}
