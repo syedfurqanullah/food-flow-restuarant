@@ -14,8 +14,8 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--ff-page);
-    color: var(--ff-text);
+    background-color: #171713;
+    color: #F4EFE5;
 }
 
 img {
@@ -38,19 +38,6 @@ ul {
     list-style: none;
 }
 
-
-/* Shared homepage design tokens */
-:root {
-    --ff-page: #171713;
-    --ff-surface: #201f1a;
-    --ff-ink: #171713;
-    --ff-paper: #fff9f0;
-    --ff-gold: #d3b77e;
-    --ff-gold-strong: #b89a62;
-    --ff-muted-on-dark: #b8b2a8;
-    --ff-text: #f4efe5;
-    --ff-card-radius: 14px;
-}
 
 /* =========================================
    2. SHARED CONTAINER
@@ -739,7 +726,6 @@ ul {
 ===================================== */
 
 .categories-section {
-    background-color: #fff9f0;
     padding: 60px 0;
 }
 
@@ -840,7 +826,6 @@ ul {
 
 
 .popular-section {
-    background-color: #ffffff;
     padding: 70px 0;
 }
 
@@ -1032,7 +1017,6 @@ ul {
 .categories-section,
 .popular-section {
     padding-block: clamp(56px, 7vw, 88px);
-    background: #171713;
     color: #F4EFE5;
 }
 
@@ -1239,7 +1223,6 @@ ul {
     margin: 70px 5%;
     padding: 55px;
 
-    background-color: #FFF0D9;
     border-radius: 24px;
     overflow: hidden;
 }
@@ -1446,7 +1429,7 @@ ul {
 }
 
 .nav-toggle:checked + .nav-toggle-label {
-    border-color: var(--ff-gold-strong);
+    border-color: #B89A62;
     background: rgba(184, 154, 98, 0.12);
 }
 
@@ -1487,7 +1470,7 @@ ul {
 .food-card {
     display: flex;
     flex-direction: column;
-    border-radius: var(--ff-card-radius);
+    border-radius: 14px;
 }
 
 .food-image {
@@ -1521,16 +1504,15 @@ ul {
 }
 
 .card-order-link:hover {
-    border-color: var(--ff-gold-strong);
-    background: var(--ff-gold-strong);
-    color: var(--ff-ink);
+    border-color: #B89A62;
+    background: #B89A62;
+    color: #171713;
 }
 
 .special-offers {
     max-width: 1320px;
     margin-inline: auto;
     border: 1px solid rgba(184, 154, 98, 0.28);
-    background: #201f1a;
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -1609,7 +1591,6 @@ ul {
 
 /* Restaurant menu sections: clear contrast, confident food photography */
 .categories-section {
-    background: transparent;
     color: #F4EFE5;
 }
 
@@ -1716,7 +1697,6 @@ ul {
 
 .popular-section {
     padding-block: clamp(62px, 7vw, 92px);
-    background: transparent;
 }
 
 .popular-section .section-heading-feature {
@@ -1732,7 +1712,7 @@ ul {
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 13px;
-    background: var(--ff-surface);
+    background: #201f1a;
 }
 
 .popular-section .food-image {
@@ -1841,7 +1821,6 @@ ul {
 /* Keep the offer on the same charcoal and muted-gold system as the other sections. */
 .special-offers {
     border-color: rgba(184, 154, 98, 0.28);
-    background: var(--ff-surface);
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -1872,3 +1851,135 @@ ul {
     color: #F4EFE5;
 }
 
+/* ========================================
+   WHY CHOOSE FOODFLOW SECTION
+======================================== */
+
+.why-choose {
+    padding: 90px 5%;
+
+}
+
+
+/* SECTION HEADER */
+
+.why-header {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.why-tag {
+    display: inline-block;
+
+    color: #D8870B;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.why-header h2 {
+    
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.why-header h2 span {
+    color: #F5A623;
+}
+
+.why-header p {
+    color: #746B63;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* FEATURES GRID */
+
+.why-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* INDIVIDUAL CARD */
+
+.why-card {
+    padding: 32px 24px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #F0E7DB;
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #F5A623;
+
+    box-shadow: 0 12px 30px rgba(41, 35, 31, 0.08);
+}
+
+
+/* ICON BOX */
+
+.why-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 22px;
+
+    background-color: #FFF0D9;
+    color: #D8870B;
+
+    border-radius: 18px;
+
+    font-size: 27px;
+}
+
+
+/* CARD HEADING */
+
+.why-card h3 {
+    color: #29231F;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    margin-bottom: 13px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.why-card p {
+    color: #746B63;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
