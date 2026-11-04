@@ -187,4 +187,413 @@
   accent-color: var(--admin-accent);
 }
 
+<<<<<<< HEAD
+=======
+/* =========================================================
+   ADD THIS BELOW THE LOGIN STYLES IN css/admin.css
+   It uses the variables and .btn / .form-group styles
+   from the login snippet, so paste that one first.
+   ========================================================= */
+
+/* ---------- Extra buttons ---------- */
+.btn-secondary {
+  background: #fff;
+  color: var(--admin-text);
+  border: 1px solid var(--admin-border);
+}
+
+.btn-secondary:hover {
+  background: #f3f4f6;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* ---------- Shared admin layout: sidebar + content ---------- */
+.admin-body {
+  margin: 0;
+  background: var(--admin-bg);
+  font-family: var(--admin-font);
+  color: var(--admin-text);
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  flex: 0 0 250px;
+  width: 250px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  background: var(--admin-dark);
+  color: #fff;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sidebar-brand small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.sidebar-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--admin-accent);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #d1d5db;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: var(--admin-accent);
+  color: #fff;
+}
+
+.sidebar-link.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: inset 4px 0 0 var(--admin-accent);
+}
+
+/* keep the active link readable when hovered */
+.sidebar-link.active:hover {
+  background: var(--admin-accent);
+}
+
+.sidebar-link:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.5);
+  outline-offset: 2px;
+}
+
+.admin-main {
+  flex: 1;
+  min-width: 0; /* lets wide tables scroll instead of stretching the page */
+  padding: 32px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  margin-bottom: 24px;
+  background: var(--admin-card);
+  border-radius: var(--admin-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ---------- Search + filter ---------- */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 380px;
+}
+
+.search-box svg {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: var(--admin-muted);
+}
+
+.search-box input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 14px 11px 42px;
+  border: 1px solid var(--admin-border);
+  border-radius: 999px;
+  background: #fff;
+  font-family: var(--admin-font);
+  font-size: 15px;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.18);
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  padding: 8px 16px;
+  border: 1px solid var(--admin-border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--admin-text);
+  font-family: var(--admin-font);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pill:hover {
+  border-color: var(--admin-accent);
+  color: var(--admin-accent);
+}
+
+.pill.active {
+  background: var(--admin-accent);
+  border-color: var(--admin-accent);
+  color: #fff;
+}
+
+/* ---------- Data tables (reused by Customers) ---------- */
+.table-card {
+  overflow: hidden;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.data-table th {
+  padding: 16px 20px;
+  background: #fafafa;
+  border-bottom: 1px solid var(--admin-border);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--admin-border);
+  vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.data-table tbody tr:hover {
+  background: #fffaf5;
+}
+
+.col-actions {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.food-cell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.food-name {
+  font-weight: 500;
+}
+
+.food-thumb {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Placeholder colors until real food photos are added */
+.thumb-1 { background: linear-gradient(135deg, #f59e0b, #b45309); }
+.thumb-2 { background: linear-gradient(135deg, #ef4444, #f59e0b); }
+.thumb-3 { background: linear-gradient(135deg, #fde68a, #d97706); }
+.thumb-4 { background: linear-gradient(135deg, #a16207, #451a03); }
+.thumb-5 { background: linear-gradient(135deg, #78350f, #292524); }
+
+/* ---------- Status badges ---------- */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* ---------- Action buttons (Edit / Delete / View) ---------- */
+.icon-btn {
+  display: inline-block;
+  padding: 7px 14px;
+  margin-left: 6px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.icon-btn:hover {
+  opacity: 0.88;
+}
+
+.icon-btn:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.5);
+  outline-offset: 2px;
+}
+
+.icon-btn-edit   { background: #3b82f6; }
+.icon-btn-delete { background: #ef4444; }
+.icon-btn-view   { background: #6b7280; }
+
+/* ---------- Add / Edit form ---------- */
+.form-card {
+  padding: 28px;
+  scroll-margin-top: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.form-span-2 {
+  grid-column: span 2;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.form-actions-center {
+  justify-content: center;
+}
+
+/* ---------- Delete confirmation ---------- */
+.confirm-card {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 28px;
+  text-align: center;
+  scroll-margin-top: 24px;
+}
+
+.confirm-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.confirm-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.confirm-text {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--admin-muted);
+}
+>>>>>>> 7059c78 (adding menu management page with enhanced styling in the login page)
 
