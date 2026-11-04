@@ -57,20 +57,20 @@
         width: 44px;
         height: 44px;
         place-items: center;
-        border: 1px solid rgba(184, 154, 98, 0.4);
+        border: 1px solid var(--overlay-gold-40);
         border-radius: 9px;
-        color: #F4EFE5;
+        color: var(--color-cream);
         cursor: pointer;
         transition: border-color 180ms ease, background-color 180ms ease;
     }
 
     .nav-toggle-label:hover {
-        border-color: #B89A62;
-        background: rgba(184, 154, 98, 0.1);
+        border-color: var(--color-accent);
+        background: var(--overlay-gold-10);
     }
 
     .nav-toggle:focus-visible + .nav-toggle-label {
-        outline: 2px solid #D3B77E;
+        outline: 2px solid var(--color-accent-light);
         outline-offset: 3px;
     }
 
@@ -124,7 +124,7 @@
         width: 100%;
         margin-top: 4px;
         overflow: visible;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 1px solid var(--overlay-white-08);
         padding-top: 8px;
     }
 
@@ -162,7 +162,7 @@
     .navigation-link:hover,
     .navigation-link:focus-visible,
     .navigation-link.is-active {
-        background: rgba(184, 154, 98, 0.1);
+        background: var(--overlay-gold-10);
     }
 
     .navigation-link:focus-visible {
@@ -178,16 +178,16 @@
         width: 100%;
         min-height: 44px;
         padding: 8px 14px;
-        border-color: rgba(184, 154, 98, 0.55);
-        background: rgba(184, 154, 98, 0.08);
-        color: #D3B77E;
+        border-color: var(--overlay-gold-55);
+        background: var(--overlay-gold-08);
+        color: var(--color-accent-light);
         font-size: 0.82rem;
     }
 
     .mobile-signup-link .button:hover {
-        border-color: #B89A62;
-        background: rgba(184, 154, 98, 0.16);
-        color: #F4EFE5;
+        border-color: var(--color-accent);
+        background: var(--overlay-gold-16);
+        color: var(--color-cream);
     }
 }
 
@@ -217,7 +217,7 @@
 
     .hero-visual {
         background-image:
-            linear-gradient(180deg, rgba(23, 23, 19, 0.9) 0%, rgba(23, 23, 19, 0.78) 58%, rgba(23, 23, 19, 0.42) 100%),
+            linear-gradient(180deg, var(--overlay-ink-90) 0%, var(--overlay-ink-78) 58%, var(--overlay-ink-42) 100%),
             url("../assets/images/hero/hero-food.jpg");
         background-position: center, 58% center;
     }
@@ -453,8 +453,8 @@
 
     .hero-visual {
         background-image:
-            linear-gradient(90deg, rgba(23, 23, 19, 0.9), rgba(23, 23, 19, 0.52)),
-            linear-gradient(0deg, rgba(23, 23, 19, 0.56), transparent 70%),
+            linear-gradient(90deg, var(--overlay-ink-90), var(--overlay-ink-52)),
+            linear-gradient(0deg, var(--overlay-ink-56), transparent 70%),
             url("../assets/images/hero/hero-food.jpg");
         background-position: center, center, 62% center;
     }
@@ -621,7 +621,6 @@
     }
 
 }
-
 
 /* ================= AHMAD MENU - ALL DEVICES RESPONSIVE ================= */
 
@@ -936,3 +935,58 @@
 
 
 /* END AHMAD MENU RESPONSIVE */
+=======
+/* ========================================
+   TESTIMONIALS RESPONSIVE
+======================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .testimonials-header {
+        margin-bottom: 40px;
+    }
+
+    .testimonials .section-title {
+        font-size: 32px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .testimonials-header {
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    .testimonials .section-title {
+        font-size: 27px;
+    }
+
+    .testimonials-description {
+        font-size: 14px;
+    }
+
+    .testimonial-card {
+        padding: 22px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+}
