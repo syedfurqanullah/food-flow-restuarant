@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Path is for pages/admin/login.html -->
-  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../../css/admin.css">
   <!-- <link rel="stylesheet" href="../css/admin-responsive.css"> -->
 </head>
 <body class="admin-login-body">
@@ -36,13 +36,13 @@
 
       <div class="form-group">
         <label for="identifier">Email or username</label>
-        <input type="text" id="identifier" name="identifier" placeholder="admin@foodflow.pk" autocomplete="username">
+        <input type="text" id="identifier" name="identifier" placeholder="admin@foodflow.pk" autocomplete="username" required>
       </div>
 
       <div class="form-group">
         <label for="password">Password</label>
         <div class="password-field">
-          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
           <!-- Visual only: no JavaScript yet, so this does not toggle anything -->
           <button type="button" class="password-toggle" aria-label="Show password">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
