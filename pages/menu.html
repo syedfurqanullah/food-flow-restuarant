@@ -1,302 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>FoodFlow | Our Menu</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore FoodFlow's sample menu of freshly prepared restaurant favorites.">
+    <meta name="theme-color" content="#171713">
+    <title>Menu | FoodFlow</title>
+    <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body class="menu-page">
-
-    <!-- NAVBAR -->
-    <header class="header">
-
-        <div class="logo">
-            🍳 FoodFlow
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-container">
+            <a class="brand" href="../index.html" aria-label="FoodFlow home">
+                <span class="brand-logo-frame"><img class="brand-logo" src="../assets/images/logo/logo.jpg" alt=""
+                        width="298" height="208"></span>
+                <span class="brand-wordmark">Food<span>Flow.</span></span>
+            </a>
+            <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-controls="site-navigation"
+                aria-label="Toggle navigation menu">
+            <label class="nav-toggle-label" for="nav-toggle"><span class="menu-icon" aria-hidden="true"></span><span
+                    class="visually-hidden">Toggle navigation</span></label>
+            <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+                <ul class="navigation-list">
+                    <li><a class="navigation-link" href="../index.html">Home</a></li>
+                    <li><a class="navigation-link is-active" href="menu.html" aria-current="page">Menu</a></li>
+                    <li><a class="navigation-link" href="deals.html">Deals</a></li>
+                    <li><a class="navigation-link" href="about.html">Our Story</a></li>
+                    <li><a class="navigation-link" href="contact.html">Contact</a></li>
+                    <li class="mobile-signup-link"><a class="button button-secondary" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a class="cart-link" href="cart.html" aria-label="Shopping cart"><svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01" />
+                    </svg><span class="cart-label">Cart</span><span class="cart-count" aria-hidden="true">0</span></a>
+                <a class="button button-primary order-button" href="#menu-items">Order Online</a>
+                <a class="button button-secondary signup-button" href="signup.html">Sign Up</a>
+            </div>
         </div>
-
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="header-buttons">
-            <a href="cart.html">🛒</a>
-            <a href="login.html">Login</a>
-        </div>
-
     </header>
 
-
-    <!-- TOP BANNER -->
-    <section class="menu-hero">
-
-        <div class="banner-content">
-
-            <img
-                src="../assets/images/backgrounds/food-bg.jpg"
-                alt="FoodFlow Delicious Food"
-                class="banner-image"
-            >
-
-            <div class="banner-text">
-
-                <h1>Our Menu</h1>
-
-                <p>Freshly prepared. Made with love.</p>
-
+    <main id="main-content">
+        <section class="menu-hero" aria-labelledby="menu-title">
+            <div class="menu-hero-image" role="img" aria-label="A selection of freshly prepared FoodFlow dishes"></div>
+            <div class="container menu-hero-content">
+                <p class="menu-eyebrow">FOODFLOW KITCHEN</p>
+                <h1 id="menu-title">Made fresh.<br><span>Made to share.</span></h1>
+                <p>Explore our kitchen favorites, from satisfying mains to something sweet. Find a dish for lunch,
+                    dinner or a shared table.</p>
+                <a class="button button-primary" href="#menu-items">Explore the menu <span
+                        aria-hidden="true">↓</span></a>
+                <p class="menu-demo-note">Sample menu for a frontend demonstration. Prices and availability require
+                    restaurant confirmation.</p>
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-
-    <!-- MENU SECTION -->
-    <main class="menu-section">
-
-        <!-- SEARCH -->
-<div class="search-bar">
-
-    <input
-        type="search"
-        placeholder="🔍 Search for delicious food..."
-        aria-label="Search food"
-    >
-
-</div>
-        
-
-
-        <!-- CATEGORIES -->
-        <div class="food-categories">
-
-            <a href="#all">All</a>
-            <a href="#burgers">Burgers</a>
-            <a href="#pizza">Pizza</a>
-            <a href="#pasta">Pasta</a>
-            <a href="#drinks">Drinks</a>
-            <a href="#desserts">Desserts</a>
-
-        </div>
-
-
-        <!-- FOOD CARDS -->
-        <div class="food-container" id="all">
-
-
-            <!-- CLASSIC BURGER -->
-            <article class="food-card" id="burgers">
-
-                <img
-                    src="../assets/images/food/classic-burger.jpg"
-                    alt="Classic Burger"
-                >
-
-                <div class="food-info">
-
-                    <h3>Classic Burger</h3>
-
-                    <p>
-                        Juicy beef patty, fresh lettuce,
-                        cheese and special sauce.
-                    </p>
-
-                    <div class="food-details">
-                        <h4>$8.99</h4>
-                        <span class="rating">⭐ 4.8</span>
+        <section class="menu-section" id="menu-items" aria-labelledby="menu-section-title">
+            <div class="container">
+                <div class="menu-intro">
+                    <div>
+                        <p class="menu-eyebrow">FROM OUR KITCHEN</p>
+                        <h2 id="menu-section-title">Find your favorite</h2>
+                        <p>Browse the sample selection below. Ask the restaurant about ingredients and allergens.</p>
                     </div>
-
-                    <button type="button">
-                        Add to Cart
-                    </button>
-
+                    <form class="menu-search" role="search" action="#menu-items">
+                        <label class="visually-hidden" for="menu-search">Search menu (visual demo)</label>
+                        <span aria-hidden="true">⌕</span><input id="menu-search" type="search"
+                            placeholder="Search dishes…" autocomplete="off">
+                    </form>
                 </div>
+                <nav class="menu-categories" aria-label="Menu categories">
+                    <a class="is-active" href="#all-dishes" aria-current="location">All dishes</a>
+                    <a href="#burgers">Burgers</a><a href="#pizza">Pizza</a><a href="#pasta">Pasta</a><a
+                        href="#sides">Sides</a><a href="#drinks">Drinks</a><a href="#desserts">Desserts</a>
+                </nav>
+                <p class="menu-control-note">Search and add buttons are visual samples; ordering is not connected in
+                    this HTML/CSS version.</p>
 
-            </article>
-
-
-            <!-- MARGHERITA PIZZA -->
-            <article class="food-card" id="pizza">
-
-                <img
-                    src="../assets/images/food/margherita-pizza.jpg"
-                    alt="Margherita Pizza"
-                >
-
-                <div class="food-info">
-
-                    <h3>Margherita Pizza</h3>
-
-                    <p>
-                        Fresh tomato sauce, mozzarella
-                        cheese and Italian basil.
-                    </p>
-
-                    <div class="food-details">
-                        <h4>$12.99</h4>
-                        <span class="rating">⭐ 4.8</span>
+                <div class="menu-category-block" id="all-dishes" aria-labelledby="all-title">
+                    <div class="menu-category-heading">
+                        <h2 id="all-title">All dishes</h2><span>5 sample items</span>
                     </div>
-
-                    <button type="button">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <!-- CREAMY PASTA -->
-            <article class="food-card" id="pasta">
-
-                <img
-                    src="../assets/images/food/creamy-pasta.jpg"
-                    alt="Creamy Pasta"
-                >
-
-                <div class="food-info">
-
-                    <h3>Creamy Pasta</h3>
-
-                    <p>
-                        Creamy pasta with tender chicken
-                        and delicious Italian herbs.
-                    </p>
-
-                    <div class="food-details">
-                        <h4>$11.99</h4>
-                        <span class="rating">⭐ 4.7</span>
+                    <div class="food-container">
+                        <article class="food-card" id="burgers"><img src="../assets/images/food/classic-burger.jpg"
+                                alt="Classic burger with lettuce and cheese" width="640" height="430" loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">HOUSE FAVORITE</p>
+                                <h3>Classic Burger</h3>
+                                <p>Beef patty, lettuce, cheese and house sauce on a toasted bun.</p>
+                                <p class="food-allergens"><span>Contains</span> wheat, milk · confirm with restaurant
+                                </p>
+                                <div class="food-details"><data value="8.99">$8.99</data><button type="button"
+                                        aria-label="Add Classic Burger to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
+                        <article class="food-card" id="pizza"><img src="../assets/images/food/margherita-pizza.jpg"
+                                alt="Margherita pizza with tomato, mozzarella and basil" width="640" height="430"
+                                loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">OVEN BAKED</p>
+                                <h3>Margherita Pizza</h3>
+                                <p>Tomato sauce, mozzarella and basil on a baked pizza base.</p>
+                                <p class="food-allergens"><span>Contains</span> wheat, milk · confirm with restaurant
+                                </p>
+                                <div class="food-details"><data value="12.99">$12.99</data><button type="button"
+                                        aria-label="Add Margherita Pizza to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
+                        <article class="food-card" id="pasta"><img src="../assets/images/food/creamy-pasta.jpg"
+                                alt="Creamy pasta with herbs" width="640" height="430" loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">KITCHEN FAVORITE</p>
+                                <h3>Creamy Pasta</h3>
+                                <p>Creamy sauce, parmesan and herbs. Ask about available options.</p>
+                                <p class="food-allergens"><span>Contains</span> wheat, milk · confirm with restaurant
+                                </p>
+                                <div class="food-details"><data value="11.99">$11.99</data><button type="button"
+                                        aria-label="Add Creamy Pasta to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
+                        <article class="food-card" id="sides"><img src="../assets/images/food/french-fries.jpg"
+                                alt="Golden French fries" width="640" height="430" loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">A SIDE TO SHARE</p>
+                                <h3>French Fries</h3>
+                                <p>Crisp golden fries, served as a side for your meal.</p>
+                                <p class="food-allergens"><span>Dietary info</span> confirm preparation with restaurant</p>
+                                <div class="food-details"><data value="4.99">$4.99</data><button type="button"
+                                        aria-label="Add French Fries to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
+                        <article class="food-card" id="drinks"><img src="../assets/images/categories/drinks.jpg"
+                                alt="Chilled soft drink served with ice" width="640" height="430" loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">COLD &amp; REFRESHING</p>
+                                <h3>Chilled Soft Drink</h3>
+                                <p>A chilled soft drink served over ice.</p>
+                                <p class="food-allergens"><span>Dietary info</span> check product label</p>
+                                <div class="food-details"><data value="2.99">$2.99</data><button type="button"
+                                        aria-label="Add Chilled Soft Drink to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
+                        <article class="food-card" id="desserts"><img src="../assets/images/food/chocolate-cake.jpg"
+                                alt="Chocolate cake with chocolate frosting" width="640" height="430" loading="lazy">
+                            <div class="food-info">
+                                <p class="food-kicker">SOMETHING SWEET</p>
+                                <h3>Chocolate Cake</h3>
+                                <p>Chocolate sponge with a smooth chocolate frosting.</p>
+                                <p class="food-allergens"><span>Contains</span> wheat, egg, milk · confirm with
+                                    restaurant</p>
+                                <div class="food-details"><data value="6.99">$6.99</data><button type="button"
+                                        aria-label="Add Chocolate Cake to cart (demo)">Add to order <span
+                                            aria-hidden="true">+</span></button></div>
+                            </div>
+                        </article>
                     </div>
-
-                    <button type="button">
-                        Add to Cart
-                    </button>
-
                 </div>
-
-            </article>
-
-
-            
-
-            <!-- COCA COLA -->
-            <article class="food-card" id="drinks">
-
-                <img
-                    src="../assets/images/categories/drinks.jpg"
-                    alt="Coca Cola"
-                >
-
-                <div class="food-info">
-
-                    <h3>Coca Cola</h3>
-
-                    <p>
-                        Refreshing chilled Coca Cola
-                        served with ice.
-                    </p>
-
-                    <div class="food-details">
-                        <h4>$2.99</h4>
-                        <span class="rating">⭐ 4.8</span>
-                    </div>
-
-                    <button type="button">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <!-- CHOCOLATE CAKE -->
-            <article class="food-card" id="desserts">
-
-                <img
-                    src="../assets/images/food/chocolate-cake.jpg"
-                    alt="Chocolate Cake"
-                >
-
-                <div class="food-info">
-
-                    <h3>Chocolate Cake</h3>
-
-                    <p>
-                        Delicious chocolate cake
-                        with creamy chocolate frosting.
-                    </p>
-
-                    <div class="food-details">
-                        <h4>$6.99</h4>
-                        <span class="rating">⭐ 4.9</span>
-                    </div>
-
-                    <button type="button">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
+                <aside class="menu-allergen-note"><strong>Food allergies?</strong> Ingredient and allergen details shown
+                    here are examples only. Please contact the restaurant directly to confirm current ingredients and
+                    cross-contact information.</aside>
+            </div>
+        </section>
     </main>
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-logo">
-
-            <h2>🍳 FoodFlow</h2>
-
-            <p>Fresh Food, Happy Moments.</p>
-
+    <footer class="menu-footer">
+        <div class="container menu-footer-inner"><a class="menu-footer-brand"
+                href="../index.html">FoodFlow<span>.</span></a>
+            <p>Good food. Made to share.</p>
+            <nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="menu.html"
+                    aria-current="page">Menu</a><a href="contact.html">Contact</a></nav><small>© 2026 FoodFlow ·
+                Frontend demo · Sample menu and prices</small>
         </div>
-
-
-        <div class="footer-links">
-
-            <h3>Quick Links</h3>
-
-            <a href="../index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-
-        </div>
-
-
-        <div class="footer-contact">
-
-            <h3>Contact Us</h3>
-
-            <p>☎ +92 300 1234567</p>
-            <p>✉ info@foodflow.pk</p>
-            <p>📍 Karachi, Pakistan</p>
-
-        </div>
-
-
-        <div class="copyright">
-
-            <p>© 2026 FoodFlow. All Rights Reserved.</p>
-
-        </div>
-
     </footer>
-
 </body>
+
 </html>
- 
