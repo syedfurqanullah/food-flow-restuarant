@@ -110,3 +110,38 @@
     --transition-base: 260ms ease;
 
 }
+
+
+
+:root {
+    /* FoodFlow Brand Colors */
+    --color-primary: #B89A62;
+    --color-primary-light: #D2B77F;
+
+    /* Background Colors */
+    --color-bg-main: #171713;
+    --color-bg-card: #211F19;
+    --color-bg-hover: #2B281F;
+
+    /* Text Colors */
+    --color-text-primary: #F4EFE5;
+    --color-text-secondary: #B8B1A3;
+    --color-text-muted: #898274;
+
+    /* Border */
+    --color-border: rgba(184, 154, 98, 0.2);
+
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* Spacing */
+    --section-spacing: 80px;
+    --card-padding: 28px;
+
+    /* Border Radius */
+    --radius-card: 16px;
+    --radius-pill: 50px;
+
+    /* Transitions */
+    --transition-smooth: 0.3s ease;
+}
