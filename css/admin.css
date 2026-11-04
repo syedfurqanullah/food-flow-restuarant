@@ -1,24 +1,5 @@
 
-/* =========================================================
-   ADD THIS TO THE BOTTOM OF css/admin.css
-   (do not replace what is already in the file)
-   ========================================================= */
-
-/* ---------- Admin theme variables ----------
-   Estimated from the design images. If main.css has the real
-   brand colors, change the values here to match. */
-:root {
-  --admin-accent: #f97316;
-  --admin-accent-hover: #ea6a0a;
-  --admin-dark: #1a1a1a;
-  --admin-bg: #f5f5f5;
-  --admin-card: #ffffff;
-  --admin-text: #1f2937;
-  --admin-muted: #6b7280;
-  --admin-border: #e5e7eb;
-  --admin-radius: 12px;
-  --admin-font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
-}
+@import url("./variables-admin.css");
 
 /* ---------- Shared buttons (reused on every admin page) ---------- */
 .btn {
@@ -50,7 +31,7 @@
 }
 
 .btn:focus-visible {
-  outline: 3px solid rgba(249, 115, 22, 0.4);
+  outline: 3px solid var(--admin-accent-ring);
   outline-offset: 2px;
 }
 
@@ -154,7 +135,7 @@
 .form-group textarea:focus {
   outline: none;
   border-color: var(--admin-accent);
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.18);
+  box-shadow: 0 0 0 3px var(--admin-accent-soft-ring);
 }
 
 /* Password field with the show/hide icon inside */
@@ -188,7 +169,7 @@
 }
 
 .password-toggle:focus-visible {
-  outline: 3px solid rgba(249, 115, 22, 0.4);
+  outline: 3px solid var(--admin-accent-ring);
 }
 
 .remember-me {
@@ -206,5 +187,4 @@
   accent-color: var(--admin-accent);
 }
 
-@import url("./variables-admin.css");
 
