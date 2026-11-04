@@ -1,3 +1,4 @@
+
 /* =========================================================
    ADD THIS TO THE BOTTOM OF css/admin.css
    (do not replace what is already in the file)
@@ -204,3 +205,6 @@
   height: 18px;
   accent-color: var(--admin-accent);
 }
+
+@import url("./variables-admin.css");
+
