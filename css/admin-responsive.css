@@ -367,3 +367,19 @@
     padding: 32px 18px;
   }
 }
+
+/* Admin responsive rules moved from admin.css */
+@media (max-width: 700px) {
+  .insight-grid { grid-template-columns: 1fr; gap: 10px; }
+  .insight-card { padding: 16px; }
+  .page-header { align-items: stretch; }
+  .directory-card, .menu-list-card { padding: 18px 14px 0; }
+  .section-heading { flex-wrap: wrap; }
+  .menu-toolbar { gap: 12px; }
+  .menu-list-card .filter-pills { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding: 2px 2px 8px; scrollbar-color: var(--color-accent) var(--color-surface); scrollbar-width: thin; }
+  .menu-list-card .pill { flex: 0 0 auto; }
+  .select-filter { justify-content: space-between; width: 100%; }
+  .select-filter select { flex: 1; }
+  .directory-footer { align-items: flex-start; flex-direction: column; }
+  .admin-brand-logo { width: 36px; height: 36px; flex-basis: 36px; }
+}

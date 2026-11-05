@@ -974,7 +974,6 @@
 }
 
 /* ========== SAMI CART END ========== */
-=======
 @media (max-width: 900px) {
     .special-offers {
         margin: 48px 24px;
@@ -1165,319 +1164,6 @@
 
 }
 
-/* ================= AHMAD MENU - ALL DEVICES RESPONSIVE ================= */
-
-
-/* LARGE SMART DISPLAY - 1920px+ */
-
-@media (min-width: 1920px) {
-
-    .menu-page .menu-section {
-        max-width: 1600px;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 25px;
-    }
-
-    .menu-page .food-card > img {
-        height: 240px;
-    }
-
-}
-
-
-/* DESKTOP - 1200px TO 1919px */
-
-@media (min-width: 1200px) and (max-width: 1919px) {
-
-    .menu-page .menu-section {
-        width: 95%;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-}
-
-
-/* LAPTOP - 992px TO 1199px */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    .menu-page .header {
-        padding: 12px 20px;
-    }
-
-    .menu-page .header nav {
-        gap: 14px;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-    }
-
-    .menu-page .menu-section {
-        width: 96%;
-    }
-
-}
-
-
-/* TABLET LANDSCAPE - 769px TO 991px */
-
-@media (min-width: 769px) and (max-width: 991px) {
-
-    .menu-page .header {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .menu-page .header nav {
-        gap: 12px;
-    }
-
-    .menu-page .header nav a {
-        font-size: 12px;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .menu-page .menu-section {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .menu-page .footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* TABLET PORTRAIT - 577px TO 768px */
-
-@media (min-width: 577px) and (max-width: 768px) {
-
-    .menu-page .header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .menu-page .header nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .menu-page .menu-section {
-        width: 94%;
-        padding: 18px;
-    }
-
-    .menu-page .menu-hero {
-        height: 160px;
-    }
-
-    .menu-page .footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* ALL MOBILE PHONES - 376px TO 576px */
-
-@media (min-width: 376px) and (max-width: 576px) {
-
-    .menu-page .header {
-        flex-direction: column;
-        padding: 15px 10px;
-        gap: 14px;
-    }
-
-    .menu-page .header nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .menu-page .header nav a {
-        font-size: 12px;
-    }
-
-    .menu-page .menu-hero {
-        height: 145px;
-    }
-
-    .menu-page .banner-text h1 {
-        font-size: 25px;
-    }
-
-    .menu-page .menu-section {
-        width: 95%;
-        padding: 15px 12px;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-page .food-card > img {
-        height: 220px;
-    }
-
-    .menu-page .search-bar input {
-        width: 100%;
-    }
-
-    .menu-page .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .menu-page .footer-links,
-    .menu-page .footer-social {
-        align-items: center;
-    }
-
-}
-
-
-/* SMALL MOBILE - 320px TO 375px */
-
-@media (max-width: 375px) {
-
-    .menu-page .header {
-        flex-direction: column;
-        padding: 12px 8px;
-        gap: 12px;
-    }
-
-    .menu-page .logo {
-        font-size: 19px;
-    }
-
-    .menu-page .header nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 9px;
-    }
-
-    .menu-page .header nav a {
-        font-size: 11px;
-    }
-
-    .menu-page .header-buttons a {
-        font-size: 11px;
-        padding: 7px 10px;
-    }
-
-    .menu-page .menu-hero {
-        height: 130px;
-    }
-
-    .menu-page .banner-text h1 {
-        font-size: 22px;
-    }
-
-    .menu-page .menu-section {
-        width: 96%;
-        padding: 12px 9px;
-    }
-
-    .menu-page .menu-heading h2 {
-        font-size: 20px;
-    }
-
-    .menu-page .food-container {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-page .food-card > img {
-        height: 190px;
-    }
-
-    .menu-page .food-categories {
-        gap: 7px;
-    }
-
-    .menu-page .food-categories a {
-        padding: 7px 10px;
-        font-size: 10px;
-    }
-
-    .menu-page .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 20px 12px;
-    }
-
-}
-
-
-/* FOLDABLE PHONES */
-
-@media (max-width: 850px) and (orientation: landscape) {
-
-    .menu-page .food-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .menu-page .menu-hero {
-        height: 140px;
-    }
-
-}
-
-
-/* LARGE TOUCH DISPLAYS */
-
-@media (hover: none) and (pointer: coarse) {
-
-    .menu-page .food-info button {
-        min-height: 44px;
-    }
-
-    .menu-page .header-buttons a {
-        min-height: 40px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-
-/* PREVENT HORIZONTAL OVERFLOW */
-
-.menu-page {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.menu-page .food-container,
-.menu-page .food-card,
-.menu-page .menu-section {
-    min-width: 0;
-}
-
-.menu-page img {
-    max-width: 100%;
-}
-
-
-/* END AHMAD MENU RESPONSIVE */
 /* ========================================
    TESTIMONIALS RESPONSIVE
 ======================================== */
@@ -1533,3 +1219,213 @@
     }
 }
 
+/* Responsive rules moved from main.css */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-heading-feature {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .categories-grid {
+        gap: 12px;
+    }
+
+    .category-card {
+        padding: 9px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .category-card,
+    .food-card,
+    .food-image,
+    .section-link {
+        transition: none;
+    }
+
+    .category-card:hover,
+    .food-card:hover,
+    .food-card:hover .food-image,
+    .section-link:hover {
+        transform: none;
+    }
+}
+
+@media(max-width:1100px) {
+    .menu-page .food-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .menu-page .food-info {
+        min-height: 250px
+    }
+}
+
+@media(max-width:760px) {
+
+    .menu-page .header-container,
+    .menu-page .menu-hero-content,
+    .menu-page .menu-section>.container {
+        width: calc(100% - 36px)
+    }
+
+    .menu-page .menu-hero {
+        min-height: 500px
+    }
+
+    .menu-page .menu-hero-image {
+        background-image: linear-gradient(90deg, rgba(23, 23, 19, .9), rgba(23, 23, 19, .56)), url('../assets/images/backgrounds/food-bg.jpg');
+        background-position: center, 60% center
+    }
+
+    .menu-page .menu-intro {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 18px
+    }
+
+    .menu-page .menu-search {
+        width: 100%;
+        max-width: none
+    }
+
+    .menu-page .food-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px
+    }
+
+    .menu-page .food-info {
+        min-height: 255px;
+        padding: 15px
+    }
+
+    .menu-page .food-info button {
+        font-size: .75rem;
+        padding-inline: 10px
+    }
+}
+
+@media(max-width:520px) {
+
+    .menu-page .header-container,
+    .menu-page .menu-hero-content,
+    .menu-page .menu-section>.container {
+        width: calc(100% - 28px)
+    }
+
+    .menu-page .menu-hero {
+        min-height: 460px
+    }
+
+    .menu-page .menu-hero-content {
+        padding-block: 58px
+    }
+
+    .menu-page .menu-hero h1 {
+        font-size: clamp(2.8rem, 13vw, 4rem)
+    }
+
+    .menu-page .food-container {
+        grid-template-columns: 1fr
+    }
+
+    .menu-page .food-card {
+        display: grid;
+        grid-template-columns: 38% minmax(0, 1fr)
+    }
+
+    .menu-page .food-card>img {
+        height: 100%;
+        min-height: 100%;
+        aspect-ratio: auto
+    }
+
+    .menu-page .food-info {
+        min-height: 0;
+        padding: 14px
+    }
+
+    .menu-page .food-info h3 {
+        font-size: 1.05rem
+    }
+
+    .menu-page .food-info>p:not(.food-kicker):not(.food-allergens) {
+        min-height: 0;
+        font-size: .82rem
+    }
+
+    .menu-page .food-allergens {
+        margin: 10px 0;
+        font-size: .66rem
+    }
+
+    .menu-page .food-details {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px
+    }
+
+    .menu-page .food-info button {
+        width: 100%;
+        min-height: 44px
+    }
+
+    .menu-page .menu-footer-inner {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .menu-page .menu-footer-inner>p {
+        margin: 0
+    }
+
+    .menu-page .menu-footer nav {
+        flex-wrap: wrap
+    }
+
+    .menu-page .menu-footer small {
+        width: 100%
+    }
+}
+
+@media(max-width:360px) {
+    .menu-page .food-card {
+        grid-template-columns: 1fr
+    }
+
+    .menu-page .food-card>img {
+        aspect-ratio: 1.7/1
+    }
+
+    .menu-page .food-details {
+        align-items: center;
+        flex-direction: row
+    }
+
+    .menu-page .food-info button {
+        width: auto
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .menu-page .food-card,
+    .menu-page .menu-categories a,
+    .menu-page .food-info button {
+        transition: none
+    }
+}
