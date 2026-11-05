@@ -1,0 +1,166 @@
+@media (max-width: 1100px) {
+  .menu-page .food-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .menu-page .food-info {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-page .header-container,
+  .menu-page .menu-hero-content,
+  .menu-page .menu-section > .container {
+    width: calc(100% - 36px);
+  }
+
+  .menu-page .menu-hero {
+    min-height: 500px;
+  }
+
+  .menu-page .menu-hero-image {
+    background-image:
+      linear-gradient(90deg, rgba(23, 23, 19, 0.9), rgba(23, 23, 19, 0.56)),
+      url("../../assets/images/backgrounds/food-bg.jpg");
+    background-position:
+      center,
+      60% center;
+  }
+
+  .menu-page .menu-intro {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .menu-page .menu-search {
+    width: 100%;
+    max-width: none;
+  }
+
+  .menu-page .food-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .menu-page .food-info {
+    min-height: 255px;
+    padding: 15px;
+  }
+
+  .menu-page .food-info button {
+    font-size: 0.75rem;
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .menu-page .header-container,
+  .menu-page .menu-hero-content,
+  .menu-page .menu-section > .container {
+    width: calc(100% - 28px);
+  }
+
+  .menu-page .menu-hero {
+    min-height: 460px;
+  }
+
+  .menu-page .menu-hero-content {
+    padding-block: 58px;
+  }
+
+  .menu-page .menu-hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+  }
+
+  .menu-page .food-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-page .food-card {
+    display: grid;
+    grid-template-columns: 38% minmax(0, 1fr);
+  }
+
+  .menu-page .food-card > img {
+    height: 100%;
+    min-height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .menu-page .food-info {
+    min-height: 0;
+    padding: 14px;
+  }
+
+  .menu-page .food-info h3 {
+    font-size: 1.05rem;
+  }
+
+  .menu-page .food-info > p:not(.food-kicker):not(.food-allergens) {
+    min-height: 0;
+    font-size: 0.82rem;
+  }
+
+  .menu-page .food-allergens {
+    margin: 10px 0;
+    font-size: 0.66rem;
+  }
+
+  .menu-page .food-details {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .menu-page .food-info button {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .menu-page .menu-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu-page .menu-footer-inner > p {
+    margin: 0;
+  }
+
+  .menu-page .menu-footer nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-page .menu-footer small {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu-page .food-card {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-page .food-card > img {
+    aspect-ratio: 1.7/1;
+  }
+
+  .menu-page .food-details {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .menu-page .food-info button {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-page .food-card,
+  .menu-page .menu-categories a,
+  .menu-page .food-info button {
+    transition: none;
+  }
+}

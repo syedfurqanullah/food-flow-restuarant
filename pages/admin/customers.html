@@ -1,242 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Management | FoodFlow Admin</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Management | FoodFlow Admin</title>
+    <!-- Path is for pages/admin/customers.html -->
+    <link rel="stylesheet" href="../../css/variables.css" />
+    <link rel="stylesheet" href="../../css/admin/customers/main.css" />
+    <link rel="stylesheet" href="../../css/admin/customers/responsive.css" />
+  </head>
 
-  <!-- Path is for pages/admin/customers.html -->
-  <link rel="stylesheet" href="../../css/variables.css">
-  <link rel="stylesheet" href="../../css/admin.css">
-  <link rel="stylesheet" href="../../css/admin-responsive.css">
-</head>
-
-<body class="admin-body">
-
-  <div class="admin-layout">
-
-    <!-- ========== SIDEBAR (same on every admin page) ========== -->
-    <aside class="sidebar">
-      <a href="dashboard.html" class="sidebar-brand">
-        <img class="admin-brand-logo" src="../../assets/images/logo/logo.jpg" alt="">
-        <span class="admin-brand-name">FoodFlow<span>Admin</span></span>
-      </a>
-
-      <nav class="sidebar-nav" aria-label="Admin navigation">
-        <a href="dashboard.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="3" width="7" height="9" />
-            <rect x="14" y="3" width="7" height="5" />
-            <rect x="14" y="12" width="7" height="9" />
-            <rect x="3" y="16" width="7" height="5" />
-          </svg>
-          Dashboard
+  <body class="admin-body">
+    <div class="admin-layout">
+      <!-- ========== SIDEBAR (same on every admin page) ========== -->
+      <aside class="sidebar">
+        <a href="dashboard.html" class="sidebar-brand">
+          <img
+            class="admin-brand-logo"
+            src="../../assets/images/logo/logo.jpg"
+            alt=""
+          />
+          <span class="admin-brand-name">FoodFlow<span>Admin</span></span>
         </a>
-        <a href="orders.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-            <path d="M3 6h18" />
-            <path d="M16 10a4 4 0 0 1-8 0" />
-          </svg>
-          Orders
-        </a>
-        <a href="menu-management.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 2v7a3 3 0 0 0 6 0V2" />
-            <path d="M6 2v20" />
-            <path d="M18 2c-2 2-3 5-3 8h3v12" />
-          </svg>
-          Menu Management
-        </a>
-        <a href="customers.html" class="sidebar-link active" aria-current="page">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M23 21v-2a4 4 0 0 0-3-3.9" />
-            <path d="M16 3.1a4 4 0 0 1 0 7.8" />
-          </svg>
-          Customers
-        </a>
-        <a href="settings.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="3" />
-            <path
-              d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
-          </svg>
-          Settings
-        </a>
-        <a href="login.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-            <path d="m16 17 5-5-5-5" />
-            <path d="M21 12H9" />
-          </svg>
-          Logout
-        </a>
-      </nav>
-    </aside>
 
-    <!-- ========== MAIN CONTENT ========== -->
-    <main class="admin-main">
-      <header class="admin-topbar">
-        <a class="admin-topbar-brand" href="customers.html">FoodFlow <span>Admin</span></a>
-        <nav class="admin-topbar-nav" aria-label="Quick admin navigation">
-          <a href="menu-management.html">Menu management</a>
-          <a href="customers.html" aria-current="page">Customers</a>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html" class="sidebar-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="7" height="9" />
+              <rect x="14" y="3" width="7" height="5" />
+              <rect x="14" y="12" width="7" height="9" />
+              <rect x="3" y="16" width="7" height="5" />
+            </svg>
+            Dashboard
+          </a>
+          <a href="orders.html" class="sidebar-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            Orders
+          </a>
+          <a href="menu-management.html" class="sidebar-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 2v7a3 3 0 0 0 6 0V2" />
+              <path d="M6 2v20" />
+              <path d="M18 2c-2 2-3 5-3 8h3v12" />
+            </svg>
+            Menu Management
+          </a>
+          <a
+            href="customers.html"
+            class="sidebar-link active"
+            aria-current="page"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.9" />
+              <path d="M16 3.1a4 4 0 0 1 0 7.8" />
+            </svg>
+            Customers
+          </a>
+          <a href="settings.html" class="sidebar-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"
+              />
+            </svg>
+            Settings
+          </a>
+          <a href="login.html" class="sidebar-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+              <path d="m16 17 5-5-5-5" />
+              <path d="M21 12H9" />
+            </svg>
+            Logout
+          </a>
         </nav>
-        <a class="admin-topbar-site" href="../../index.html">View customer site <span aria-hidden="true">↗</span></a>
-      </header>
-      <header class="page-header">
-        <div>
-          <p class="page-eyebrow">GUEST RELATIONSHIPS</p>
-          <h1 class="page-title">Customers</h1>
-          <p class="page-description">Get to know your guests and their ordering habits.</p>
-        </div><a href="#customer-directory" class="btn btn-primary">View customer directory</a>
-      </header>
-      <section class="insight-grid" aria-label="Customer overview">
-        <article class="card insight-card"><span class="insight-icon">01</span>
-          <div>
-            <p class="summary-label">Sample guests</p>
-            <p class="summary-value">05</p>
-            <p class="insight-note">Illustrative records on this screen</p>
-          </div>
-        </article>
-        <article class="card insight-card"><span class="insight-icon">02</span>
-          <div>
-            <p class="summary-label">Returning guests</p>
-            <p class="summary-value">80%</p>
-            <p class="insight-note">Four of five sample guests</p>
-          </div>
-        </article>
-        <article class="card insight-card"><span class="insight-icon">03</span>
-          <div>
-            <p class="summary-label">Average spend</p>
-            <p class="summary-value">Rs. 9,370</p>
-            <p class="insight-note">Across these sample records</p>
-          </div>
-        </article>
-      </section>
-      <section class="card directory-card" id="customer-directory" aria-labelledby="directory-title">
-        <div class="section-heading">
-          <div>
-            <h2 class="card-title" id="directory-title">Guest directory</h2>
-            <p class="page-description">A sample preview of customer information.</p>
-          </div><span class="record-count">5 sample records</span>
-        </div>
-        <div class="toolbar customer-toolbar"><label class="search-box"><svg viewBox="0 0 24 24" width="18" height="18"
-              fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg><input type="search" placeholder="Search name, email or phone"
-              aria-label="Search customer list"></label><label class="select-filter">Sort by <select
-              aria-label="Sort customers">
-              <option>Recently joined</option>
-              <option>Name A to Z</option>
-              <option>Most orders</option>
-            </select></label></div>
-        <div class="table-wrap">
-          <table class="data-table customer-table">
-            <thead>
-              <tr>
-                <th>Customer</th>
-                <th>Contact</th>
-                <th>Joined</th>
-                <th>Orders</th>
-                <th>Total spend</th>
-                <th class="col-actions">Profile</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="customer-cell"><span class="avatar avatar-orange">AK</span><span><span
-                        class="customer-name">Ahmad Khan</span><small class="customer-meta">Regular guest</small></span>
-                  </div>
-                </td>
-                <td><span class="contact-stack">ahmad.khan@example.com<small>+92 300 1234567</small></span></td>
-                <td>12 Aug 2026</td>
-                <td>08</td>
-                <td>Rs. 12,400</td>
-                <td class="col-actions"><a href="#ahmad-profile" class="text-action">View profile <span
-                      aria-hidden="true">↗</span></a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="customer-cell"><span class="avatar avatar-purple">SA</span><span><span
-                        class="customer-name">Sara Ali</span><small class="customer-meta">Returning guest</small></span>
-                  </div>
-                </td>
-                <td><span class="contact-stack">sara.ali@example.com<small>+92 321 7654321</small></span></td>
-                <td>25 Aug 2026</td>
-                <td>05</td>
-                <td>Rs. 8,350</td>
-                <td class="col-actions"><a href="#sara-profile" class="text-action">View profile <span
-                      aria-hidden="true">↗</span></a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="customer-cell"><span class="avatar avatar-green">BA</span><span><span
-                        class="customer-name">Bilal Ahmed</span><small class="customer-meta">New guest</small></span>
-                  </div>
-                </td>
-                <td><span class="contact-stack">bilal.ahmed@example.com<small>+92 333 9876543</small></span></td>
-                <td>03 Sep 2026</td>
-                <td>03</td>
-                <td>Rs. 4,600</td>
-                <td class="col-actions"><a href="#bilal-profile" class="text-action">View profile <span
-                      aria-hidden="true">↗</span></a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="customer-cell"><span class="avatar avatar-blue">AM</span><span><span
-                        class="customer-name">Ayesha Malik</span><small class="customer-meta">Regular
-                        guest</small></span></div>
-                </td>
-                <td><span class="contact-stack">ayesha.malik@example.com<small>+92 345 1122334</small></span></td>
-                <td>19 Sep 2026</td>
-                <td>11</td>
-                <td>Rs. 19,300</td>
-                <td class="col-actions"><a href="#ayesha-profile" class="text-action">View profile <span
-                      aria-hidden="true">↗</span></a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="customer-cell"><span class="avatar avatar-pink">HR</span><span><span
-                        class="customer-name">Hassan Raza</span><small class="customer-meta">New guest</small></span>
-                  </div>
-                </td>
-                <td><span class="contact-stack">hassan.raza@example.com<small>+92 312 5566778</small></span></td>
-                <td>07 Oct 2026</td>
-                <td>01</td>
-                <td>Rs. 2,200</td>
-                <td class="col-actions"><a href="#hassan-profile" class="text-action">View profile <span
-                      aria-hidden="true">↗</span></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="directory-footer"><span>Showing 5 sample customers</span>
-          <nav class="pagination" aria-label="Customer pages"><a href="#previous" aria-label="Previous page">‹</a><a
-              class="current" href="#page-1" aria-current="page">1</a><a href="#page-2">2</a><a href="#page-3">3</a><a
-              href="#next" aria-label="Next page">›</a></nav>
-        </div>
-      </section>
-      <p class="demo-notice">Demo interface · Customer records are illustrative and are not connected to an ordering
-        account or database.</p>
-      <footer class="admin-footer">
-        <span>© 2026 FoodFlow · Restaurant management demo</span>
-        <a href="../../index.html">Customer website</a>
-      </footer>
-    </main>
-  </div>
+      </aside>
 
-</body>
-
+      <!-- ========== MAIN CONTENT ========== -->
+      <main class="admin-main">
+        <header class="admin-topbar">
+          <a class="admin-topbar-brand" href="customers.html"
+            >FoodFlow <span>Admin</span></a
+          >
+          <nav class="admin-topbar-nav" aria-label="Quick admin navigation">
+            <a href="menu-management.html">Menu management</a>
+            <a href="customers.html" aria-current="page">Customers</a>
+          </nav>
+          <a class="admin-topbar-site" href="../../index.html"
+            >View customer site <span aria-hidden="true">↗</span></a
+          >
+        </header>
+        <header class="page-header">
+          <div>
+            <p class="page-eyebrow">GUEST RELATIONSHIPS</p>
+            <h1 class="page-title">Customers</h1>
+            <p class="page-description">
+              Get to know your guests and their ordering habits.
+            </p>
+          </div>
+          <a href="#customer-directory" class="btn btn-primary"
+            >View customer directory</a
+          >
+        </header>
+        <section class="insight-grid" aria-label="Customer overview">
+          <article class="card insight-card">
+            <span class="insight-icon">01</span>
+            <div>
+              <p class="summary-label">Sample guests</p>
+              <p class="summary-value">05</p>
+              <p class="insight-note">Illustrative records on this screen</p>
+            </div>
+          </article>
+          <article class="card insight-card">
+            <span class="insight-icon">02</span>
+            <div>
+              <p class="summary-label">Returning guests</p>
+              <p class="summary-value">80%</p>
+              <p class="insight-note">Four of five sample guests</p>
+            </div>
+          </article>
+          <article class="card insight-card">
+            <span class="insight-icon">03</span>
+            <div>
+              <p class="summary-label">Average spend</p>
+              <p class="summary-value">Rs. 9,370</p>
+              <p class="insight-note">Across these sample records</p>
+            </div>
+          </article>
+        </section>
+        <section
+          class="card directory-card"
+          id="customer-directory"
+          aria-labelledby="directory-title"
+        >
+          <div class="section-heading">
+            <div>
+              <h2 class="card-title" id="directory-title">Guest directory</h2>
+              <p class="page-description">
+                A sample preview of customer information.
+              </p>
+            </div>
+            <span class="record-count">5 sample records</span>
+          </div>
+          <div class="toolbar customer-toolbar">
+            <label class="search-box"
+              ><svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" /></svg
+              ><input
+                type="search"
+                placeholder="Search name, email or phone"
+                aria-label="Search customer list" /></label
+            ><label class="select-filter"
+              >Sort by
+              <select aria-label="Sort customers">
+                <option>Recently joined</option>
+                <option>Name A to Z</option>
+                <option>Most orders</option>
+              </select></label
+            >
+          </div>
+          <div class="table-wrap">
+            <table class="data-table customer-table">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Contact</th>
+                  <th>Joined</th>
+                  <th>Orders</th>
+                  <th>Total spend</th>
+                  <th class="col-actions">Profile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="avatar avatar-orange">AK</span
+                      ><span
+                        ><span class="customer-name">Ahmad Khan</span
+                        ><small class="customer-meta"
+                          >Regular guest</small
+                        ></span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <span class="contact-stack"
+                      >ahmad.khan@example.com<small
+                        >+92 300 1234567</small
+                      ></span
+                    >
+                  </td>
+                  <td>12 Aug 2026</td>
+                  <td>08</td>
+                  <td>Rs. 12,400</td>
+                  <td class="col-actions">
+                    <a href="#ahmad-profile" class="text-action"
+                      >View profile <span aria-hidden="true">↗</span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="avatar avatar-purple">SA</span
+                      ><span
+                        ><span class="customer-name">Sara Ali</span
+                        ><small class="customer-meta"
+                          >Returning guest</small
+                        ></span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <span class="contact-stack"
+                      >sara.ali@example.com<small>+92 321 7654321</small></span
+                    >
+                  </td>
+                  <td>25 Aug 2026</td>
+                  <td>05</td>
+                  <td>Rs. 8,350</td>
+                  <td class="col-actions">
+                    <a href="#sara-profile" class="text-action"
+                      >View profile <span aria-hidden="true">↗</span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="avatar avatar-green">BA</span
+                      ><span
+                        ><span class="customer-name">Bilal Ahmed</span
+                        ><small class="customer-meta">New guest</small></span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <span class="contact-stack"
+                      >bilal.ahmed@example.com<small
+                        >+92 333 9876543</small
+                      ></span
+                    >
+                  </td>
+                  <td>03 Sep 2026</td>
+                  <td>03</td>
+                  <td>Rs. 4,600</td>
+                  <td class="col-actions">
+                    <a href="#bilal-profile" class="text-action"
+                      >View profile <span aria-hidden="true">↗</span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="avatar avatar-blue">AM</span
+                      ><span
+                        ><span class="customer-name">Ayesha Malik</span
+                        ><small class="customer-meta"
+                          >Regular guest</small
+                        ></span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <span class="contact-stack"
+                      >ayesha.malik@example.com<small
+                        >+92 345 1122334</small
+                      ></span
+                    >
+                  </td>
+                  <td>19 Sep 2026</td>
+                  <td>11</td>
+                  <td>Rs. 19,300</td>
+                  <td class="col-actions">
+                    <a href="#ayesha-profile" class="text-action"
+                      >View profile <span aria-hidden="true">↗</span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="avatar avatar-pink">HR</span
+                      ><span
+                        ><span class="customer-name">Hassan Raza</span
+                        ><small class="customer-meta">New guest</small></span
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <span class="contact-stack"
+                      >hassan.raza@example.com<small
+                        >+92 312 5566778</small
+                      ></span
+                    >
+                  </td>
+                  <td>07 Oct 2026</td>
+                  <td>01</td>
+                  <td>Rs. 2,200</td>
+                  <td class="col-actions">
+                    <a href="#hassan-profile" class="text-action"
+                      >View profile <span aria-hidden="true">↗</span></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="directory-footer">
+            <span>Showing 5 sample customers</span>
+            <nav class="pagination" aria-label="Customer pages">
+              <a href="#previous" aria-label="Previous page">‹</a
+              ><a class="current" href="#page-1" aria-current="page">1</a
+              ><a href="#page-2">2</a><a href="#page-3">3</a
+              ><a href="#next" aria-label="Next page">›</a>
+            </nav>
+          </div>
+        </section>
+        <p class="demo-notice">
+          Demo interface · Customer records are illustrative and are not
+          connected to an ordering account or database.
+        </p>
+        <footer class="admin-footer">
+          <span>© 2026 FoodFlow · Restaurant management demo</span>
+          <a href="../../index.html">Customer website</a>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

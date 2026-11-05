@@ -1,0 +1,15 @@
+:root {
+  /* FoodFlow admin palette, matched to the customer site. */
+  --admin-accent: #b89a62;
+  --admin-accent-hover: #d3b77e;
+  --admin-dark: #171713;
+  --admin-bg: #171713;
+  --admin-card: #211f1a;
+  --admin-text: #f4efe5;
+  --admin-muted: #b8b2a8;
+  --admin-border: rgba(184, 154, 98, 0.28);
+  --admin-accent-ring: rgba(184, 154, 98, 0.4);
+  --admin-accent-soft-ring: rgba(184, 154, 98, 0.18);
+  --admin-radius: 12px;
+  --admin-font: Arial, Helvetica, sans-serif;
+}
