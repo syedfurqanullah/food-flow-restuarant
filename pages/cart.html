@@ -4,47 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart | FOODFLOW</title>
+    <meta name="description" content="Review the FoodFlow sample order and continue browsing the menu.">
+    <meta name="theme-color" content="#171713">
+    <title>Your Cart | FoodFlow</title>
 
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
-<body>
-
-<div class="cart-page">
-
-    <!-- NAVBAR -->
-    <header class="cart-navbar">
-
-        <a href="../index.html" class="cart-logo">
-            <img src="../assets/images/logo/logo.jpg" alt="FOODFLOW Logo">
-        </a>
-
-        <nav class="cart-nav-links">
-            <a href="../index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="cart-nav-actions">
-            <a href="cart.html" class="cart-icon">🛒</a>
-            <a href="signup.html" class="cart-login">Sign Up</a>
+<body class="cart-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-container">
+            <a class="brand" href="../index.html" aria-label="FoodFlow home">
+                <span class="brand-logo-frame"><img class="brand-logo" src="../assets/images/logo/logo.jpg" alt="" width="298" height="208"></span>
+                <span class="brand-wordmark">Food<span>Flow.</span></span>
+            </a>
+            <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-controls="site-navigation" aria-label="Toggle navigation menu">
+            <label class="nav-toggle-label" for="nav-toggle"><span class="menu-icon" aria-hidden="true"></span><span class="visually-hidden">Toggle navigation</span></label>
+            <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+                <ul class="navigation-list">
+                    <li><a class="navigation-link" href="../index.html">Home</a></li>
+                    <li><a class="navigation-link" href="menu.html">Menu</a></li>
+                    <li><a class="navigation-link" href="about.html">Our Story</a></li>
+                    <li><a class="navigation-link" href="contact.html">Contact</a></li>
+                    <li class="mobile-signup-link"><a class="button button-secondary" href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a class="cart-link is-active" href="cart.html" aria-label="Shopping cart, 5 sample items" aria-current="page">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01" /></svg>
+                    <span class="cart-label is-active">Cart</span><span class="cart-count" aria-hidden="true">5</span>
+                </a>
+                <a class="button button-primary order-button" href="menu.html">Order Online</a>
+                <a class="button button-secondary signup-button" href="signup.html">Sign Up</a>
+            </div>
         </div>
-
     </header>
 
 
     <!-- HERO SECTION -->
-    <section class="cart-hero">
+    <section class="cart-hero" aria-labelledby="cart-title">
 
         <div class="cart-hero-content">
 
             <h2 class="cart-brand">FOODFLOW</h2>
 
-            <h1>My Cart</h1>
+            <h1 id="cart-title">Your order</h1>
 
             <p>Review your items and proceed to checkout</p>
 
@@ -54,7 +61,9 @@
 
 
     <!-- CART SECTION -->
-    <main class="cart-main">
+    <main class="cart-main" id="main-content">
+
+        <p class="cart-demo-note">Sample order for a frontend demonstration. Cart controls and checkout are not connected.</p>
 
         <!-- LEFT: CART ITEMS -->
         <section class="cart-items-panel">
@@ -73,12 +82,12 @@
                 </div>
 
                 <div class="cart-quantity">
-                    <button type="button">−</button>
+                <button type="button" aria-label="Decrease Classic Burger quantity (demo)" disabled>−</button>
                     <span>1</span>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase Classic Burger quantity (demo)" disabled>+</button>
                 </div>
 
-                <button class="cart-delete" type="button">×</button>
+                <button class="cart-delete" type="button" aria-label="Remove Classic Burger (demo)" disabled>×</button>
 
             </div>
 
@@ -95,12 +104,12 @@
                 </div>
 
                 <div class="cart-quantity">
-                    <button type="button">−</button>
+                <button type="button" aria-label="Decrease French Fries quantity (demo)" disabled>−</button>
                     <span>1</span>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase French Fries quantity (demo)" disabled>+</button>
                 </div>
 
-                <button class="cart-delete" type="button">×</button>
+                <button class="cart-delete" type="button" aria-label="Remove French Fries (demo)" disabled>×</button>
 
             </div>
 
@@ -117,12 +126,12 @@
                 </div>
 
                 <div class="cart-quantity">
-                    <button type="button">−</button>
+                <button type="button" aria-label="Decrease Margherita Pizza quantity (demo)" disabled>−</button>
                     <span>1</span>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase Margherita Pizza quantity (demo)" disabled>+</button>
                 </div>
 
-                <button class="cart-delete" type="button">×</button>
+                <button class="cart-delete" type="button" aria-label="Remove Margherita Pizza (demo)" disabled>×</button>
 
             </div>
 
@@ -139,12 +148,12 @@
                 </div>
 
                 <div class="cart-quantity">
-                    <button type="button">−</button>
+                <button type="button" aria-label="Decrease Creamy Pasta quantity (demo)" disabled>−</button>
                     <span>1</span>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase Creamy Pasta quantity (demo)" disabled>+</button>
                 </div>
 
-                <button class="cart-delete" type="button">×</button>
+                <button class="cart-delete" type="button" aria-label="Remove Creamy Pasta (demo)" disabled>×</button>
 
             </div>
 
@@ -161,12 +170,12 @@
                 </div>
 
                 <div class="cart-quantity">
-                    <button type="button">−</button>
+                <button type="button" aria-label="Decrease Chocolate Cake quantity (demo)" disabled>−</button>
                     <span>1</span>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase Chocolate Cake quantity (demo)" disabled>+</button>
                 </div>
 
-                <button class="cart-delete" type="button">×</button>
+                <button class="cart-delete" type="button" aria-label="Remove Chocolate Cake (demo)" disabled>×</button>
 
             </div>
 
@@ -200,9 +209,9 @@
                 <strong>$46.95</strong>
             </div>
 
-            <a href="checkout.html" class="checkout-btn">
-                Proceed to Checkout →
-            </a>
+            <span class="checkout-btn" aria-disabled="true">
+                Checkout preview coming soon
+            </span>
 
         </aside>
 
@@ -210,35 +219,31 @@
 
 
     <!-- FOOTER -->
-    <footer class="cart-footer">
-
-        <div class="cart-footer-brand">
-            <h2>FOODFLOW</h2>
-            <p>Freshly prepared. Made with love.</p>
+    <footer class="home-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../assets/images/logo/logo.jpg" alt="" width="48" height="48">
+                    <span>Food<span class="footer-brand-highlight">Flow.</span></span>
+                </a>
+                <p>Fresh ingredients, delicious meals and a better food ordering experience. Made with care, served with love.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Quick Links</h2>
+                <ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul>
+            </div>
+            <div class="footer-column">
+                <h2>Get In Touch</h2>
+                <ul class="footer-links"><li><a href="contact.html">Contact Our Team</a></li><li><a href="contact.html">Customer Support</a></li><li><a href="menu.html">Order Online</a></li></ul>
+            </div>
+            <div class="footer-column">
+                <h2>Follow FoodFlow</h2>
+                <p class="footer-social-text">Stay connected with us for food updates and exciting offers.</p>
+                <a href="contact.html" class="footer-social-link">Connect With Us</a>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 FoodFlow. All rights reserved.</p><p>Made with care for food lovers.</p></div>
         </div>
-
-        <div class="cart-footer-links">
-            <h3>Quick Links</h3>
-            <a href="../index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="cart-footer-contact">
-            <h3>Contact Us</h3>
-            <p>+92 300 1234567</p>
-            <p>info@foodflow.pk</p>
-            <p>Karachi, Pakistan</p>
-        </div>
-
-        <div class="cart-copyright">
-            © 2026 FOODFLOW. All Rights Reserved.
-        </div>
-
     </footer>
-
-</div>
 
 </body>
 </html>

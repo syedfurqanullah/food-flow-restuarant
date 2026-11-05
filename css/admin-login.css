@@ -214,6 +214,12 @@
     background: var(--color-accent-bright-hover)
 }
 
+.login-panel .btn.btn-primary:disabled {
+    cursor: not-allowed;
+    opacity: .68;
+    transform: none
+}
+
 .login-panel .btn.btn-primary:focus-visible {
     outline: 3px solid var(--color-accent-light);
     outline-offset: 3px
