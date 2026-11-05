@@ -187,8 +187,6 @@
   accent-color: var(--admin-accent);
 }
 
-<<<<<<< HEAD
-=======
 /* =========================================================
    ADD THIS BELOW THE LOGIN STYLES IN css/admin.css
    It uses the variables and .btn / .form-group styles
@@ -595,7 +593,7 @@
   font-size: 14px;
   color: var(--admin-muted);
 }
->>>>>>> 7059c78 (adding menu management page with enhanced styling in the login page)
+
 
 
 /* ---------- Customers page ---------- */
@@ -764,6 +762,104 @@
   color: var(--admin-muted);
   font-size: 13px;
   line-height: 1.7;
+}
+
+/* Premium restaurant management pages */
+.admin-main { max-width: 1200px; margin-inline: auto; }
+.admin-body { background: var(--color-ink); color: var(--color-cream); font-family: var(--font-body); }
+.sidebar { background: var(--color-ink); }
+.sidebar-brand { align-items: center; }
+.admin-brand-logo { display: block; width: 42px; height: 42px; flex: 0 0 42px; border: 1px solid var(--overlay-gold-55); border-radius: 50%; object-fit: cover; }
+.admin-brand-name { display: flex; align-items: baseline; gap: 7px; color: var(--color-cream); font-family: var(--font-display); font-size: 19px; font-weight: 700; letter-spacing: -.5px; }
+.admin-brand-name span { color: var(--color-accent-light); font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.page-eyebrow { color: var(--color-accent); }
+.page-title, .card-title, .confirm-title { font-family: var(--font-display); }
+.page-description { color: var(--color-text-soft); }
+.page-header { align-items: flex-end; margin-bottom: 28px; }
+.page-title { letter-spacing: -.035em; }
+.page-header .btn { text-decoration: none; }
+.btn-primary { background: var(--color-accent-bright); color: var(--color-ink-contrast); }
+.btn-primary:hover { background: var(--color-accent-bright-hover); }
+.insight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
+.insight-card { display: flex; align-items: flex-start; gap: 16px; min-width: 0; margin: 0; padding: 22px; border: 1px solid var(--color-border); box-shadow: var(--shadow-card); }
+.insight-icon { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border: 1px solid var(--color-border); border-radius: 13px; color: var(--color-accent); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.summary-label { color: #aaa59b; }
+.summary-value { color: var(--admin-text); font-size: clamp(23px, 2.6vw, 29px); }
+.insight-note, .customer-meta { display: block; margin: 5px 0 0; color: #938d82; font-size: 12px; }
+.directory-card, .menu-list-card { overflow: hidden; padding: 22px 24px 0; border: 1px solid var(--color-border); box-shadow: var(--shadow-card); }
+.section-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.section-heading .card-title { margin-bottom: 0; }
+.section-heading .page-description { margin-top: 5px; }
+.record-count { flex: 0 0 auto; padding: 7px 10px; border: 1px solid var(--admin-border); border-radius: 999px; color: #c9c2b6; font-size: 11px; }
+.customer-toolbar { padding-bottom: 18px; }
+.search-box input, .select-filter select { border-color: var(--admin-border); background: #191814; color: var(--admin-text); }
+.search-box input::placeholder { color: #827c72; }
+.select-filter { display: flex; align-items: center; gap: 9px; color: #aaa59b; font-size: 13px; }
+.select-filter select { padding: 10px 32px 10px 12px; border: 1px solid var(--admin-border); border-radius: 9px; font: inherit; }
+.data-table { min-width: 720px; color: #e9e3d9; font-size: 13px; }
+.data-table th { background: #28251f; color: #aaa59b; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
+.data-table th, .data-table td { padding: 16px 15px; border-bottom-color: rgba(184,154,98,.14); }
+.data-table tbody tr:hover { background: rgba(184,154,98,.055); }
+.customer-table { min-width: 880px; }
+.customer-cell { gap: 11px; }
+.customer-name { color: #f4efe5; font-size: 13px; }
+.avatar { flex-basis: 38px; width: 38px; height: 38px; }
+.contact-stack { display: block; white-space: nowrap; }
+.contact-stack small { display: block; margin-top: 4px; color: #938d82; font-size: 11px; }
+.avatar-orange { background: rgba(184,154,98,.18); color: #dbc28f; }
+.avatar-purple { background: rgba(149,125,183,.18); color: #c8b2e5; }
+.avatar-green { background: rgba(111,156,119,.18); color: #a7d3ad; }
+.avatar-blue { background: rgba(101,142,180,.18); color: #a9c9e7; }
+.avatar-pink { background: rgba(190,117,146,.18); color: #e4b2c4; }
+.text-action { color: var(--color-accent-light); font-size: 12px; text-decoration: none; white-space: nowrap; }
+.text-action:hover { color: var(--color-accent-bright); }
+.directory-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; color: #938d82; font-size: 12px; }
+.pagination { display: flex; gap: 5px; }
+.pagination a { display: grid; place-items: center; min-width: 32px; height: 32px; border: 1px solid var(--admin-border); border-radius: 8px; color: #c9c2b6; text-decoration: none; }
+.pagination a.current { background: var(--color-accent); color: var(--color-ink); }
+.menu-list-card { padding-bottom: 0; }
+.menu-toolbar { align-items: center; }
+.menu-list-card .search-box { flex: 1 1 260px; }
+.menu-list-card .filter-pills { flex: 1 1 100%; align-items: center; gap: 9px; }
+.menu-list-card .pill { min-height: 40px; padding: 9px 17px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-soft); font-size: 13px; transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast); }
+.menu-list-card .pill:hover { border-color: var(--color-accent); background: var(--color-surface-hover); color: var(--color-accent-light); transform: translateY(-1px); }
+.menu-list-card .pill.active { border-color: var(--color-accent-bright); background: var(--color-accent-bright); color: var(--color-ink-contrast); font-weight: 700; box-shadow: 0 5px 14px var(--overlay-gold-18); }
+.menu-list-card .pill:focus-visible { outline: 2px solid var(--color-accent-light); outline-offset: 3px; }
+.menu-list-card .pill.active:hover { background: var(--color-accent-bright-hover); color: var(--color-ink-contrast); }
+.menu-table-card { margin-bottom: 0; border: 0; border-radius: 0; box-shadow: none; }
+.menu-table-card .food-thumb { overflow: hidden; border: 1px solid rgba(255,255,255,.08); }
+.item-description { display: block; max-width: 280px; margin-top: 4px; color: #938d82; font-size: 11px; line-height: 1.5; }
+.badge { border: 1px solid transparent; }
+.badge-success { background: rgba(86,153,102,.15); color: #9dd5a6; border-color: rgba(86,153,102,.25); }
+.badge-danger { background: rgba(200,89,80,.15); color: #e9a49f; border-color: rgba(200,89,80,.25); }
+.icon-btn { border: 0; cursor: pointer; }
+.icon-btn-edit { background: var(--overlay-gold-12); color: var(--color-accent-light); }
+.icon-btn-delete { background: rgba(200,89,80,.16); color: #e9a49f; }
+.icon-btn-view { background: rgba(184,154,98,.18); color: #dbc28f; }
+.form-card { padding: 24px; border: 1px solid var(--color-border); box-shadow: var(--shadow-card); }
+.form-card .card-title { color: var(--admin-text); }
+.form-group label { color: #d7d0c4; }
+.form-group input, .form-group select, .form-group textarea { border-color: var(--admin-border); background: #191814; color: var(--admin-text); }
+.form-group input::placeholder, .form-group textarea::placeholder { color: #827c72; }
+.form-group input[type="file"] { color: #aaa59b; }
+.form-group input[type="file"]::file-selector-button { margin-right: 12px; padding: 8px 11px; border: 1px solid var(--admin-border); border-radius: 7px; background: #28251f; color: #e8dfd0; cursor: pointer; }
+.btn-secondary { border-color: var(--admin-border); background: #28251f; color: #e6dfd3; }
+.btn-secondary:hover { background: #322e26; }
+.demo-notice { margin: 14px 0 0; color: #918b80; font-size: 12px; line-height: 1.65; }
+
+@media (max-width: 700px) {
+  .insight-grid { grid-template-columns: 1fr; gap: 10px; }
+  .insight-card { padding: 16px; }
+  .page-header { align-items: stretch; }
+  .directory-card, .menu-list-card { padding: 18px 14px 0; }
+  .section-heading { flex-wrap: wrap; }
+  .menu-toolbar { gap: 12px; }
+  .menu-list-card .filter-pills { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding: 2px 2px 8px; scrollbar-color: var(--color-accent) var(--color-surface); scrollbar-width: thin; }
+  .menu-list-card .pill { flex: 0 0 auto; }
+  .select-filter { justify-content: space-between; width: 100%; }
+  .select-filter select { flex: 1; }
+  .directory-footer { align-items: flex-start; flex-direction: column; }
+  .admin-brand-logo { width: 36px; height: 36px; flex-basis: 36px; }
 }
 
 
