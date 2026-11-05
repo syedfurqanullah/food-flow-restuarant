@@ -974,7 +974,7 @@
 }
 
 /* ========== SAMI CART END ========== */
-=======
+
 @media (max-width: 900px) {
     .special-offers {
         margin: 48px 24px;
@@ -1533,3 +1533,48 @@
     }
 }
 
+
+/* ==========================================
+   FOODFLOW FOOTER: RESPONSIVE LAYOUT
+=========================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .home-footer {
+        padding-top: 36px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
