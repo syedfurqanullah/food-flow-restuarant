@@ -2334,6 +2334,8 @@ body.menu-page {
 
 /* ================= NAVBAR ================= */
 
+
+
 .menu-page .header {
     width: 100%;
     min-height: 65px;
@@ -2807,6 +2809,117 @@ body.menu-page {
 
 
 
+/* ==========================================
+   FOODFLOW: MAIN FOOTER
+   Purpose: Create a premium multi-column
+   footer with brand and navigation details.
+=========================================== */
+
+.home-footer {
+    background-color: var(--color-ink-soft);
+    border-top: 1px solid var(--overlay-gold-28);
+    padding: 48px 0 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 36px;
+}
+
+/* Brand Information */
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    color: var(--color-cream);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.footer-logo img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.footer-brand-highlight {
+    color: var(--color-accent-bright);
+}
+
+.footer-brand p,
+.footer-social-text {
+    max-width: 290px;
+    color: var(--color-text-soft);
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+/* Footer Column Headings */
+
+.footer-column h2 {
+    margin: 0 0 18px;
+    color: var(--color-accent-light);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Footer Navigation */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: var(--color-text-soft);
+    font-size: 0.88rem;
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-accent-bright);
+}
+
+/* Social Connection Link */
+
+.footer-social-link {
+    display: inline-flex;
+    margin-top: 8px;
+    color: var(--color-accent-bright);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.footer-social-link:hover {
+    color: var(--color-accent-light);
+}
+
+/* Copyright Information */
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--overlay-gold-18);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--color-text-subtle);
+    font-size: 0.8rem;
+}
+
+
+
 /* ===== MENU PAGE STYLES: consolidated from menu.css ===== */
 /* Menu page refinements. Loaded after shared and legacy responsive styles. */
 .menu-page {
@@ -3268,6 +3381,172 @@ body.menu-page {
     transform: translateY(0)
 }
 
+
+@media(max-width:1100px) {
+    .menu-page .food-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .menu-page .food-info {
+        min-height: 250px
+    }
+}
+
+@media(max-width:760px) {
+
+    .menu-page .header-container,
+    .menu-page .menu-hero-content,
+    .menu-page .menu-section>.container {
+        width: calc(100% - 36px)
+    }
+
+    .menu-page .menu-hero {
+        min-height: 500px
+    }
+
+    .menu-page .menu-hero-image {
+        background-image: linear-gradient(90deg, rgba(23, 23, 19, .9), rgba(23, 23, 19, .56)), url('../assets/images/backgrounds/food-bg.jpg');
+        background-position: center, 60% center
+    }
+
+    .menu-page .menu-intro {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 18px
+    }
+
+    .menu-page .menu-search {
+        width: 100%;
+        max-width: none
+    }
+
+    .menu-page .food-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px
+    }
+
+    .menu-page .food-info {
+        min-height: 255px;
+        padding: 15px
+    }
+
+    .menu-page .food-info button {
+        font-size: .75rem;
+        padding-inline: 10px
+    }
+}
+
+@media(max-width:520px) {
+
+    .menu-page .header-container,
+    .menu-page .menu-hero-content,
+    .menu-page .menu-section>.container {
+        width: calc(100% - 28px)
+    }
+
+    .menu-page .menu-hero {
+        min-height: 460px
+    }
+
+    .menu-page .menu-hero-content {
+        padding-block: 58px
+    }
+
+    .menu-page .menu-hero h1 {
+        font-size: clamp(2.8rem, 13vw, 4rem)
+    }
+
+    .menu-page .food-container {
+        grid-template-columns: 1fr
+    }
+
+    .menu-page .food-card {
+        display: grid;
+        grid-template-columns: 38% minmax(0, 1fr)
+    }
+
+    .menu-page .food-card>img {
+        height: 100%;
+        min-height: 100%;
+        aspect-ratio: auto
+    }
+
+    .menu-page .food-info {
+        min-height: 0;
+        padding: 14px
+    }
+
+    .menu-page .food-info h3 {
+        font-size: 1.05rem
+    }
+
+    .menu-page .food-info>p:not(.food-kicker):not(.food-allergens) {
+        min-height: 0;
+        font-size: .82rem
+    }
+
+    .menu-page .food-allergens {
+        margin: 10px 0;
+        font-size: .66rem
+    }
+
+    .menu-page .food-details {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px
+    }
+
+    .menu-page .food-info button {
+        width: 100%;
+        min-height: 44px
+    }
+
+    .menu-page .menu-footer-inner {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .menu-page .menu-footer-inner>p {
+        margin: 0
+    }
+
+    .menu-page .menu-footer nav {
+        flex-wrap: wrap
+    }
+
+    .menu-page .menu-footer small {
+        width: 100%
+    }
+}
+
+@media(max-width:360px) {
+    .menu-page .food-card {
+        grid-template-columns: 1fr
+    }
+
+    .menu-page .food-card>img {
+        aspect-ratio: 1.7/1
+    }
+
+    .menu-page .food-details {
+        align-items: center;
+        flex-direction: row
+    }
+
+    .menu-page .food-info button {
+        width: auto
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .menu-page .food-card,
+    .menu-page .menu-categories a,
+    .menu-page .food-info button {
+        transition: none
+    }
+}
 
 
 
