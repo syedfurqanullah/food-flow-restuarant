@@ -1,31 +1,244 @@
+/* Responsive rules for the admin area and admin sign-in page. */
+@media (max-width: 850px) {
+    .admin-login-shell {
+        grid-template-columns: minmax(0, .9fr) minmax(390px, 1.1fr);
+    }
+
+    .login-story {
+        padding: 32px;
+    }
+
+    .login-story h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .login-panel {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .admin-login-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .login-story {
+        min-height: 320px;
+        padding: 22px 24px 26px;
+    }
+
+    .login-story::after {
+        background: linear-gradient(90deg, rgba(23, 23, 19, .92), rgba(23, 23, 19, .64));
+    }
+
+    .login-story-copy {
+        margin: auto 0;
+        padding: 28px 0;
+    }
+
+    .login-brand {
+        margin-bottom: 24px;
+        font-size: 1.3rem;
+    }
+
+    .login-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login-story h1 {
+        max-width: 430px;
+        font-size: clamp(2.15rem, 9vw, 3rem);
+    }
+
+    .login-story-copy > p:last-child {
+        font-size: .9rem;
+    }
+
+    .story-caption {
+        display: none;
+    }
+
+    .login-panel {
+        min-height: auto;
+        padding: 38px 24px 20px;
+    }
+
+    .login-panel .login-card,
+    .login-footer {
+        max-width: 480px;
+    }
+
+    .login-footer {
+        margin-top: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-panel .form-group input {
+        font-size: 16px;
+    }
+
+    .login-panel .btn {
+        min-height: 46px;
+    }
+}
+
+@media (max-width: 380px) {
+    .login-story {
+        min-height: 290px;
+        padding-inline: 18px;
+    }
+
+    .login-panel {
+        padding: 32px 18px 18px;
+    }
+
+    .login-footer {
+        flex-wrap: wrap;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .admin-home-link,
+    .login-panel .form-group input,
+    .login-panel .btn.btn-primary {
+        transition: none;
+    }
+}
+
 /* =========================================================
-   ADD THIS TO THE BOTTOM OF css/admin-responsive.css
+   ADD THIS BELOW THE LOGIN SNIPPET IN css/admin-responsive.css
    ========================================================= */
 
+/* Tablet: sidebar becomes a top bar with scrollable links */
+@media (max-width: 900px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 14px 16px;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 12px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .sidebar-link {
+    flex: 0 0 auto;
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+
+  .admin-main {
+    padding: 24px 20px;
+  }
+}
+
 /* Mobile */
-@media (max-width: 480px) {
-  .admin-login-body {
-    padding: 16px;
-    align-items: flex-start;
+@media (max-width: 600px) {
+  .admin-main {
+    padding: 20px 14px;
   }
 
-  .login-card {
-    margin-top: 24px;
-    padding: 28px 20px;
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .login-title {
+  .page-title {
     font-size: 24px;
   }
 
-  /* 16px stops iPhones zooming in when a field is tapped */
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    font-size: 16px;
+  .page-header .btn {
+    width: 100%;
+    min-height: 46px;
   }
 
-  .btn {
-    min-height: 46px;
+  .search-box {
+    max-width: none;
+  }
+
+  /* Filter pills scroll sideways instead of wrapping into many rows */
+  .filter-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+
+  .pill {
+    flex: 0 0 auto;
+    min-height: 40px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 12px 14px;
+  }
+
+  .icon-btn {
+    padding: 9px 14px;
+  }
+
+  /* Form becomes one column */
+  .form-card {
+    padding: 20px 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-span-2 {
+    grid-column: auto;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+
+/* ---------- Customers page responsive layout ---------- */
+@media (max-width: 600px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card {
+    padding: 18px;
+  }
+
+  .customer-toolbar {
+    align-items: stretch;
+  }
+
+  .table-count {
+    width: 100%;
+  }
+
+  .empty-state {
+    padding: 32px 18px;
   }
 }
