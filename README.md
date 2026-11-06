@@ -2,6 +2,16 @@
 
 FoodFlow is a **Bano Qabil team collaboration project** created for practice and learning. The project is currently in progress. Its goal is to build a frontend for a restaurant management and food ordering website while the team practices web development and collaboration.
 
+## Live Demo
+
+[View FoodFlow](https://foodflow-pk.vercel.app/)
+
+## 📸 Screenshots
+
+### Home Page
+
+![FoodFlow Home](./assets/screenshots/home%20page.png)
+
 ## Project status
 
 The current work covers the website structure in **HTML** and its visual design in **CSS**. **JavaScript has not been added yet** and is planned for a later stage. As a result, pages and controls shown in the project should be considered frontend layouts; ordering, forms, login, and admin management are not functional features at this stage.
