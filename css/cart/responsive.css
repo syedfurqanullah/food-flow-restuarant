@@ -52,14 +52,6 @@
     border-radius: 17px;
   }
 
-  .offer-discount {
-    width: 76px;
-    height: 76px;
-  }
-
-  .discount-number {
-    font-size: 23px;
-  }
 }
 
 @media (max-width: 360px) {

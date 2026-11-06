@@ -93,15 +93,6 @@
   background: #f3f4f6;
 }
 
-.btn-danger {
-  background: #ef4444;
-  color: #fff;
-}
-
-.btn-danger:hover {
-  background: #dc2626;
-}
-
 /* ---------- Shared admin layout: sidebar + content ---------- */
 .admin-body {
   margin: 0;
@@ -145,15 +136,6 @@
   font-size: 12px;
   font-weight: 400;
   color: #9ca3af;
-}
-
-.sidebar-brand-mark {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--admin-accent);
 }
 
 .sidebar-nav {
@@ -369,25 +351,6 @@
 }
 
 /* Placeholder colors until real food photos are added */
-.thumb-1 {
-  background: linear-gradient(135deg, #f59e0b, #b45309);
-}
-
-.thumb-2 {
-  background: linear-gradient(135deg, #ef4444, #f59e0b);
-}
-
-.thumb-3 {
-  background: linear-gradient(135deg, #fde68a, #d97706);
-}
-
-.thumb-4 {
-  background: linear-gradient(135deg, #a16207, #451a03);
-}
-
-.thumb-5 {
-  background: linear-gradient(135deg, #78350f, #292524);
-}
 
 /* ---------- Status badges ---------- */
 .badge {
@@ -406,11 +369,6 @@
 .badge-danger {
   background: #fee2e2;
   color: #b91c1c;
-}
-
-.badge-warning {
-  background: #fef3c7;
-  color: #b45309;
 }
 
 /* ---------- Action buttons (Edit / Delete / View) ---------- */
@@ -443,10 +401,6 @@
   background: #ef4444;
 }
 
-.icon-btn-view {
-  background: #6b7280;
-}
-
 /* ---------- Add / Edit form ---------- */
 .form-card {
   padding: 28px;
@@ -473,42 +427,7 @@
   margin-top: 8px;
 }
 
-.form-actions-center {
-  justify-content: center;
-}
-
 /* ---------- Delete confirmation ---------- */
-.confirm-card {
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 32px 28px;
-  text-align: center;
-  scroll-margin-top: 24px;
-}
-
-.confirm-icon {
-  display: grid;
-  place-items: center;
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  background: #fee2e2;
-  color: #ef4444;
-}
-
-.confirm-title {
-  margin: 0 0 8px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.confirm-text {
-  margin: 0 0 24px;
-  font-size: 14px;
-  color: var(--admin-muted);
-}
 
 /* Premium restaurant management pages */
 .admin-main {
@@ -959,15 +878,6 @@
   box-shadow: none;
 }
 
-.item-description {
-  display: block;
-  max-width: 280px;
-  margin-top: 4px;
-  color: #938d82;
-  font-size: 11px;
-  line-height: 1.5;
-}
-
 .badge {
   border: 1px solid transparent;
 }
@@ -997,9 +907,4 @@
 .icon-btn-delete {
   background: rgba(200, 89, 80, 0.16);
   color: #e9a49f;
-}
-
-.icon-btn-view {
-  background: rgba(184, 154, 98, 0.18);
-  color: #dbc28f;
 }
