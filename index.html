@@ -1,519 +1,640 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Freshly prepared FoodFlow favorites, made to order and delivered with care."
+    />
+    <meta name="theme-color" content="#171713" />
+    <title>FoodFlow | Fresh food, made to order</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/home/main.css" />
+    <link rel="stylesheet" href="css/home/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Freshly prepared FoodFlow favorites, made to order and delivered with care." />
-  <meta name="theme-color" content="#171713" />
-  <title>FoodFlow | Fresh food, made to order</title>
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/home/main.css" />
-  <link rel="stylesheet" href="css/home/responsive.css" />
-</head>
-
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-container">
-      <a class="brand" href="index.html" aria-label="FoodFlow home">
-        <span class="brand-logo-frame"><img class="brand-logo" src="assets/images/logo/logo.jpg" alt="" width="298"
-            height="208" /></span>
-        <span class="brand-wordmark">Food<span>Flow.</span></span>
-      </a>
-
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-controls="site-navigation"
-        aria-label="Toggle navigation menu" />
-      <label class="nav-toggle-label" for="nav-toggle">
-        <span class="menu-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Toggle navigation</span>
-      </label>
-
-      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
-        <ul class="navigation-list">
-          <li>
-            <a class="navigation-link is-active" href="index.html" aria-current="page">Home</a>
-          </li>
-          <li><a class="navigation-link" href="pages/menu.html">Menu</a></li>
-          <li>
-            <a class="navigation-link" href="pages/about.html">About</a>
-          </li>
-          <li>
-            <a class="navigation-link" href="pages/contact.html">Contact</a>
-          </li>
-          <li class="mobile-signup-link">
-            <a class="button button-secondary" href="pages/signup.html">Sign Up</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <a class="cart-link" href="pages/cart.html" aria-label="Shopping cart, 0 items">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01" />
-          </svg>
-          <span class="cart-label">Cart</span><span class="cart-count" aria-hidden="true">0</span>
-        </a>
-        <a class="button button-primary order-button" href="pages/menu.html">Order Online</a>
-        <a class="button button-secondary signup-button" href="pages/signup.html">Sign Up</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="hero-visual" aria-hidden="true"></div>
-      <div class="container hero-container">
-        <div class="hero-content">
-          <p class="hero-eyebrow">
-            <span class="eyebrow-rule" aria-hidden="true"></span> FOODFLOW
-            KITCHEN
-          </p>
-          <h1 class="hero-title" id="hero-title">
-            Good food.<span class="hero-highlight">Made to share.</span>
-          </h1>
-          <p class="hero-description">
-            From stacked burgers to fresh pizza and pasta, find a new favorite
-            made for sharing.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="pages/menu.html">View the Menu <span
-                aria-hidden="true">&rarr;</span></a>
-            <a class="button button-secondary" href="pages/contact.html">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Food Categories Section -->
-    <section class="categories-section" aria-labelledby="categories-title">
-      <div class="container">
-        <!-- Section Heading -->
-        <div class="section-heading section-heading-feature">
-          <div>
-            <p class="section-subtitle">DISCOVER OUR FOOD</p>
-            <h2 id="categories-title">Explore Our Menu</h2>
-            <p>Choose a category and find your next favorite.</p>
-          </div>
-          <a class="section-link" href="pages/menu.html">View Full Menu <span aria-hidden="true">&rarr;</span></a>
-        </div>
-
-        <!-- Categories List -->
-        <div class="categories-grid">
-          <!-- Burger Category -->
-          <a href="pages/menu.html" class="category-card">
-            <div class="category-image">
-              <img src="assets/images/categories/burger.jpg" alt="Delicious burger" loading="lazy" />
-            </div>
-
-            <h3>Burgers</h3>
-          </a>
-
-          <!-- Pizza Category -->
-          <a href="pages/menu.html" class="category-card">
-            <div class="category-image">
-              <img src="assets/images/categories/pizza.jpg" alt="Freshly baked pizza" loading="lazy" />
-            </div>
-
-            <h3>Pizza</h3>
-          </a>
-
-          <!-- Pasta Category -->
-          <a href="pages/menu.html" class="category-card">
-            <div class="category-image">
-              <img src="assets/images/categories/pasta.jpg" alt="Creamy pasta" loading="lazy" />
-            </div>
-
-            <h3>Pasta</h3>
-          </a>
-
-          <!-- Drinks Category -->
-          <a href="pages/menu.html" class="category-card">
-            <div class="category-image">
-              <img src="assets/images/categories/drinks.jpg" alt="Refreshing drinks" loading="lazy" />
-            </div>
-
-            <h3>Drinks</h3>
-          </a>
-
-          <!-- Desserts Category -->
-          <a href="pages/menu.html" class="category-card">
-            <div class="category-image">
-              <img src="assets/images/categories/dessert.jpg" alt="Delicious dessert" loading="lazy" />
-            </div>
-
-            <h3>Desserts</h3>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="popular-section" aria-labelledby="popular-title">
-      <div class="container">
-        <div class="section-heading section-heading-feature">
-          <div>
-            <p class="section-subtitle">SIGNATURE PLATES</p>
-            <h2 id="popular-title">Popular Dishes</h2>
-            <p>A few FoodFlow favorites, made fresh to order.</p>
-          </div>
-          <a class="section-link" href="pages/menu.html">Browse the Menu <span aria-hidden="true">&rarr;</span></a>
-        </div>
-
-        <div class="popular-grid">
-          <article class="food-card">
-            <img src="assets/images/food/classic-burger.jpg" alt="Classic burger" class="food-image" loading="lazy"
-              decoding="async" />
-
-            <div class="food-info">
-              <span class="food-tag">HOUSE FAVORITE</span>
-              <h3>Classic Burger</h3>
-              <p>
-                Grilled beef, aged cheddar, crisp lettuce and our house sauce.
-              </p>
-
-              <div class="food-bottom">
-                <span class="food-price">$8.99</span>
-                <a href="pages/menu.html" class="card-order-link">
-                  Order This Dish
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="food-card">
-            <img src="assets/images/food/margherita-pizza.jpg" alt="Fresh margherita pizza" class="food-image"
-              loading="lazy" decoding="async" />
-
-            <div class="food-info">
-              <span class="food-tag">OVEN BAKED</span>
-              <h3>Margherita Pizza</h3>
-              <p>
-                San Marzano tomato, mozzarella, basil and extra virgin olive
-                oil.
-              </p>
-
-              <div class="food-bottom">
-                <span class="food-price">$12.99</span>
-                <a href="pages/menu.html" class="card-order-link">
-                  Order This Dish</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="food-card">
-            <img src="assets/images/food/creamy-pasta.jpg" alt="Creamy pasta served fresh" class="food-image"
-              loading="lazy" decoding="async" />
-
-            <div class="food-info">
-              <span class="food-tag">GUEST FAVORITE</span>
-              <h3>Creamy Pasta</h3>
-              <p>
-                Silky cream sauce, parmesan and freshly cracked black pepper.
-              </p>
-
-              <div class="food-bottom">
-                <span class="food-price">$10.50</span>
-                <a href="pages/menu.html" class="card-order-link">
-                  Order This Dish
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="food-card">
-            <img src="assets/images/food/chocolate-cake.jpg" alt="Rich chocolate cake" class="food-image" loading="lazy"
-              decoding="async" />
-
-            <div class="food-info">
-              <span class="food-tag">MADE IN HOUSE</span>
-              <h3>Chocolate Cake</h3>
-              <p>Rich cocoa sponge layered with smooth chocolate ganache.</p>
-
-              <div class="food-bottom">
-                <span class="food-price">$6.50</span>
-                <a href="pages/menu.html" class="card-order-link">
-                  Order This Dish
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- Special Offers Section -->
-    <section class="special-offers" id="deals" aria-labelledby="deal-title">
-      <div class="offer-content">
-        <span class="offer-label">A FIRST VISIT TREAT</span>
-
-        <p class="offer-eyebrow">A LITTLE SOMETHING EXTRA</p>
-
-        <h2 id="deal-title">
-          Your first order.
-          <span>With a little extra.</span>
-        </h2>
-
-        <p class="offer-description">
-          Take 20% off your first order with code <strong>FLOW20</strong> and
-          find a new favorite from our menu.
-        </p>
-
-        <a href="pages/menu.html" class="offer-button">
-          Explore the menu
-          <span aria-hidden="true">&rarr;</span>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="index.html" aria-label="FoodFlow home">
+          <span class="brand-logo-frame"
+            ><img
+              class="brand-logo"
+              src="assets/images/logo/logo.jpg"
+              alt=""
+              width="298"
+              height="208"
+          /></span>
+          <span class="brand-wordmark">Food<span>Flow.</span></span>
         </a>
 
-        <p class="offer-note">
-          Sample promotion for this frontend demo. Offer terms and checkout
-          are not active.
-        </p>
-      </div>
+        <input
+          class="nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-controls="site-navigation"
+          aria-label="Toggle navigation menu"
+        />
+        <label class="nav-toggle-label" for="nav-toggle">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </label>
 
-      <div class="offer-visual">
-        <img src="assets/images/offers/offer-banner.jpg"
-          alt="FoodFlow sample offer banner: get 20 percent off your first order" loading="lazy" decoding="async" />
-      </div>
-    </section>
-    <!-- Why Choose FoodFlow Section -->
-    <section class="why-choose" id="why-choose" aria-labelledby="why-title">
-      <!-- Section Heading -->
-      <div class="why-header">
-        <span class="why-tag">WHY FOODFLOW</span>
+        <nav
+          class="site-navigation"
+          id="site-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="navigation-list">
+            <li>
+              <a
+                class="navigation-link is-active"
+                href="index.html"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a class="navigation-link" href="pages/menu.html">Menu</a></li>
+            <li>
+              <a class="navigation-link" href="pages/about.html">About</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="pages/contact.html">Contact</a>
+            </li>
+            <li class="mobile-signup-link">
+              <a class="button button-secondary" href="pages/signup.html"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-        <h2 id="why-title">
-          Why Choose
-          <span>FoodFlow?</span>
-        </h2>
-
-        <p>
-          Discover the menu, find a new favorite and make your next meal feel
-          special.
-        </p>
-      </div>
-
-      <!-- Features Container -->
-      <div class="why-container">
-        <!-- Feature 1 -->
-        <article class="why-card">
-          <span class="why-card-number" aria-hidden="true">01</span>
-          <div class="why-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M20.8 3.2C12.2 3.5 6.8 5.8 5 10.4c-1.2 3.2 1 6.1 4.1 5.8 5.1-.5 8.3-5.8 11.7-13z" />
-              <path d="M3.5 21c1.3-5.2 5.2-8.4 10.4-10.8" />
+        <div class="header-actions">
+          <a
+            class="cart-link"
+            href="pages/cart.html"
+            aria-label="Shopping cart, 0 items"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
+              />
             </svg>
-          </div>
-          <h3>Made to explore</h3>
-          <p>
-            Browse a menu of familiar favorites and discover a dish for your
-            next meal.
-          </p>
-        </article>
-
-        <!-- Feature 2 -->
-        <article class="why-card">
-          <span class="why-card-number" aria-hidden="true">02</span>
-          <div class="why-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M3 10h18M5 10l1.4 10h11.2L19 10" />
-              <path d="M8 10V6a4 4 0 0 1 8 0v4M9 15h.01M15 15h.01" />
-            </svg>
-          </div>
-          <h3>Menu with details</h3>
-          <p>
-            Each dish has a description and sample pricing to help you choose
-            what sounds good.
-          </p>
-        </article>
-
-        <!-- Feature 3 -->
-        <article class="why-card">
-          <span class="why-card-number" aria-hidden="true">03</span>
-          <div class="why-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M3 6h12v11H3zM15 10h4l3 3v4h-7z" />
-              <circle cx="7.5" cy="19" r="2" />
-              <circle cx="18.5" cy="19" r="2" />
-            </svg>
-          </div>
-          <h3>Simple to browse</h3>
-          <p>
-            Move from the home page to the menu and cart in a few clear steps.
-          </p>
-        </article>
-
-        <!-- Feature 4 -->
-        <article class="why-card">
-          <span class="why-card-number" aria-hidden="true">04</span>
-          <div class="why-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 6.7a4.8 4.8 0 0 1 8.5 3.1C20.5 15.7 12 21 12 21z" />
-              <path d="M8.5 12h2l1.2-2.2 1.6 4.4 1.2-2.2h1" />
-            </svg>
-          </div>
-          <h3>Made for sharing</h3>
-          <p>
-            Find something for yourself or pick a few favorites for the table.
-          </p>
-        </article>
+            <span class="cart-label">Cart</span
+            ><span class="cart-count" aria-hidden="true">0</span>
+          </a>
+          <a class="button button-primary order-button" href="pages/menu.html"
+            >Order Online</a
+          >
+          <a
+            class="button button-secondary signup-button"
+            href="pages/signup.html"
+            >Sign Up</a
+          >
+        </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials section-padding" id="testimonials">
-      <div class="container">
+    <main id="main-content">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-eyebrow">
+              <span class="eyebrow-rule" aria-hidden="true"></span> FOODFLOW
+              KITCHEN
+            </p>
+            <h1 class="hero-title" id="hero-title">
+              Good food.<span class="hero-highlight">Made to share.</span>
+            </h1>
+            <p class="hero-description">
+              From stacked burgers to fresh pizza and pasta, find a new favorite
+              made for sharing.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="pages/menu.html"
+                >View the Menu <span aria-hidden="true">&rarr;</span></a
+              >
+              <a class="button button-secondary" href="pages/contact.html"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Food Categories Section -->
+      <section class="categories-section" aria-labelledby="categories-title">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="section-heading section-heading-feature">
+            <div>
+              <p class="section-subtitle">DISCOVER OUR FOOD</p>
+              <h2 id="categories-title">Explore Our Menu</h2>
+              <p>Choose a category and find your next favorite.</p>
+            </div>
+            <a class="section-link" href="pages/menu.html"
+              >View Full Menu <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+
+          <!-- Categories List -->
+          <div class="categories-grid">
+            <!-- Burger Category -->
+            <a href="pages/menu.html" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/categories/burger.jpg"
+                  alt="Delicious burger"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>Burgers</h3>
+            </a>
+
+            <!-- Pizza Category -->
+            <a href="pages/menu.html" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/categories/pizza.jpg"
+                  alt="Freshly baked pizza"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>Pizza</h3>
+            </a>
+
+            <!-- Pasta Category -->
+            <a href="pages/menu.html" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/categories/pasta.jpg"
+                  alt="Creamy pasta"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>Pasta</h3>
+            </a>
+
+            <!-- Drinks Category -->
+            <a href="pages/menu.html" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/categories/drinks.jpg"
+                  alt="Refreshing drinks"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>Drinks</h3>
+            </a>
+
+            <!-- Desserts Category -->
+            <a href="pages/menu.html" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/categories/dessert.jpg"
+                  alt="Delicious dessert"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>Desserts</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-section" aria-labelledby="popular-title">
+        <div class="container">
+          <div class="section-heading section-heading-feature">
+            <div>
+              <p class="section-subtitle">SIGNATURE PLATES</p>
+              <h2 id="popular-title">Popular Dishes</h2>
+              <p>A few FoodFlow favorites, made fresh to order.</p>
+            </div>
+            <a class="section-link" href="pages/menu.html"
+              >Browse the Menu <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+
+          <div class="popular-grid">
+            <article class="food-card">
+              <img
+                src="assets/images/food/classic-burger.jpg"
+                alt="Classic burger"
+                class="food-image"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="food-info">
+                <span class="food-tag">HOUSE FAVORITE</span>
+                <h3>Classic Burger</h3>
+                <p>
+                  Grilled beef, aged cheddar, crisp lettuce and our house sauce.
+                </p>
+
+                <div class="food-bottom">
+                  <span class="food-price">$8.99</span>
+                  <a href="pages/menu.html" class="card-order-link">
+                    Order This Dish
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="food-card">
+              <img
+                src="assets/images/food/margherita-pizza.jpg"
+                alt="Fresh margherita pizza"
+                class="food-image"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="food-info">
+                <span class="food-tag">OVEN BAKED</span>
+                <h3>Margherita Pizza</h3>
+                <p>
+                  San Marzano tomato, mozzarella, basil and extra virgin olive
+                  oil.
+                </p>
+
+                <div class="food-bottom">
+                  <span class="food-price">$12.99</span>
+                  <a href="pages/menu.html" class="card-order-link">
+                    Order This Dish</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="food-card">
+              <img
+                src="assets/images/food/creamy-pasta.jpg"
+                alt="Creamy pasta served fresh"
+                class="food-image"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="food-info">
+                <span class="food-tag">GUEST FAVORITE</span>
+                <h3>Creamy Pasta</h3>
+                <p>
+                  Silky cream sauce, parmesan and freshly cracked black pepper.
+                </p>
+
+                <div class="food-bottom">
+                  <span class="food-price">$10.50</span>
+                  <a href="pages/menu.html" class="card-order-link">
+                    Order This Dish
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="food-card">
+              <img
+                src="assets/images/food/chocolate-cake.jpg"
+                alt="Rich chocolate cake"
+                class="food-image"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="food-info">
+                <span class="food-tag">MADE IN HOUSE</span>
+                <h3>Chocolate Cake</h3>
+                <p>Rich cocoa sponge layered with smooth chocolate ganache.</p>
+
+                <div class="food-bottom">
+                  <span class="food-price">$6.50</span>
+                  <a href="pages/menu.html" class="card-order-link">
+                    Order This Dish
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Special Offers Section -->
+      <section class="special-offers" id="deals" aria-labelledby="deal-title">
+        <div class="offer-content">
+          <span class="offer-label">A FIRST VISIT TREAT</span>
+
+          <p class="offer-eyebrow">A LITTLE SOMETHING EXTRA</p>
+
+          <h2 id="deal-title">
+            Your first order.
+            <span>With a little extra.</span>
+          </h2>
+
+          <p class="offer-description">
+            Take 20% off your first order with code <strong>FLOW20</strong> and
+            find a new favorite from our menu.
+          </p>
+
+          <a href="pages/menu.html" class="offer-button">
+            Explore the menu
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+
+          <p class="offer-note">
+            Sample promotion for this frontend demo. Offer terms and checkout
+            are not active.
+          </p>
+        </div>
+
+        <div class="offer-visual">
+          <img
+            src="assets/images/offers/offer-banner.jpg"
+            alt="FoodFlow sample offer banner: get 20 percent off your first order"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <!-- Why Choose FoodFlow Section -->
+      <section class="why-choose" id="why-choose" aria-labelledby="why-title">
         <!-- Section Heading -->
-        <div class="testimonials-header">
-          <span class="section-subtitle">CUSTOMER REVIEWS</span>
+        <div class="why-header">
+          <span class="why-tag">WHY FOODFLOW</span>
 
-          <h2 class="section-title">What Our <span>Customers</span> Say</h2>
+          <h2 id="why-title">
+            Why Choose
+            <span>FoodFlow?</span>
+          </h2>
 
-          <p class="testimonials-description">
-            Don't just take our word for it. See what our happy customers have
-            to say about FoodFlow.
+          <p>
+            Discover the menu, find a new favorite and make your next meal feel
+            special.
           </p>
         </div>
 
-        <!-- Testimonials Cards -->
-        <div class="testimonials-grid">
-          <!-- Review Card 1 -->
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">
-              ★★★★★
+        <!-- Features Container -->
+        <div class="why-container">
+          <!-- Feature 1 -->
+          <article class="why-card">
+            <span class="why-card-number" aria-hidden="true">01</span>
+            <div class="why-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20.8 3.2C12.2 3.5 6.8 5.8 5 10.4c-1.2 3.2 1 6.1 4.1 5.8 5.1-.5 8.3-5.8 11.7-13z"
+                />
+                <path d="M3.5 21c1.3-5.2 5.2-8.4 10.4-10.8" />
+              </svg>
             </div>
-
-            <p class="testimonial-text">
-              FoodFlow has completely changed the way I order food. The meals
-              are delicious, fresh, and always delivered on time"
+            <h3>Made to explore</h3>
+            <p>
+              Browse a menu of familiar favorites and discover a dish for your
+              next meal.
             </p>
-
-            <div class="testimonial-user">
-              <div class="testimonial-avatar">AK</div>
-
-              <div class="testimonial-user-info">
-                <h3>Ali Khan</h3>
-                <span>Regular Customer</span>
-              </div>
-            </div>
           </article>
 
-          <!-- Review Card 2 -->
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">
-              ★★★★★
+          <!-- Feature 2 -->
+          <article class="why-card">
+            <span class="why-card-number" aria-hidden="true">02</span>
+            <div class="why-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 10h18M5 10l1.4 10h11.2L19 10" />
+                <path d="M8 10V6a4 4 0 0 1 8 0v4M9 15h.01M15 15h.01" />
+              </svg>
             </div>
-
-            <p class="testimonial-text">
-              Amazing food quality and a very smooth ordering experience. I
-              love the variety of dishes available on FoodFlow.
+            <h3>Menu with details</h3>
+            <p>
+              Each dish has a description and sample pricing to help you choose
+              what sounds good.
             </p>
-
-            <div class="testimonial-user">
-              <div class="testimonial-avatar">SA</div>
-
-              <div class="testimonial-user-info">
-                <h3>Sara Ahmed</h3>
-                <span>Happy Customer</span>
-              </div>
-            </div>
           </article>
 
-          <!-- Review Card 3 -->
-          <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">
-              ★★★★★
+          <!-- Feature 3 -->
+          <article class="why-card">
+            <span class="why-card-number" aria-hidden="true">03</span>
+            <div class="why-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 6h12v11H3zM15 10h4l3 3v4h-7z" />
+                <circle cx="7.5" cy="19" r="2" />
+                <circle cx="18.5" cy="19" r="2" />
+              </svg>
             </div>
-
-            <p class="testimonial-text">
-              From browsing the menu to receiving my order, everything feels
-              simple and convenient. Highly recommended!
+            <h3>Simple to browse</h3>
+            <p>
+              Move from the home page to the menu and cart in a few clear steps.
             </p>
+          </article>
 
-            <div class="testimonial-user">
-              <div class="testimonial-avatar">UA</div>
-
-              <div class="testimonial-user-info">
-                <h3>Usman Ali</h3>
-                <span>Food Lover</span>
-              </div>
+          <!-- Feature 4 -->
+          <article class="why-card">
+            <span class="why-card-number" aria-hidden="true">04</span>
+            <div class="why-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 6.7a4.8 4.8 0 0 1 8.5 3.1C20.5 15.7 12 21 12 21z"
+                />
+                <path d="M8.5 12h2l1.2-2.2 1.6 4.4 1.2-2.2h1" />
+              </svg>
             </div>
+            <h3>Made for sharing</h3>
+            <p>
+              Find something for yourself or pick a few favorites for the table.
+            </p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================
+      <!-- Testimonials Section -->
+      <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="testimonials-header">
+            <span class="section-subtitle">CUSTOMER REVIEWS</span>
+
+            <h2 class="section-title">What Our <span>Customers</span> Say</h2>
+
+            <p class="testimonials-description">
+              Don't just take our word for it. See what our happy customers have
+              to say about FoodFlow.
+            </p>
+          </div>
+
+          <!-- Testimonials Cards -->
+          <div class="testimonials-grid">
+            <!-- Review Card 1 -->
+            <article class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+
+              <p class="testimonial-text">
+                FoodFlow has completely changed the way I order food. The meals
+                are delicious, fresh, and always delivered on time"
+              </p>
+
+              <div class="testimonial-user">
+                <div class="testimonial-avatar">AK</div>
+
+                <div class="testimonial-user-info">
+                  <h3>Ali Khan</h3>
+                  <span>Regular Customer</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Review Card 2 -->
+            <article class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+
+              <p class="testimonial-text">
+                Amazing food quality and a very smooth ordering experience. I
+                love the variety of dishes available on FoodFlow.
+              </p>
+
+              <div class="testimonial-user">
+                <div class="testimonial-avatar">SA</div>
+
+                <div class="testimonial-user-info">
+                  <h3>Sara Ahmed</h3>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Review Card 3 -->
+            <article class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+
+              <p class="testimonial-text">
+                From browsing the menu to receiving my order, everything feels
+                simple and convenient. Highly recommended!
+              </p>
+
+              <div class="testimonial-user">
+                <div class="testimonial-avatar">UA</div>
+
+                <div class="testimonial-user-info">
+                  <h3>Usman Ali</h3>
+                  <span>Food Lover</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
          FOODFLOW: MAIN FOOTER
          Purpose: Provide brand information,
          navigation links and contact access.
     =========================================== -->
-    <footer class="home-footer">
-      <div class="container footer-container">
-        <!-- Brand Information -->
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo">
-            <img src="assets/images/logo/logo.jpg" alt="" width="48" height="48" />
-            <span>Food<span class="footer-brand-highlight">Flow.</span></span>
-          </a>
+      <footer class="home-footer">
+        <div class="container footer-container">
+          <!-- Brand Information -->
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="assets/images/logo/logo.jpg"
+                alt=""
+                width="48"
+                height="48"
+              />
+              <span>Food<span class="footer-brand-highlight">Flow.</span></span>
+            </a>
 
-          <p>
-            Fresh ingredients, delicious meals and a better food ordering
-            experience. Made with care, served with love.
-          </p>
+            <p>
+              Fresh ingredients, delicious meals and a better food ordering
+              experience. Made with care, served with love.
+            </p>
+          </div>
+
+          <!-- Quick Navigation Links -->
+          <div class="footer-column">
+            <h2>Quick Links</h2>
+
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/menu.html">Our Menu</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Support -->
+          <div class="footer-column">
+            <h2>Get In Touch</h2>
+
+            <ul class="footer-links">
+              <li>
+                <a href="pages/contact.html">Contact Our Team</a>
+              </li>
+              <li>
+                <a href="pages/contact.html">Customer Support</a>
+              </li>
+              <li>
+                <a href="pages/menu.html">Order Online</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-column">
+            <h2>Follow FoodFlow</h2>
+
+            <p class="footer-social-text">
+              Stay connected with us for food updates and exciting offers.
+            </p>
+
+            <a href="pages/contact.html" class="footer-social-link">
+              Connect With Us
+            </a>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <p>&copy; 2026 FoodFlow. All rights reserved.</p>
+
+            <p>Made with care for food lovers.</p>
+          </div>
         </div>
-
-        <!-- Quick Navigation Links -->
-        <div class="footer-column">
-          <h2>Quick Links</h2>
-
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/menu.html">Our Menu</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Customer Support -->
-        <div class="footer-column">
-          <h2>Get In Touch</h2>
-
-          <ul class="footer-links">
-            <li>
-              <a href="pages/contact.html">Contact Our Team</a>
-            </li>
-            <li>
-              <a href="pages/contact.html">Customer Support</a>
-            </li>
-            <li>
-              <a href="pages/menu.html">Order Online</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Social Media -->
-        <div class="footer-column">
-          <h2>Follow FoodFlow</h2>
-
-          <p class="footer-social-text">
-            Stay connected with us for food updates and exciting offers.
-          </p>
-
-          <a href="pages/contact.html" class="footer-social-link">
-            Connect With Us
-          </a>
-        </div>
-
-        <!-- Copyright -->
-        <div class="footer-bottom">
-          <p>&copy; 2026 FoodFlow. All rights reserved.</p>
-
-          <p>Made with care for food lovers.</p>
-        </div>
-      </div>
-    </footer>
-  </main>
-</body>
-
+      </footer>
+    </main>
+  </body>
 </html>
