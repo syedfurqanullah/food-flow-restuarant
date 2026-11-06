@@ -1,0 +1,335 @@
+
+/* =========================================================
+   FOODFLOW ADMIN SETTINGS
+   Responsive stylesheet
+   Purpose: Tablet, mobile and small-screen optimization.
+========================================================= */
+
+/* ---------- Laptop and small desktop ---------- */
+
+@media (max-width: 1200px) {
+
+  .sidebar {
+    flex-basis: 225px;
+    width: 225px;
+  }
+
+  .admin-main {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .settings-card {
+    padding: 22px;
+  }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+  /* Convert sidebar into horizontal navigation */
+  .admin-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    overflow: visible;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 16px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 8px;
+    padding-bottom: 4px;
+    overflow-x: auto;
+  }
+
+  .sidebar-link {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .sidebar-link.active {
+    box-shadow: inset 0 -3px 0 var(--admin-accent);
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  /* Main page spacing */
+  .admin-main {
+    padding: 0 22px 22px;
+  }
+
+  .settings-card {
+    padding: 21px;
+  }
+
+  .business-day {
+    grid-template-columns: 110px minmax(200px, 1fr) 65px;
+    gap: 12px;
+  }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+  /* Compact sidebar */
+  .sidebar {
+    padding: 14px;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 13px;
+  }
+
+  .admin-brand-logo {
+    width: 33px;
+    height: 33px;
+  }
+
+  .admin-brand-name {
+    font-size: 16px;
+  }
+
+  .sidebar-nav {
+    gap: 6px;
+  }
+
+  .sidebar-link {
+    gap: 7px;
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .nav-icon {
+    width: auto;
+    font-size: 15px;
+  }
+
+  /* Main content */
+  .admin-main {
+    padding: 0 14px 18px;
+  }
+
+  /* Responsive topbar */
+  .admin-topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .admin-topbar-brand {
+    font-size: 15px;
+  }
+
+  .admin-topbar-nav {
+    order: 3;
+    width: 100%;
+    gap: 17px;
+    overflow-x: auto;
+  }
+
+  .admin-topbar-nav a,
+  .admin-topbar-site {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Page heading */
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin: 25px 0 20px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .page-description {
+    font-size: 12px;
+  }
+
+  .settings-status {
+    font-size: 10px;
+  }
+
+  /* Section navigation */
+  .settings-nav {
+    gap: 4px;
+    margin-bottom: 17px;
+  }
+
+  .settings-nav-link {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+
+  /* Settings cards */
+  .settings-content {
+    gap: 15px;
+  }
+
+  .settings-card {
+    padding: 17px;
+  }
+
+  .settings-card-header {
+    align-items: flex-start;
+    gap: 11px;
+  }
+
+  .settings-heading-icon {
+    flex-basis: 37px;
+    width: 37px;
+    height: 37px;
+    font-size: 17px;
+  }
+
+  .settings-card-title {
+    font-size: 15px;
+  }
+
+  .settings-card-description {
+    font-size: 11px;
+  }
+
+  .settings-divider {
+    margin: 17px 0;
+  }
+
+  /* Stack form fields */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .form-group-full {
+    grid-column: auto;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 12px;
+  }
+
+  /* Business hours */
+  .business-day {
+    grid-template-columns: 1fr auto;
+    gap: 13px;
+    padding: 15px 0;
+  }
+
+  .business-day-name {
+    grid-column: 1;
+  }
+
+  .business-time-fields {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .day-status {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .business-time-fields input {
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  /* Notification preferences */
+  .notification-item {
+    min-height: 80px;
+    gap: 12px;
+  }
+
+  .notification-copy strong {
+    font-size: 11px;
+  }
+
+  .notification-copy small {
+    font-size: 10px;
+  }
+
+  /* Buttons */
+  .settings-actions {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+
+  .btn {
+    min-height: 40px;
+    padding: 10px 13px;
+    font-size: 11px;
+  }
+
+  /* Footer */
+  .admin-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 10px;
+  }
+
+}
+
+/* ---------- Extra small mobile ---------- */
+
+@media (max-width: 380px) {
+
+  .admin-main {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .settings-card {
+    padding: 14px;
+  }
+
+  .settings-heading-icon {
+    flex-basis: 33px;
+    width: 33px;
+    height: 33px;
+  }
+
+  .settings-card-title {
+    font-size: 14px;
+  }
+
+  .settings-nav-link {
+    padding: 9px;
+    font-size: 9px;
+  }
+
+  .business-time-fields {
+    gap: 8px;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .settings-actions .btn {
+    width: 100%;
+  }
+
+}

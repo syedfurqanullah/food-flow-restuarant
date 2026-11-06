@@ -1,13 +1,629 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- ==========================================
+       DOCUMENT CONFIGURATION
+       Page metadata and responsive viewport.
+  =========================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings | FoodFlow</title>
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/settings/main.css" />
-    <link rel="stylesheet" href="../css/settings/responsive.css" />
+
+    <meta
+      name="description"
+      content="Manage FoodFlow restaurant settings and preferences."
+    />
+
+    <title>Settings | FoodFlow Admin</title>
+
+    <!-- Shared FoodFlow design tokens -->
+    <link rel="stylesheet" href="../../css/variables.css" />
+    <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
+
+    <!-- Settings page styles -->
+    <link rel="stylesheet" href="../../css/admin/settings/main.css" />
+    <link rel="stylesheet" href="../../css/admin/settings/responsive.css" />
   </head>
 
-  <body></body>
+  <body class="admin-body">
+    <!-- ==========================================
+       ADMIN APPLICATION LAYOUT
+       Sidebar and main settings content.
+  =========================================== -->
+    <div class="admin-layout">
+      <!-- ========================================
+         SIDEBAR NAVIGATION
+    ========================================= -->
+      <aside class="sidebar">
+        <!-- FoodFlow admin branding -->
+        <a href="dashboard.html" class="sidebar-brand">
+          <img
+            src="../../assets/images/logo/logo.jpg"
+            alt="FoodFlow logo"
+            class="admin-brand-logo"
+          />
+
+          <span class="admin-brand-name">
+            FoodFlow
+            <span>Admin</span>
+          </span>
+        </a>
+
+        <!-- Admin navigation links -->
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">▦</span>
+            Dashboard
+          </a>
+
+          <a href="orders.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">▤</span>
+            Orders
+          </a>
+
+          <a href="menu-management.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">☷</span>
+            Menu Management
+          </a>
+
+          <a href="customers.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">♙</span>
+            Customers
+          </a>
+
+          <a
+            href="settings.html"
+            class="sidebar-link active"
+            aria-current="page"
+          >
+            <span class="nav-icon" aria-hidden="true">⚙</span>
+            Settings
+          </a>
+
+          <a href="login.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">↪</span>
+            Logout
+          </a>
+        </nav>
+
+        <!-- Admin account status -->
+        <div class="sidebar-bottom">
+          <span class="sidebar-status"></span>
+
+          <div>
+            <strong>FoodFlow Admin</strong>
+            <small>Management panel</small>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ========================================
+         MAIN SETTINGS CONTENT
+    ========================================= -->
+      <main class="admin-main">
+        <!-- Top navigation -->
+        <header class="admin-topbar">
+          <a href="dashboard.html" class="admin-topbar-brand">
+            FoodFlow <span>Admin</span>
+          </a>
+
+          <nav class="admin-topbar-nav" aria-label="Quick navigation">
+            <a href="orders.html">Orders</a>
+            <a href="menu-management.html">Menu Management</a>
+            <a href="customers.html">Customers</a>
+          </nav>
+
+          <a href="../../index.html" class="admin-topbar-site">
+            View Customer Site ↗
+          </a>
+        </header>
+
+        <!-- ======================================
+           PAGE INTRODUCTION
+      ======================================= -->
+        <section class="page-header">
+          <div>
+            <p class="page-eyebrow">SYSTEM CONFIGURATION</p>
+
+            <h1 class="page-title">Settings</h1>
+
+            <p class="page-description">
+              Manage your restaurant profile, business hours, notifications and
+              account preferences.
+            </p>
+          </div>
+
+          <span class="settings-status">
+            <span class="status-dot"></span>
+            System Preferences
+          </span>
+        </section>
+
+        <!-- ======================================
+           SETTINGS PAGE NAVIGATION
+           Links to individual settings sections.
+      ======================================= -->
+        <nav class="settings-nav" aria-label="Settings sections">
+          <a href="#general-settings" class="settings-nav-link active">
+            General
+          </a>
+
+          <a href="#restaurant-settings" class="settings-nav-link">
+            Restaurant
+          </a>
+
+          <a href="#business-hours" class="settings-nav-link">
+            Business Hours
+          </a>
+
+          <a href="#notification-settings" class="settings-nav-link">
+            Notifications
+          </a>
+
+          <a href="#security-settings" class="settings-nav-link"> Security </a>
+        </nav>
+
+        <!-- ======================================
+           SETTINGS CONTENT
+      ======================================= -->
+        <div class="settings-content">
+          <!-- ====================================
+             GENERAL SETTINGS
+        ===================================== -->
+          <section
+            class="settings-card"
+            id="general-settings"
+            aria-labelledby="general-title"
+          >
+            <div class="settings-card-header">
+              <div class="settings-heading-icon">⚙</div>
+
+              <div>
+                <h2 class="settings-card-title" id="general-title">
+                  General Settings
+                </h2>
+
+                <p class="settings-card-description">
+                  Manage your administrator and basic account information.
+                </p>
+              </div>
+            </div>
+
+            <div class="settings-divider"></div>
+
+            <form class="settings-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="admin-name">Administrator Name</label>
+
+                  <input
+                    type="text"
+                    id="admin-name"
+                    name="adminName"
+                    value="FoodFlow Admin"
+                    placeholder="Enter administrator name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-email">Email Address</label>
+
+                  <input
+                    type="email"
+                    id="admin-email"
+                    name="adminEmail"
+                    value="admin@foodflow.pk"
+                    placeholder="Enter email address"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-phone">Phone Number</label>
+
+                  <input
+                    type="tel"
+                    id="admin-phone"
+                    name="adminPhone"
+                    placeholder="Enter phone number"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-language">Preferred Language</label>
+
+                  <select id="admin-language" name="language">
+                    <option value="en">English</option>
+                    <option value="ur">Urdu</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="settings-actions">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+
+                <button type="button" class="btn btn-primary">
+                  Save Changes →
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- ====================================
+             RESTAURANT PROFILE SETTINGS
+        ===================================== -->
+          <section
+            class="settings-card"
+            id="restaurant-settings"
+            aria-labelledby="restaurant-title"
+          >
+            <div class="settings-card-header">
+              <div class="settings-heading-icon">♨</div>
+
+              <div>
+                <h2 class="settings-card-title" id="restaurant-title">
+                  Restaurant Information
+                </h2>
+
+                <p class="settings-card-description">
+                  Update your restaurant's public business information.
+                </p>
+              </div>
+            </div>
+
+            <div class="settings-divider"></div>
+
+            <form class="settings-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="restaurant-name">Restaurant Name</label>
+
+                  <input
+                    type="text"
+                    id="restaurant-name"
+                    name="restaurantName"
+                    value="FoodFlow Restaurant"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="restaurant-email">Business Email</label>
+
+                  <input
+                    type="email"
+                    id="restaurant-email"
+                    name="restaurantEmail"
+                    placeholder="restaurant@example.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="restaurant-phone">Contact Number</label>
+
+                  <input
+                    type="tel"
+                    id="restaurant-phone"
+                    name="restaurantPhone"
+                    placeholder="+92 300 1234567"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="restaurant-currency">Currency</label>
+
+                  <select id="restaurant-currency" name="currency">
+                    <option value="PKR">PKR - Pakistani Rupee</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="GBP">GBP - British Pound</option>
+                  </select>
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="restaurant-address">Business Address</label>
+
+                  <input
+                    type="text"
+                    id="restaurant-address"
+                    name="restaurantAddress"
+                    placeholder="Enter complete restaurant address"
+                  />
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="restaurant-description">
+                    Restaurant Description
+                  </label>
+
+                  <textarea
+                    id="restaurant-description"
+                    name="restaurantDescription"
+                    rows="4"
+                    placeholder="Write a short description about your restaurant..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="settings-actions">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+
+                <button type="button" class="btn btn-primary">
+                  Save Restaurant Info →
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- ====================================
+             BUSINESS HOURS
+        ===================================== -->
+          <section
+            class="settings-card"
+            id="business-hours"
+            aria-labelledby="hours-title"
+          >
+            <div class="settings-card-header">
+              <div class="settings-heading-icon">◷</div>
+
+              <div>
+                <h2 class="settings-card-title" id="hours-title">
+                  Business Hours
+                </h2>
+
+                <p class="settings-card-description">
+                  Configure the restaurant's weekly opening schedule.
+                </p>
+              </div>
+            </div>
+
+            <div class="settings-divider"></div>
+
+            <div class="business-hours-list">
+              <!-- Monday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Monday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="22:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Tuesday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Tuesday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="22:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Wednesday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Wednesday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="22:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Thursday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Thursday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="22:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Friday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Friday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="23:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Saturday -->
+              <div class="business-day">
+                <div class="business-day-name">
+                  <strong>Saturday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="10:00" />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="23:00" />
+                  </label>
+                </div>
+
+                <span class="day-status open-status">Open</span>
+              </div>
+
+              <!-- Sunday -->
+              <div class="business-day business-day-closed">
+                <div class="business-day-name">
+                  <strong>Sunday</strong>
+                  <small>Weekly schedule</small>
+                </div>
+
+                <div class="business-time-fields">
+                  <label>
+                    <span>Opening</span>
+                    <input type="time" value="09:00" disabled />
+                  </label>
+
+                  <label>
+                    <span>Closing</span>
+                    <input type="time" value="22:00" disabled />
+                  </label>
+                </div>
+
+                <span class="day-status closed-status">Closed</span>
+              </div>
+            </div>
+
+            <div class="settings-actions">
+              <button type="button" class="btn btn-primary">
+                Save Business Hours →
+              </button>
+            </div>
+          </section>
+
+       
+          <!-- ====================================
+             ACCOUNT SECURITY
+        ===================================== -->
+          <section
+            class="settings-card"
+            id="security-settings"
+            aria-labelledby="security-title"
+          >
+            <div class="settings-card-header">
+              <div class="settings-heading-icon">♙</div>
+
+              <div>
+                <h2 class="settings-card-title" id="security-title">
+                  Account Security
+                </h2>
+
+                <p class="settings-card-description">
+                  Update your administrator account password.
+                </p>
+              </div>
+            </div>
+
+            <div class="settings-divider"></div>
+
+            <form class="settings-form">
+              <div class="form-grid">
+                <div class="form-group form-group-full">
+                  <label for="current-password">Current Password</label>
+
+                  <input
+                    type="password"
+                    id="current-password"
+                    name="currentPassword"
+                    placeholder="Enter current password"
+                    autocomplete="current-password"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="new-password">New Password</label>
+
+                  <input
+                    type="password"
+                    id="new-password"
+                    name="newPassword"
+                    placeholder="Enter new password"
+                    autocomplete="new-password"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="confirm-password">Confirm New Password</label>
+
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    placeholder="Confirm new password"
+                    autocomplete="new-password"
+                  />
+                </div>
+              </div>
+
+              <p class="security-hint">
+                Use a strong password with a combination of letters, numbers and
+                special characters.
+              </p>
+
+              <div class="settings-actions">
+                <button type="button" class="btn btn-primary">
+                  Update Password →
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- ======================================
+           PAGE FOOTER
+      ======================================= -->
+        <footer class="admin-footer">
+          <span>© 2026 FoodFlow. All rights reserved.</span>
+          <span>Restaurant Management System</span>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
