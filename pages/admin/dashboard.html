@@ -1,13 +1,454 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FoodFlow restaurant administration dashboard"
+    />
     <title>Dashboard | FoodFlow Admin</title>
+
+    <!-- Shared and admin design tokens -->
     <link rel="stylesheet" href="../../css/variables.css" />
     <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
+
+    <!-- Dashboard styles -->
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/responsive.css" />
   </head>
-  <body></body>
+
+  <body class="admin-body">
+    <div class="admin-layout">
+
+      <!-- Sidebar navigation -->
+      <aside class="sidebar">
+        <a href="dashboard.html" class="sidebar-brand">
+          <img
+            class="admin-brand-logo"
+            src="../../assets/images/logo/logo.jpg"
+            alt="FoodFlow logo"
+          />
+          <span class="admin-brand-name">
+            FoodFlow <span>Admin</span>
+          </span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a
+            href="dashboard.html"
+            class="sidebar-link active"
+            aria-current="page"
+          >
+            <span class="nav-icon" aria-hidden="true">▦</span>
+            Dashboard
+          </a>
+
+          <a href="orders.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">▤</span>
+            Orders
+          </a>
+
+          <a href="menu-management.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">☷</span>
+            Menu Management
+          </a>
+
+          <a href="customers.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">♙</span>
+            Customers
+          </a>
+
+          <a href="settings.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">⚙</span>
+            Settings
+          </a>
+
+          <a href="login.html" class="sidebar-link">
+            <span class="nav-icon" aria-hidden="true">↪</span>
+            Logout
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <span class="sidebar-status"></span>
+          <div>
+            <strong>FoodFlow Admin</strong>
+            <small>Management panel</small>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main dashboard area -->
+      <main class="admin-main">
+
+        <!-- Top navigation -->
+        <header class="admin-topbar">
+          <a class="admin-topbar-brand" href="dashboard.html">
+            FoodFlow <span>Admin</span>
+          </a>
+
+          <nav class="admin-topbar-nav" aria-label="Quick navigation">
+            <a href="orders.html">Orders</a>
+            <a href="menu-management.html">Menu management</a>
+            <a href="customers.html">Customers</a>
+          </nav>
+
+          <a class="admin-topbar-site" href="../../index.html">
+            View customer site <span aria-hidden="true">↗</span>
+          </a>
+        </header>
+
+        <!-- Page heading -->
+        <section class="page-header">
+          <div>
+            <p class="page-eyebrow">RESTAURANT OVERVIEW</p>
+            <h1 class="page-title">Dashboard</h1>
+            <p class="page-description">
+              Welcome back! Here's what's happening at your restaurant.
+            </p>
+          </div>
+
+          <div class="dashboard-date">
+            <span class="date-label">REPORT PERIOD</span>
+            <strong>Today's overview</strong>
+          </div>
+        </section>
+
+        <!-- Summary cards -->
+        <section class="stats-grid" aria-label="Restaurant statistics">
+
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Total Revenue</span>
+              <span class="stat-icon" aria-hidden="true">₨</span>
+            </div>
+            <p class="stat-value">Rs. 48,250</p>
+            <p class="stat-note">
+              <span class="stat-positive">+12.5%</span>
+              <span>vs. previous period</span>
+            </p>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Total Orders</span>
+              <span class="stat-icon" aria-hidden="true">▤</span>
+            </div>
+            <p class="stat-value">156</p>
+            <p class="stat-note">
+              <span class="stat-positive">+8.2%</span>
+              <span>vs. previous period</span>
+            </p>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Total Customers</span>
+              <span class="stat-icon" aria-hidden="true">♙</span>
+            </div>
+            <p class="stat-value">89</p>
+            <p class="stat-note">
+              <span class="stat-positive">+5.4%</span>
+              <span>vs. previous period</span>
+            </p>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Pending Orders</span>
+              <span class="stat-icon" aria-hidden="true">◷</span>
+            </div>
+            <p class="stat-value">12</p>
+            <p class="stat-note">
+              <span class="stat-warning">Needs attention</span>
+            </p>
+          </article>
+
+        </section>
+
+        <!-- Sales overview and order summary -->
+        <section class="dashboard-grid">
+
+          <article class="card sales-card">
+            <div class="section-heading">
+              <div>
+                <p class="page-eyebrow">PERFORMANCE</p>
+                <h2 class="card-title">Sales Overview</h2>
+                <p class="card-description">
+                  Illustrative revenue during the week
+                </p>
+              </div>
+
+              <span class="chart-period">This week</span>
+            </div>
+
+            <div class="chart-summary">
+              <strong>Rs. 48,250</strong>
+              <span class="stat-positive">+12.5%</span>
+            </div>
+
+            <!-- Static CSS bar chart: JavaScript can power it later -->
+            <div
+              class="sales-chart"
+              role="img"
+              aria-label="Illustrative weekly sales chart: Monday 45 percent, Tuesday 65 percent, Wednesday 52 percent, Thursday 80 percent, Friday 60 percent, Saturday 95 percent, Sunday 72 percent."
+            >
+              <div class="chart-y-axis" aria-hidden="true">
+                <span>10k</span>
+                <span>7.5k</span>
+                <span>5k</span>
+                <span>2.5k</span>
+                <span>0</span>
+              </div>
+
+              <div class="chart-plot">
+                <div class="chart-grid-lines" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="chart-bars">
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 45%"></div>
+                    <span>Mon</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 65%"></div>
+                    <span>Tue</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 52%"></div>
+                    <span>Wed</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 80%"></div>
+                    <span>Thu</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 60%"></div>
+                    <span>Fri</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar chart-bar-highlight" style="--bar-height: 95%"></div>
+                    <span>Sat</span>
+                  </div>
+                  <div class="chart-column">
+                    <div class="chart-bar" style="--bar-height: 72%"></div>
+                    <span>Sun</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card order-summary-card">
+            <div class="section-heading">
+              <div>
+                <p class="page-eyebrow">LIVE WORKLOAD</p>
+                <h2 class="card-title">Order Summary</h2>
+                <p class="card-description">Sample order breakdown</p>
+              </div>
+            </div>
+
+            <div class="order-summary-total">
+              <strong>156</strong>
+              <span>Total orders</span>
+            </div>
+
+            <div class="order-progress-list">
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Completed</span>
+                  <strong>98</strong>
+                </div>
+                <div class="progress-track">
+                  <span class="progress-fill progress-completed"></span>
+                </div>
+              </div>
+
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Processing</span>
+                  <strong>46</strong>
+                </div>
+                <div class="progress-track">
+                  <span class="progress-fill progress-processing"></span>
+                </div>
+              </div>
+
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Pending</span>
+                  <strong>12</strong>
+                </div>
+                <div class="progress-track">
+                  <span class="progress-fill progress-pending"></span>
+                </div>
+              </div>
+            </div>
+
+            <a href="orders.html" class="text-action">
+              View all orders <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </section>
+
+        <!-- Recent orders -->
+        <section class="card recent-orders-card">
+          <div class="section-heading">
+            <div>
+              <p class="page-eyebrow">ORDER ACTIVITY</p>
+              <h2 class="card-title">Recent Orders</h2>
+              <p class="card-description">
+                A quick look at the latest sample orders.
+              </p>
+            </div>
+
+            <a href="orders.html" class="text-action">
+              View all <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Items</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="order-id">#FF-1025</td>
+                  <td>Ahmad Khan</td>
+                  <td>2 items</td>
+                  <td>06 Nov 2026</td>
+                  <td>Rs. 1,250</td>
+                  <td><span class="status-badge status-completed">Completed</span></td>
+                </tr>
+
+                <tr>
+                  <td class="order-id">#FF-1024</td>
+                  <td>Sara Ali</td>
+                  <td>3 items</td>
+                  <td>06 Nov 2026</td>
+                  <td>Rs. 2,100</td>
+                  <td><span class="status-badge status-processing">Processing</span></td>
+                </tr>
+
+                <tr>
+                  <td class="order-id">#FF-1023</td>
+                  <td>Bilal Ahmed</td>
+                  <td>1 item</td>
+                  <td>05 Nov 2026</td>
+                  <td>Rs. 750</td>
+                  <td><span class="status-badge status-pending">Pending</span></td>
+                </tr>
+
+                <tr>
+                  <td class="order-id">#FF-1022</td>
+                  <td>Ayesha Malik</td>
+                  <td>4 items</td>
+                  <td>05 Nov 2026</td>
+                  <td>Rs. 2,850</td>
+                  <td><span class="status-badge status-completed">Completed</span></td>
+                </tr>
+
+                <tr>
+                  <td class="order-id">#FF-1021</td>
+                  <td>Hassan Raza</td>
+                  <td>2 items</td>
+                  <td>04 Nov 2026</td>
+                  <td>Rs. 1,050</td>
+                  <td><span class="status-badge status-cancelled">Cancelled</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Popular menu items -->
+        <section class="card popular-items-card">
+          <div class="section-heading">
+            <div>
+              <p class="page-eyebrow">MENU PERFORMANCE</p>
+              <h2 class="card-title">Popular Items</h2>
+              <p class="card-description">
+                Sample dishes performing well this week.
+              </p>
+            </div>
+
+            <a href="menu-management.html" class="text-action">
+              Manage menu <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="popular-items-grid">
+            <article class="popular-item">
+              <img
+                src="../../assets/images/food/classic-burger.jpg"
+                alt="Classic burger"
+                loading="lazy"
+              />
+              <div class="popular-item-info">
+                <h3>Cheese Burger</h3>
+                <p>42 orders</p>
+              </div>
+              <strong>Rs. 600</strong>
+            </article>
+
+            <article class="popular-item">
+              <img
+                src="../../assets/images/food/margherita-pizza.jpg"
+                alt="Margherita pizza"
+                loading="lazy"
+              />
+              <div class="popular-item-info">
+                <h3>Margherita Pizza</h3>
+                <p>35 orders</p>
+              </div>
+              <strong>Rs. 750</strong>
+            </article>
+
+            <article class="popular-item">
+              <img
+                src="../../assets/images/food/creamy-pasta.jpg"
+                alt="Creamy pasta"
+                loading="lazy"
+              />
+              <div class="popular-item-info">
+                <h3>Creamy Pasta</h3>
+                <p>28 orders</p>
+              </div>
+              <strong>Rs. 850</strong>
+            </article>
+          </div>
+        </section>
+
+        <!-- Demo data notice -->
+        <p class="demo-notice">
+          Demo dashboard · All figures and order records are illustrative.
+          This page is not connected to a live database.
+        </p>
+
+        <!-- Footer -->
+        <footer class="admin-footer">
+          <span>© 2026 FoodFlow · Restaurant management demo</span>
+          <a href="../../index.html">Customer website</a>
+        </footer>
+
+      </main>
+    </div>
+  </body>
 </html>
