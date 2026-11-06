@@ -1,0 +1,305 @@
+
+/* =====================================================
+   FOODFLOW ADMIN DASHBOARD
+   Tablet and mobile responsive styles
+   ===================================================== */
+
+/* ---------- Small desktop and laptop ---------- */
+
+@media (max-width: 1200px) {
+  .admin-main {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .sidebar {
+    flex-basis: 225px;
+    width: 225px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .popular-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+  .admin-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    overflow: visible;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 16px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 8px;
+    padding-bottom: 4px;
+    overflow-x: auto;
+  }
+
+  .sidebar-link {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .sidebar-link.active {
+    box-shadow: inset 0 -3px 0 var(--admin-accent);
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .admin-main {
+    padding: 0 22px 22px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary-card {
+    min-height: auto;
+  }
+
+  .popular-items-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+  .sidebar {
+    padding: 14px;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 13px;
+  }
+
+  .admin-brand-logo {
+    width: 33px;
+    height: 33px;
+  }
+
+  .admin-brand-name {
+    font-size: 16px;
+  }
+
+  .sidebar-nav {
+    gap: 6px;
+  }
+
+  .sidebar-link {
+    gap: 7px;
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .nav-icon {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .admin-main {
+    padding: 0 14px 18px;
+  }
+
+  .admin-topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .admin-topbar-brand {
+    font-size: 15px;
+  }
+
+  .admin-topbar-nav {
+    order: 3;
+    width: 100%;
+    gap: 17px;
+    overflow-x: auto;
+  }
+
+  .admin-topbar-nav a,
+  .admin-topbar-site {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0 20px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .page-description {
+    font-size: 12px;
+  }
+
+  .dashboard-date {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .stat-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .stat-value {
+    margin: 13px 0 7px;
+    font-size: 19px;
+  }
+
+  .stat-note {
+    font-size: 9px;
+  }
+
+  .dashboard-grid {
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .sales-card,
+  .order-summary-card,
+  .recent-orders-card,
+  .popular-items-card {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-description {
+    font-size: 11px;
+  }
+
+  .chart-summary strong {
+    font-size: 20px;
+  }
+
+  .sales-chart {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 7px;
+    height: 190px;
+  }
+
+  .chart-bars {
+    gap: 7px;
+  }
+
+  .chart-column {
+    font-size: 9px;
+  }
+
+  .chart-bar {
+    width: min(100%, 21px);
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .section-heading > .text-action {
+    flex: 0 0 auto;
+    font-size: 10px;
+  }
+
+  .popular-items-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .popular-item {
+    padding: 10px;
+  }
+
+  .table-wrap {
+    margin-top: 14px;
+  }
+
+  .data-table th {
+    padding: 11px 10px;
+    font-size: 9px;
+  }
+
+  .data-table td {
+    padding: 12px 10px;
+    font-size: 11px;
+  }
+
+  .demo-notice {
+    font-size: 10px;
+  }
+
+  .admin-footer {
+    flex-direction: column;
+    gap: 9px;
+    font-size: 10px;
+  }
+}
+
+/* ---------- Very small mobile ---------- */
+
+@media (max-width: 380px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .chart-period {
+    padding: 7px;
+    font-size: 9px;
+  }
+
+  .chart-bars {
+    gap: 4px;
+  }
+
+  .chart-column {
+    font-size: 8px;
+  }
+}
