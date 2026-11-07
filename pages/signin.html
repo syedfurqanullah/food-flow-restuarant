@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sign in to your FoodFlow customer account. Frontend demonstration only." />
+    <meta name="theme-color" content="#171713" />
+    <title>Sign In | FoodFlow</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/admin/login/main.css" />
+    <link rel="stylesheet" href="../css/admin/login/responsive.css" />
+    <link rel="stylesheet" href="../css/signin/main.css" />
+    <link rel="stylesheet" href="../css/signin/responsive.css" />
+  </head>
+  <body class="admin-login-body signin-body">
+    <main class="admin-login-shell signin-shell">
+      <section class="login-story" aria-labelledby="story-title">
+        <a class="admin-home-link" href="../index.html"><span aria-hidden="true">←</span> Back to FoodFlow</a>
+        <div class="login-story-copy">
+          <a class="login-brand" href="../index.html" aria-label="FoodFlow home">
+            <img src="../assets/images/logo/logo.jpg" alt="" width="48" height="48" />
+            <span>Food<span>Flow.</span></span>
+          </a>
+          <p class="admin-eyebrow">WELCOME BACK</p>
+          <h1 id="story-title">Your favourite food awaits.</h1>
+          <p>Sign in to find a meal you love and make your next FoodFlow order.</p>
+        </div>
+        <p class="story-caption">FoodFlow · Made for good moments</p>
+      </section>
+
+      <section class="login-panel signin-panel" aria-labelledby="signin-title">
+        <div class="login-card">
+          <p class="admin-eyebrow">CUSTOMER SIGN IN</p>
+          <h2 class="login-title" id="signin-title">Welcome back</h2>
+          <p class="login-subtitle">Enter your account details to continue.</p>
+
+          <form class="login-form" id="signin-form" action="#" method="post">
+            <div class="form-group">
+              <label for="identifier">Email address or phone number</label>
+              <input type="text" id="identifier" name="identifier" placeholder="you@example.com or +92 300 1234567" autocomplete="username" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required />
+            </div>
+            <label class="remember-me" for="remember-me">
+              <input type="checkbox" id="remember-me" name="rememberMe" />
+              <span>Remember me on this device</span>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Sign in <span aria-hidden="true">→</span></button>
+          </form>
+
+          <p class="login-demo-note">Frontend demo only. Sign in and authentication are not connected.</p>
+          <p class="auth-switch">New to FoodFlow? <a href="signup.html">Create an account</a></p>
+        </div>
+        <footer class="login-footer">
+          <span>© 2026 FoodFlow</span>
+          <a href="../index.html">Visit customer website</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

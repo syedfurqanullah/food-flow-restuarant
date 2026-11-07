@@ -1,0 +1,11 @@
+@media (max-width: 650px) {
+  .signin-panel {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-panel .form-group input {
+    font-size: 16px;
+  }
+}
