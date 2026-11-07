@@ -843,8 +843,8 @@
   position: absolute;
   z-index: -2;
   inset: 0;
-  background: url("../assets/images/about/restaurant-interior.jpg") center/cover
-    no-repeat;
+  background: url("../../../assets/images/about/restaurant-interior.jpg")
+    center/cover no-repeat;
   content: "";
 }
 

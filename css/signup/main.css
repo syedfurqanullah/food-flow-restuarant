@@ -1,0 +1,87 @@
+/* Customer signup uses the same split layout and controls as admin sign in. */
+.signup-body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+
+.signup-shell .login-story::before {
+  background-image: url("../../assets/images/about/restaurant-interior.jpg");
+}
+
+.signup-panel .login-card {
+  max-width: 460px;
+}
+
+.signup-panel .login-subtitle {
+  margin-bottom: 26px;
+}
+
+.signup-form .form-group {
+  margin-bottom: 16px;
+}
+
+.signup-panel .form-group input:invalid:not(:placeholder-shown) {
+  border-color: #c87970;
+}
+
+.signup-panel .field-hint {
+  display: block;
+  margin-top: 7px;
+  color: var(--color-text-subtle);
+  font-size: 0.76rem;
+}
+
+.signup-panel .terms-consent {
+  align-items: flex-start;
+  margin: 3px 0 22px;
+  line-height: 1.6;
+}
+
+.signup-panel .terms-consent input {
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+
+.signup-panel .terms-consent span {
+  color: var(--color-text-soft);
+}
+
+.signup-panel .terms-consent a {
+  color: var(--color-accent-light);
+  text-underline-offset: 3px;
+}
+
+.signup-panel .terms-consent a:hover {
+  text-decoration: underline;
+}
+
+.signup-panel .btn.btn-primary {
+  justify-content: space-between;
+}
+
+.signup-panel .login-demo-note {
+  margin-top: 16px;
+}
+
+.signup-panel .login-footer {
+  margin-top: 26px;
+}
+
+.signup-body .skip-link {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  transform: translateY(-160%);
+  border-radius: 6px;
+  background: var(--color-accent-bright);
+  color: var(--color-ink);
+}
+
+.signup-body .skip-link:focus {
+  transform: translateY(0);
+}
