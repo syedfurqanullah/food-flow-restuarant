@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFlow | Gallery</title>
+
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/gallery/main.css" />
+    <link rel="stylesheet" href="/css/gallery/responsive.css" />
+    <link rel="stylesheet" href="/css/home/main.css" />
+    <link rel="stylesheet" href="/css/home/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="index.html" aria-label="FoodFlow home">
+          <span class="brand-logo-frame"
+            ><img
+              class="brand-logo"
+              src="/assets/images/logo/logo.jpg"
+              alt=""
+              width="298"
+              height="208"
+          /></span>
+          <span class="brand-wordmark">Food<span>Flow.</span></span>
+        </a>
+
+        <input
+          class="nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-controls="site-navigation"
+          aria-label="Toggle navigation menu"
+        />
+        <label class="nav-toggle-label" for="nav-toggle">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </label>
+
+        <nav
+          class="site-navigation"
+          id="site-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="navigation-list">
+            <li>
+              <a class="navigation-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="navigation-link" href="/pages/menu.html">Menu</a></li>
+            <li>
+              <a class="navigation-link" href="/pages/about.html">About</a>
+            </li>
+            <li>
+              <a
+                class="navigation-link is-active"
+                href="/pages/gallery.html"
+                aria-current="page"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a class="navigation-link" href="/pages/contact.html">Contact</a>
+            </li>
+            <li class="mobile-signup-link">
+              <a class="button button-secondary" href="/pages/signup.html"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="cart-link"
+            href="pages/cart.html"
+            aria-label="Shopping cart, 0 items"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
+              />
+            </svg>
+            <span class="cart-label">Cart</span
+            ><span class="cart-count" aria-hidden="true">0</span>
+          </a>
+          <a class="button button-primary order-button" href="pages/menu.html"
+            >Order Online</a
+          >
+          <a
+            class="button button-secondary signup-button"
+            href="pages/signup.html"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="gallery-hero">
+        <p class="eyebrow">OUR FOOD COLLECTION</p>
+        <h1>A Feast for <span>Your Eyes</span></h1>
+        <p>
+          Explore our delicious creations, fresh ingredients, and memorable
+          dining experiences.
+        </p>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-heading">
+          <h2>Our Gallery</h2>
+          <p>Discover the taste, quality and passion behind every dish.</p>
+        </div>
+
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="starters">Starters</button>
+          <button class="filter-btn" data-filter="main">Main Course</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card" data-category="starters">
+            <img
+              src="/assets/images/gallery/gallery-1.jpg"
+              alt="Fresh restaurant starter"
+            />
+            <div class="image-overlay">
+              <span>Starters</span>
+              <h3>Fresh Beginnings</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="main">
+            <img
+              src="/assets/images/gallery/gallery-2.jpg"
+              alt="Fresh healthy meal"
+            />
+            <div class="image-overlay">
+              <span>Main Course</span>
+              <h3>Healthy Delight</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="desserts">
+            <img
+              src="/assets/images/gallery/gallery-3.jpg"
+              alt="Delicious ice cream dessert"
+            />
+            <div class="image-overlay">
+              <span>Desserts</span>
+              <h3>Sweet Moments</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="drinks">
+            <img
+              src="/assets/images/gallery/gallery-4.jpg"
+              alt="Refreshing drink"
+            />
+            <div class="image-overlay">
+              <span>Drinks</span>
+              <h3>Fresh Refreshment</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="main">
+            <img
+              src="/assets/images/gallery/gallery-5.jpg"
+              alt="Delicious main course"
+            />
+            <div class="image-overlay">
+              <span>Main Course</span>
+              <h3>Made with Passion</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="starters">
+            <img
+              src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=700"
+              alt="Restaurant appetizer"
+            />
+            <div class="image-overlay">
+              <span>Starters</span>
+              <h3>Perfect Bites</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="desserts">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
+              alt="Chocolate cake"
+            />
+            <div class="image-overlay">
+              <span>Desserts</span>
+              <h3>Chocolate Heaven</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="drinks">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700"
+              alt="Refreshing beverage"
+            />
+            <div class="image-overlay">
+              <span>Drinks</span>
+              <h3>Cool & Refreshing</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <div class="container footer-container">
+        <!-- Brand Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img
+              src="/assets/images/logo/logo.jpg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <span>Food<span class="footer-brand-highlight">Flow.</span></span>
+          </a>
+
+          <p>
+            Fresh ingredients, delicious meals and a better food ordering
+            experience. Made with care, served with love.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="footer-column">
+          <h2>Quick Links</h2>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/menu.html">Our Menu</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Support -->
+        <div class="footer-column">
+          <h2>Get In Touch</h2>
+
+          <ul class="footer-links">
+            <li>
+              <a href="pages/contact.html">Contact Our Team</a>
+            </li>
+            <li>
+              <a href="pages/contact.html">Customer Support</a>
+            </li>
+            <li>
+              <a href="pages/menu.html">Order Online</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-column">
+          <h2>Follow FoodFlow</h2>
+
+          <p class="footer-social-text">
+            Stay connected with us for food updates and exciting offers.
+          </p>
+
+          <a href="pages/contact.html" class="footer-social-link">
+            Connect With Us
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 FoodFlow. All rights reserved.</p>
+
+          <p>Made with care for food lovers.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
