@@ -1412,7 +1412,7 @@ ul {
   position: relative;
   display: block;
   min-width: 0;
-  aspect-ratio: 0.88 / 1;
+  aspect-ratio: 1.02 / 1;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--overlay-white-10);
@@ -1512,7 +1512,7 @@ ul {
 }
 
 .popular-grid {
-  gap: 20px;
+  gap: 18px;
 }
 
 .popular-section .food-card {
@@ -1525,7 +1525,7 @@ ul {
 
 .popular-section .food-image {
   width: 100%;
-  aspect-ratio: 1.18 / 1;
+  aspect-ratio: 1.36 / 1;
   object-fit: cover;
   transform: scale(1.025);
   transition:
@@ -1539,7 +1539,7 @@ ul {
 }
 
 .popular-section .food-info {
-  padding: 19px 18px 18px;
+  padding: 16px;
 }
 
 .food-tag {
@@ -1553,20 +1553,20 @@ ul {
 }
 
 .popular-section .food-info h3 {
-  margin: 0 0 8px;
-  font-size: 1.25rem;
+  margin: 0 0 7px;
+  font-size: 1.12rem;
   line-height: 1.25;
 }
 
 .popular-section .food-info p {
-  margin: 0 0 19px;
+  margin: 0 0 15px;
   color: var(--color-text-soft);
   font-size: 0.87rem;
   line-height: 1.6;
 }
 
 .popular-section .food-bottom {
-  padding-top: 14px;
+  padding-top: 12px;
   border-top: 1px solid var(--overlay-white-09);
 }
 
@@ -1724,7 +1724,7 @@ ul {
 /* INDIVIDUAL CARD */
 
 .why-card {
-  padding: 32px 24px;
+  padding: 24px 20px;
 
   background-color: var(--color-white);
 
@@ -2215,12 +2215,12 @@ body.menu-page {
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
-  padding: var(--card-padding);
+  padding: 22px;
   transition: var(--transition-smooth);
 }
 
 .testimonial-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   border-color: var(--color-primary);
   background-color: var(--color-bg-hover);
 }

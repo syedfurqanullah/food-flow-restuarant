@@ -1054,6 +1054,31 @@
   line-height: 1.6;
 }
 
+.auth-switch {
+  margin: 18px 0 0;
+  color: var(--color-text-soft);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: var(--color-accent-light);
+  font-weight: 700;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.auth-switch a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+
 .login-footer {
   display: flex;
   width: 100%;

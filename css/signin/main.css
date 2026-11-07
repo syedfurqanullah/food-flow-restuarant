@@ -1,0 +1,34 @@
+/* Customer sign-in shares the FoodFlow auth layout and controls. */
+.signin-shell .admin-home-link,
+.signin-shell .admin-home-link:visited {
+  color: var(--color-cream-light);
+}
+
+.signin-shell .admin-home-link:hover,
+.signin-shell .admin-home-link:focus-visible {
+  color: var(--color-accent-light);
+}
+
+.signin-body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+
+.signin-panel .login-subtitle {
+  margin-bottom: 30px;
+}
+
+.signin-panel .remember-me {
+  margin: 2px 0 22px;
+}
+
+.signin-panel .login-demo-note {
+  margin-top: 16px;
+}
+
+.signin-panel .auth-switch {
+  margin-top: 16px;
+}
