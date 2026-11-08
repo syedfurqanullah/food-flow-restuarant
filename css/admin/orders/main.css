@@ -1,0 +1,404 @@
+
+/* =========================================================
+   FOODFLOW ADMIN ORDERS
+   Main stylesheet
+   Purpose: Desktop orders management layout and components.
+========================================================= */
+
+/* ---------- 1. Global ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--admin-bg);
+    color: var(--admin-text);
+    font-family: var(--admin-font);
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+/* ---------- 2. Admin Layout ---------- */
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex: 0 0 250px;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    padding: 24px 16px;
+    background: var(--admin-dark);
+    overflow-y: auto;
+}
+
+/* ---------- 3. Sidebar ---------- */
+
+.brand {
+    margin-bottom: 38px;
+    padding: 0 8px;
+    color: var(--admin-text);
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand span {
+    color: var(--admin-accent);
+}
+
+.sidebar-label {
+    margin: 0 0 15px;
+    padding-left: 10px;
+    color: var(--admin-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a,
+.logout {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 12px 14px;
+    border-radius: 9px;
+    color: var(--admin-muted);
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: rgba(184, 154, 98, 0.14);
+    color: var(--admin-accent-hover);
+}
+
+.sidebar nav a.active {
+    box-shadow: inset 3px 0 0 var(--admin-accent);
+}
+
+.logout {
+    margin-top: auto;
+    border-top: 1px solid var(--admin-border);
+    border-radius: 0;
+    color: #d98b80;
+}
+
+/* ---------- 4. Main Content ---------- */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 0 32px 28px;
+}
+
+/* ---------- 5. Topbar ---------- */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 76px;
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.topbar h1 {
+    margin: 0;
+    color: var(--admin-text);
+    font-size: 25px;
+    letter-spacing: -0.5px;
+}
+
+.topbar p {
+    margin: 7px 0 0;
+    color: var(--admin-muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-profile strong,
+.admin-profile small {
+    display: block;
+}
+
+.admin-profile strong {
+    color: var(--admin-text);
+    font-size: 12px;
+}
+
+.admin-profile small {
+    margin-top: 5px;
+    color: var(--admin-muted);
+    font-size: 10px;
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 10px;
+    background: rgba(184, 154, 98, 0.16);
+    color: var(--admin-accent-hover);
+    font-weight: 700;
+}
+
+/* ---------- 6. Statistics ---------- */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--admin-border);
+    border-radius: var(--admin-radius);
+    background: var(--admin-card);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card span {
+    color: var(--admin-muted);
+    font-size: 12px;
+}
+
+.stat-card h2 {
+    margin: 13px 0 7px;
+    color: var(--admin-text);
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.stat-card small {
+    color: var(--admin-accent-hover);
+    font-size: 10px;
+}
+
+/* ---------- 7. Orders Section ---------- */
+
+.orders-section {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid var(--admin-border);
+    border-radius: var(--admin-radius);
+    background: var(--admin-card);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.section-heading {
+    margin-bottom: 24px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: var(--admin-text);
+    font-size: 18px;
+}
+
+.section-heading p {
+    margin: 8px 0 0;
+    color: var(--admin-muted);
+    font-size: 11px;
+}
+
+/* ---------- 8. Search and Filters ---------- */
+
+.orders-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.orders-toolbar input,
+.orders-toolbar select {
+    min-height: 43px;
+    padding: 11px 14px;
+    border: 1px solid var(--admin-border);
+    border-radius: 8px;
+    outline: none;
+    background: var(--admin-dark);
+    color: var(--admin-text);
+    font-size: 11px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orders-toolbar input {
+    width: min(360px, 100%);
+}
+
+.orders-toolbar select {
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.orders-toolbar input::placeholder {
+    color: var(--admin-muted);
+}
+
+.orders-toolbar input:focus,
+.orders-toolbar select:focus {
+    border-color: var(--admin-accent);
+    box-shadow: 0 0 0 3px var(--admin-accent-soft-ring);
+}
+
+/* ---------- 9. Orders Table ---------- */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--admin-border);
+    border-radius: 9px;
+}
+
+table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background: rgba(184, 154, 98, 0.08);
+}
+
+th {
+    padding: 15px 13px;
+    color: var(--admin-muted);
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+td {
+    padding: 16px 13px;
+    border-top: 1px solid var(--admin-border);
+    color: var(--admin-text);
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background: rgba(184, 154, 98, 0.05);
+}
+
+.order-id {
+    color: var(--admin-accent-hover);
+    font-weight: 700;
+}
+
+/* ---------- 10. Order Status ---------- */
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background: rgba(218, 166, 76, 0.13);
+    color: #dfb86f;
+}
+
+.status.preparing {
+    background: rgba(111, 151, 218, 0.13);
+    color: #8aafea;
+}
+
+.status.completed {
+    background: rgba(119, 189, 131, 0.13);
+    color: #8bd39a;
+}
+
+.status.cancelled {
+    background: rgba(190, 105, 90, 0.13);
+    color: #dc9285;
+}
+
+/* ---------- 11. Action Button ---------- */
+
+.action-btn {
+    min-height: 32px;
+    padding: 7px 12px;
+    border: 1px solid var(--admin-border);
+    border-radius: 7px;
+    background: transparent;
+    color: var(--admin-accent-hover);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.action-btn:hover {
+    border-color: var(--admin-accent);
+    background: var(--admin-accent);
+    color: #171713;
+}
+
+.action-btn:focus-visible {
+    outline: 2px solid var(--admin-accent-hover);
+    outline-offset: 3px;
+}
+
+/* ---------- 12. Empty State ---------- */
+
+.empty-message {
+    padding: 30px 15px;
+    color: var(--admin-muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ---------- 13. Accessibility ---------- */
+
+::selection {
+    background: var(--admin-accent);
+    color: var(--admin-dark);
+}
