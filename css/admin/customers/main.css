@@ -449,8 +449,9 @@
   height: 42px;
   flex: 0 0 42px;
   border: 1px solid var(--overlay-gold-55);
+  padding: 4px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .admin-brand-name {
   display: flex;
