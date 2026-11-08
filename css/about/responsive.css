@@ -1,0 +1,148 @@
+
+/* AH MAD ABOUT RESPONSIVE */
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 15px 3%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .story-section,
+    .chef-section {
+        padding: 65px 5%;
+        gap: 30px;
+    }
+
+    .story-content h2,
+    .chef-content h2 {
+        font-size: 30px;
+    }
+
+    .special-section,
+    .why-section {
+        padding: 65px 5%;
+    }
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+
+    .about-hero {
+        min-height: 420px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    .story-section,
+    .chef-section {
+        flex-direction: column;
+        padding: 55px 6%;
+    }
+
+    .story-image,
+    .story-content,
+    .chef-image,
+    .chef-content {
+        width: 100%;
+    }
+
+    .story-image img,
+    .chef-image img {
+        height: 300px;
+    }
+
+    .special-container,
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 30px;
+    }
+
+    .about-hero {
+        min-height: 370px;
+    }
+
+    .story-section,
+    .chef-section {
+        padding: 45px 5%;
+    }
+
+    .story-content h2,
+    .chef-content h2 {
+        font-size: 27px;
+    }
+
+    .story-stats {
+        gap: 18px;
+    }
+
+    .special-container,
+    .why-container,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .special-card img {
+        height: 220px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .footer {
+        padding: 40px 7% 20px;
+    }
+}
