@@ -2310,8 +2310,13 @@ body.menu-page {
 }
 
 .footer-logo img {
-  width: 46px;
-  height: 46px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  padding: 7px;
+  border: 1px solid var(--overlay-gold-amber-68);
+  background: var(--color-ink-soft);
   object-fit: contain;
   border-radius: 50%;
   mix-blend-mode: screen;

@@ -1,8 +1,13 @@
 ﻿<!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review sample orders and their status in the FoodFlow admin demonstration."
+    />
     <title>FoodFlow | Admin Orders</title>
 
     <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
@@ -63,8 +68,8 @@
       <main class="main-content">
         <header class="topbar">
           <div>
-            <h1>Orders Management</h1>
-            <p>Manage and track all restaurant orders.</p>
+            <h1>Order management</h1>
+            <p>Review sample orders and their current status.</p>
           </div>
 
           <div class="admin-profile">
@@ -81,7 +86,7 @@
           <div class="stat-card">
             <span>Total Orders</span>
             <h2 id="totalOrders">8</h2>
-            <small>All orders</small>
+            <small>Sample orders</small>
           </div>
 
           <div class="stat-card">
@@ -93,13 +98,13 @@
           <div class="stat-card">
             <span>Preparing</span>
             <h2 id="preparingOrders">2</h2>
-            <small>Currently in kitchen</small>
+            <small>Being prepared</small>
           </div>
 
           <div class="stat-card">
             <span>Completed</span>
             <h2 id="completedOrders">3</h2>
-            <small>Successfully delivered</small>
+            <small>Orders marked complete</small>
           </div>
         </section>
 
@@ -108,7 +113,7 @@
           <div class="section-heading">
             <div>
               <h2>Recent Orders</h2>
-              <p>View and manage customer orders.</p>
+              <p>Review sample orders and their details.</p>
             </div>
           </div>
 
@@ -116,11 +121,11 @@
             <input
               type="search"
               id="orderSearch"
-              placeholder="Search order ID or customer..."
+              placeholder="Search by order ID or customer"
             />
 
             <select id="statusFilter">
-              <option value="all">All Status</option>
+              <option value="all">All statuses</option>
               <option value="pending">Pending</option>
               <option value="preparing">Preparing</option>
               <option value="completed">Completed</option>
@@ -149,7 +154,7 @@
             </table>
           </div>
 
-          <p id="emptyMessage" class="empty-message" hidden>No orders found.</p>
+          <p id="emptyMessage" class="empty-message" hidden>No orders match your search.</p>
         </section>
       </main>
     </div>
