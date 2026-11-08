@@ -1,0 +1,77 @@
+@media (max-width: 900px) {
+  .account-layout {
+    grid-template-columns: 1fr;
+  }
+  .account-sidebar {
+    position: static;
+  }
+  .account-nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .account-nav a {
+    justify-content: center;
+    padding-inline: 7px;
+  }
+  .account-signout {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .account-chip > span:last-child {
+    display: none;
+  }
+  .account-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .account-stats,
+  .account-lower {
+    grid-template-columns: 1fr;
+  }
+  .account-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .order-row {
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+    gap: 11px;
+  }
+  .order-meta {
+    grid-column: 2;
+    justify-items: start;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .text-action {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  .panel-card {
+    padding: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .account-main {
+    padding-top: 25px;
+  }
+  .account-hero {
+    padding: 22px 18px;
+  }
+  .account-hero h1 {
+    font-size: 2rem;
+  }
+  .account-stats article {
+    padding: 18px;
+  }
+  .profile-card dl div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .account-nav a,
+  .account-signout {
+    transition: none;
+  }
+}
