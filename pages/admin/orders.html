@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodFlow | Admin Orders</title>
 
-
     <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
 
     <link rel="stylesheet" href="/css/admin/orders/main.css" />
     <link rel="stylesheet" href="/css/admin/orders/responsive.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
-
-  
   </head>
   <body>
     <div class="admin-layout">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <a href="admin-dashboard.html" class="brand"> Food<span>Flow</span> </a>
+        <a href="dashboard.html" class="sidebar-brand">
+          <img
+            class="admin-brand-logo"
+            src="../../assets/images/logo/logo.jpg"
+            alt="FoodFlow logo"
+          />
+          <span class="admin-brand-name"> FoodFlow <span>Admin</span> </span>
+        </a>
 
-        <p class="sidebar-label">MAIN MENU</p>
-
-           <nav class="sidebar-nav" aria-label="Admin navigation">
-          <a
-            href="dashboard.html"
-            class="sidebar-link active"
-            aria-current="page"
-          >
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html" class="sidebar-link" aria-current="page">
             <span class="nav-icon" aria-hidden="true">▦</span>
             Dashboard
           </a>
 
-          <a href="orders.html" class="sidebar-link">
+          <a href="orders.html" class="sidebar-link active">
             <span class="nav-icon" aria-hidden="true">▤</span>
             Orders
           </a>
@@ -57,7 +55,6 @@
             Logout
           </a>
         </nav>
-
 
         <a href="../login.html" class="logout">Logout</a>
       </aside>
@@ -156,7 +153,5 @@
         </section>
       </main>
     </div>
-
-   
   </body>
 </html>
