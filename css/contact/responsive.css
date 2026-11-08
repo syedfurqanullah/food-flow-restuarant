@@ -1,0 +1,227 @@
+
+/* ==================================================
+   AHMAD CONTACT RESPONSIVE - FOODFLOW
+================================================== */
+
+/* LARGE DESKTOP */
+
+@media (min-width: 1400px) {
+
+    .contact-section,
+    .message-section,
+    .map-section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .contact-hero {
+        min-height: 450px;
+    }
+
+}
+
+/* LAPTOP */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 15px 3%;
+    }
+
+    .nav-links {
+        gap: 17px;
+    }
+
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .message-wrapper {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .message-info {
+        padding: 40px 25px;
+    }
+
+    .message-form-box {
+        padding: 40px 25px;
+    }
+
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .contact-hero {
+        min-height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .section-heading h2,
+    .map-heading h2 {
+        font-size: 30px;
+    }
+
+    .message-section {
+        padding: 60px 5%;
+    }
+
+    .message-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .message-info {
+        padding: 45px 35px;
+    }
+
+    .message-form-box {
+        padding: 45px 35px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .cart-btn,
+    .login-btn {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .contact-hero {
+        min-height: 260px;
+        padding: 30px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 50px 18px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-card {
+        padding: 25px 15px;
+    }
+
+    .section-heading h2,
+    .map-heading h2 {
+        font-size: 27px;
+    }
+
+    .message-section {
+        padding: 40px 15px;
+    }
+
+    .message-info {
+        padding: 35px 22px;
+    }
+
+    .message-info h2 {
+        font-size: 30px;
+    }
+
+    .message-form-box {
+        padding: 35px 20px;
+    }
+
+    .form-title h2 {
+        font-size: 27px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .map-section {
+        padding: 45px 15px;
+    }
+
+    .map-container {
+        height: 280px;
+    }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 350px) {
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .message-info h2 {
+        font-size: 26px;
+    }
+
+    .message-info,
+    .message-form-box {
+        padding: 28px 15px;
+    }
+
+    .map-container {
+        height: 240px;
+    }
+
+}

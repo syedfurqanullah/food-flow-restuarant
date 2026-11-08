@@ -1,0 +1,491 @@
+
+/* ==================================================
+   AHMAD CONTACT PAGE - FOODFLOW
+================================================== */
+
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #100e0b;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #090807;
+    border-bottom: 1px solid #393024;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: #ffc64b;
+    font-size: 27px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc64b;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-btn,
+.login-btn {
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.cart-btn {
+    color: #ffc64b;
+    border: 1px solid #ffc64b;
+}
+
+.login-btn {
+    background: #ffc64b;
+    color: #100e0b;
+    border: 1px solid #ffc64b;
+}
+
+.cart-btn:hover {
+    background: #ffc64b;
+    color: #100e0b;
+}
+
+.login-btn:hover {
+    background: #e6a927;
+}
+
+/* HERO BANNER */
+
+.contact-hero {
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.82)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tag,
+.message-tag,
+.small-heading {
+    color: #ffc64b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    margin: 18px 0;
+}
+
+.hero-content h1 span,
+.section-heading h2 span,
+.message-info h2 span,
+.form-title h2 span,
+.map-heading h2 span {
+    color: #ffc64b;
+}
+
+.hero-content p {
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* CONTACT CARDS */
+
+.contact-section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #bdb8af;
+    font-size: 15px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.contact-card {
+    background: #1b1813;
+    border: 1px solid #393024;
+    border-radius: 12px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffc64b;
+    box-shadow: 0 8px 25px rgba(255,198,75,.08);
+}
+
+.contact-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.contact-card h3 {
+    color: #ffc64b;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #d2cec6;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* UNIQUE MESSAGE SECTION */
+
+.message-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: #100e0b;
+}
+
+.message-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    background: #1b1813;
+    border: 1px solid #393024;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* LEFT INFORMATION */
+
+.message-info {
+    padding: 55px 40px;
+
+    background:
+        linear-gradient(rgba(9,8,7,.91), rgba(9,8,7,.94)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.message-tag {
+    display: inline-block;
+    border: 1px solid #ffc64b;
+    padding: 8px 15px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.message-info h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.message-info > p {
+    color: #c5bfb5;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.message-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.message-detail {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.detail-icon {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc64b;
+    color: #100e0b;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.message-detail h4 {
+    color: #ffc64b;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.message-detail p {
+    color: #d2cec6;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.message-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    padding: 17px;
+    background: rgba(255,198,75,.08);
+    border-left: 3px solid #ffc64b;
+    border-radius: 5px;
+}
+
+.message-note span {
+    font-size: 25px;
+}
+
+.message-note p {
+    color: #e8dfcf;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* RIGHT FORM */
+
+.message-form-box {
+    padding: 55px 45px;
+    background: #1b1813;
+}
+
+.form-title {
+    margin-bottom: 35px;
+}
+
+.form-title h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-title p {
+    color: #aaa49a;
+    font-size: 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    color: #f4e8d0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: #100e0b;
+    color: #ffffff;
+    border: 1px solid #393024;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffc64b;
+    box-shadow: 0 0 0 3px rgba(255,198,75,.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888176;
+}
+
+.form-group textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+.message-submit {
+    width: 100%;
+    padding: 16px 22px;
+    background: #ffc64b;
+    color: #100e0b;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.message-submit span {
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+.message-submit:hover {
+    background: #e6a927;
+    transform: translateY(-3px);
+}
+
+/* GOOGLE MAP */
+
+.map-section {
+    width: 100%;
+    padding: 75px 7%;
+    background: #100e0b;
+}
+
+.map-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.map-heading h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.map-heading p {
+    color: #bdb8af;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #ffc64b;
+    border-radius: 12px;
+    background: #1b1813;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #090807;
+    border-top: 1px solid #393024;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer h2 {
+    color: #ffc64b;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #bdb8af;
+    font-size: 14px;
+    line-height: 1.8;
+}
