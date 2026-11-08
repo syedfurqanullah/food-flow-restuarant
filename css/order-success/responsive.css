@@ -1,0 +1,136 @@
+/* =====================================
+   ORDER SUCCESS RESPONSIVE
+===================================== */
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .success-main {
+        padding: 45px 18px;
+    }
+
+    .success-card {
+        max-width: 600px;
+        padding: 35px 25px;
+    }
+
+    .success-card h1 {
+        font-size: 28px;
+    }
+
+    .header-container {
+        min-height: 75px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        padding: 0 16px;
+        min-height: 70px;
+    }
+
+    .brand {
+        font-size: 19px;
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-link {
+        font-size: 13px;
+    }
+
+    .success-main {
+        padding: 30px 13px;
+    }
+
+    .success-card {
+        padding: 30px 17px;
+        border-radius: 15px;
+    }
+
+    .success-icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 20px;
+    }
+
+    .success-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .success-card h1 {
+        font-size: 24px;
+    }
+
+    .success-description {
+        font-size: 13px;
+    }
+
+    .order-number-box {
+        padding: 20px 10px;
+    }
+
+    .order-number-box h2 {
+        font-size: 23px;
+    }
+
+    .order-summary {
+        padding: 18px 14px;
+    }
+
+    .summary-heading h2 {
+        font-size: 16px;
+    }
+
+    .summary-row {
+        font-size: 13px;
+    }
+
+    .total-row {
+        font-size: 14px;
+    }
+
+    .total-row strong:last-child {
+        font-size: 17px;
+    }
+
+    .continue-btn,
+    .back-home-btn {
+        min-height: 48px;
+        font-size: 13px;
+    }
+
+    .success-footer p {
+        font-size: 11px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 350px) {
+
+    .success-card {
+        padding: 25px 12px;
+    }
+
+    .success-card h1 {
+        font-size: 21px;
+    }
+
+    .summary-row {
+        font-size: 12px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+}
