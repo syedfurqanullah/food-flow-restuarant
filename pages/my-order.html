@@ -1,13 +1,311 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Orders | FoodFlow</title>
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/my-order/main.css" />
-    <link rel="stylesheet" href="../css/my-order/responsive.css" />
-  </head>
 
-  <body></body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11100E">
+
+    <title>My Orders | FoodFlow</title>
+
+     <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="../css/my-order/main.css">
+    <link rel="stylesheet" href="../css/my-order/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="my-orders-header">
+        <div class="my-orders-container">
+
+            <a href="../index.html" class="my-orders-logo">
+                FOOD<span>FLOW</span>
+            </a>
+
+            <nav class="my-orders-nav">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#menu">Menu</a>
+                <a href="cart.html">Cart</a>
+                <a href="my-orders.html" class="active">My Orders</a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- MAIN START -->
+    <main class="my-orders-main">
+
+        <div class="my-orders-container">
+
+            <!-- PAGE HEADING -->
+            <section class="my-orders-heading">
+
+                <div>
+                    <p class="my-orders-subtitle">YOUR FOOD JOURNEY</p>
+
+                    <h1>My <span>Orders</span></h1>
+
+                    <p class="my-orders-description">
+                        Track your orders and explore your previous purchases.
+                    </p>
+                </div>
+
+                <a href="../index.html#menu" class="order-again-btn">
+                    + Order Again
+                </a>
+
+            </section>
+
+
+            <!-- ORDERS LIST -->
+            <section class="orders-list">
+
+                <div class="orders-section-heading">
+                    <h2>Recent Orders</h2>
+                    <span>3 Orders</span>
+                </div>
+
+
+                <!-- ORDER 1 -->
+                <article class="order-card">
+
+                    <div class="order-card-top">
+
+                        <div class="order-id">
+                            <span>ORDER ID</span>
+                            <h3>#FF-2026-001</h3>
+                        </div>
+
+                        <span class="order-status delivered">
+                            Delivered
+                        </span>
+
+                    </div>
+
+                    <div class="order-card-details">
+
+                        <div class="order-detail">
+                            <span>Order Date</span>
+                            <strong>09 Nov 2026</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Items</span>
+                            <strong>2 Items</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Total Amount</span>
+                            <strong class="order-price">Rs. 1,200</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="order-card-bottom">
+
+                        <p>Classic Burger, French Fries</p>
+
+                        <a href="#" class="view-details-btn">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ORDER 2 -->
+                <article class="order-card">
+
+                    <div class="order-card-top">
+
+                        <div class="order-id">
+                            <span>ORDER ID</span>
+                            <h3>#FF-2026-002</h3>
+                        </div>
+
+                        <span class="order-status preparing">
+                            Preparing
+                        </span>
+
+                    </div>
+
+                    <div class="order-card-details">
+
+                        <div class="order-detail">
+                            <span>Order Date</span>
+                            <strong>08 Nov 2026</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Items</span>
+                            <strong>3 Items</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Total Amount</span>
+                            <strong class="order-price">Rs. 1,850</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="order-card-bottom">
+
+                        <p>Pizza, Cold Drink, Chicken Wings</p>
+
+                        <a href="#" class="view-details-btn">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ORDER 3 -->
+                <article class="order-card">
+
+                    <div class="order-card-top">
+
+                        <div class="order-id">
+                            <span>ORDER ID</span>
+                            <h3>#FF-2026-003</h3>
+                        </div>
+
+                        <span class="order-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+                    <div class="order-card-details">
+
+                        <div class="order-detail">
+                            <span>Order Date</span>
+                            <strong>07 Nov 2026</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Items</span>
+                            <strong>1 Item</strong>
+                        </div>
+
+                        <div class="order-detail">
+                            <span>Total Amount</span>
+                            <strong class="order-price">Rs. 750</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="order-card-bottom">
+
+                        <p>Special Chicken Burger</p>
+
+                        <a href="#" class="view-details-btn">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- EMPTY ORDERS SECTION -->
+            <section class="empty-orders" hidden>
+
+                <div class="empty-orders-icon">🛍️</div>
+
+                <h2>No Orders Yet!</h2>
+
+                <p>
+                    You haven't placed any orders yet.
+                    Explore our menu and discover something delicious.
+                </p>
+
+                <a href="../index.html#menu" class="order-again-btn">
+                    Explore Menu
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+    <!-- MAIN END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="foodflow-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="footer-logo">
+                    FOOD<span>FLOW</span>
+                </a>
+
+                <p>
+                    Delicious food, unforgettable taste.
+                    Bringing happiness to your table with every order.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+                <a href="../index.html#menu">Our Menu</a>
+                <a href="cart.html">My Cart</a>
+                <a href="my-orders.html">My Orders</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Customer Support</h3>
+
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Get In Touch</h3>
+
+                <p>Email: support@foodflow.com</p>
+                <p>Website: www.foodflow.com</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 FOODFLOW. All Rights Reserved.</p>
+
+            <p>
+                Made with <span>♥</span> for Food Lovers.
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
 </html>
