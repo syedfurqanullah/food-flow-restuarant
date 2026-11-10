@@ -1,6 +1,7 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -20,7 +21,7 @@
     <main class="admin-login-shell">
       <section class="login-story" aria-labelledby="story-title">
         <a class="admin-home-link" href="../../index.html"
-          ><span aria-hidden="true">←</span> Back to FoodFlow</a
+          ><span aria-hidden="true">&larr;</span> Back to FoodFlow</a
         >
         <div class="login-story-copy">
           <a
@@ -37,13 +38,13 @@
             <span>Food<span>Flow.</span></span>
           </a>
           <p class="admin-eyebrow">RESTAURANT MANAGEMENT</p>
-          <h1 id="story-title">Good service starts behind the scenes.</h1>
+          <h1 id="story-title">Restaurant management, in one place.</h1>
           <p>
-            Manage the daily details that help every FoodFlow meal reach the
-            table with care.
+            Review orders, menu items and restaurant settings from the team
+            portal.
           </p>
         </div>
-        <p class="story-caption">FoodFlow · Restaurant team portal</p>
+        <p class="story-caption">FoodFlow &middot; Restaurant team portal</p>
       </section>
 
       <section class="login-panel" aria-labelledby="login-title">
@@ -51,17 +52,17 @@
           <p class="admin-eyebrow">TEAM ACCESS</p>
           <h2 class="login-title" id="login-title">Welcome back</h2>
           <p class="login-subtitle">
-            Sign in to continue to your restaurant dashboard.
+            Enter your team details to continue to the dashboard.
           </p>
 
-          <form class="login-form" id="login-form" action="#" method="post">
+          <form class="login-form" id="login-form" action="dashboard.html" method="get" novalidate>
             <div class="form-group">
               <label for="identifier">Email address or phone number</label>
               <input
                 type="text"
                 id="identifier"
                 name="identifier"
-                placeholder="you@example.com or +92 300 1234567"
+                placeholder="Enter email or phone number"
                 autocomplete="username"
                 required
               />
@@ -81,8 +82,8 @@
               <input type="checkbox" id="remember" name="remember" />
               <span>Remember me on this device</span>
             </label>
-            <button type="submit" class="btn btn-primary btn-block" disabled>
-              Sign in <span aria-hidden="true">→</span>
+            <button type="submit" class="btn btn-primary btn-block">
+              Sign in <span aria-hidden="true">&rarr;</span>
             </button>
           </form>
 
@@ -92,7 +93,7 @@
           <p class="auth-switch">New to FoodFlow? <a href="../signup.html">Create an account</a></p>
         </div>
         <footer class="login-footer">
-          <span>© 2026 FoodFlow</span>
+          <span>&copy; 2026 FoodFlow</span>
           <a href="../../index.html">Visit customer website</a>
         </footer>
       </section>
