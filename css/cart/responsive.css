@@ -243,8 +243,9 @@
 }
 
 .cart-page .cart-item img {
-  width: 76px;
-  height: 70px;
+  width: 68px;
+  height: 68px;
+  flex: 0 0 68px;
   border-radius: var(--radius-sm);
 }
 

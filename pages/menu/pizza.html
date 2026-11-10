@@ -1,0 +1,254 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse FoodFlow's sample pizza menu, with Margherita, mushroom and pepperoni pizzas."
+    />
+    <meta name="theme-color" content="#171713" />
+    <title>Pizza Menu | FoodFlow</title>
+    <link rel="stylesheet" href="../../css/variables.css" />
+    <link rel="stylesheet" href="../../css/home/main.css" />
+    <link rel="stylesheet" href="../../css/menu/main.css" />
+    <link rel="stylesheet" href="../../css/home/responsive.css" />
+    <link rel="stylesheet" href="../../css/menu/responsive.css" />
+  </head>
+
+  <body class="menu-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="../../index.html" aria-label="FoodFlow home">
+          <span class="brand-logo-frame"
+            ><img
+              class="brand-logo"
+              src="../../assets/images/logo/logo.jpg"
+              alt=""
+              width="298"
+              height="208"
+          /></span>
+          <span class="brand-wordmark">Food<span>Flow.</span></span>
+        </a>
+        <input
+          class="nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-controls="site-navigation"
+          aria-label="Toggle navigation menu"
+        />
+        <label class="nav-toggle-label" for="nav-toggle"
+          ><span class="menu-icon" aria-hidden="true"></span
+          ><span class="visually-hidden">Toggle navigation</span></label
+        >
+        <nav
+          class="site-navigation"
+          id="site-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="navigation-list">
+            <li><a class="navigation-link" href="../../index.html">Home</a></li>
+            <li>
+              <a
+                class="navigation-link is-active"
+                href="menu.html"
+                aria-current="page"
+                >Menu</a
+              >
+            </li>
+            <li><a class="navigation-link" href="../about.html">About Us</a></li>
+            <li>
+              <a class="navigation-link" href="../gallery.html">Gallery</a>
+            </li>
+            <li><a class="navigation-link" href="../contact.html">Contact</a></li>
+            <li class="mobile-signup-link">
+              <a class="button button-secondary" href="../signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="../cart.html" aria-label="Shopping cart"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
+              /></svg
+            ><span class="cart-label">Cart</span
+            ><span class="cart-count" aria-hidden="true">0</span></a
+          >
+          <a class="button button-primary order-button" href="#menu-items"
+            >Order Online</a
+          >
+          <a class="button button-secondary signup-button" href="../signup.html"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="menu-hero" aria-labelledby="menu-title">
+        <div
+          class="menu-hero-image"
+          role="img"
+          aria-label="A selection of freshly prepared FoodFlow dishes"
+        ></div>
+        <div class="container menu-hero-content">
+          <p class="menu-eyebrow">FOODFLOW KITCHEN</p>
+          <h1 id="menu-title">Explore our<br /><span>pizza menu.</span></h1>
+          <p>
+            Choose Margherita, mushroom or pepperoni pizza from our sample
+            selection. Ask the restaurant about ingredients and allergens.
+          </p>
+          <a class="button button-primary" href="#menu-items"
+            >Browse pizzas <span aria-hidden="true">&darr;</span></a
+          >
+          <p class="menu-demo-note">
+            Sample menu for a frontend demonstration. Prices and availability
+            require restaurant confirmation.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="menu-section"
+        id="menu-items"
+        aria-labelledby="menu-section-title"
+      >
+        <div class="container">
+          <div class="menu-intro">
+            <div>
+              <p class="menu-eyebrow">PIZZA SELECTION</p>
+              <h2 id="menu-section-title">Choose a pizza</h2>
+              <p>
+                Browse our sample pizza selection. For ingredient or allergen
+                details, check with the restaurant.
+              </p>
+            </div>
+            <form class="menu-search" role="search" action="#menu-items">
+              <label class="visually-hidden" for="menu-search"
+                >Search menu (visual demo)</label
+              >
+              <span class="menu-search-icon" aria-hidden="true"></span
+              ><input
+                id="menu-search"
+                type="search"
+                placeholder="Search dishes..."
+                autocomplete="off"
+              />
+            </form>
+          </div>
+                    <nav class="menu-categories" aria-label="Menu categories">
+            <a href="menu.html">All dishes</a>
+            <a href="burgers.html">Burgers</a>
+            <a href="pizza.html">Pizza</a>
+            <a href="pasta.html">Pasta</a>
+            <a href="bbq.html">BBQ</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="desserts.html">Desserts</a>
+          </nav>
+
+          <div
+            class="menu-category-block"
+            id="all-dishes"
+            aria-labelledby="all-title"
+          >
+            <div class="menu-category-heading">
+              <h2 id="all-title">Pizza</h2>
+              <span>3 menu items</span>
+            </div>
+            <div class="food-container">
+              <article class="food-card" id="margherita-pizza">
+                <img src="../../assets/images/menu/pizza/margherita-pizza.webp" alt="Margherita Pizza" width="640" height="430" loading="lazy" />
+                <div class="food-info">
+                  <p class="food-kicker">PIZZA</p>
+                  <h3>Margherita Pizza</h3>
+                  <p>A baked pizza base topped with tomato sauce, mozzarella and basil.</p>
+                  <p class="food-allergens"><span>Dietary info</span> Confirm ingredients and preparation with the restaurant.</p>
+                  <div class="food-details">
+                    <data value="750">Rs. 750</data><button type="button" aria-label="Add Margherita Pizza to cart (demo)" disabled><svg class="cart-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M2 3h2l2.2 11.2a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 1.9-1.4L22 8H5"/></svg><span>Add to cart</span></button>
+                  </div>
+                </div>
+              </article>
+              <article class="food-card" id="mushroom-pizza">
+                <img src="../../assets/images/menu/pizza/mushroom-pizza.webp" alt="Mushroom Pizza" width="640" height="430" loading="lazy" />
+                <div class="food-info">
+                  <p class="food-kicker">PIZZA</p>
+                  <h3>Mushroom Pizza</h3>
+                  <p>Mushrooms, mozzarella and herbs layered over a bed of tomato sauce.</p>
+                  <p class="food-allergens"><span>Dietary info</span> Confirm ingredients and preparation with the restaurant.</p>
+                  <div class="food-details">
+                    <data value="850">Rs. 850</data><button type="button" aria-label="Add Mushroom Pizza to cart (demo)" disabled><svg class="cart-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M2 3h2l2.2 11.2a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 1.9-1.4L22 8H5"/></svg><span>Add to cart</span></button>
+                  </div>
+                </div>
+              </article>
+              <article class="food-card" id="pepperoni-pizza">
+                <img src="../../assets/images/menu/pizza/pepperoni-pizza.webp" alt="Pepperoni Pizza" width="640" height="430" loading="lazy" />
+                <div class="food-info">
+                  <p class="food-kicker">PIZZA</p>
+                  <h3>Pepperoni Pizza</h3>
+                  <p>Pepperoni and mozzarella served on a classic tomato base.</p>
+                  <p class="food-allergens"><span>Dietary info</span> Confirm ingredients and preparation with the restaurant.</p>
+                  <div class="food-details">
+                    <data value="950">Rs. 950</data><button type="button" aria-label="Add Pepperoni Pizza to cart (demo)" disabled><svg class="cart-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M2 3h2l2.2 11.2a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 1.9-1.4L22 8H5"/></svg><span>Add to cart</span></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo"
+            ><img
+              src="../../assets/images/logo/logo.jpg"
+              alt=""
+              width="48"
+              height="48"
+            /><span
+              >Food<span class="footer-brand-highlight">Flow.</span></span
+            ></a
+          >
+          <p>
+            Fresh ingredients, delicious meals and a better food ordering
+            experience. Made with care, served with love.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h2>Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="menu.html" aria-current="page">Our Menu</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Get In Touch</h2>
+          <ul class="footer-links">
+            <li><a href="../contact.html">Contact Our Team</a></li>
+            <li><a href="../contact.html">Customer Support</a></li>
+            <li><a href="menu.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Explore FoodFlow</h2>
+          <p class="footer-social-text">
+            Browse the sample menu to see the dishes featured on this site.
+          </p>
+          <a href="menu.html" class="footer-social-link">Explore the menu</a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 FoodFlow. All rights reserved.</p>
+          <p>Made with care for food lovers.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
