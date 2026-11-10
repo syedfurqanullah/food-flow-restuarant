@@ -362,3 +362,110 @@ a {
     padding-top: 20px;
     text-align: center;
 }
+
+/* Editorial about-page refinement */
+.about-page .about-hero {
+    min-height: clamp(390px, 52vw, 580px);
+    background:
+        linear-gradient(90deg, rgba(17, 16, 14, 0.92), rgba(17, 16, 14, 0.48)),
+        url("../../assets/images/about/restaurant-interior.jpg") center / cover no-repeat;
+    text-align: left;
+}
+
+.about-page .hero-overlay {
+    width: min(100%, 620px);
+    margin-right: auto;
+}
+
+.about-page .hero-overlay h1 {
+    max-width: 11ch;
+    font-size: clamp(2.65rem, 5.5vw, 4.9rem);
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+.about-page .hero-btn,
+.about-page .chef-btn {
+    border-radius: 999px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
+}
+
+.about-page .story-section,
+.about-page .chef-section {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+    padding: clamp(70px, 9vw, 120px) 0;
+    gap: clamp(35px, 6vw, 80px);
+}
+
+.about-page .story-image img,
+.about-page .chef-image img {
+    height: clamp(320px, 38vw, 500px);
+    border: 1px solid rgba(255, 198, 75, 0.3);
+    border-radius: 2px;
+    box-shadow: 18px 18px 0 rgba(255, 198, 75, 0.09);
+}
+
+.about-page .story-content h2,
+.about-page .chef-content h2 {
+    font-size: clamp(2rem, 3.5vw, 3.15rem);
+    letter-spacing: -0.04em;
+}
+
+.about-page .story-stats {
+    gap: 0;
+    margin-top: 38px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.about-page .story-stats > div {
+    flex: 1;
+    padding: 18px 16px 18px 0;
+}
+
+.about-page .story-stats > div + div {
+    padding-left: 16px;
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.about-page .story-stats h3 {
+    font-size: clamp(1.65rem, 2.5vw, 2.25rem);
+}
+
+.about-page .special-section {
+    padding: clamp(70px, 9vw, 110px) max(24px, calc((100% - 1180px) / 2));
+    background: #17130e;
+}
+
+.about-page .special-container {
+    gap: 1px;
+    background: rgba(255, 198, 75, 0.2);
+}
+
+.about-page .special-card {
+    border-radius: 0;
+    background: #211b14;
+    transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+
+.about-page .special-card:hover {
+    transform: translateY(-7px);
+    background: #282017;
+    box-shadow: 0 18px 28px rgba(0, 0, 0, 0.25);
+}
+
+.about-page .special-card img {
+    height: 210px;
+    filter: saturate(0.8) contrast(1.05);
+    transition: transform 260ms ease, filter 260ms ease;
+}
+
+.about-page .special-card:hover img {
+    transform: scale(1.045);
+    filter: saturate(1) contrast(1.05);
+}
+
+.about-page .special-info {
+    padding: 28px;
+}

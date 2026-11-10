@@ -264,6 +264,16 @@
     color: #FFF8ED;
 }
 
+/* Replace legacy malformed arrow text with a consistent text action. */
+.view-details-btn {
+    font-size: 0;
+}
+
+.view-details-btn::after {
+    content: "View details →";
+    font-size: 13px;
+}
+
 
 /* EMPTY ORDERS */
 
@@ -389,6 +399,20 @@
 
 .footer-bottom span {
     color: #D99546;
+}
+
+.my-orders-page .home-footer .footer-bottom p {
+    font-size: 0;
+}
+
+.my-orders-page .home-footer .footer-bottom p:first-child::before {
+    content: "© 2026 FoodFlow. All rights reserved.";
+    font-size: 12px;
+}
+
+.my-orders-page .home-footer .footer-bottom p:last-child::before {
+    content: "Made with care for food lovers.";
+    font-size: 12px;
 }
 
 /* SAMI MY ORDERS END */

@@ -46,147 +46,6 @@
 }
 
 
-/* ==========================================
-   HEADER
-========================================== */
-
-.checkout-page .site-header {
-    position: relative;
-    z-index: 20;
-    background: var(--dark);
-    border-bottom: 1px solid rgba(245, 166, 35, 0.25);
-}
-
-.checkout-page .header-container {
-    min-height: 82px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.checkout-page .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.checkout-page .brand-logo-frame {
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid var(--gold);
-    background: white;
-}
-
-.checkout-page .brand-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.checkout-page .brand-wordmark {
-    color: var(--cream);
-    font-size: 1.45rem;
-    font-weight: 800;
-    letter-spacing: -0.7px;
-}
-
-.checkout-page .brand-wordmark span {
-    color: var(--gold);
-}
-
-
-/* NAVIGATION */
-
-.checkout-page .site-navigation {
-    margin-left: auto;
-}
-
-.checkout-page .navigation-list {
-    display: flex;
-    align-items: center;
-    gap: 27px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.checkout-page .navigation-link {
-    color: #eee4d5;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: color 0.2s ease;
-}
-
-.checkout-page .navigation-link:hover,
-.checkout-page .navigation-link.is-active {
-    color: var(--gold);
-}
-
-.checkout-page .nav-toggle,
-.checkout-page .nav-toggle-label,
-.checkout-page .mobile-signup-link {
-    display: none;
-}
-
-
-/* HEADER BUTTONS */
-
-.checkout-page .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.checkout-page .cart-link {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--cream);
-    font-size: 0.9rem;
-    font-weight: 700;
-    padding: 9px 10px;
-}
-
-.checkout-page .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 9px 17px;
-    border-radius: 7px;
-    font-size: 0.87rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.25s ease;
-}
-
-.checkout-page .checkout-login-button {
-    color: #f5c66d;
-    border: 1px solid #b88b3c;
-    background: transparent;
-}
-
-.checkout-page .checkout-login-button:hover {
-    background: rgba(245, 166, 35, 0.12);
-    border-color: var(--gold);
-}
-
-.checkout-page .checkout-signup-button {
-    color: var(--dark);
-    background: var(--gold);
-    border: 1px solid var(--gold);
-}
-
-.checkout-page .checkout-signup-button:hover {
-    background: var(--gold-dark);
-    border-color: var(--gold-dark);
-}
 
 
 /* ==========================================
@@ -431,6 +290,38 @@
     font-size: 1.45rem;
 }
 
+/* Keep the HTML-only payment preview clear and free of legacy icon glyphs. */
+.payment-icon {
+    font-size: 0;
+}
+
+.payment-option:nth-child(1) .payment-icon::before,
+.payment-option:nth-child(2) .payment-icon::before,
+.payment-option:nth-child(3) .payment-icon::before {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+}
+
+.payment-option:nth-child(1) .payment-icon::before { content: "COD"; }
+.payment-option:nth-child(2) .payment-icon::before { content: "CARD"; }
+.payment-option:nth-child(3) .payment-icon::before { content: "ONLINE"; }
+
+.place-order-btn span,
+.checkout-secure-note {
+    font-size: 0;
+}
+
+.place-order-btn span::after {
+    content: "→";
+    font-size: 1em;
+}
+
+.checkout-secure-note::before {
+    content: "Preview only: your information is not collected or sent.";
+    font-size: 0.85rem;
+}
+
 .payment-text {
     display: flex;
     flex-direction: column;
@@ -560,6 +451,72 @@
     color: var(--brown);
     font-size: 0.88rem;
     white-space: nowrap;
+}
+
+/* Task-first checkout refinement */
+.checkout-page .checkout-hero {
+    min-height: 150px;
+    background: #17130e;
+}
+
+.checkout-page .checkout-hero-content {
+    width: min(1160px, calc(100% - 48px));
+    padding: 24px 0;
+    text-align: left;
+}
+
+.checkout-page .checkout-hero h1 {
+    margin: 5px 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.checkout-page .checkout-main {
+    padding: clamp(38px, 6vw, 72px) 0;
+    background: #f7f0e6;
+}
+
+.checkout-page .checkout-container {
+    gap: clamp(22px, 4vw, 48px);
+}
+
+.checkout-page .checkout-form-section,
+.checkout-page .checkout-summary {
+    border-radius: 2px;
+    border-color: #ded1bf;
+    box-shadow: none;
+}
+
+.checkout-page .checkout-form-section {
+    padding: clamp(24px, 4vw, 44px);
+}
+
+.checkout-page .checkout-summary {
+    padding: 30px;
+    border-top: 3px solid var(--gold);
+}
+
+.checkout-page .checkout-step {
+    border-radius: 2px;
+    background: #211b14;
+    color: #f8dfad;
+}
+
+.checkout-page .payment-option {
+    border-radius: 2px;
+}
+
+.checkout-page .payment-option:has(input:disabled) {
+    opacity: 0.52;
+    cursor: not-allowed;
+}
+
+.checkout-page .place-order-btn {
+    border-radius: 2px;
+    box-shadow: 7px 7px 0 rgba(83, 49, 14, 0.2);
+}
+
+.checkout-page .summary-item-count {
+    border-radius: 2px;
 }
 
 
@@ -699,3 +656,39 @@
 /* ==========================================
    END OF CHECKOUT MAIN CSS
 ========================================== */
+
+/* The checkout uses the shared Home header; page-specific header rules live in
+   header.css only to neutralize legacy checkout selectors on smaller screens. */
+
+.checkout-page .checkout-hero, .checkout-page .checkout-main { background: #171713; }
+.checkout-page .checkout-hero { border-bottom: 1px solid rgba(217, 149, 70, 0.18); }
+.checkout-page .checkout-eyebrow, .checkout-page .checkout-step, .checkout-page .summary-item-count, .checkout-page .checkout-product > strong, .checkout-page .checkout-total strong:last-child { color: #e4af68; }
+.checkout-page .checkout-form-section, .checkout-page .checkout-summary { background: #211d17; border-color: rgba(255, 248, 237, 0.13); }
+.checkout-page .checkout-section-heading h2, .checkout-page .summary-heading h2, .checkout-page .checkout-product-info h3, .checkout-page .checkout-total strong { color: #fff8ed; }
+.checkout-page .checkout-section-heading p, .checkout-page .checkout-product-info p, .checkout-page .checkout-price-row { color: #b9aea1; }
+.checkout-page .checkout-form-group label { color: #f4e8d0; }
+.checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea, .checkout-page .payment-option { border-color: rgba(255, 248, 237, 0.14); background: #171411; color: #fff8ed; }
+.checkout-page .checkout-form-group input:focus, .checkout-page .checkout-form-group textarea:focus, .checkout-page .payment-option:has(input:checked) { border-color: #d99546; background: #292018; }
+.checkout-page .checkout-payment-section, .checkout-page .checkout-product, .checkout-page .checkout-price-details { border-color: rgba(255, 248, 237, 0.12); }
+.checkout-page .continue-shopping { border-color: rgba(255, 248, 237, 0.22); border-radius: 2px; color: #fff8ed; }
+
+.checkout-page .home-footer { background: linear-gradient(135deg, #11110f 0%, #201910 100%); border-top-color: rgba(217, 149, 70, 0.38); }
+.checkout-page .footer-container { grid-template-columns: 1.5fr 1fr 1fr; gap: 44px; }
+.checkout-page .footer-brand > .brand { gap: 10px; color: #fff8ed; }
+.checkout-page .footer-brand > .brand .brand-logo-frame { width: 50px; height: 50px; }
+.checkout-page .footer-brand p, .checkout-page .footer-column p, .checkout-page .footer-column > a { display: block; margin: 0 0 12px; color: rgba(255, 248, 237, 0.62); font-size: 0.88rem; line-height: 1.7; }
+.checkout-page .footer-column h2 { color: #fff8ed; font-size: 0.78rem; letter-spacing: 0.11em; text-transform: uppercase; }
+.checkout-page .footer-bottom { display: block; margin-top: 24px; border-top-color: rgba(255, 248, 237, 0.12); }
+.checkout-page .footer-bottom .container { width: min(1180px, calc(100% - 40px)); }
+.checkout-page .footer-bottom p { color: rgba(255, 248, 237, 0.46); }
+
+.checkout-page .cart-link > span:first-of-type:not(.cart-label) { display: none; }
+.checkout-page .continue-shopping { font-size: 0; }
+.checkout-page .continue-shopping::after { content: "← Back to Cart Preview"; font-size: 0.87rem; }
+.checkout-page .footer-column:nth-child(3) p { font-size: 0; }
+.checkout-page .footer-column:nth-child(3) p::before { font-size: 0.88rem; }
+.checkout-page .footer-column:nth-child(3) p:nth-of-type(1)::before { content: "+92 300 1234567"; }
+.checkout-page .footer-column:nth-child(3) p:nth-of-type(2)::before { content: "info@foodflow.pk"; }
+.checkout-page .footer-column:nth-child(3) p:nth-of-type(3)::before { content: "Karachi, Pakistan"; }
+.checkout-page .footer-bottom p { font-size: 0; }
+.checkout-page .footer-bottom p::before { content: "© 2026 FoodFlow. All rights reserved."; font-size: 0.8rem; }

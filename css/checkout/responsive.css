@@ -1033,3 +1033,17 @@ and (orientation: landscape) {
 /* ==================================================
    END FOODFLOW CHECKOUT RESPONSIVE
 ================================================== */
+
+@media screen and (max-width: 767px) {
+    .checkout-page .header-container { min-height: 68px; }
+    .checkout-page .site-navigation { background: #171713; border-top: 1px solid rgba(217, 149, 70, 0.22); }
+    .checkout-page .navigation-link { padding-block: 14px; }
+    .checkout-page .navigation-link::after { display: none; }
+    .checkout-page .footer-container { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
+    .checkout-page .footer-brand { grid-column: 1 / -1; }
+}
+
+@media screen and (max-width: 380px) {
+    .checkout-page .footer-container { grid-template-columns: 1fr; }
+    .checkout-page .footer-brand { grid-column: auto; }
+}

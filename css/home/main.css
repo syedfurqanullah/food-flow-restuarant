@@ -2394,6 +2394,104 @@ body.menu-page {
   font-size: 0.8rem;
 }
 
+/* Premium shared shell: used by all customer-facing pages. */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(23, 23, 19, 0.94);
+  border-bottom-color: rgba(217, 149, 70, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(16px);
+}
+
+.header-container {
+  min-height: 74px;
+}
+
+.navigation-list {
+  gap: clamp(12px, 1.8vw, 26px);
+}
+
+.navigation-link {
+  padding-block: 27px 23px;
+  color: rgba(255, 248, 237, 0.72);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+.navigation-link::after {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  height: 2px;
+  background: var(--color-accent-bright);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 180ms ease;
+}
+
+.navigation-link:hover::after,
+.navigation-link.is-active::after {
+  transform: scaleX(1);
+}
+
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 248, 237, 0.16);
+  border-radius: 999px;
+  color: var(--color-cream);
+}
+
+.cart-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.home-footer {
+  position: relative;
+  overflow: hidden;
+  padding: 68px 0 22px;
+  background: linear-gradient(135deg, #11110f 0%, #201910 100%);
+  border-top-color: rgba(217, 149, 70, 0.38);
+}
+
+.home-footer::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1160px, calc(100% - 48px));
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent-bright), transparent);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.footer-container {
+  position: relative;
+  gap: 44px;
+}
+
+.footer-column h2 {
+  color: var(--color-cream);
+  font-size: 0.78rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  color: rgba(255, 248, 237, 0.62);
+}
+
+.footer-links a:hover {
+  color: var(--color-accent-bright);
+}
+
 /* Compact, consistent food imagery and cards */
 .categories-section .category-card {
   aspect-ratio: 4 / 3;

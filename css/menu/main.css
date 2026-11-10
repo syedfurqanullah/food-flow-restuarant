@@ -134,6 +134,25 @@
   font-size: 0.78rem !important;
 }
 
+.menu-preview-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 1rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-gold, #d99546);
+  border-radius: 0.5rem;
+  color: var(--color-gold, #d99546);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu-preview-link:hover,
+.menu-preview-link:focus-visible {
+  background: var(--color-gold, #d99546);
+  color: var(--color-ink, #171411);
+}
+
 .menu-page .menu-section {
   width: 100%;
   max-width: none;
