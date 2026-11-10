@@ -375,13 +375,20 @@ a {
 .about-page .hero-overlay {
     width: min(100%, 620px);
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about-page .hero-overlay h1 {
-    max-width: 11ch;
+    max-width: 100%;
     font-size: clamp(2.65rem, 5.5vw, 4.9rem);
     letter-spacing: -0.055em;
     line-height: 0.98;
+}
+
+.about-page .hero-overlay > p:not(.small-heading) {
+    max-width: 620px;
 }
 
 .about-page .hero-btn,
