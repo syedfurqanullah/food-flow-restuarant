@@ -157,8 +157,43 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .menu-page .food-info {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-page .food-container {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .menu-page .food-card {
+    display: block;
+  }
+
+  .menu-page .food-card > img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .menu-page .food-info {
+    padding: 14px;
+  }
+
+  .menu-page .food-details {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .menu-page .food-card,
+  .menu-page .food-card > img,
   .menu-page .menu-categories a,
   .menu-page .food-info button {
     transition: none;
