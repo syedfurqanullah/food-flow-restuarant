@@ -2205,13 +2205,16 @@ body.menu-page {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 25px;
 }
 
 /* Testimonial Card */
 
 .testimonial-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
@@ -2237,6 +2240,8 @@ body.menu-page {
 /* Review Text */
 
 .testimonial-text {
+  flex: 1;
+  min-height: 8.2em;
   color: var(--color-text-secondary);
   font-size: 14px;
   line-height: 1.9;
@@ -2247,7 +2252,9 @@ body.menu-page {
 
 .testimonial-user {
   display: flex;
+  min-height: 70px;
   align-items: center;
+  margin-top: auto;
   gap: 14px;
   border-top: 1px solid var(--color-border);
   padding-top: 20px;

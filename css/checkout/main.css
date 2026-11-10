@@ -660,7 +660,7 @@
 /* The checkout uses the shared Home header; page-specific header rules live in
    header.css only to neutralize legacy checkout selectors on smaller screens. */
 
-.checkout-page .checkout-hero, .checkout-page .checkout-main { background: #171713; }
+.checkout-page .checkout-main { background: #171713; }
 .checkout-page .checkout-hero { border-bottom: 1px solid rgba(217, 149, 70, 0.18); }
 .checkout-page .checkout-eyebrow, .checkout-page .checkout-step, .checkout-page .summary-item-count, .checkout-page .checkout-product > strong, .checkout-page .checkout-total strong:last-child { color: #e4af68; }
 .checkout-page .checkout-form-section, .checkout-page .checkout-summary { background: #211d17; border-color: rgba(255, 248, 237, 0.13); }
