@@ -227,7 +227,7 @@
         var(--overlay-ink-78) 58%,
         var(--overlay-ink-42) 100%
       ),
-      url("../../assets/images/hero/hero-food.jpg");
+      url("../../assets/images/hero/hero.png");
     background-position:
       center,
       58% center;
@@ -1508,5 +1508,30 @@
     transition: none;
     transform: none;
     filter: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .popular-section .food-info {
+    padding: 12px;
+  }
+
+  .popular-section .food-info h3 {
+    font-size: 1rem;
+  }
+
+  .popular-section .food-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .popular-grid {
+    grid-template-columns: 1fr;
   }
 }

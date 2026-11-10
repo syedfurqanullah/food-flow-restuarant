@@ -1,13 +1,195 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png?v=4" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order Success | FoodFlow</title>
+    <meta name="theme-color" content="#11100E" />
+
+    <title>Order Successful | FoodFlow</title>
+
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/order-success/main.css" />
     <link rel="stylesheet" href="../css/order-success/responsive.css" />
+    <link rel="stylesheet" href="/css/home/main.css" />
+    <link rel="stylesheet" href="/css/home/responsive.css" />
   </head>
 
-  <body></body>
-</html>
+  <body>
+    <!-- HEADER START -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="index.html" aria-label="FoodFlow home">
+          <span class="brand-logo-frame"
+            ><img
+              class="brand-logo"
+              src="/assets/images/logo/logo.jpg"
+              alt=""
+              width="298"
+              height="208"
+          /></span>
+          <span class="brand-wordmark">Food<span>Flow.</span></span>
+        </a>
+
+        <input
+          class="nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-controls="site-navigation"
+          aria-label="Toggle navigation menu"
+        />
+        <label class="nav-toggle-label" for="nav-toggle">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </label>
+
+        <nav
+          class="site-navigation"
+          id="site-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="navigation-list">
+            <li>
+              <a
+                class="navigation-link is-active"
+                href="index.html"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a class="navigation-link" href="pages/menu.html">Menu</a></li>
+            <li>
+              <a class="navigation-link" href="pages/about.html">About Us</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="pages/gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="pages/contact.html">Contact</a>
+            </li>
+            <li class="mobile-signup-link">
+              <a class="button button-secondary" href="pages/signup.html"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="cart-link"
+            href="pages/cart.html"
+            aria-label="Shopping cart, 0 items"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
+              />
+            </svg>
+            <span class="cart-label">Cart</span
+            ><span class="cart-count" aria-hidden="true">0</span>
+          </a>
+          <a class="button button-primary order-button" href="pages/menu.html"
+            >Order Online</a
+          >
+          <a
+            class="button button-secondary signup-button"
+            href="pages/signup.html"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="success-main">
+      <section class="success-card">
+        <!-- SUCCESS ICON -->
+        <div class="success-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 12.5L10 17L20 7"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <!-- SUCCESS MESSAGE -->
+        <p class="success-label">ORDER CONFIRMED</p>
+
+        <h1>Order Placed <span>Successfully!</span></h1>
+
+        <p class="success-description">
+          Thank you for choosing FoodFlow! Your order has been received
+          successfully. We are preparing something delicious for you.
+        </p>
+
+        <!-- ORDER NUMBER -->
+        <div class="order-number-box">
+          <span>YOUR ORDER NUMBER</span>
+          <h2>#FF-2026-001</h2>
+          <p>Keep this number for your reference.</p>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="order-summary">
+          <div class="summary-heading">
+            <h2>Order Summary</h2>
+            <span>Order Details</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Classic Burger</span>
+            <span>Rs. 850</span>
+          </div>
+
+          <div class="summary-row">
+            <span>French Fries</span>
+            <span>Rs. 350</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Delivery Fee</span>
+            <span>Rs. 150</span>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row total-row">
+            <strong>Total Amount</strong>
+            <strong>Rs. 1,350</strong>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="success-actions">
+          <a href="../index.html#menu" class="continue-btn">
+            Continue Shopping
+            <span>→</span>
+          </a>
+
+          <a href="../index.html" class="back-home-btn"> Back to Home </a>
+        </div>
+
+        <p class="thank-you">
+          Made with care, served with love.
+          <span>♥</span>
+        </p>
+      </section>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="success-footer">
+      <p>© 2026 FoodFlow. All Rights Reserved.</p>
+    </footer>
+    <!-- FOOTER END -->

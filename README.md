@@ -27,8 +27,8 @@ The current work covers the website structure in **HTML** and its visual design 
 - Checkout
 - Contact
 - Sign up
-- Order lookup
-- Order confirmation
+- Orders
+- Orders confirmation
 
 ### Admin area
 

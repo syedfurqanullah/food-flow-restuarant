@@ -1,8 +1,13 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review sample menu items, prices, and availability in the FoodFlow admin demonstration."
+    />
     <title>Menu Management | FoodFlow Admin</title>
 
     <!-- Path is for pages/admin/menu-management.html -->
@@ -36,32 +41,32 @@
 
         <nav class="sidebar-nav" aria-label="Admin navigation">
           <a href="dashboard.html" class="sidebar-link" aria-current="page">
-            <span class="nav-icon" aria-hidden="true">▦</span>
+            <span class="nav-icon" aria-hidden="true">&#9632;</span>
             Dashboard
           </a>
 
           <a href="orders.html" class="sidebar-link">
-            <span class="nav-icon" aria-hidden="true">▤</span>
+            <span class="nav-icon" aria-hidden="true">&#9776;</span>
             Orders
           </a>
 
           <a href="menu-management.html" class="sidebar-link active">
-            <span class="nav-icon" aria-hidden="true">☷</span>
+            <span class="nav-icon" aria-hidden="true">&#9881;</span>
             Menu Management
           </a>
 
           <a href="customers.html" class="sidebar-link">
-            <span class="nav-icon" aria-hidden="true">♙</span>
+            <span class="nav-icon" aria-hidden="true">&#9829;</span>
             Customers
           </a>
 
           <a href="settings.html" class="sidebar-link">
-            <span class="nav-icon" aria-hidden="true">⚙</span>
+            <span class="nav-icon" aria-hidden="true">&#9881;</span>
             Settings
           </a>
 
           <a href="login.html" class="sidebar-link">
-            <span class="nav-icon" aria-hidden="true">↪</span>
+            <span class="nav-icon" aria-hidden="true">&#8617;</span>
             Logout
           </a>
         </nav>
@@ -80,7 +85,7 @@
             <a href="customers.html">Customers</a>
           </nav>
           <a class="admin-topbar-site" href="../../index.html"
-            >View customer site <span aria-hidden="true">↗</span></a
+            >View customer site <span aria-hidden="true">&#8599;</span></a
           >
         </header>
 
@@ -89,10 +94,10 @@
             <p class="page-eyebrow">FOOD & DRINKS</p>
             <h1 class="page-title">Menu management</h1>
             <p class="page-description">
-              Keep your menu clear, current and ready for service.
+              Review menu items, prices and availability.
             </p>
           </div>
-          <a href="#food-form" class="btn btn-primary">＋ Add menu item</a>
+          <a href="#food-form" class="btn btn-primary">ï¼‹ Add menu item</a>
         </header>
 
         <section class="insight-grid menu-insights" aria-label="Menu overview">
@@ -130,7 +135,7 @@
             <div>
               <h2 class="card-title" id="menu-list-title">Your menu</h2>
               <p class="page-description">
-                Manage the dishes guests can discover and order.
+                Browse sample menu items and their details.
               </p>
             </div>
             <span class="record-count">5 sample items</span>
@@ -153,7 +158,7 @@
               </svg>
               <input
                 type="search"
-                placeholder="Search food items"
+                placeholder="Search menu items"
                 aria-label="Search food items"
               />
             </div>
@@ -192,7 +197,7 @@
                     <div class="food-cell">
                       <img
                         class="food-thumb"
-                        src="../../assets/images/food/classic-burger.jpg"
+                        src="../../assets/images/menu/burgers/classic-cheeseburger.jpg"
                         alt=""
                       />
                       <span class="food-name">Cheese Burger</span>
@@ -221,7 +226,7 @@
                     <div class="food-cell">
                       <img
                         class="food-thumb"
-                        src="../../assets/images/food/margherita-pizza.jpg"
+                        src="../../assets/images/menu/pizza/margherita-pizza.webp"
                         alt=""
                       />
                       <span class="food-name">Margherita Pizza</span>
@@ -250,7 +255,7 @@
                     <div class="food-cell">
                       <img
                         class="food-thumb"
-                        src="../../assets/images/food/creamy-pasta.jpg"
+                        src="../../assets/images/menu/pasta/creamy-mushroom-pasta.webp"
                         alt=""
                       />
                       <span class="food-name">Creamy Pasta</span>
@@ -279,7 +284,7 @@
                     <div class="food-cell">
                       <img
                         class="food-thumb"
-                        src="../../assets/images/categories/drinks.jpg"
+                        src="../../assets/images/menu/drinks/iced-cola.webp"
                         alt=""
                       />
                       <span class="food-name">Cold Coffee</span>
@@ -308,7 +313,7 @@
                     <div class="food-cell">
                       <img
                         class="food-thumb"
-                        src="../../assets/images/food/chocolate-cake.jpg"
+                        src="../../assets/images/menu/desserts/molten-chocolate-cake.webp"
                         alt=""
                       />
                       <span class="food-name">Chocolate Cake</span>
@@ -344,7 +349,7 @@
               <p class="page-eyebrow">MENU EDITOR</p>
               <h2 class="card-title">Add a menu item</h2>
               <p class="page-description">
-                Add the details guests need to choose this dish.
+                Enter the details shown to customers in the menu.
               </p>
             </div>
             <span class="record-count">Changes are a visual demo</span>
@@ -409,7 +414,7 @@
                   id="food-description"
                   name="description"
                   rows="4"
-                  placeholder="Short description of the dish"
+                  placeholder="Describe the dish in a few words"
                 ></textarea>
               </div>
             </div>
@@ -424,13 +429,12 @@
         </section>
 
         <p class="demo-notice">
-          Demo interface · Search, filters, menu edits and customer actions are
-          presentation only until connected to application logic and a secure
-          database.
+          Demo interface &middot; Search, filters and menu edits are for demonstration
+          only. Changes are not saved to an application database.
         </p>
 
         <footer class="admin-footer">
-          <span>© 2026 FoodFlow · Restaurant management demo</span>
+          <span>&copy; 2026 FoodFlow &middot; Restaurant management demo</span>
           <a href="../../index.html">Customer website</a>
         </footer>
       </main>

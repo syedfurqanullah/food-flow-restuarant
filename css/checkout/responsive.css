@@ -1,0 +1,1035 @@
+
+/* ==================================================
+   FOODFLOW CHECKOUT - COMPLETE RESPONSIVE CSS
+   Mobile | Tablet | Laptop | Desktop | Smart Display
+================================================== */
+
+
+/* GLOBAL RESPONSIVE SETTINGS */
+
+.checkout-page,
+.checkout-page * {
+    box-sizing: border-box;
+}
+
+.checkout-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.checkout-page img {
+    max-width: 100%;
+}
+
+.checkout-page .container {
+    width: 92%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout-page .checkout-container > *,
+.checkout-page .checkout-footer-container > * {
+    min-width: 0;
+}
+
+.checkout-page input,
+.checkout-page textarea,
+.checkout-page button {
+    max-width: 100%;
+}
+
+
+/* HEADER BASE */
+
+.checkout-page .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.checkout-page .brand {
+    flex-shrink: 0;
+}
+
+.checkout-page .site-navigation {
+    margin-left: auto;
+}
+
+.checkout-page .navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-page .mobile-signup-link {
+    display: none;
+}
+
+.checkout-page .nav-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkout-page .nav-toggle-label {
+    display: none;
+}
+
+
+/* MAIN CHECKOUT BASE */
+
+.checkout-page .checkout-main {
+    width: 100%;
+}
+
+.checkout-page .checkout-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.85fr);
+    align-items: start;
+    gap: 35px;
+}
+
+.checkout-page .checkout-form-section,
+.checkout-page .checkout-summary {
+    width: 100%;
+    min-width: 0;
+}
+
+.checkout-page .checkout-form {
+    width: 100%;
+}
+
+.checkout-page .checkout-form-group {
+    width: 100%;
+    min-width: 0;
+}
+
+.checkout-page .checkout-form-group input,
+.checkout-page .checkout-form-group textarea,
+.checkout-page .checkout-form-group select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.checkout-page .checkout-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.checkout-page .checkout-payment-section {
+    width: 100%;
+    min-width: 0;
+}
+
+.checkout-page .payment-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.checkout-page .payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.checkout-page .payment-text {
+    min-width: 0;
+}
+
+.checkout-page .checkout-product {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-width: 0;
+}
+
+.checkout-page .checkout-product img {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.checkout-page .checkout-product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.checkout-page .checkout-product > strong {
+    flex-shrink: 0;
+}
+
+.checkout-page .place-order-btn {
+    width: 100%;
+    max-width: 100%;
+}
+
+.checkout-page .checkout-footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 35px;
+}
+
+
+/* ==================================================
+   1. EXTRA SMALL MOBILE
+   320px - 374px
+================================================== */
+
+@media screen and (max-width: 374px) {
+
+    .checkout-page .container {
+        width: 94%;
+    }
+
+    .checkout-page .header-container {
+        min-height: 65px;
+        gap: 8px;
+    }
+
+    .checkout-page .brand-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .checkout-page .brand-wordmark {
+        font-size: 17px;
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 210px;
+        padding: 35px 0;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 29px;
+    }
+
+    .checkout-page .checkout-hero-content p {
+        font-size: 13px;
+    }
+
+    .checkout-page .checkout-main {
+        padding: 25px 0;
+    }
+
+    .checkout-page .checkout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .checkout-page .checkout-section-heading {
+        gap: 10px;
+    }
+
+    .checkout-page .checkout-section-heading h2 {
+        font-size: 18px;
+    }
+
+    .checkout-page .checkout-section-heading p {
+        font-size: 12px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .checkout-page .checkout-form-group input,
+    .checkout-page .checkout-form-group textarea {
+        min-height: 44px;
+        font-size: 14px;
+    }
+
+    .checkout-page .checkout-form-group textarea {
+        min-height: 85px;
+    }
+
+    .checkout-page .payment-option {
+        padding: 12px;
+    }
+
+    .checkout-page .payment-text strong {
+        font-size: 13px;
+    }
+
+    .checkout-page .payment-text small {
+        font-size: 11px;
+    }
+
+    .checkout-page .checkout-product img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .checkout-page .checkout-product-info h3 {
+        font-size: 13px;
+    }
+
+    .checkout-page .checkout-product-info p {
+        font-size: 11px;
+    }
+
+    .checkout-page .checkout-product > strong {
+        font-size: 13px;
+    }
+
+    .checkout-page .place-order-btn {
+        padding: 13px 10px;
+        font-size: 14px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .checkout-page .checkout-footer-bottom p {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+
+/* ==================================================
+   2. MOBILE
+   375px - 480px
+================================================== */
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+
+    .checkout-page .container {
+        width: 92%;
+    }
+
+    .checkout-page .header-container {
+        min-height: 70px;
+    }
+
+    .checkout-page .brand-logo {
+        width: 39px;
+        height: 39px;
+    }
+
+    .checkout-page .brand-wordmark {
+        font-size: 19px;
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 240px;
+        padding: 40px 0;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .checkout-page .checkout-main {
+        padding: 30px 0;
+    }
+
+    .checkout-page .checkout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 19px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .checkout-page .checkout-form-group input,
+    .checkout-page .checkout-form-group textarea {
+        min-height: 46px;
+    }
+
+    .checkout-page .checkout-form-group textarea {
+        min-height: 90px;
+    }
+
+    .checkout-page .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-page .place-order-btn {
+        width: 100%;
+    }
+
+    .checkout-page .checkout-footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+/* ==================================================
+   3. LARGE MOBILE
+   481px - 599px
+================================================== */
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+
+    .checkout-page .container {
+        width: 90%;
+    }
+
+    .checkout-page .checkout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 22px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 270px;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+}
+
+
+/* ==================================================
+   4. SMALL TABLET
+   600px - 767px
+================================================== */
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    .checkout-page .container {
+        width: 90%;
+        max-width: 680px;
+    }
+
+    .checkout-page .checkout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 25px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 290px;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+
+
+/* ==================================================
+   5. TABLET PORTRAIT
+   768px - 899px
+================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    .checkout-page .container {
+        width: 92%;
+    }
+
+    .checkout-page .checkout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 28px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .checkout-page .payment-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 320px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* ==================================================
+   6. TABLET LANDSCAPE
+   900px - 1024px
+================================================== */
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+
+    .checkout-page .container {
+        width: 94%;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.3fr) minmax(270px, 0.85fr);
+        gap: 22px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 20px;
+    }
+
+    .checkout-page .checkout-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .checkout-page .checkout-product {
+        gap: 9px;
+    }
+
+    .checkout-page .checkout-product img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .checkout-page .checkout-product-info h3 {
+        font-size: 14px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 20px;
+    }
+}
+
+
+/* ==================================================
+   7. SMALL LAPTOP
+   1025px - 1199px
+================================================== */
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+
+    .checkout-page .container {
+        width: 92%;
+        max-width: 1120px;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.85fr);
+        gap: 25px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 25px;
+    }
+
+    .checkout-page .checkout-form-row {
+        gap: 14px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 25px;
+    }
+}
+
+
+/* ==================================================
+   8. LAPTOP
+   1200px - 1439px
+================================================== */
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+
+    .checkout-page .container {
+        width: 90%;
+        max-width: 1300px;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.55fr) minmax(330px, 0.85fr);
+        gap: 32px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 28px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 35px;
+    }
+}
+
+
+/* ==================================================
+   9. DESKTOP
+   1440px - 1919px
+================================================== */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+    .checkout-page .container {
+        width: 88%;
+        max-width: 1500px;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.65fr) minmax(360px, 0.85fr);
+        gap: 42px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 32px;
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 360px;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 52px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 45px;
+    }
+}
+
+
+/* ==================================================
+   10. LARGE DESKTOP
+   1920px - 2559px
+================================================== */
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+
+    .checkout-page .container {
+        width: 86%;
+        max-width: 1800px;
+    }
+
+    .checkout-page .header-container {
+        min-height: 90px;
+    }
+
+    .checkout-page .brand-wordmark {
+        font-size: 28px;
+    }
+
+    .checkout-page .navigation-link {
+        font-size: 17px;
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 420px;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 62px;
+    }
+
+    .checkout-page .checkout-hero-content p {
+        font-size: 19px;
+    }
+
+    .checkout-page .checkout-main {
+        padding: 65px 0;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.7fr) minmax(420px, 0.9fr);
+        gap: 55px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 38px;
+    }
+
+    .checkout-page .checkout-section-heading h2,
+    .checkout-page .summary-heading h2 {
+        font-size: 28px;
+    }
+
+    .checkout-page .checkout-form-group input,
+    .checkout-page .checkout-form-group textarea {
+        font-size: 17px;
+    }
+
+    .checkout-page .place-order-btn {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 55px;
+    }
+}
+
+
+/* ==================================================
+   11. 4K SMART DISPLAY
+   2560px AND ABOVE
+================================================== */
+
+@media screen and (min-width: 2560px) {
+
+    .checkout-page .container {
+        width: 84%;
+        max-width: 2100px;
+    }
+
+    .checkout-page .header-container {
+        min-height: 105px;
+    }
+
+    .checkout-page .brand-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .checkout-page .brand-wordmark {
+        font-size: 34px;
+    }
+
+    .checkout-page .navigation-link {
+        font-size: 20px;
+    }
+
+    .checkout-page .checkout-hero {
+        min-height: 500px;
+    }
+
+    .checkout-page .checkout-hero-content h1 {
+        font-size: 76px;
+    }
+
+    .checkout-page .checkout-hero-content p {
+        font-size: 23px;
+    }
+
+    .checkout-page .checkout-main {
+        padding: 85px 0;
+    }
+
+    .checkout-page .checkout-container {
+        grid-template-columns: minmax(0, 1.7fr) minmax(480px, 0.9fr);
+        gap: 70px;
+    }
+
+    .checkout-page .checkout-form-section,
+    .checkout-page .checkout-summary {
+        padding: 45px;
+    }
+
+    .checkout-page .checkout-section-heading h2,
+    .checkout-page .summary-heading h2 {
+        font-size: 32px;
+    }
+
+    .checkout-page .checkout-form-group label {
+        font-size: 19px;
+    }
+
+    .checkout-page .checkout-form-group input,
+    .checkout-page .checkout-form-group textarea {
+        min-height: 58px;
+        font-size: 19px;
+    }
+
+    .checkout-page .checkout-product img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .checkout-page .place-order-btn {
+        padding: 22px;
+        font-size: 21px;
+    }
+
+    .checkout-page .checkout-footer-container {
+        gap: 65px;
+    }
+}
+
+
+/* ==================================================
+   12. MOBILE NAVIGATION
+================================================== */
+
+@media screen and (max-width: 767px) {
+
+    .checkout-page .header-container {
+        min-height: 70px;
+        gap: 10px;
+    }
+
+    .checkout-page .nav-toggle-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+        cursor: pointer;
+        order: 3;
+        z-index: 1002;
+    }
+
+    /* Your HTML has an empty menu-icon span.
+       These pseudo-elements create the hamburger. */
+
+    .checkout-page .menu-icon {
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #f5a623;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .checkout-page .menu-icon::before,
+    .checkout-page .menu-icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background: #f5a623;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .checkout-page .menu-icon::before {
+        top: -8px;
+    }
+
+    .checkout-page .menu-icon::after {
+        top: 8px;
+    }
+
+    .checkout-page .site-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        margin: 0;
+        padding: 0 20px;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        background: #171411;
+        border-top: 1px solid rgba(245, 166, 35, 0.2);
+        z-index: 1001;
+        transition:
+            max-height 0.35s ease,
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            padding 0.3s ease;
+    }
+
+    .checkout-page .navigation-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .checkout-page .navigation-list li {
+        display: block;
+        width: 100%;
+        list-style: none;
+    }
+
+    .checkout-page .navigation-link {
+        display: block;
+        width: 100%;
+        padding: 14px 5px;
+        color: #fff9f0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .checkout-page .mobile-signup-link {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .checkout-page .mobile-signup-link .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .checkout-page .nav-toggle:checked
+    + .nav-toggle-label
+    + .site-navigation {
+        max-height: 450px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .checkout-page .nav-toggle:checked
+    + .nav-toggle-label
+    .menu-icon {
+        background: transparent;
+    }
+
+    .checkout-page .nav-toggle:checked
+    + .nav-toggle-label
+    .menu-icon::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .checkout-page .nav-toggle:checked
+    + .nav-toggle-label
+    .menu-icon::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .checkout-page .checkout-header-actions {
+        display: none;
+    }
+
+    .checkout-page .brand {
+        margin-right: auto;
+    }
+}
+
+
+/* ==================================================
+   13. TABLET AND ABOVE NAVIGATION
+================================================== */
+
+@media screen and (min-width: 768px) {
+
+    .checkout-page .nav-toggle,
+    .checkout-page .nav-toggle-label {
+        display: none;
+    }
+
+    .checkout-page .site-navigation {
+        position: static;
+        max-height: none;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        transform: none;
+    }
+
+    .checkout-page .mobile-signup-link {
+        display: none;
+    }
+
+    .checkout-page .checkout-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .checkout-page .navigation-list {
+        gap: clamp(10px, 1.5vw, 25px);
+    }
+
+    .checkout-page .navigation-link {
+        white-space: nowrap;
+    }
+}
+
+
+/* ==================================================
+   14. LANDSCAPE MOBILE
+================================================== */
+
+@media screen and (max-width: 900px)
+and (orientation: landscape) {
+
+    .checkout-page .checkout-hero {
+        min-height: 200px;
+        padding: 25px 0;
+    }
+
+    .checkout-page .checkout-main {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+
+/* ==================================================
+   END FOODFLOW CHECKOUT RESPONSIVE
+================================================== */
