@@ -269,7 +269,6 @@
     font-size: 1rem;
     line-height: 1.7;
   }
-
 }
 
 /* Narrow phones */
@@ -304,9 +303,7 @@
   }
 
   .header-actions .order-button {
-    min-height: 44px;
-    padding: 7px 9px;
-    font-size: 0.72rem;
+    display: none;
   }
 
   .cart-link {
@@ -337,9 +334,16 @@
     padding-block: 42px 50px;
   }
 
+  .hero-content {
+    width: calc(100vw - 24px);
+    max-width: 100%;
+  }
+
   .hero-title {
+    max-width: 100%;
     font-size: clamp(2.15rem, 10vw, 2.8rem);
     letter-spacing: -1px;
+    overflow-wrap: anywhere;
   }
 
   .hero-eyebrow {
@@ -348,6 +352,7 @@
   }
 
   .hero-description {
+    max-width: 100%;
     font-size: 0.96rem;
     line-height: 1.65;
   }

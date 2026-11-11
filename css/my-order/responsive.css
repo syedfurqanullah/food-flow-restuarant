@@ -166,3 +166,36 @@
 }
 
 /* SAMI MY ORDERS RESPONSIVE END */
+
+/* Keep the shared customer footer responsive layout intact on this page. */
+@media (max-width: 900px) {
+  .my-orders-page .home-footer .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .my-orders-page .home-footer {
+    padding-top: 36px;
+  }
+
+  .my-orders-page .home-footer .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+
+  .my-orders-page .home-footer .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 380px) {
+  .my-orders-page .home-footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .my-orders-page .home-footer .footer-brand {
+    grid-column: auto;
+  }
+}

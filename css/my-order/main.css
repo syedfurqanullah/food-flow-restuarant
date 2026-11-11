@@ -1,418 +1,463 @@
-
 /* ==========================================
    SAMI MY ORDERS START
 ========================================== */
 
 .my-orders-header {
-    background: #171411;
-    border-bottom: 1px solid rgba(255, 248, 237, 0.1);
+  background: #171411;
+  border-bottom: 1px solid rgba(255, 248, 237, 0.1);
 }
 
 .my-orders-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .my-orders-header .my-orders-container {
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .my-orders-logo {
-    color: #FFF8ED;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: 1px;
+  color: #fff8ed;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .my-orders-logo span {
-    color: #D99546;
+  color: #d99546;
 }
 
 .my-orders-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .my-orders-nav a {
-    color: #D0C5B8;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
+  color: #d0c5b8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .my-orders-nav a:hover,
 .my-orders-nav a.active {
-    color: #D99546;
+  color: #d99546;
 }
-
 
 /* MAIN */
 
 .my-orders-main {
-    background: #11100E;
-    min-height: 75vh;
-    padding: 65px 0;
-    color: #FFF8ED;
+  background: #11100e;
+  min-height: 75vh;
+  padding: 65px 0;
+  color: #fff8ed;
 }
 
 .my-orders-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 45px;
 }
 
 .my-orders-subtitle {
-    color: #D99546;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
+  color: #d99546;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
 }
 
 .my-orders-heading h1 {
-    font-size: 38px;
-    margin-bottom: 12px;
+  font-size: 38px;
+  margin-bottom: 12px;
 }
 
 .my-orders-heading h1 span {
-    color: #D99546;
+  color: #d99546;
 }
 
 .my-orders-description {
-    color: #AFA397;
-    font-size: 14px;
-    line-height: 1.7;
+  color: #afa397;
+  font-size: 14px;
+  line-height: 1.7;
 }
-
 
 /* ORDER AGAIN BUTTON */
 
 .order-again-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 23px;
-    border-radius: 7px;
-    background: #D99546;
-    color: #171411;
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.3s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 23px;
+  border-radius: 7px;
+  background: #d99546;
+  color: #171411;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .order-again-btn:hover {
-    background: #E9AA5C;
-    transform: translateY(-2px);
+  background: #e9aa5c;
+  transform: translateY(-2px);
 }
-
 
 /* ORDER LIST */
 
 .orders-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .orders-section-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .orders-section-heading h2 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 .orders-section-heading span {
-    color: #D99546;
-    font-size: 13px;
+  color: #d99546;
+  font-size: 13px;
 }
-
 
 /* ORDER CARD */
 
 .order-card {
-    background: #201B16;
-    border: 1px solid rgba(255, 248, 237, 0.1);
-    border-radius: 12px;
-    padding: 25px;
-    transition: 0.3s;
+  background: #201b16;
+  border: 1px solid rgba(255, 248, 237, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.3s;
 }
 
 .order-card:hover {
-    border-color: rgba(217, 149, 70, 0.5);
-    transform: translateY(-3px);
+  border-color: rgba(217, 149, 70, 0.5);
+  transform: translateY(-3px);
 }
 
 .order-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 248, 237, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 248, 237, 0.1);
 }
 
 .order-id span {
-    color: #AFA397;
-    font-size: 10px;
-    letter-spacing: 2px;
+  color: #afa397;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
 .order-id h3 {
-    color: #D99546;
-    font-size: 18px;
-    margin-top: 7px;
+  color: #d99546;
+  font-size: 18px;
+  margin-top: 7px;
 }
-
 
 /* ORDER STATUS */
 
 .order-status {
-    padding: 8px 15px;
-    border-radius: 30px;
-    font-size: 11px;
-    font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .delivered {
-    background: rgba(76, 175, 80, 0.13);
-    color: #75CB7A;
+  background: rgba(76, 175, 80, 0.13);
+  color: #75cb7a;
 }
 
 .preparing {
-    background: rgba(217, 149, 70, 0.13);
-    color: #E9AA5C;
+  background: rgba(217, 149, 70, 0.13);
+  color: #e9aa5c;
 }
 
 .pending {
-    background: rgba(240, 190, 70, 0.13);
-    color: #F0C56B;
+  background: rgba(240, 190, 70, 0.13);
+  color: #f0c56b;
 }
-
 
 /* ORDER DETAILS */
 
 .order-card-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 22px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 22px 0;
 }
 
 .order-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .order-detail span {
-    color: #AFA397;
-    font-size: 12px;
+  color: #afa397;
+  font-size: 12px;
 }
 
 .order-detail strong {
-    color: #FFF8ED;
-    font-size: 14px;
+  color: #fff8ed;
+  font-size: 14px;
 }
 
 .order-detail .order-price {
-    color: #D99546;
+  color: #d99546;
 }
-
 
 /* ORDER BOTTOM */
 
 .order-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    border-top: 1px solid rgba(255, 248, 237, 0.1);
-    padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid rgba(255, 248, 237, 0.1);
+  padding-top: 18px;
 }
 
 .order-card-bottom p {
-    color: #B9AEA1;
-    font-size: 13px;
-    line-height: 1.6;
+  color: #b9aea1;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .view-details-btn {
-    color: #D99546;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: 0.3s;
+  color: #d99546;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
 }
 
 .view-details-btn:hover {
-    color: #FFF8ED;
+  color: #fff8ed;
 }
 
 /* Replace legacy malformed arrow text with a consistent text action. */
 .view-details-btn {
-    font-size: 0;
+  font-size: 0;
 }
 
 .view-details-btn::after {
-    content: "View details →";
-    font-size: 13px;
+  content: "View details →";
+  font-size: 13px;
 }
-
 
 /* EMPTY ORDERS */
 
 .empty-orders {
-    text-align: center;
-    padding: 70px 20px;
-    background: #201B16;
-    border: 1px solid rgba(217, 149, 70, 0.2);
-    border-radius: 14px;
+  text-align: center;
+  padding: 70px 20px;
+  background: #201b16;
+  border: 1px solid rgba(217, 149, 70, 0.2);
+  border-radius: 14px;
 }
 
 .empty-orders-icon {
-    font-size: 55px;
-    margin-bottom: 20px;
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
 .empty-orders h2 {
-    font-size: 25px;
-    margin-bottom: 12px;
+  font-size: 25px;
+  margin-bottom: 12px;
 }
 
 .empty-orders p {
-    color: #AFA397;
-    font-size: 14px;
-    line-height: 1.8;
-    max-width: 430px;
-    margin: 0 auto 25px;
+  color: #afa397;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 430px;
+  margin: 0 auto 25px;
 }
-
 
 /* ==========================================
    FOODFLOW PROFESSIONAL FOOTER
 ========================================== */
 
 .foodflow-footer {
-    background: #171411;
-    color: #FFF8ED;
-    border-top: 1px solid rgba(255, 248, 237, 0.12);
-    padding: 55px 5% 20px;
+  background: #171411;
+  color: #fff8ed;
+  border-top: 1px solid rgba(255, 248, 237, 0.12);
+  padding: 55px 5% 20px;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 35px;
-    padding-bottom: 40px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 35px;
+  padding-bottom: 40px;
 }
 
 .footer-logo {
-    display: inline-block;
-    color: #FFF8ED;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
+  display: inline-block;
+  color: #fff8ed;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
 }
 
 .footer-logo span {
-    color: #D99546;
+  color: #d99546;
 }
 
 .footer-brand p {
-    color: #AFA397;
-    font-size: 13px;
-    line-height: 1.9;
-    max-width: 260px;
+  color: #afa397;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 260px;
 }
 
 .footer-links,
 .footer-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
 }
 
 .footer-links h3,
 .footer-contact h3 {
-    font-size: 16px;
-    color: #D99546;
-    margin-bottom: 8px;
+  font-size: 16px;
+  color: #d99546;
+  margin-bottom: 8px;
 }
 
 .footer-links a {
-    color: #B9AEA1;
-    text-decoration: none;
-    font-size: 13px;
-    transition: 0.3s;
+  color: #b9aea1;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
 }
 
 .footer-links a:hover {
-    color: #D99546;
-    padding-left: 4px;
+  color: #d99546;
+  padding-left: 4px;
 }
 
 .footer-contact p {
-    color: #B9AEA1;
-    font-size: 13px;
-    line-height: 1.7;
-    overflow-wrap: anywhere;
+  color: #b9aea1;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
 }
-
 
 /* FOOTER BOTTOM */
 
 .footer-bottom {
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 248, 237, 0.12);
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 248, 237, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .footer-bottom p {
-    color: #968A7D;
-    font-size: 12px;
+  color: #968a7d;
+  font-size: 12px;
 }
 
 .footer-bottom span {
-    color: #D99546;
+  color: #d99546;
 }
 
 .my-orders-page .home-footer .footer-bottom p {
-    font-size: 0;
+  font-size: 0;
 }
 
 .my-orders-page .home-footer .footer-bottom p:first-child::before {
-    content: "© 2026 FoodFlow. All rights reserved.";
-    font-size: 12px;
+  content: "© 2026 FoodFlow. All rights reserved.";
+  font-size: 12px;
 }
 
 .my-orders-page .home-footer .footer-bottom p:last-child::before {
-    content: "Made with care for food lovers.";
-    font-size: 12px;
+  content: "Made with care for food lovers.";
+  font-size: 12px;
 }
 
 /* SAMI MY ORDERS END */
+
+/* Use the same customer-site footer system as every other public page. */
+.my-orders-page .home-footer .footer-container {
+  width: min(var(--container-width), calc(100% - (var(--page-gutter) * 2)));
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 44px;
+  padding-bottom: 0;
+}
+
+.my-orders-page .home-footer .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: var(--color-cream);
+  font-size: 1.4rem;
+  letter-spacing: normal;
+}
+
+.my-orders-page .home-footer .footer-logo span,
+.my-orders-page .home-footer .footer-brand-highlight {
+  color: var(--color-accent-bright);
+}
+
+.my-orders-page .home-footer .footer-brand p {
+  max-width: 290px;
+  color: var(--color-text-soft);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.my-orders-page .home-footer .footer-links {
+  gap: 12px;
+}
+
+.my-orders-page .home-footer .footer-links a {
+  color: var(--color-text-soft);
+  font-size: 0.88rem;
+}
+
+.my-orders-page .home-footer .footer-bottom p {
+  color: var(--color-text-subtle);
+  font-size: 0.8rem;
+}
+
+.my-orders-page .home-footer .footer-bottom {
+  max-width: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  gap: 12px;
+}
+
+.my-orders-page .home-footer .footer-bottom p::before {
+  content: none;
+}
