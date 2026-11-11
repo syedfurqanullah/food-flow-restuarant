@@ -4,7 +4,10 @@
     <link rel="icon" type="image/png" href="../assets/icons/favicon.png?v=4" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Create your FoodFlow customer account. This is a front-end demonstration." />
+    <meta
+      name="description"
+      content="Create your FoodFlow customer account. This is a front-end demonstration."
+    />
     <meta name="theme-color" content="#171713" />
     <title>Create Account | FoodFlow</title>
     <link rel="stylesheet" href="../css/variables.css" />
@@ -17,10 +20,21 @@
     <a class="skip-link" href="#signup-form">Skip to create account</a>
     <main class="admin-login-shell signup-shell">
       <section class="login-story" aria-labelledby="story-title">
-        <a class="admin-home-link" href="../index.html"><span aria-hidden="true">&larr;</span> Back to FoodFlow</a>
+        <a class="admin-home-link" href="../index.html"
+          ><span aria-hidden="true">&larr;</span> Back to FoodFlow</a
+        >
         <div class="login-story-copy">
-          <a class="login-brand" href="../index.html" aria-label="FoodFlow home">
-            <img src="../assets/images/logo/logo.jpg" alt="" width="48" height="48" />
+          <a
+            class="login-brand"
+            href="../index.html"
+            aria-label="FoodFlow home"
+          >
+            <img
+              src="../assets/images/logo/logo.jpg"
+              alt=""
+              width="48"
+              height="48"
+            />
             <span>Food<span>Flow.</span></span>
           </a>
           <p class="admin-eyebrow">GOOD FOOD, SHARED MOMENTS</p>
@@ -34,35 +48,85 @@
         <div class="login-card">
           <p class="admin-eyebrow">JOIN FOODFLOW</p>
           <h2 class="login-title" id="signup-title">Create your account</h2>
-          <p class="login-subtitle">Create an account to explore the menu and preview FoodFlow.</p>
+          <p class="login-subtitle">
+            Create an account to explore the menu and preview FoodFlow.
+          </p>
 
-          <form class="signup-form" id="signup-form" action="user-panel.html" method="get" novalidate>
+          <form
+            class="signup-form"
+            id="signup-form"
+            action="user-panel.html"
+            method="get"
+            novalidate
+          >
             <div class="form-group">
               <label for="full-name">Full name</label>
-              <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" autocomplete="name" minlength="2" maxlength="60" required />
+              <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                minlength="2"
+                maxlength="60"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="contact">Email address or phone number</label>
-              <input type="text" id="contact" name="contact" placeholder="you@example.com or +92 300 1234567" autocomplete="username" required />
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="you@example.com or +92 300 1234567"
+                autocomplete="username"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" minlength="8" required />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                autocomplete="new-password"
+                minlength="8"
+                required
+              />
               <small class="field-hint">Use at least 8 characters.</small>
             </div>
             <div class="form-group">
               <label for="confirm-password">Confirm password</label>
-              <input type="password" id="confirm-password" name="confirmPassword" placeholder="Enter your password again" autocomplete="new-password" minlength="8" required />
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirmPassword"
+                placeholder="Enter your password again"
+                autocomplete="new-password"
+                minlength="8"
+                required
+              />
             </div>
             <label class="remember-me terms-consent" for="terms">
               <input type="checkbox" id="terms" name="terms" required />
-              <span>I agree to the <a href="#terms">Terms &amp; Conditions</a> and <a href="#privacy">Privacy Policy</a>.</span>
+              <span
+                >I agree to the <a href="#terms">Terms &amp; Conditions</a> and
+                <a href="#privacy">Privacy Policy</a>.</span
+              >
             </label>
-            <button type="submit" class="btn btn-primary btn-block">Create account <span aria-hidden="true">&rarr;</span></button>
+            <button type="submit" class="btn btn-primary btn-block">
+              Create account <span aria-hidden="true">&rarr;</span>
+            </button>
           </form>
 
-          <p class="login-demo-note">This is a front-end demonstration. Account creation and authentication are not connected.</p>
-          <p class="auth-switch">Already have an account? <a href="signin.html">Sign in</a></p>
+          <p class="login-demo-note">
+            This is a front-end demonstration. Account creation and
+            authentication are not connected.
+          </p>
+          <p class="auth-switch">
+            Already have an account? <a href="signin.html">Sign in</a>
+          </p>
         </div>
         <footer class="login-footer">
           <span>&copy; 2026 FoodFlow</span>

@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../css/home/responsive.css" />
     <link rel="stylesheet" href="../css/my-order/main.css" />
     <link rel="stylesheet" href="../css/my-order/responsive.css" />
-    <link rel="stylesheet" href="../css/home/header-interactions.css" />
   </head>
 
   <body class="my-orders-page">
@@ -53,7 +52,7 @@
             <li><a class="navigation-link" href="menu/menu.html">Menu</a></li>
             <li><a class="navigation-link" href="about.html">About Us</a></li>
             <li><a class="navigation-link" href="gallery.html">Gallery</a></li>
-            <li><a class="navigation-link" href="contact.html">Contact</a></li>
+            <li><a class="navigation-link" href="contact.html">Contact</a></n+            </li>
             <li class="mobile-signup-link">
               <a class="button button-secondary" href="signup.html">Sign Up</a>
             </li>
@@ -232,50 +231,73 @@
 
     <!-- FOOTER START -->
     <footer class="home-footer">
-      <div class="footer-container">
+      <div class="container footer-container">
+        <!-- Brand Information -->
         <div class="footer-brand">
           <a href="../index.html" class="footer-logo">
-            FOOD<span>FLOW</span>
+            <img
+              src="../assets/images/logo/logo.jpg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <span>Food<span class="footer-brand-highlight">Flow.</span></span>
           </a>
 
           <p>
-            Delicious food, unforgettable taste. Bringing happiness to your
-            table with every order.
+            FoodFlow brings fresh ingredients and delicious meals together for a simple ordering experience.
           </p>
         </div>
 
-        <div class="footer-links">
-          <h3>Quick Links</h3>
+        <!-- Quick Navigation Links -->
+        <div class="footer-column">
+          <h2>Quick Links</h2>
 
-          <a href="../index.html">Home</a>
-          <a href="../index.html#menu">Our Menu</a>
-          <a href="cart.html">My Cart</a>
-          <a href="my-order.html">My Orders</a>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu/menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
-        <div class="footer-links">
-          <h3>Customer Support</h3>
+        <!-- Customer Support -->
+        <div class="footer-column">
+          <h2>Get In Touch</h2>
 
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
+          <ul class="footer-links">
+            <li>
+              <a href="contact.html">Contact Our Team</a>
+            </li>
+            <li>
+              <a href="contact.html">Customer Support</a>
+            </li>
+            <li>
+              <a href="menu/menu.html">Order Online</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="footer-contact">
-          <h3>Get In Touch</h3>
-
-          <p>Email: support@foodflow.com</p>
-          <p>Website: www.foodflow.com</p>
+        <!-- Social Media -->
+        <div class="footer-column">
+          <h2>Explore FoodFlow</h2>
+          <p class="footer-social-text">
+            Browse the sample menu to see the dishes featured on this site.
+          </p>
+          <a href="menu/menu.html" class="footer-social-link">
+            Explore the menu
+          </a>
         </div>
-      </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 FOODFLOW. All Rights Reserved.</p>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 FoodFlow. All rights reserved.</p>
 
-        <p>Made with <span>♥</span> for Food Lovers.</p>
+          <p>Made with care for food lovers.</p>
+        </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
-    <script src="../js/components/site-header.js" defer></script>
+
   </body>
 </html>
