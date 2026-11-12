@@ -1,82 +1,61 @@
-# FoodFlow – Restaurant Management and Ordering System
+# FoodFlow - Restaurant Management and Ordering System
 
-FoodFlow is a **Bano Qabil team collaboration project** created for practice and learning. The project is currently in progress. Its goal is to build a frontend for a restaurant management and food ordering website while the team practices web development and collaboration.
+FoodFlow is a Bano Qabil team collaboration project for practicing professional frontend development. It presents a restaurant ordering website and a restaurant administration interface.
 
-## Live Demo
+## Live demo
 
 [View FoodFlow](https://foodflow-pk.vercel.app/)
 
-## 📸 Screenshots
+## Screenshot
 
-### Home Page
-
-![FoodFlow Home](./assets/screenshots/home%20page.png)
+![FoodFlow home page](./assets/screenshots/home%20page.png)
 
 ## Project status
 
-The current work covers the website structure in **HTML** and its visual design in **CSS**. **JavaScript has not been added yet** and is planned for a later stage. As a result, pages and controls shown in the project should be considered frontend layouts; ordering, forms, login, and admin management are not functional features at this stage.
+The current product is a static frontend built with HTML and CSS. Customer ordering, search, authentication, form submissions, and admin management are visual demonstrations only; they are not connected to a backend.
 
-## Pages in the project
+## Pages
 
 ### Customer website
 
 - Home
 - About
-- Menu
+- Menu and category pages
 - Cart
-- Checkout
+- Checkout and order confirmation
 - Contact
-- Sign up
-- Orders
-- Orders confirmation
+- Sign up and sign in
+- User panel and order history
+- Gallery
 
 ### Admin area
 
 - Login
 - Dashboard
-- Menu management
 - Orders
+- Menu management
 - Customers
-
-These pages are being developed as part of the frontend practice. Their content and design may change as the project progresses.
+- Settings
 
 ## Technologies
 
-- **HTML5** – page structure
-- **CSS3** – styling and layouts
-- **JavaScript** – planned for a later development stage
-- **Git and GitHub** – version control and team collaboration
+- HTML5
+- CSS3
+- Git and GitHub
 
-## Project structure
-
-```text
-.
-├── assets/
-│   └── images/       # Images used by the website
-├── css/              # Stylesheets for website pages and sections
-├── js/               # Reserved for JavaScript work planned later
-├── pages/            # Customer and admin HTML pages
-├── index.html        # Homepage
-└── README.md
-```
-
-The folder structure may evolve as development continues.
+JavaScript files may exist in the repository for future work, but the current customer experience is designed to work as a static frontend.
 
 ## Run locally
 
 1. Clone or download the repository.
 2. Open the project folder in a code editor.
-3. Open `index.html` in a web browser, or use a local development server such as the VS Code Live Server extension.
+3. Use a local server such as VS Code Live Server, then open `index.html`.
 
 ## Project details
 
-- **Name:** FoodFlow – Restaurant Management and Ordering System
-- **Program:** Bano Qabil
-- **Type:** Team collaboration and practice project
-- **Status:** In progress
-- **Current implementation:** HTML and CSS
-- **Planned next step:** Add JavaScript functionality
+- Name: FoodFlow - Restaurant Management and Ordering System
+- Program: Bano Qabil
+- Type: Team collaboration and practice project
+- Status: In progress
 
----
-
-Built as a learning project through practice and teamwork.
+Built as a learning project through collaboration and practice.

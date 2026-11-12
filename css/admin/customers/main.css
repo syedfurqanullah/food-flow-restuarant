@@ -1,5 +1,3 @@
-@import url("../variables-admin.css");
-
 /* ---------- Shared buttons (reused on every admin page) ---------- */
 .btn {
   display: inline-flex;

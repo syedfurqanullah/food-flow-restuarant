@@ -32,6 +32,17 @@
   --color-accent-tint-pale: #fce9c8;
   --color-border-pale: #f0e7db;
 
+  /* Semantic customer theme controls: update these for a site-wide recolour. */
+  --color-brand: var(--color-accent-bright);
+  --color-brand-hover: var(--color-accent-bright-hover);
+  --color-page-background: var(--color-ink);
+  --color-card-background: var(--color-surface-raised);
+  --color-card-border: var(--color-border);
+  --color-card-border-strong: var(--color-accent);
+  --color-input-background: var(--color-white);
+  --color-input-text: var(--color-text);
+  --color-focus-ring: var(--color-accent-bright);
+
   /* Common translucent surfaces and overlays */
   --overlay-ink-97: rgba(23, 23, 19, 0.97);
   --overlay-ink-96: rgba(23, 23, 19, 0.96);
@@ -104,42 +115,25 @@
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-pill: 999px;
+  --radius-control: 10px;
+  --radius-card: 18px;
   --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-card-hover: 0 18px 36px rgba(0, 0, 0, 0.2);
   --shadow-floating: 0 18px 50px rgba(0, 0, 0, 0.2);
   --transition-fast: 180ms ease;
   --transition-base: 260ms ease;
-}
 
-:root {
-  /* FoodFlow Brand Colors */
+  /* Compatibility aliases used by the existing page styles */
   --color-primary: #b89a62;
   --color-primary-light: #d2b77f;
-
-  /* Background Colors */
   --color-bg-main: #171713;
   --color-bg-card: #211f19;
   --color-bg-hover: #2b281f;
-
-  /* Text Colors */
   --color-text-primary: #f4efe5;
   --color-text-secondary: #b8b1a3;
-  --color-text-muted: #898274;
-
-  /* Border */
-  --color-border: rgba(184, 154, 98, 0.2);
-
-  /* Typography */
   --font-primary: "Poppins", sans-serif;
-
-  /* Spacing */
   --section-spacing: 80px;
   --card-padding: 22px;
-
-  /* Border Radius */
-  --radius-card: 16px;
-  --radius-pill: 50px;
-
-  /* Transitions */
   --transition-smooth: 0.3s ease;
 }
 
@@ -157,6 +151,74 @@ img {
   img {
     transition: none !important;
     transform: none !important;
+  }
+}
+
+/* =========================================================
+   SHARED CUSTOMER COMPONENT FINISH
+   These selectors keep cards and interactions consistent on
+   every customer page without changing any page structure.
+   ========================================================= */
+
+body .categories-section .category-card,
+body .popular-section .food-card,
+body .testimonial-card,
+body .gallery-card {
+  border-radius: var(--radius-card);
+}
+
+body .cart-page .cart-item,
+body .order-card,
+body .checkout-page .checkout-form-section,
+body .checkout-page .checkout-summary,
+body .contact-page .contact-card,
+body .order-summary {
+  border-radius: var(--radius-card);
+}
+
+/* Shared card colours remain controlled by the semantic tokens above. */
+body .contact-page .contact-card,
+body .order-card,
+body .order-summary {
+  border-color: var(--color-card-border);
+  background-color: var(--color-card-background);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    animation: foodflow-page-enter 360ms ease-out both;
+  }
+
+  body
+    :where(
+      .button,
+      button,
+      .category-card,
+      .food-card,
+      .testimonial-card,
+      .gallery-card,
+      .contact-card,
+      .order-card,
+      .cart-item
+    ) {
+    transition:
+      transform var(--transition-base),
+      box-shadow var(--transition-base),
+      border-color var(--transition-fast),
+      background-color var(--transition-fast),
+      color var(--transition-fast);
+  }
+}
+
+@keyframes foodflow-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

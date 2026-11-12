@@ -1360,7 +1360,8 @@
   }
 
   .testimonial-card {
-    padding: 18px;
+    min-height: 0;
+    padding: 26px 22px;
   }
 
   .testimonial-text {

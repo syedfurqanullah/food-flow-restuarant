@@ -390,7 +390,7 @@ ul {
 }
 
 .brand-wordmark span {
-  color: var(--color-accent-deep-warm);
+  color: var(--color-accent-bright);
 }
 
 .navigation-list {
@@ -2519,4 +2519,124 @@ body.menu-page {
 
 .popular-section .food-info p {
   margin-bottom: 12px;
+}
+
+/* Premium customer reviews */
+.testimonials {
+  padding: clamp(76px, 9vw, 124px) 0;
+  background: var(--color-ink-soft);
+}
+
+.testimonials-header {
+  max-width: 760px;
+  margin-bottom: 54px;
+}
+
+.testimonials .section-subtitle {
+  color: var(--color-accent-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+}
+
+.testimonials .section-title {
+  color: var(--color-cream);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.4vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.testimonials .section-title span {
+  color: var(--color-accent-soft);
+}
+
+.testimonials-description {
+  max-width: 500px;
+  margin-inline: auto;
+  color: var(--color-text-soft);
+}
+
+.testimonials-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  position: relative;
+  min-height: 340px;
+  overflow: hidden;
+  padding: 30px 26px;
+  border: 1px solid var(--overlay-gold-18);
+  border-radius: var(--radius-card);
+  background: linear-gradient(145deg, var(--color-surface-raised), var(--color-ink));
+  box-shadow: none;
+  transition: transform var(--transition-base), border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.testimonial-card::before {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  color: var(--overlay-gold-18);
+  font-family: var(--font-display);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1;
+  content: "“";
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--overlay-gold-55);
+  background: var(--color-surface-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.testimonial-stars {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 26px;
+  color: var(--color-accent-soft);
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+}
+
+.testimonial-text {
+  position: relative;
+  z-index: 1;
+  min-height: 0;
+  margin: 0;
+  color: var(--color-cream);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.62;
+}
+
+.testimonial-user {
+  gap: 13px;
+  min-height: 0;
+  margin-top: auto;
+  padding-top: 25px;
+  border-top-color: var(--overlay-white-12);
+}
+
+.testimonial-avatar {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--overlay-gold-40);
+  border-radius: 50%;
+  background: var(--overlay-gold-08);
+  color: var(--color-accent-soft);
+  font-size: 0.78rem;
+}
+
+.testimonial-user-info h3 {
+  color: var(--color-cream);
+  font-size: 0.9rem;
+}
+
+.testimonial-user-info span {
+  color: var(--color-text-subtle);
+  font-size: 0.75rem;
 }

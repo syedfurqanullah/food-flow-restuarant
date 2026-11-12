@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../css/home/responsive.css" />
     <link rel="stylesheet" href="../css/about/main.css" />
     <link rel="stylesheet" href="../css/about/responsive.css" />
-
   </head>
   <body class="about-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -85,59 +84,81 @@
     </header>
     <main id="main-content" class="content-page-main">
       <section class="about-hero" aria-labelledby="about-title">
+        <img
+          class="about-hero-image"
+          src="../assets/images/about/restaurant-interior.jpg"
+          alt="FoodFlow restaurant interior with dining tables"
+        />
         <div class="hero-overlay">
-          <p class="small-heading">WELCOME TO FOODFLOW</p>
-          <h1 id="about-title">Our story, your experience.</h1>
+     
+          <h1 id="about-title">Food worth <span>gathering for.</span></h1>
           <p>
-            We bring people together with fresh ingredients, familiar favourites
-            and meals made for sharing.
+            From our kitchen to your table, we make everyday favourites feel
+            like an occasion.
           </p>
-          <a href="#our-story" class="hero-btn">Discover our story</a>
+          <a href="#our-story" class="hero-btn"
+            >Discover our story <span aria-hidden="true">→</span></a
+          >
         </div>
       </section>
+
       <section
         class="story-section"
         id="our-story"
         aria-labelledby="story-title"
       >
-        <div class="story-image">
-          <img
-            src="../assets/images/about/restaurant-interior.jpg"
-            alt="Warm FoodFlow restaurant interior"
-          />
+        <div class="story-visual">
+          <div class="story-image">
+            <img
+              src="../assets/images/about/restaurant-interior.jpg"
+              alt="Warm FoodFlow restaurant interior"
+            />
+          </div>
+          <div class="story-note">
+            <strong>Made for moments</strong
+            ><span
+              >Relaxed lunches, lively dinners and every plan in between.</span
+            >
+          </div>
         </div>
         <div class="story-content">
-          <p class="section-tag">ABOUT FOODFLOW</p>
-          <h2 id="story-title">We bring people together through food.</h2>
+          <p class="section-tag">Our story</p>
+          <h2 id="story-title">Good food brings the best people together.</h2>
           <p>
-            FoodFlow is built around good ingredients, thoughtful preparation
-            and a welcoming experience from menu to meal.
+            FoodFlow began with a simple idea: make it easier to enjoy food you
+            genuinely look forward to. Our menu is built around comforting
+            classics, fresh flavours and dishes made to share.
           </p>
           <p>
-            Our kitchen creates familiar dishes with care, so every order feels
-            easy to choose and enjoyable to share.
+            Whether you are ordering a quick favourite or setting the table for
+            everyone, every choice should feel effortless and every bite worth
+            coming back for.
           </p>
-          <div class="story-stats" aria-label="FoodFlow highlights">
+          <div class="story-stats" aria-label="FoodFlow promises">
             <div>
-              <h3>10+</h3>
-              <span>Years of care</span>
+              <h3>Fresh</h3>
+              <span>Ingredients, thoughtfully chosen</span>
             </div>
             <div>
-              <h3>50+</h3>
-              <span>Menu favourites</span>
+              <h3>Warm</h3>
+              <span>Hospitality in every order</span>
             </div>
             <div>
-              <h3>5K+</h3>
-              <span>Happy guests</span>
+              <h3>Easy</h3>
+              <span>Good food, simply enjoyed</span>
             </div>
           </div>
         </div>
       </section>
+
       <section class="special-section" aria-labelledby="quality-title">
         <div class="section-heading">
-          <p class="section-tag">OUR QUALITY</p>
-          <h2 id="quality-title">What makes us special</h2>
-          <p>Simple values that guide every meal we prepare.</p>
+          <p class="section-tag">The FoodFlow way</p>
+          <h2 id="quality-title">A little more care in every detail.</h2>
+          <p>
+            Three simple principles guide the way we choose, prepare and serve
+            our food.
+          </p>
         </div>
         <div class="special-container">
           <article class="special-card">
@@ -147,8 +168,11 @@
               loading="lazy"
             />
             <div class="special-info">
-              <h3>Fresh ingredients</h3>
-              <p>We choose ingredients with flavour and quality in mind.</p>
+              <h3>Quality first</h3>
+              <p>
+                Ingredients selected for the flavour you can taste in every
+                dish.
+              </p>
             </div>
           </article>
           <article class="special-card">
@@ -158,9 +182,10 @@
               loading="lazy"
             />
             <div class="special-info">
-              <h3>Made with care</h3>
+              <h3>Cooked with intention</h3>
               <p>
-                Every dish is prepared to make the experience feel considered.
+                Familiar food prepared with patience, craft and a little kitchen
+                magic.
               </p>
             </div>
           </article>
@@ -171,15 +196,16 @@
               loading="lazy"
             />
             <div class="special-info">
-              <h3>Made for sharing</h3>
+              <h3>Made to share</h3>
               <p>
-                Choose a favourite for yourself or something for the whole
-                table.
+                Generous flavours for solo cravings, family tables and
+                everything between.
               </p>
             </div>
           </article>
         </div>
       </section>
+
       <section class="chef-section" aria-labelledby="kitchen-title">
         <div class="chef-image">
           <img
@@ -189,14 +215,29 @@
           />
         </div>
         <div class="chef-content">
-          <p class="section-tag">OUR KITCHEN</p>
-          <h2 id="kitchen-title">Passion behind every dish.</h2>
+          <p class="section-tag">From our kitchen</p>
+          <h2 id="kitchen-title">Favourites, made fresh for your table.</h2>
           <p>
-            From quick favourites to dishes for a relaxed meal, our menu is
-            designed to make choosing easy.
+            Our kitchen is where familiar recipes meet the small details that
+            make a meal memorable. Explore the menu and find the dish that fits
+            your moment.
           </p>
-          <a href="menu/menu.html" class="chef-btn">Explore our menu</a>
+          <a href="menu/menu.html" class="chef-btn"
+            >Explore the menu <span aria-hidden="true">→</span></a
+          >
         </div>
+      </section>
+
+      <section class="about-cta" aria-labelledby="cta-title">
+        <p class="section-tag">Your next favourite awaits</p>
+        <h2 id="cta-title">Something delicious is always within reach.</h2>
+        <p>
+          Take a look at the FoodFlow menu and order the meal your moment
+          deserves.
+        </p>
+        <a href="menu/menu.html" class="about-cta-button"
+          >View full menu <span aria-hidden="true">→</span></a
+        >
       </section>
     </main>
     <footer class="home-footer">
@@ -247,6 +288,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>

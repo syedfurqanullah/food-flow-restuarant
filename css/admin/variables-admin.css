@@ -1,5 +1,6 @@
 :root {
   /* FoodFlow admin palette, matched to the customer site. */
+  /* Core theme: change these values to recolour the complete admin interface. */
   --admin-accent: #b89a62;
   --admin-accent-hover: #d3b77e;
   --admin-dark: #171713;
@@ -10,7 +11,18 @@
   --admin-border: rgba(184, 154, 98, 0.28);
   --admin-accent-ring: rgba(184, 154, 98, 0.4);
   --admin-accent-soft-ring: rgba(184, 154, 98, 0.18);
-  --admin-radius: 12px;
+  --admin-input: #211f1a;
+  --admin-input-text: #f4efe5;
+  --admin-input-placeholder: #b8b2a8;
+  --admin-card-hover: #28251f;
+  --admin-success: #77bd83;
+  --admin-warning: #d89a55;
+  --admin-danger: #dc9285;
+  --admin-focus-ring: var(--admin-accent-ring);
+  --admin-radius: 14px;
+  --admin-card-radius: 16px;
+  --admin-control-radius: 10px;
+  --admin-shadow-card: 0 10px 28px rgba(0, 0, 0, 0.16);
   --admin-font: Arial, Helvetica, sans-serif;
 }
 
@@ -28,5 +40,97 @@ img {
   img {
     transition: none !important;
     transform: none !important;
+  }
+}
+
+/* =========================================================
+   SHARED ADMIN COMPONENT FINISH
+   Card, control and motion rules remain tied to the tokens
+   above so an admin theme can be changed from one place.
+   ========================================================= */
+
+.admin-layout
+  :where(.card, .stat-card, .orders-section, .settings-card, .dashboard-date) {
+  border-radius: var(--admin-card-radius);
+  box-shadow: var(--admin-shadow-card);
+}
+
+/* High-specificity shared controls replace page-level legacy colour literals. */
+.admin-layout .sidebar,
+.admin-layout .sidebar-brand {
+  background-color: var(--admin-dark);
+  color: var(--admin-text);
+}
+
+.admin-layout .sidebar-link {
+  color: var(--admin-muted);
+}
+
+.admin-layout .sidebar-link:hover,
+.admin-layout .sidebar-link.active {
+  background-color: var(--admin-accent-soft-ring);
+  color: var(--admin-accent-hover);
+}
+
+.admin-layout .btn-primary {
+  background-color: var(--admin-accent);
+  color: var(--admin-text);
+}
+
+.admin-layout .btn-primary:hover {
+  background-color: var(--admin-accent-hover);
+}
+
+.admin-layout .btn-secondary {
+  border-color: var(--admin-border);
+  background-color: var(--admin-card);
+  color: var(--admin-text);
+}
+
+.admin-layout .btn-secondary:hover {
+  background-color: var(--admin-card-hover);
+}
+
+.admin-layout .form-group input,
+.admin-layout .form-group select,
+.admin-layout .form-group textarea {
+  border-color: var(--admin-border);
+  background-color: var(--admin-input);
+  color: var(--admin-input-text);
+}
+
+.admin-layout .form-group input::placeholder,
+.admin-layout .form-group textarea::placeholder {
+  color: var(--admin-input-placeholder);
+}
+
+.admin-layout :where(input, select, textarea) {
+  border-radius: var(--admin-control-radius);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .admin-layout {
+    animation: foodflow-admin-enter 360ms ease-out both;
+  }
+
+  .admin-layout :where(.card, .stat-card, .sidebar-link, .btn, button) {
+    transition:
+      transform 220ms ease,
+      box-shadow 220ms ease,
+      border-color 180ms ease,
+      background-color 180ms ease,
+      color 180ms ease;
+  }
+}
+
+@keyframes foodflow-admin-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

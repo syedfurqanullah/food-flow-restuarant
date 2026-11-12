@@ -1,148 +1,77 @@
+@media (max-width: 860px) {
+  .about-page .story-section,
+  .about-page .chef-section {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .about-page .chef-section .chef-image {
+    order: 2;
+  }
+  .about-page .special-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-page .special-card:last-child {
+    grid-column: 1 / -1;
+  }
 
-/* AH MAD ABOUT RESPONSIVE */
-
-/* TABLETS */
-
-@media (max-width: 1024px) {
-
-    .navbar {
-        padding: 15px 3%;
-    }
-
-    .nav-links {
-        gap: 15px;
-    }
-
-    .story-section,
-    .chef-section {
-        padding: 65px 5%;
-        gap: 30px;
-    }
-
-    .story-content h2,
-    .chef-content h2 {
-        font-size: 30px;
-    }
-
-    .special-section,
-    .why-section {
-        padding: 65px 5%;
-    }
+  .about-page .special-card {
+    min-height: 400px;
+  }
 }
 
-/* MOBILE DEVICES */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px 15px;
-    }
-
-    .nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .nav-buttons {
-        justify-content: center;
-    }
-
-    .about-hero {
-        min-height: 420px;
-    }
-
-    .hero-overlay h1 {
-        font-size: 36px;
-    }
-
-    .story-section,
-    .chef-section {
-        flex-direction: column;
-        padding: 55px 6%;
-    }
-
-    .story-image,
-    .story-content,
-    .chef-image,
-    .chef-content {
-        width: 100%;
-    }
-
-    .story-image img,
-    .chef-image img {
-        height: 300px;
-    }
-
-    .special-container,
-    .why-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-heading h2 {
-        font-size: 30px;
-    }
+@media (max-width: 600px) {
+  .about-page .about-hero {
+    min-height: 510px;
+    background-position: 58% center;
+  }
+  .about-page .hero-overlay {
+    padding-block: 74px;
+  }
+  .about-page .hero-overlay h1 {
+    max-width: 420px;
+  }
+  .about-page .story-section,
+  .about-page .chef-section {
+    padding-block: 66px;
+  }
+  .about-page .story-image img,
+  .about-page .chef-image img {
+    height: 360px;
+  }
+  .about-page .story-note {
+    right: 14px;
+    bottom: 14px;
+    max-width: 170px;
+    padding: 14px 16px;
+  }
+  .about-page .story-stats > div {
+    padding: 16px 9px;
+  }
+  .about-page .story-stats span {
+    font-size: 0.68rem;
+  }
+  .about-page .special-container {
+    grid-template-columns: 1fr;
+  }
+  .about-page .special-card,
+  .about-page .special-card:last-child {
+    grid-column: auto;
+    min-height: 360px;
+  }
+  .about-page .special-info {
+    padding: 22px;
+  }
+  .about-page .chef-image::before {
+    top: -11px;
+    right: -11px;
+  }
+  .about-page .about-cta {
+    padding: 38px 22px;
+  }
 }
 
-/* SMALL MOBILE */
-
-@media (max-width: 480px) {
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .nav-links {
-        gap: 13px;
-    }
-
-    .nav-links a {
-        font-size: 13px;
-    }
-
-    .hero-overlay h1 {
-        font-size: 30px;
-    }
-
-    .about-hero {
-        min-height: 370px;
-    }
-
-    .story-section,
-    .chef-section {
-        padding: 45px 5%;
-    }
-
-    .story-content h2,
-    .chef-content h2 {
-        font-size: 27px;
-    }
-
-    .story-stats {
-        gap: 18px;
-    }
-
-    .special-container,
-    .why-container,
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .special-card img {
-        height: 220px;
-    }
-
-    .section-heading h2 {
-        font-size: 26px;
-    }
-
-    .footer {
-        padding: 40px 7% 20px;
-    }
+@media (max-width: 360px) {
+  .about-page .story-stats h3 {
+    font-size: 1.25rem;
+  }
 }
