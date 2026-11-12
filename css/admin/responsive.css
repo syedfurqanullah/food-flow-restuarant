@@ -1,0 +1,150 @@
+/* Keep the admin sidebar and page shell consistent across every admin screen. */
+@media (max-width: 1200px) {
+  .admin-main,
+  .main-content {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    top: auto;
+    align-self: stretch;
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    overflow: visible;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 16px;
+  }
+
+  .admin-layout .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-bottom: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .admin-layout .sidebar-link {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .admin-layout .sidebar-link.active {
+    box-shadow: inset 0 -3px 0 var(--admin-accent);
+  }
+
+  .sidebar-bottom,
+  .sidebar > .logout {
+    display: none;
+  }
+
+  .admin-main,
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 22px 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    padding: 14px;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 13px;
+  }
+
+  .admin-brand-logo {
+    width: 33px;
+    height: 33px;
+  }
+
+  .admin-brand-name {
+    font-size: 16px;
+  }
+
+  .admin-layout .sidebar-nav {
+    gap: 6px;
+  }
+
+  .admin-layout .sidebar-link {
+    gap: 7px;
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .nav-icon {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .admin-main,
+  .main-content {
+    padding: 0 14px 18px;
+  }
+
+  .admin-topbar,
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .admin-topbar-brand {
+    font-size: 15px;
+  }
+
+  .admin-topbar-nav {
+    order: 3;
+    width: 100%;
+    gap: 17px;
+    overflow-x: auto;
+  }
+
+  .admin-topbar-nav a,
+  .admin-topbar-site {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0 20px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .page-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .admin-main,
+  .main-content {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}

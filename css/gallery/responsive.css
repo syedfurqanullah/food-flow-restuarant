@@ -1,4 +1,5 @@
-
+/* Adapt the gallery grid and navigation for smaller screens. */
+/* Tablet layout: Show two images per row and tighten the header. */
 @media (max-width: 900px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -13,6 +14,7 @@
     }
 }
 
+/* Mobile layout: Stack navigation and use compact gallery cards. */
 @media (max-width: 600px) {
     .gallery-header {
         flex-direction: column;
@@ -57,6 +59,7 @@
     }
 }
 
+/* Narrow screens: Show one gallery image per row. */
 @media (max-width: 360px) {
     .gallery-grid {
         grid-template-columns: 1fr;

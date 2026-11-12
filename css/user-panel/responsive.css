@@ -1,3 +1,5 @@
+/* Reflow the customer account page at common screen widths. */
+/* Tablet layout: Move account navigation above the page content. */
 @media (max-width: 900px) {
   .account-layout {
     grid-template-columns: 1fr;
@@ -16,6 +18,7 @@
     display: none;
   }
 }
+/* Mobile layout: Stack account panels and simplify order rows. */
 @media (max-width: 680px) {
   .account-chip > span:last-child {
     display: none;
@@ -50,6 +53,7 @@
     padding: 18px;
   }
 }
+/* Narrow screens: Tighten account panels and profile details. */
 @media (max-width: 420px) {
   .account-main {
     padding-top: 25px;
@@ -69,6 +73,7 @@
     gap: 5px;
   }
 }
+/* Respect the visitor's reduced-motion preference. */
 @media (prefers-reduced-motion: reduce) {
   .account-nav a,
   .account-signout {

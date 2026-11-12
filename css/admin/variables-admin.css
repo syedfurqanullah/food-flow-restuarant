@@ -1,16 +1,17 @@
 :root {
   /* FoodFlow admin palette, matched to the customer site. */
   /* Core theme: change these values to recolour the complete admin interface. */
-  --admin-accent: #b89a62;
-  --admin-accent-hover: #d3b77e;
+  --admin-accent: #f5a623;
+  --admin-accent-hover: #e89512;
+  --admin-accent-rgb: 245, 166, 35;
   --admin-dark: #171713;
   --admin-bg: #171713;
   --admin-card: #211f1a;
   --admin-text: #f4efe5;
   --admin-muted: #b8b2a8;
-  --admin-border: rgba(184, 154, 98, 0.28);
-  --admin-accent-ring: rgba(184, 154, 98, 0.4);
-  --admin-accent-soft-ring: rgba(184, 154, 98, 0.18);
+  --admin-border: rgba(var(--admin-accent-rgb), 0.28);
+  --admin-accent-ring: rgba(var(--admin-accent-rgb), 0.4);
+  --admin-accent-soft-ring: rgba(var(--admin-accent-rgb), 0.18);
   --admin-input: #211f1a;
   --admin-input-text: #f4efe5;
   --admin-input-placeholder: #b8b2a8;
@@ -120,6 +121,127 @@ img {
       border-color 180ms ease,
       background-color 180ms ease,
       color 180ms ease;
+  }
+}
+
+/* Keep admin card hover and keyboard-focus feedback consistent. */
+html body .admin-layout :is(
+    .card,
+    .stat-card,
+    .insight-card,
+    .settings-card,
+    .dashboard-date,
+    .orders-section,
+    .directory-card,
+    .menu-list-card,
+    .form-card,
+    .sales-card,
+    .order-summary-card,
+    .recent-orders-card,
+    .popular-items-card
+  ) {
+  border-radius: var(--admin-card-radius);
+  transition:
+    transform 260ms ease,
+    box-shadow 260ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ):hover {
+    transform: translateY(-4px);
+    border-color: var(--admin-accent);
+    box-shadow: var(--admin-shadow-card);
+  }
+}
+
+html body .admin-layout :is(
+    .card,
+    .stat-card,
+    .insight-card,
+    .settings-card,
+    .dashboard-date,
+    .orders-section,
+    .directory-card,
+    .menu-list-card,
+    .form-card,
+    .sales-card,
+    .order-summary-card,
+    .recent-orders-card,
+    .popular-items-card
+  ):focus-within {
+  border-color: var(--admin-accent);
+  box-shadow: var(--admin-shadow-card);
+}
+
+/* Let keyboard users skip the admin navigation and reach page content. */
+.skip-link {
+  position: fixed;
+  z-index: 10000;
+  top: 12px;
+  left: 12px;
+  padding: 12px 16px;
+  transform: translateY(calc(-100% - 16px));
+  border-radius: var(--admin-control-radius);
+  background: var(--admin-text);
+  color: var(--admin-dark);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ) {
+    transition: none;
+  }
+
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ):hover {
+    transform: none;
   }
 }
 

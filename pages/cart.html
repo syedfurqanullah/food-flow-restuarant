@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Review the FoodFlow sample order and continue browsing the menu."
+      content="Review the FoodFlow cart preview, check item quantities and continue exploring the menu."
     />
     <meta name="theme-color" content="#171713" />
     <title>Your Cart | FoodFlow</title>
@@ -88,8 +88,17 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="cart-hero" aria-labelledby="cart-title">
-      <div class="cart-hero-content">
+    <section class="cart-hero order-page-hero" aria-labelledby="cart-title">
+      <div class="order-page-hero-image" aria-hidden="true">
+        <img
+          src="../assets/images/cart/takeaway-packaging.jpg"
+          alt=""
+          width="380"
+          height="200"
+        />
+      </div>
+      <div class="order-page-hero-overlay"></div>
+      <div class="cart-hero-content order-page-hero-content">
         <h2 class="cart-brand">FOODFLOW</h2>
 
         <h1 id="cart-title">Your cart</h1>
@@ -152,8 +161,8 @@
         <!-- ITEM 2 -->
         <div class="cart-item">
           <img
-            src="../assets/images/categories/burgers.jpg"
-            alt="French Fries"
+            src="../assets/images/hero/hero-food.jpg"
+            alt="French fries served with a burger and drink"
           />
 
           <div class="cart-item-info">
@@ -353,7 +362,8 @@
             <span>Food<span class="footer-brand-highlight">Flow.</span></span>
           </a>
           <p>
-            FoodFlow brings fresh ingredients and delicious meals together for a simple ordering experience.
+            From familiar favourites to new flavours, find a meal for every kind
+            of moment at FoodFlow.
           </p>
         </div>
         <div class="footer-column">
@@ -377,13 +387,13 @@
         <div class="footer-column">
           <h2>Explore FoodFlow</h2>
           <p class="footer-social-text">
-            Browse the sample menu to see the dishes featured on this site.
+            Explore the FoodFlow menu and find a favourite for your next meal.
           </p>
           <a href="menu/menu.html" class="footer-social-link">Explore the menu</a>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2026 FoodFlow. All rights reserved.</p>
-          <p>Made with care for food lovers.</p>
+          <p>Good food, shared moments, and a warm welcome at FoodFlow.</p>
         </div>
       </div>
     </footer>

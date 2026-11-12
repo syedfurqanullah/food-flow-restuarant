@@ -1,9 +1,12 @@
+/* Keep contact details, forms and the map usable on smaller screens. */
+/* Tablet layout: Reflow contact cards and stack the message panel. */
 @media (max-width: 980px) {
   .contact-page .contact-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contact-page .message-wrapper { grid-template-columns: 1fr; }
   .contact-page .message-info { min-height: 420px; }
 }
 
+/* Mobile layout: Simplify spacing and stack form fields. */
 @media (max-width: 600px) {
   .contact-page .contact-hero { min-height: 470px; padding-block: 64px; background-position: 58% center; }
   .contact-page .hero-content h1 { font-size: clamp(3.1rem, 15vw, 4.2rem); }

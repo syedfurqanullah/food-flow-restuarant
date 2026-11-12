@@ -23,7 +23,7 @@
       var(--overlay-ink-78) 52%,
       var(--overlay-ink-28) 100%
     ),
-    url("../../assets/images/contact/contact.png") center / cover
+    url("../../assets/images/about/restaurant-interior.jpg") center / cover
       no-repeat;
 }
 .contact-page .hero-content {
@@ -63,6 +63,7 @@
   line-height: 0.92;
 }
 .contact-page .hero-content h1 span,
+.contact-page h1 span,
 .contact-page h2 span {
   color: var(--color-accent-soft);
 }
@@ -93,6 +94,7 @@
   justify-content: center;
 }
 .contact-page .section-heading h2,
+.contact-page .section-heading h1,
 .contact-page .map-heading h2,
 .contact-page .message-info h2,
 .contact-page .form-title h2 {

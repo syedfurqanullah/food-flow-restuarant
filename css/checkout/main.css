@@ -53,34 +53,16 @@
 ========================================== */
 
 .checkout-hero {
-    min-height: 225px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    background:
-        linear-gradient(
-            rgba(17, 14, 11, 0.78),
-            rgba(17, 14, 11, 0.82)
-        ),
-        url("../../assets/images/backgrounds/food-bg.jpg")
-        center / cover no-repeat;
-
     color: var(--cream);
 }
 
-.checkout-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(17, 14, 11, 0.08);
-    pointer-events: none;
-}
-
 .checkout-hero-content {
-    position: relative;
-    z-index: 2;
     padding: 35px 15px;
 }
 
@@ -426,7 +408,7 @@
     width: 65px;
     height: 65px;
     flex: 0 0 65px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 9px;
 }
 
@@ -454,10 +436,6 @@
 }
 
 /* Task-first checkout refinement */
-.checkout-page .checkout-hero {
-    min-height: 150px;
-    background: #17130e;
-}
 
 .checkout-page .checkout-hero-content {
     width: min(1160px, calc(100% - 48px));
@@ -685,10 +663,3 @@
 .checkout-page .cart-link > span:first-of-type:not(.cart-label) { display: none; }
 .checkout-page .continue-shopping { font-size: 0; }
 .checkout-page .continue-shopping::after { content: "← Back to Cart Preview"; font-size: 0.87rem; }
-.checkout-page .footer-column:nth-child(3) p { font-size: 0; }
-.checkout-page .footer-column:nth-child(3) p::before { font-size: 0.88rem; }
-.checkout-page .footer-column:nth-child(3) p:nth-of-type(1)::before { content: "+92 300 1234567"; }
-.checkout-page .footer-column:nth-child(3) p:nth-of-type(2)::before { content: "info@foodflow.pk"; }
-.checkout-page .footer-column:nth-child(3) p:nth-of-type(3)::before { content: "Karachi, Pakistan"; }
-.checkout-page .footer-bottom p { font-size: 0; }
-.checkout-page .footer-bottom p::before { content: "© 2026 FoodFlow. All rights reserved."; font-size: 0.8rem; }

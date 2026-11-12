@@ -1,3 +1,5 @@
+/* Adjust menu cards and controls for smaller screens. */
+/* Tablet layout: Reduce the number of menu cards per row. */
 @media (max-width: 1100px) {
   .menu-page .food-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -8,6 +10,7 @@
   }
 }
 
+/* Small tablet layout: Stack search and use a two-column menu grid. */
 @media (max-width: 760px) {
   .menu-page .header-container,
   .menu-page .menu-hero-content,
@@ -55,6 +58,7 @@
   }
 }
 
+/* Mobile layout: Show compact horizontal menu cards. */
 @media (max-width: 520px) {
   .menu-page .header-container,
   .menu-page .menu-hero-content,
@@ -80,13 +84,17 @@
 
   .menu-page .food-card {
     display: grid;
-    grid-template-columns: 38% minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .menu-page .food-card > img {
-    height: 100%;
-    min-height: 100%;
-    aspect-ratio: auto;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transform: none;
   }
 
   .menu-page .food-info {
@@ -138,6 +146,7 @@
   }
 }
 
+/* Narrow screens: Stack each menu card image above its details. */
 @media (max-width: 360px) {
   .menu-page .food-card {
     grid-template-columns: 1fr;
@@ -157,6 +166,7 @@
   }
 }
 
+/* Respect the visitor's reduced-motion preference. */
 @media (prefers-reduced-motion: reduce) {
   .menu-page .food-card,
   .menu-page .food-card > img,

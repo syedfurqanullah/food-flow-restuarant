@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Explore FoodFlow's sample menu of freshly prepared restaurant favorites."
+      content="Explore FoodFlow's menu of burgers, pizza, pasta, BBQ, refreshing drinks and desserts."
     />
     <meta name="theme-color" content="#171713" />
     <title>Menu | FoodFlow</title>
@@ -18,6 +18,7 @@
 
   <body class="menu-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- Site header: Provides navigation to the main restaurant pages. -->
     <header class="site-header">
       <div class="container header-container">
         <a class="brand" href="../index.html" aria-label="FoodFlow home">
@@ -86,7 +87,9 @@
       </div>
     </header>
 
+    <!-- Main content: Introduces the menu and lists available dishes. -->
     <main id="main-content">
+      <!-- Menu hero: Sets the tone and links customers to the food selection. -->
       <section class="menu-hero" aria-labelledby="menu-title">
         <div
           class="menu-hero-image"
@@ -104,12 +107,13 @@
             >Explore the menu <span aria-hidden="true">↓</span></a
           >
           <p class="menu-demo-note">
-            Sample menu for a frontend demonstration. Prices and availability
-            require restaurant confirmation.
+            Menu items and prices are shown for preview. Please contact the
+            restaurant to confirm current availability.
           </p>
         </div>
       </section>
 
+      <!-- Menu selection: Groups search, categories and dish cards. -->
       <section
         class="menu-section"
         id="menu-items"
@@ -121,13 +125,13 @@
               <p class="menu-eyebrow">FROM OUR KITCHEN</p>
               <h2 id="menu-section-title">Find your favorite</h2>
               <p>
-                Browse the sample selection below. Ask the restaurant about
-                ingredients and allergens.
+                Explore the menu below. Please contact the restaurant to
+                confirm ingredients and allergen information.
               </p>
             </div>
             <form class="menu-search" role="search" action="#menu-items">
               <label class="visually-hidden" for="menu-search"
-                >Search menu (visual demo)</label
+                >Search the menu</label
               >
               <span aria-hidden="true">⌕</span
               ><input
@@ -147,8 +151,8 @@
             ><a href="#desserts">Desserts</a>
           </nav>
           <p class="menu-control-note">
-            Search and add buttons are visual samples; ordering is not connected
-            in this HTML/CSS version.
+            Search and add controls are shown for preview; online ordering is
+            not available on this demo site.
           </p>
 
           <div
@@ -158,12 +162,12 @@
           >
             <div class="menu-category-heading">
               <h2 id="all-title">All dishes</h2>
-              <span>6 sample items</span>
+              <span>6 menu highlights</span>
             </div>
             <div class="food-container">
               <article class="food-card" id="burgers">
                 <img
-                  src="../assets/images/food/classic-burger.jpg"
+                  src="../assets/images/menu/burgers/classic-burger.jpg"
                   alt="Classic burger with lettuce and cheese"
                   width="640"
                   height="430"
@@ -193,7 +197,7 @@
               </article>
               <article class="food-card" id="pizza">
                 <img
-                  src="../assets/images/food/margherita-pizza.jpg"
+                  src="../assets/images/menu/pizza/margherita-pizza.webp"
                   alt="Margherita pizza with tomato, mozzarella and basil"
                   width="640"
                   height="430"
@@ -222,7 +226,7 @@
               </article>
               <article class="food-card" id="pasta">
                 <img
-                  src="../assets/images/food/creamy-pasta.jpg"
+                  src="../assets/images/menu/pasta/creamy-mushroom-pasta.webp"
                   alt="Creamy pasta with herbs"
                   width="640"
                   height="430"
@@ -252,8 +256,8 @@
               </article>
               <article class="food-card" id="sides">
                 <img
-                  src="../assets/images/food/french-fries.jpg"
-                  alt="Golden French fries"
+                  src="../assets/images/hero/hero-food.jpg"
+                  alt="French fries served with a burger and drink"
                   width="640"
                   height="430"
                   loading="lazy"
@@ -307,7 +311,7 @@
               </article>
               <article class="food-card" id="desserts">
                 <img
-                  src="../assets/images/food/chocolate-cake.jpg"
+                  src="../assets/images/menu/desserts/chocolate-cake.jpg"
                   alt="Chocolate cake with chocolate frosting"
                   width="640"
                   height="430"
@@ -344,6 +348,7 @@
       </section>
     </main>
 
+    <!-- Site footer: Keeps key links and contact routes easy to find. -->
     <footer class="home-footer">
       <div class="container footer-container">
         <div class="footer-brand">
@@ -358,8 +363,8 @@
             ></a
           >
           <p>
-            Fresh ingredients, delicious meals and a better food ordering
-            experience. Made with care, served with love.
+            Explore comforting favourites, bold flavours and something
+            delicious for every table.
           </p>
         </div>
         <div class="footer-column">
@@ -389,7 +394,7 @@
         </div>
         <div class="footer-bottom">
           <p>&copy; 2026 FoodFlow. All rights reserved.</p>
-          <p>Made with care for food lovers.</p>
+          <p>Good food, shared moments, and a warm welcome at FoodFlow.</p>
         </div>
       </div>
     </footer>

@@ -689,6 +689,140 @@
   }
 }
 
+/* Keep the home-page mobile navigation identical on checkout and confirmation. */
+@media (max-width: 1024px) {
+  .checkout-page .header-container,
+  .order-success-page .header-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 4px 14px;
+    min-height: 72px;
+    padding-block: 10px;
+  }
+
+  .checkout-page .brand,
+  .order-success-page .brand {
+    min-width: 0;
+  }
+
+  .checkout-page .header-actions,
+  .order-success-page .header-actions {
+    grid-column: 2;
+    grid-row: 1;
+    gap: 8px;
+  }
+
+  .checkout-page .signup-button,
+  .order-success-page .signup-button,
+  .checkout-page .cart-label,
+  .order-success-page .cart-label {
+    display: none;
+  }
+
+  .checkout-page .nav-toggle,
+  .order-success-page .nav-toggle {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    opacity: 0;
+    pointer-events: auto;
+    white-space: nowrap;
+  }
+
+  .checkout-page .nav-toggle-label,
+  .order-success-page .nav-toggle-label {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid var(--overlay-gold-40);
+    border-radius: 9px;
+    color: var(--color-cream);
+    cursor: pointer;
+  }
+
+  .checkout-page .menu-icon,
+  .checkout-page .menu-icon::before,
+  .checkout-page .menu-icon::after {
+    width: 19px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+  }
+
+  .checkout-page .menu-icon::before,
+  .checkout-page .menu-icon::after {
+    top: auto;
+    transform: translateY(0);
+  }
+
+  .checkout-page .menu-icon::before {
+    top: -6px;
+  }
+
+  .checkout-page .menu-icon::after {
+    top: 6px;
+  }
+
+  .checkout-page .site-navigation,
+  .order-success-page .site-navigation {
+    position: static;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: none;
+    width: 100%;
+    max-height: none;
+    margin: 4px 0 0;
+    padding: 8px 0 0;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    border-top: 1px solid var(--overlay-white-08);
+    background: transparent;
+  }
+
+  .checkout-page .nav-toggle:checked ~ .site-navigation,
+  .order-success-page .nav-toggle:checked ~ .site-navigation {
+    display: block;
+  }
+
+  .checkout-page .navigation-list,
+  .order-success-page .navigation-list {
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding-bottom: 3px;
+  }
+
+  .checkout-page .navigation-link,
+  .order-success-page .navigation-link {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    align-items: center;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+
+  .checkout-page .mobile-signup-link,
+  .order-success-page .mobile-signup-link {
+    display: block;
+  }
+}
+
 /* =====================================
    CATEGORIES RESPONSIVE DESIGN
 ===================================== */
@@ -786,9 +920,7 @@
     font-size: 17px;
   }
 
-  .cart-page .cart-hero {
-    min-height: 260px;
-  }
+
 
   .cart-page .cart-brand {
     font-size: 30px;
@@ -1016,13 +1148,6 @@
     font-size: 11px;
   }
 
-  /* HERO */
-
-  .cart-page .cart-hero {
-    min-height: 135px;
-    padding: 20px 10px;
-  }
-
   .cart-page .cart-brand {
     font-size: 19px;
     letter-spacing: 3px;
@@ -1241,10 +1366,6 @@
 /* LANDSCAPE MOBILE */
 
 @media (max-height: 500px) and (orientation: landscape) {
-  .cart-page .cart-hero {
-    min-height: 110px;
-  }
-
   .cart-page .cart-main {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1461,7 +1582,6 @@
 /* Consistent image crops and zoom across food cards */
 .categories-section .category-image img,
 .popular-section .food-image,
-.menu-page .food-card > img,
 .offer-visual img {
   border: 0;
   outline: 0;

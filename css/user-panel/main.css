@@ -1,3 +1,4 @@
+/* Customer account page layout and shared panel styles. */
 .user-panel-page {
   min-width: 320px;
   background: var(--color-ink);
@@ -5,6 +6,7 @@
   font-family: var(--font-body);
 }
 
+/* Customer identity chip and avatar styles. */
 .account-chip {
   display: inline-flex;
   align-items: center;
@@ -29,6 +31,7 @@
   height: 32px;
   font-size: 0.68rem;
 }
+/* Account page introduction and main content layout. */
 .account-main {
   padding: clamp(38px, 6vw, 78px) 0 clamp(58px, 7vw, 94px);
   background:
@@ -79,6 +82,7 @@
   gap: 24px;
   align-items: start;
 }
+/* Sidebar navigation and profile summary. */
 .account-sidebar,
 .panel-card,
 .account-stats article {
@@ -155,6 +159,7 @@
   display: grid;
   gap: 24px;
 }
+/* Account summary cards and totals. */
 .account-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -207,6 +212,7 @@
 .text-action:hover {
   color: var(--color-cream);
 }
+/* Recent order rows and their delivery status. */
 .order-row {
   display: grid;
   grid-template-columns: 40px minmax(0, 1fr) auto auto;
@@ -262,6 +268,7 @@
   background: var(--overlay-gold-16);
   color: var(--color-accent-light);
 }
+/* Saved address and customer profile details. */
 .account-lower {
   display: grid;
   grid-template-columns: 1fr 1fr;

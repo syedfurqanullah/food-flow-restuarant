@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#171411" />
     <meta
       name="description"
-      content="Review the FoodFlow sample order and continue to the checkout confirmation preview."
+      content="Complete the FoodFlow checkout preview to review delivery information and your order summary."
     />
 
     <title>Checkout | FoodFlow</title>
@@ -101,13 +101,24 @@
     </header>
 
     <!-- HERO -->
-    <section class="checkout-hero">
-      <div class="checkout-hero-overlay"></div>
+    <section
+      class="checkout-hero order-page-hero"
+      aria-labelledby="checkout-title"
+    >
+      <div class="order-page-hero-image" aria-hidden="true">
+        <img
+          src="../assets/images/cart/takeaway-packaging.jpg"
+          alt=""
+          width="380"
+          height="200"
+        />
+      </div>
+      <div class="order-page-hero-overlay"></div>
 
-      <div class="container checkout-hero-content">
+      <div class="container checkout-hero-content order-page-hero-content">
         <span class="checkout-eyebrow">FOODFLOW RESTAURANT</span>
 
-        <h1>Checkout</h1>
+        <h1 id="checkout-title">Checkout</h1>
 
         <p>Complete your order details</p>
       </div>
@@ -289,8 +300,8 @@
           <!-- FRIES -->
           <div class="checkout-product">
             <img
-              src="../assets/images/menu/burgers/crispy-chicken-burger.jpg"
-              alt="French Fries"
+              src="../assets/images/hero/hero-food.jpg"
+              alt="French fries served with a burger and drink"
             />
 
             <div class="checkout-product-info">
@@ -395,7 +406,7 @@
             <h2>Explore FoodFlow</h2>
 
             <p class="footer-social-text">
-              Browse the menu to see the dishes featured on this site.
+              Explore the FoodFlow menu and find a favourite for your next meal.
             </p>
 
           <a href="menu/menu.html" class="footer-social-link">
@@ -407,7 +418,7 @@
           <div class="footer-bottom">
             <p>&copy; 2026 FoodFlow. All rights reserved.</p>
 
-            <p>Made with care for food lovers.</p>
+            <p>Good food, shared moments, and a warm welcome at FoodFlow.</p>
           </div>
         </div>
       </footer>

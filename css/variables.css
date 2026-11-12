@@ -199,7 +199,17 @@ body .order-summary {
       .gallery-card,
       .contact-card,
       .order-card,
-      .cart-item
+      .cart-item,
+      .special-card,
+      .why-card,
+      .panel-card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .success-card,
+      .checkout-form-section,
+      .checkout-summary,
+      .order-summary
     ) {
     transition:
       transform var(--transition-base),
@@ -207,6 +217,168 @@ body .order-summary {
       border-color var(--transition-fast),
       background-color var(--transition-fast),
       color var(--transition-fast);
+  }
+}
+
+/* Keep customer card hover and keyboard-focus feedback consistent. */
+html body :is(
+    .categories-section .category-card,
+    .popular-section .food-card,
+    .menu-page .food-card,
+    .contact-page .contact-card,
+    .my-orders-page .order-card,
+    .cart-page .cart-item,
+    .account-content .panel-card,
+    .category-card,
+    .food-card,
+    .testimonial-card,
+    .gallery-card,
+    .special-card,
+    .why-card,
+    .panel-card,
+    .stat-card,
+    .insight-card,
+    .settings-card,
+    .success-card,
+    .checkout-form-section,
+    .checkout-summary,
+    .order-summary
+  ) {
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body :is(
+      .categories-section .category-card,
+      .popular-section .food-card,
+      .menu-page .food-card,
+      .contact-page .contact-card,
+      .my-orders-page .order-card,
+      .cart-page .cart-item,
+      .account-content .panel-card,
+      .category-card,
+      .food-card,
+      .testimonial-card,
+      .gallery-card,
+      .special-card,
+      .why-card,
+      .panel-card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .success-card,
+      .checkout-form-section,
+      .checkout-summary,
+      .order-summary
+    ):hover {
+    transform: translateY(-4px);
+    border-color: var(--color-card-border-strong);
+    box-shadow: var(--shadow-card-hover);
+  }
+}
+
+html body :is(
+    .categories-section .category-card,
+    .popular-section .food-card,
+    .menu-page .food-card,
+    .contact-page .contact-card,
+    .my-orders-page .order-card,
+    .cart-page .cart-item,
+    .account-content .panel-card,
+    .category-card,
+    .food-card,
+    .testimonial-card,
+    .gallery-card,
+    .special-card,
+    .why-card,
+    .panel-card,
+    .stat-card,
+    .insight-card,
+    .settings-card,
+    .success-card,
+    .checkout-form-section,
+    .checkout-summary,
+    .order-summary
+  ):focus-within {
+  border-color: var(--color-card-border-strong);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Give keyboard users a clear focus indicator on every interactive control. */
+html body :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-focus-ring, var(--admin-focus-ring, #d3b77e));
+  outline-offset: 3px;
+}
+
+/* Let keyboard users skip directly to the page content. */
+.skip-link {
+  position: fixed;
+  z-index: 10000;
+  top: 12px;
+  left: 12px;
+  padding: 12px 16px;
+  transform: translateY(calc(-100% - 16px));
+  border-radius: var(--radius-control);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body :is(
+      .category-card,
+      .food-card,
+      .testimonial-card,
+      .gallery-card,
+      .contact-card,
+      .order-card,
+      .cart-item,
+      .special-card,
+      .why-card,
+      .panel-card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .success-card,
+      .checkout-form-section,
+      .checkout-summary,
+      .order-summary
+    ) {
+    transition: none;
+  }
+
+  html body :is(
+      .categories-section .category-card,
+      .popular-section .food-card,
+      .menu-page .food-card,
+      .contact-page .contact-card,
+      .my-orders-page .order-card,
+      .cart-page .cart-item,
+      .account-content .panel-card,
+      .category-card,
+      .food-card,
+      .testimonial-card,
+      .gallery-card,
+      .special-card,
+      .why-card,
+      .panel-card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .success-card,
+      .checkout-form-section,
+      .checkout-summary,
+      .order-summary
+    ):hover {
+    transform: none;
   }
 }
 
@@ -276,4 +448,99 @@ body .order-summary {
   justify-content: center;
   gap: 12px;
   margin-top: 28px;
+}
+
+@keyframes foodflow-scroll-reveal {
+  from {
+    opacity: 0;
+    translate: 0 18px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    body:is(
+        .home-page,
+        .menu-page,
+        .about-page,
+        .contact-page,
+        .gallery-page,
+        .cart-page,
+        .checkout-page,
+        .order-success-page
+      ) main > :is(section, article),
+    body:is(
+        .home-page,
+        .menu-page,
+        .about-page,
+        .contact-page,
+        .gallery-page,
+        .cart-page,
+        .checkout-page,
+        .order-success-page
+      ) main :is(
+        .category-card,
+        .food-card,
+        .testimonial-card,
+        .gallery-card,
+        .contact-card,
+        .order-card,
+        .cart-item,
+        .special-card,
+        .why-card,
+        .success-card,
+        .checkout-form-section,
+        .checkout-summary,
+        .order-summary
+      ) {
+      animation: foodflow-scroll-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:is(
+      .home-page,
+      .menu-page,
+      .about-page,
+      .contact-page,
+      .gallery-page,
+      .cart-page,
+      .checkout-page,
+      .order-success-page
+    ) main > :is(section, article),
+  body:is(
+      .home-page,
+      .menu-page,
+      .about-page,
+      .contact-page,
+      .gallery-page,
+      .cart-page,
+      .checkout-page,
+      .order-success-page
+    ) main :is(
+      .category-card,
+      .food-card,
+      .testimonial-card,
+      .gallery-card,
+      .contact-card,
+      .order-card,
+      .cart-item,
+      .special-card,
+      .why-card,
+      .success-card,
+      .checkout-form-section,
+      .checkout-summary,
+      .order-summary
+    ) {
+    animation: none;
+    translate: none;
+  }
 }

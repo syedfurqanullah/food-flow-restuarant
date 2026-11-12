@@ -9,49 +9,13 @@
     box-sizing: border-box;
 }
 
-body {
+body.order-success-page {
     font-family: Arial, Helvetica, sans-serif;
     background: #11100E;
     color: #FFF8ED;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-/* HEADER */
-
-.success-header {
-    width: 100%;
-    background: #171411;
-    border-bottom: 1px solid rgba(255, 248, 237, 0.1);
-}
-
-.header-container {
-    max-width: 1200px;
-    min-height: 85px;
-    margin: auto;
-    padding: 0 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #FFF8ED;
-    text-decoration: none;
-    font-size: 23px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.brand img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .brand-highlight {

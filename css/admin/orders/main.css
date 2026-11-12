@@ -94,7 +94,7 @@ select {
 
 .sidebar nav a:hover,
 .sidebar nav a.active {
-    background: rgba(184, 154, 98, 0.14);
+    background: rgba(var(--admin-accent-rgb), 0.14);
     color: var(--admin-accent-hover);
 }
 
@@ -170,7 +170,7 @@ select {
     width: 39px;
     height: 39px;
     border-radius: 10px;
-    background: rgba(184, 154, 98, 0.16);
+    background: rgba(var(--admin-accent-rgb), 0.16);
     color: var(--admin-accent-hover);
     font-weight: 700;
 }
@@ -296,7 +296,7 @@ table {
 }
 
 thead {
-    background: rgba(184, 154, 98, 0.08);
+    background: rgba(var(--admin-accent-rgb), 0.08);
 }
 
 th {
@@ -320,7 +320,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-    background: rgba(184, 154, 98, 0.05);
+    background: rgba(var(--admin-accent-rgb), 0.05);
 }
 
 .order-id {

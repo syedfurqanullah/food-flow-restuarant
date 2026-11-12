@@ -582,10 +582,10 @@
 .data-table th,
 .data-table td {
   padding: 16px 15px;
-  border-bottom-color: rgba(184, 154, 98, 0.14);
+  border-bottom-color: rgba(var(--admin-accent-rgb), 0.14);
 }
 .data-table tbody tr:hover {
-  background: rgba(184, 154, 98, 0.055);
+  background: rgba(var(--admin-accent-rgb), 0.055);
 }
 .form-card {
   padding: 24px;
@@ -890,7 +890,7 @@
   font-size: 11px;
 }
 .avatar-orange {
-  background: rgba(184, 154, 98, 0.18);
+  background: rgba(var(--admin-accent-rgb), 0.18);
   color: #dbc28f;
 }
 .avatar-purple {

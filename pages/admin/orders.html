@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Review sample orders and their status in the FoodFlow admin demonstration."
+      content="Review example orders and their status in the FoodFlow admin preview."
     />
     <title>FoodFlow | Admin Orders</title>
 
+    <link rel="stylesheet" href="../../css/variables.css" />
     <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
 
     <link rel="stylesheet" href="../../css/admin/orders/main.css" />
     <link rel="stylesheet" href="../../css/admin/orders/responsive.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
+    <link rel="stylesheet" href="../../css/admin/responsive.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="admin-layout">
       <!-- Sidebar -->
       <aside class="sidebar">
@@ -65,11 +68,11 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="main-content">
+      <main class="main-content" id="main-content">
         <header class="topbar">
           <div>
             <h1>Order management</h1>
-            <p>Review sample orders and their current status.</p>
+            <p>Review example orders and their current status.</p>
           </div>
 
           <div class="admin-profile">
@@ -113,7 +116,7 @@
           <div class="section-heading">
             <div>
               <h2>Recent Orders</h2>
-              <p>Review sample orders and their details.</p>
+              <p>Review example orders and their details.</p>
             </div>
           </div>
 
@@ -121,10 +124,11 @@
             <input
               type="search"
               id="orderSearch"
+              aria-label="Search orders by order ID or customer"
               placeholder="Search by order ID or customer"
             />
 
-            <select id="statusFilter">
+            <select id="statusFilter" aria-label="Filter orders by status">
               <option value="all">All statuses</option>
               <option value="pending">Pending</option>
               <option value="preparing">Preparing</option>

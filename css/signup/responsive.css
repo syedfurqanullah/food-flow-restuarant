@@ -1,3 +1,5 @@
+/* Keep the sign-up form readable across smaller screen sizes. */
+/* Tablet layout: Adjust the two-column account page. */
 @media (max-width: 850px) {
   .signup-shell {
     grid-template-columns: minmax(0, 0.9fr) minmax(390px, 1.1fr);
@@ -8,6 +10,7 @@
   }
 }
 
+/* Mobile layout: Stack the welcome panel and sign-up form. */
 @media (max-width: 650px) {
   .signup-shell {
     grid-template-columns: 1fr;
@@ -28,6 +31,7 @@
   }
 }
 
+/* Narrow screens: Keep form controls comfortable to use. */
 @media (max-width: 480px) {
   .signup-panel .form-group input {
     font-size: 16px;
@@ -38,6 +42,7 @@
   }
 }
 
+/* Extra narrow screens: Reduce panel spacing. */
 @media (max-width: 380px) {
   .signup-shell .login-story {
     min-height: 260px;
@@ -49,6 +54,7 @@
   }
 }
 
+/* Respect the visitor's reduced-motion preference. */
 @media (prefers-reduced-motion: reduce) {
   .signup-panel .form-group input,
   .signup-panel .btn.btn-primary {

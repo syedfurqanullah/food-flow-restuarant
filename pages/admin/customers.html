@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Review sample customer profiles and order details in the FoodFlow admin demonstration."
+      content="Review example customer profiles and order details in the FoodFlow admin preview."
     />
     <title>Customer Management | FoodFlow Admin</title>
 
@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="../../css/admin/customers/main.css" />
     <link rel="stylesheet" href="../../css/admin/customers/responsive.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
+    <link rel="stylesheet" href="../../css/admin/responsive.css" />
 
   </head>
 
   <body class="admin-body">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="admin-layout">
       <!-- ========== SIDEBAR (same on every admin page) ========== -->
       <aside class="sidebar">
@@ -71,7 +73,7 @@
       </aside>
 
       <!-- ========== MAIN CONTENT ========== -->
-      <main class="admin-main">
+      <main class="admin-main" id="main-content">
         <header class="admin-topbar">
           <a class="admin-topbar-brand" href="customers.html"
             >FoodFlow <span>Admin</span></a
@@ -89,7 +91,7 @@
             <p class="page-eyebrow">GUEST RELATIONSHIPS</p>
             <h1 class="page-title">Customers</h1>
             <p class="page-description">
-              Review sample customer profiles, contact details and order history.
+              Review example customer profiles, contact details and order history.
             </p>
           </div>
           <a href="#customer-directory" class="btn btn-primary"
@@ -100,7 +102,7 @@
           <article class="card insight-card">
             <span class="insight-icon">01</span>
             <div>
-              <p class="summary-label">Sample guests</p>
+              <p class="summary-label">Preview guests</p>
               <p class="summary-value">05</p>
               <p class="insight-note">Illustrative records on this screen</p>
             </div>
@@ -110,7 +112,7 @@
             <div>
               <p class="summary-label">Returning guests</p>
               <p class="summary-value">80%</p>
-              <p class="insight-note">Four of five sample guests</p>
+              <p class="insight-note">Four of five preview guests</p>
             </div>
           </article>
           <article class="card insight-card">
@@ -118,7 +120,7 @@
             <div>
               <p class="summary-label">Average spend</p>
               <p class="summary-value">Rs. 9,370</p>
-              <p class="insight-note">Across these sample records</p>
+              <p class="insight-note">Across these preview records</p>
             </div>
           </article>
         </section>
@@ -131,10 +133,10 @@
             <div>
               <h2 class="card-title" id="directory-title">Guest directory</h2>
               <p class="page-description">
-                Browse sample customer records and ordering details.
+                Review example customer records and ordering details.
               </p>
             </div>
-            <span class="record-count">5 sample records</span>
+            <span class="record-count">5 preview records</span>
           </div>
           <div class="toolbar customer-toolbar">
             <label class="search-box"
@@ -313,7 +315,7 @@
             </table>
           </div>
           <div class="directory-footer">
-            <span>Showing 5 sample customers</span>
+            <span>Showing 5 preview customers</span>
             <nav class="pagination" aria-label="Customer pages">
               <a href="#previous" aria-label="Previous page">&#8249;</a
               ><a class="current" href="#page-1" aria-current="page">1</a

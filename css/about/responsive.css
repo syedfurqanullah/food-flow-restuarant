@@ -1,3 +1,5 @@
+/* Keep the About page readable on tablets and small screens. */
+/* Tablet layout: Stack story sections and arrange the feature cards. */
 @media (max-width: 860px) {
   .about-page .story-section,
   .about-page .chef-section {
@@ -19,6 +21,7 @@
   }
 }
 
+/* Mobile layout: Reduce spacing and place feature cards in one column. */
 @media (max-width: 600px) {
   .about-page .about-hero {
     min-height: 510px;
@@ -70,6 +73,7 @@
   }
 }
 
+/* Narrow screens: Keep the story statistics easy to scan. */
 @media (max-width: 360px) {
   .about-page .story-stats h3 {
     font-size: 1.25rem;
