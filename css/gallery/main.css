@@ -1,11 +1,11 @@
 
 :root {
-    --primary-gold: #d4a853;
-    --dark-bg: #171717;
-    --dark-card: #222222;
-    --light-bg: #faf8f3;
-    --text-dark: #252525;
-    --text-light: #ffffff;
+    --primary-gold: var(--color-accent);
+    --dark-bg: var(--color-ink);
+    --dark-card: var(--color-surface);
+    --light-bg: var(--color-ink);
+    --text-dark: var(--color-cream);
+    --text-light: var(--color-cream);
 }
 
 * {
@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-    color: white;
+    color: var(--color-cream);
     font-size: 27px;
     font-weight: 800;
     text-decoration: none;
@@ -46,7 +46,7 @@ body {
 }
 
 .gallery-nav a {
-    color: #ddd;
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s;
@@ -68,7 +68,7 @@ body {
     min-height: 340px;
     padding: 90px 20px;
     text-align: center;
-    color: white;
+    color: var(--color-cream);
 }
 
 .eyebrow {
@@ -89,7 +89,7 @@ body {
 }
 
 .gallery-hero p:last-child {
-    color: #ddd;
+    color: var(--color-text-soft);
     line-height: 1.7;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .gallery-heading p {
-    color: #777;
+    color: var(--color-text-muted);
     line-height: 1.6;
 }
 
@@ -123,8 +123,9 @@ body {
 }
 
 .filter-btn {
-    border: 1px solid #ddd;
-    background: white;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-cream);
     padding: 11px 22px;
     border-radius: 30px;
     cursor: pointer;
@@ -136,7 +137,7 @@ body {
 .filter-btn.active {
     background: var(--primary-gold);
     border-color: var(--primary-gold);
-    color: white;
+    color: var(--color-ink);
 }
 
 .gallery-grid {
@@ -172,7 +173,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     padding: 25px;
-    color: white;
+    color: var(--color-cream);
     background: linear-gradient(
         transparent 35%,
         rgba(0, 0, 0, 0.85)

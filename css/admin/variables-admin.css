@@ -1,21 +1,21 @@
 :root {
   /* FoodFlow admin palette, matched to the customer site. */
   /* Core theme: change these values to recolour the complete admin interface. */
-  --admin-accent: #f5a623;
-  --admin-accent-hover: #e89512;
-  --admin-accent-rgb: 245, 166, 35;
-  --admin-dark: #171713;
-  --admin-bg: #171713;
-  --admin-card: #211f1a;
-  --admin-text: #f4efe5;
-  --admin-muted: #b8b2a8;
+  --admin-accent: #c5a15a;
+  --admin-accent-hover: #d6b56e;
+  --admin-accent-rgb: 197, 161, 90;
+  --admin-dark: #101010;
+  --admin-bg: #101010;
+  --admin-card: #24211c;
+  --admin-text: #f3e8d2;
+  --admin-muted: rgba(243, 232, 210, 0.72);
   --admin-border: rgba(var(--admin-accent-rgb), 0.28);
   --admin-accent-ring: rgba(var(--admin-accent-rgb), 0.4);
   --admin-accent-soft-ring: rgba(var(--admin-accent-rgb), 0.18);
-  --admin-input: #211f1a;
-  --admin-input-text: #f4efe5;
-  --admin-input-placeholder: #b8b2a8;
-  --admin-card-hover: #28251f;
+  --admin-input: #24211c;
+  --admin-input-text: #f3e8d2;
+  --admin-input-placeholder: rgba(243, 232, 210, 0.58);
+  --admin-card-hover: #34302a;
   --admin-success: #77bd83;
   --admin-warning: #d89a55;
   --admin-danger: #dc9285;
@@ -70,12 +70,12 @@ img {
 .admin-layout .sidebar-link:hover,
 .admin-layout .sidebar-link.active {
   background-color: var(--admin-accent-soft-ring);
-  color: var(--admin-accent-hover);
+  color: var(--admin-accent);
 }
 
 .admin-layout .btn-primary {
   background-color: var(--admin-accent);
-  color: var(--admin-text);
+  color: var(--admin-dark);
 }
 
 .admin-layout .btn-primary:hover {
@@ -107,6 +107,21 @@ img {
 
 .admin-layout :where(input, select, textarea) {
   border-radius: var(--admin-control-radius);
+}
+
+.admin-login-body .btn-primary {
+  background-color: var(--admin-accent);
+  color: var(--admin-dark);
+}
+
+.admin-login-body :is(input, select, textarea) {
+  border-color: var(--admin-border);
+  background-color: var(--admin-input);
+  color: var(--admin-input-text);
+}
+
+.admin-login-body :is(input, textarea)::placeholder {
+  color: var(--admin-input-placeholder);
 }
 
 @media (prefers-reduced-motion: no-preference) {

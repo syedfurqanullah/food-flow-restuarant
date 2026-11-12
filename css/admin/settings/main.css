@@ -443,7 +443,7 @@ textarea {
 
 .btn-primary {
   background: var(--admin-accent);
-  color: #171713;
+  color: var(--admin-dark);
 }
 
 .btn-primary:hover {
@@ -629,7 +629,7 @@ textarea {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #f4efe5;
+  background: var(--admin-text);
   content: "";
   transition: transform 0.2s ease;
 }
@@ -640,7 +640,7 @@ textarea {
 
 .notification-item input:checked + .toggle-switch::after {
   transform: translateX(19px);
-  background: #171713;
+  background: var(--admin-dark);
 }
 
 .notification-item input:focus-visible + .toggle-switch {

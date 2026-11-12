@@ -341,7 +341,7 @@ ul {
 ========================================= */
 
 .site-header {
-  background: var(--overlay-cream-96);
+  background: var(--overlay-ink-96);
 }
 
 .header-container {
@@ -1803,8 +1803,8 @@ ul {
 
 body.menu-page {
   font-family: Arial, Helvetica, sans-serif;
-  background: #171714;
-  color: #ffffff;
+  background: var(--color-ink);
+  color: var(--color-cream);
 }
 
 .menu-page a {
@@ -2129,14 +2129,14 @@ body.menu-page {
 .menu-page .footer-links a,
 .menu-page .footer-contact p,
 .menu-page .footer-social a {
-  color: #c8c0b4;
+  color: var(--color-text-soft);
   font-size: 13px;
   margin-bottom: 8px;
 }
 
 .menu-page .footer-links a:hover,
 .menu-page .footer-social a:hover {
-  color: #ffc64b;
+  color: var(--color-accent-bright);
 }
 
 .menu-page .footer-social {
@@ -2405,8 +2405,8 @@ body.menu-page {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(23, 23, 19, 0.94);
-  border-bottom-color: rgba(217, 149, 70, 0.22);
+  background: var(--overlay-ink-94);
+  border-bottom-color: var(--color-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(16px);
 }
@@ -2421,7 +2421,7 @@ body.menu-page {
 
 .navigation-link {
   padding-block: 27px 23px;
-  color: rgba(255, 248, 237, 0.72);
+  color: var(--color-text-muted);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.035em;
@@ -2450,7 +2450,7 @@ body.menu-page {
   align-items: center;
   gap: 7px;
   padding: 8px 10px;
-  border: 1px solid rgba(255, 248, 237, 0.16);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   color: var(--color-cream);
 }
@@ -2464,8 +2464,8 @@ body.menu-page {
   position: relative;
   overflow: hidden;
   padding: 68px 0 22px;
-  background: linear-gradient(135deg, #11110f 0%, #201910 100%);
-  border-top-color: rgba(217, 149, 70, 0.38);
+  background: linear-gradient(135deg, var(--color-ink) 0%, var(--color-ink-soft) 100%);
+  border-top-color: var(--color-border);
 }
 
 .home-footer::before {
@@ -2492,7 +2492,7 @@ body.menu-page {
 }
 
 .footer-links a {
-  color: rgba(255, 248, 237, 0.62);
+  color: var(--color-text-soft);
 }
 
 .footer-links a:hover {
@@ -2682,10 +2682,10 @@ body.menu-page {
   background: linear-gradient(
     90deg,
     var(--color-ink) 0%,
-    rgba(23, 23, 19, 0.96) 32%,
-    rgba(23, 23, 19, 0.68) 52%,
-    rgba(23, 23, 19, 0.12) 76%,
-    rgba(23, 23, 19, 0.05) 100%
+    var(--overlay-ink-96) 32%,
+    var(--overlay-ink-78) 52%,
+    var(--overlay-ink-22) 76%,
+    var(--overlay-ink-20) 100%
   );
   pointer-events: none;
 }
@@ -2708,9 +2708,9 @@ body.menu-page {
   .order-page-hero-overlay {
     background: linear-gradient(
       90deg,
-      rgba(23, 23, 19, 0.94) 0%,
-      rgba(23, 23, 19, 0.78) 58%,
-      rgba(23, 23, 19, 0.32) 100%
+      var(--overlay-ink-94) 0%,
+      var(--overlay-ink-78) 58%,
+      var(--overlay-ink-30) 100%
     );
   }
 }

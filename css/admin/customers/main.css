@@ -871,7 +871,7 @@
   gap: 11px;
 }
 .customer-name {
-  color: #f4efe5;
+  color: var(--admin-text);
   font-size: 13px;
 }
 .avatar {

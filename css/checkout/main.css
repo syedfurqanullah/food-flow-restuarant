@@ -5,14 +5,14 @@
 ========================================== */
 
 .checkout-page {
-    --cream: #fff9f0;
-    --dark: #171411;
-    --brown: #292018;
-    --gold: #f5a623;
-    --gold-dark: #e89512;
-    --text: #302921;
-    --muted: #95897c;
-    --border: #e9dfd1;
+    --cream: var(--color-ink);
+    --dark: var(--color-ink);
+    --brown: var(--color-surface);
+    --gold: var(--color-accent);
+    --gold-dark: var(--color-accent-bright-hover);
+    --text: var(--color-text);
+    --muted: var(--color-text-muted);
+    --border: var(--color-border);
 
     margin: 0;
     background: var(--cream);
@@ -638,27 +638,28 @@
 /* The checkout uses the shared Home header; page-specific header rules live in
    header.css only to neutralize legacy checkout selectors on smaller screens. */
 
-.checkout-page .checkout-main { background: #171713; }
-.checkout-page .checkout-hero { border-bottom: 1px solid rgba(217, 149, 70, 0.18); }
-.checkout-page .checkout-eyebrow, .checkout-page .checkout-step, .checkout-page .summary-item-count, .checkout-page .checkout-product > strong, .checkout-page .checkout-total strong:last-child { color: #e4af68; }
-.checkout-page .checkout-form-section, .checkout-page .checkout-summary { background: #211d17; border-color: rgba(255, 248, 237, 0.13); }
-.checkout-page .checkout-section-heading h2, .checkout-page .summary-heading h2, .checkout-page .checkout-product-info h3, .checkout-page .checkout-total strong { color: #fff8ed; }
-.checkout-page .checkout-section-heading p, .checkout-page .checkout-product-info p, .checkout-page .checkout-price-row { color: #b9aea1; }
-.checkout-page .checkout-form-group label { color: #f4e8d0; }
-.checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea, .checkout-page .payment-option { border-color: rgba(255, 248, 237, 0.14); background: #171411; color: #fff8ed; }
-.checkout-page .checkout-form-group input:focus, .checkout-page .checkout-form-group textarea:focus, .checkout-page .payment-option:has(input:checked) { border-color: #d99546; background: #292018; }
-.checkout-page .checkout-payment-section, .checkout-page .checkout-product, .checkout-page .checkout-price-details { border-color: rgba(255, 248, 237, 0.12); }
-.checkout-page .continue-shopping { border-color: rgba(255, 248, 237, 0.22); border-radius: 2px; color: #fff8ed; }
+.checkout-page .checkout-main { background: var(--color-ink); }
+.checkout-page .checkout-hero { border-bottom: 1px solid var(--color-border); }
+.checkout-page .checkout-eyebrow, .checkout-page .checkout-step, .checkout-page .summary-item-count, .checkout-page .checkout-product > strong, .checkout-page .checkout-total strong:last-child { color: var(--color-accent); }
+.checkout-page .checkout-step, .checkout-page .summary-item-count { background: var(--color-accent-tint); }
+.checkout-page .checkout-form-section, .checkout-page .checkout-summary { background: var(--color-surface); border-color: var(--color-border); }
+.checkout-page .checkout-section-heading h2, .checkout-page .summary-heading h2, .checkout-page .checkout-product-info h3, .checkout-page .checkout-total strong { color: var(--color-cream); }
+.checkout-page .checkout-section-heading p, .checkout-page .checkout-product-info p, .checkout-page .checkout-price-row { color: var(--color-text-muted); }
+.checkout-page .checkout-form-group label { color: var(--color-cream); }
+.checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea, .checkout-page .payment-option { border-color: var(--color-border); background: var(--color-ink); color: var(--color-cream); }
+.checkout-page .checkout-form-group input:focus, .checkout-page .checkout-form-group textarea:focus, .checkout-page .payment-option:has(input:checked) { border-color: var(--color-accent); background: var(--color-surface); }
+.checkout-page .checkout-payment-section, .checkout-page .checkout-product, .checkout-page .checkout-price-details { border-color: var(--color-border); }
+.checkout-page .continue-shopping { border-color: var(--color-border); border-radius: 2px; color: var(--color-cream); }
 
-.checkout-page .home-footer { background: linear-gradient(135deg, #11110f 0%, #201910 100%); border-top-color: rgba(217, 149, 70, 0.38); }
+.checkout-page .home-footer { background: linear-gradient(135deg, var(--color-ink) 0%, var(--color-surface) 100%); border-top-color: var(--color-border); }
 .checkout-page .footer-container { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px; }
-.checkout-page .footer-brand > .brand { gap: 10px; color: #fff8ed; }
+.checkout-page .footer-brand > .brand { gap: 10px; color: var(--color-cream); }
 .checkout-page .footer-brand > .brand .brand-logo-frame { width: 50px; height: 50px; }
-.checkout-page .footer-brand p, .checkout-page .footer-column p, .checkout-page .footer-column > a { display: block; margin: 0 0 12px; color: rgba(255, 248, 237, 0.62); font-size: 0.88rem; line-height: 1.7; }
-.checkout-page .footer-column h2 { color: #fff8ed; font-size: 0.78rem; letter-spacing: 0.11em; text-transform: uppercase; }
-.checkout-page .footer-bottom { display: flex; justify-content: space-between; margin-top: 24px; border-top-color: rgba(255, 248, 237, 0.12); }
+.checkout-page .footer-brand p, .checkout-page .footer-column p, .checkout-page .footer-column > a { display: block; margin: 0 0 12px; color: var(--color-text-soft); font-size: 0.88rem; line-height: 1.7; }
+.checkout-page .footer-column h2 { color: var(--color-cream); font-size: 0.78rem; letter-spacing: 0.11em; text-transform: uppercase; }
+.checkout-page .footer-bottom { display: flex; justify-content: space-between; margin-top: 24px; border-top-color: var(--color-border); }
 .checkout-page .footer-bottom .container { width: min(1180px, calc(100% - 40px)); }
-.checkout-page .footer-bottom p { color: rgba(255, 248, 237, 0.46); }
+.checkout-page .footer-bottom p { color: var(--color-text-subtle); }
 
 .checkout-page .cart-link > span:first-of-type:not(.cart-label) { display: none; }
 .checkout-page .continue-shopping { font-size: 0; }

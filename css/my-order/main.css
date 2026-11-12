@@ -3,8 +3,8 @@
 ========================================== */
 
 .my-orders-header {
-  background: #171411;
-  border-bottom: 1px solid rgba(255, 248, 237, 0.1);
+  background: var(--color-ink);
+  border-bottom: 1px solid rgba(243, 232, 210, 0.1);
 }
 
 .my-orders-container {
@@ -22,7 +22,7 @@
 }
 
 .my-orders-logo {
-  color: #fff8ed;
+  color: var(--color-cream);
   text-decoration: none;
   font-size: 25px;
   font-weight: 800;
@@ -30,7 +30,7 @@
 }
 
 .my-orders-logo span {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 .my-orders-nav {
@@ -40,7 +40,7 @@
 }
 
 .my-orders-nav a {
-  color: #d0c5b8;
+  color: var(--color-text-soft);
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
@@ -48,16 +48,16 @@
 
 .my-orders-nav a:hover,
 .my-orders-nav a.active {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 /* MAIN */
 
 .my-orders-main {
-  background: #11100e;
+  background: var(--color-ink);
   min-height: 75vh;
   padding: 65px 0;
-  color: #fff8ed;
+  color: var(--color-cream);
 }
 
 .my-orders-heading {
@@ -69,7 +69,7 @@
 }
 
 .my-orders-subtitle {
-  color: #d99546;
+  color: var(--color-accent);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -82,11 +82,11 @@
 }
 
 .my-orders-heading h1 span {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 .my-orders-description {
-  color: #afa397;
+  color: var(--color-text-muted);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -100,8 +100,8 @@
   gap: 8px;
   padding: 14px 23px;
   border-radius: 7px;
-  background: #d99546;
-  color: #171411;
+  background: var(--color-accent);
+  color: var(--color-ink);
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -109,7 +109,7 @@
 }
 
 .order-again-btn:hover {
-  background: #e9aa5c;
+  background: var(--color-accent);
   transform: translateY(-2px);
 }
 
@@ -133,22 +133,22 @@
 }
 
 .orders-section-heading span {
-  color: #d99546;
+  color: var(--color-accent);
   font-size: 13px;
 }
 
 /* ORDER CARD */
 
 .order-card {
-  background: #201b16;
-  border: 1px solid rgba(255, 248, 237, 0.1);
+  background: var(--color-surface);
+  border: 1px solid rgba(243, 232, 210, 0.1);
   border-radius: 12px;
   padding: 25px;
   transition: 0.3s;
 }
 
 .order-card:hover {
-  border-color: rgba(217, 149, 70, 0.5);
+  border-color: rgba(197, 161, 90, 0.5);
   transform: translateY(-3px);
 }
 
@@ -158,17 +158,17 @@
   justify-content: space-between;
   gap: 15px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 248, 237, 0.1);
+  border-bottom: 1px solid rgba(243, 232, 210, 0.1);
 }
 
 .order-id span {
-  color: #afa397;
+  color: var(--color-text-muted);
   font-size: 10px;
   letter-spacing: 2px;
 }
 
 .order-id h3 {
-  color: #d99546;
+  color: var(--color-accent);
   font-size: 18px;
   margin-top: 7px;
 }
@@ -188,13 +188,13 @@
 }
 
 .preparing {
-  background: rgba(217, 149, 70, 0.13);
-  color: #e9aa5c;
+  background: rgba(197, 161, 90, 0.13);
+  color: var(--color-accent);
 }
 
 .pending {
-  background: rgba(240, 190, 70, 0.13);
-  color: #f0c56b;
+  background: rgba(197, 161, 90, 0.13);
+  color: var(--color-accent);
 }
 
 /* ORDER DETAILS */
@@ -213,17 +213,17 @@
 }
 
 .order-detail span {
-  color: #afa397;
+  color: var(--color-text-muted);
   font-size: 12px;
 }
 
 .order-detail strong {
-  color: #fff8ed;
+  color: var(--color-cream);
   font-size: 14px;
 }
 
 .order-detail .order-price {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 /* ORDER BOTTOM */
@@ -233,18 +233,18 @@
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  border-top: 1px solid rgba(255, 248, 237, 0.1);
+  border-top: 1px solid rgba(243, 232, 210, 0.1);
   padding-top: 18px;
 }
 
 .order-card-bottom p {
-  color: #b9aea1;
+  color: var(--color-text-muted);
   font-size: 13px;
   line-height: 1.6;
 }
 
 .view-details-btn {
-  color: #d99546;
+  color: var(--color-accent);
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
@@ -253,7 +253,7 @@
 }
 
 .view-details-btn:hover {
-  color: #fff8ed;
+  color: var(--color-cream);
 }
 
 /* Replace legacy malformed arrow text with a consistent text action. */
@@ -271,8 +271,8 @@
 .empty-orders {
   text-align: center;
   padding: 70px 20px;
-  background: #201b16;
-  border: 1px solid rgba(217, 149, 70, 0.2);
+  background: var(--color-surface);
+  border: 1px solid rgba(197, 161, 90, 0.2);
   border-radius: 14px;
 }
 
@@ -287,7 +287,7 @@
 }
 
 .empty-orders p {
-  color: #afa397;
+  color: var(--color-text-muted);
   font-size: 14px;
   line-height: 1.8;
   max-width: 430px;
@@ -299,9 +299,9 @@
 ========================================== */
 
 .foodflow-footer {
-  background: #171411;
-  color: #fff8ed;
-  border-top: 1px solid rgba(255, 248, 237, 0.12);
+  background: var(--color-ink);
+  color: var(--color-cream);
+  border-top: 1px solid rgba(243, 232, 210, 0.12);
   padding: 55px 5% 20px;
 }
 
@@ -316,7 +316,7 @@
 
 .footer-logo {
   display: inline-block;
-  color: #fff8ed;
+  color: var(--color-cream);
   text-decoration: none;
   font-size: 25px;
   font-weight: 800;
@@ -325,11 +325,11 @@
 }
 
 .footer-logo span {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 .footer-brand p {
-  color: #afa397;
+  color: var(--color-text-muted);
   font-size: 13px;
   line-height: 1.9;
   max-width: 260px;
@@ -346,24 +346,24 @@
 .footer-links h3,
 .footer-contact h3 {
   font-size: 16px;
-  color: #d99546;
+  color: var(--color-accent);
   margin-bottom: 8px;
 }
 
 .footer-links a {
-  color: #b9aea1;
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: 13px;
   transition: 0.3s;
 }
 
 .footer-links a:hover {
-  color: #d99546;
+  color: var(--color-accent);
   padding-left: 4px;
 }
 
 .footer-contact p {
-  color: #b9aea1;
+  color: var(--color-text-muted);
   font-size: 13px;
   line-height: 1.7;
   overflow-wrap: anywhere;
@@ -375,19 +375,19 @@
   max-width: 1200px;
   margin: auto;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 248, 237, 0.12);
+  border-top: 1px solid rgba(243, 232, 210, 0.12);
   display: flex;
   justify-content: space-between;
   gap: 15px;
 }
 
 .footer-bottom p {
-  color: #968a7d;
+  color: var(--color-text-subtle);
   font-size: 12px;
 }
 
 .footer-bottom span {
-  color: #d99546;
+  color: var(--color-accent);
 }
 
 .my-orders-page .home-footer .footer-bottom p {

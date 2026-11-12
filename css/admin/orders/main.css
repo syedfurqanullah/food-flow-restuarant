@@ -379,7 +379,7 @@ tbody tr:hover {
 .action-btn:hover {
     border-color: var(--admin-accent);
     background: var(--admin-accent);
-    color: #171713;
+    color: var(--admin-dark);
 }
 
 .action-btn:focus-visible {
