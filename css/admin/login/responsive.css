@@ -1,23 +1,4 @@
 /* Responsive rules for the admin area and admin sign-in page. */
-@media (max-width: 850px) {
-}
-
-@media (max-width: 650px) {
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 380px) {
-}
-
-@media (prefers-reduced-motion: reduce) {
-}
-
-/* =========================================================
-   ADD THIS BELOW THE LOGIN SNIPPET IN css/admin-responsive.css
-   ========================================================= */
-
 /* Tablet: sidebar becomes a top bar with scrollable links */
 @media (max-width: 900px) {
   .admin-layout {
@@ -448,14 +429,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-}
-
-/* ---------- Customers page responsive layout ---------- */
-@media (max-width: 600px) {
-}
-
-/* Admin responsive rules moved from admin.css */
+/* Admin layout adjustments */
 @media (max-width: 700px) {
   .insight-grid {
     grid-template-columns: 1fr;
@@ -515,8 +489,8 @@
   .login-story::after {
     background: linear-gradient(
       90deg,
-      rgba(16, 16, 16, 0.92),
-      rgba(16, 16, 16, 0.64)
+      rgba(var(--admin-dark-rgb), 0.92),
+      rgba(var(--admin-dark-rgb), 0.64)
     );
   }
 

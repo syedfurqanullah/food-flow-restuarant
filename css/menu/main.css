@@ -64,9 +64,9 @@
   background:
     linear-gradient(
       90deg,
-      rgba(16, 16, 16, 0.94) 0%,
-      rgba(16, 16, 16, 0.76) 48%,
-      rgba(16, 16, 16, 0.2) 100%
+      rgba(var(--color-ink-rgb), 0.94) 0%,
+      rgba(var(--color-ink-rgb), 0.76) 48%,
+      rgba(var(--color-ink-rgb), 0.2) 100%
     ),
     url("../../assets/images/backgrounds/menu-hero.png") center 52% / cover
       no-repeat;
@@ -141,17 +141,17 @@
   min-height: 2.75rem;
   margin-top: 1rem;
   padding: 0.65rem 1rem;
-  border: 1px solid var(--color-gold, #c5a15a);
+  border: 1px solid var(--color-accent);
   border-radius: 0.5rem;
-  color: var(--color-gold, #c5a15a);
+  color: var(--color-accent);
   font-weight: 700;
   text-decoration: none;
 }
 
 .menu-preview-link:hover,
 .menu-preview-link:focus-visible {
-  background: var(--color-gold, #c5a15a);
-  color: var(--color-ink, #101010);
+  background: var(--color-accent);
+  color: var(--color-ink);
 }
 
 .menu-page .menu-section {
@@ -263,7 +263,7 @@
   overflow-x: auto;
   margin: 0 -2px 10px;
   padding: 12px 2px;
-  background: rgba(16, 16, 16, 0.96);
+  background: rgba(var(--color-ink-rgb), 0.96);
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent) transparent;
 }
@@ -349,10 +349,12 @@
   scroll-margin-top: 88px;
 }
 
-.menu-page .food-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--overlay-gold-40);
-  box-shadow: var(--shadow-card);
+@media (hover: hover) and (pointer: fine) {
+  .menu-page .food-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--overlay-gold-40);
+    box-shadow: var(--shadow-card);
+  }
 }
 
 .menu-page .food-card > img {
@@ -368,9 +370,11 @@
     filter 500ms ease;
 }
 
-.menu-page .food-card:hover > img {
-  transform: scale(1.06);
-  filter: saturate(1.06);
+@media (hover: hover) and (pointer: fine) {
+  .menu-page .food-card:hover > img {
+    transform: scale(1.045);
+    filter: saturate(1.03);
+  }
 }
 
 .menu-page .food-info {
@@ -570,7 +574,11 @@
 
   .menu-page .menu-hero-image {
     background-image:
-      linear-gradient(90deg, rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.56)),
+      linear-gradient(
+        90deg,
+        rgba(var(--color-ink-rgb), 0.9),
+        rgba(var(--color-ink-rgb), 0.56)
+      ),
       url("../../assets/images/backgrounds/menu-hero.png");
     background-position:
       center,

@@ -1,21 +1,24 @@
 :root {
-  /* FoodFlow admin palette, matched to the customer site. */
-  /* Core theme: change these values to recolour the complete admin interface. */
-  --admin-accent: #c5a15a;
-  --admin-accent-hover: #d6b56e;
+  /* Change these palette values to recolour the complete admin interface. */
   --admin-accent-rgb: 197, 161, 90;
-  --admin-dark: #101010;
-  --admin-bg: #101010;
-  --admin-card: #24211c;
-  --admin-text: #f3e8d2;
-  --admin-muted: rgba(243, 232, 210, 0.72);
+  --admin-dark-rgb: 16, 16, 16;
+  --admin-card-rgb: 36, 33, 28;
+  --admin-text-rgb: 243, 232, 210;
+  --admin-surface-hover-rgb: 52, 48, 42;
+  --admin-accent: rgb(var(--admin-accent-rgb));
+  --admin-accent-hover: #d6b56e;
+  --admin-dark: rgb(var(--admin-dark-rgb));
+  --admin-bg: var(--admin-dark);
+  --admin-card: rgb(var(--admin-card-rgb));
+  --admin-text: rgb(var(--admin-text-rgb));
+  --admin-muted: rgba(var(--admin-text-rgb), 0.72);
   --admin-border: rgba(var(--admin-accent-rgb), 0.28);
   --admin-accent-ring: rgba(var(--admin-accent-rgb), 0.4);
   --admin-accent-soft-ring: rgba(var(--admin-accent-rgb), 0.18);
-  --admin-input: #24211c;
-  --admin-input-text: #f3e8d2;
-  --admin-input-placeholder: rgba(243, 232, 210, 0.58);
-  --admin-card-hover: #34302a;
+  --admin-input: var(--admin-card);
+  --admin-input-text: var(--admin-text);
+  --admin-input-placeholder: rgba(var(--admin-text-rgb), 0.58);
+  --admin-card-hover: rgb(var(--admin-surface-hover-rgb));
   --admin-success: #77bd83;
   --admin-warning: #d89a55;
   --admin-danger: #dc9285;

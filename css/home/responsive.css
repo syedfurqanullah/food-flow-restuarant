@@ -1598,12 +1598,14 @@
     filter 500ms ease;
 }
 
-.categories-section .category-card:hover .category-image img,
-.popular-section .food-card:hover .food-image,
-.menu-page .food-card:hover > img,
-.offer-visual:hover img {
-  transform: scale(1.09);
-  filter: saturate(1.05);
+@media (hover: hover) and (pointer: fine) {
+  .categories-section .category-card:hover .category-image img,
+  .popular-section .food-card:hover .food-image,
+  .menu-page .food-card:hover > img,
+  .offer-visual:hover img {
+    transform: scale(1.05);
+    filter: saturate(1.03);
+  }
 }
 
 .menu-page .food-card > img {
@@ -1670,46 +1672,32 @@
 
 /* Black, espresso and champagne theme. */
 body.home-page {
-  --home-ivory: #f3e8d2;
-  --home-white: #24211c;
-  --home-ink: #101010;
-  --home-muted: rgba(243, 232, 210, 0.72);
-  --home-charcoal: #101010;
-  --home-charcoal-deep: #090909;
-  --home-brass: #c5a15a;
-  --home-olive: #24211c;
-  --home-sand: #f3e8d2;
-  --home-walnut: #24211c;
-  --home-brass-wash: rgba(197, 161, 90, 0.16);
-  --home-border: rgba(197, 161, 90, 0.24);
+  --home-ivory: var(--color-cream);
+  --home-white: var(--color-surface);
+  --home-ink: var(--color-ink);
+  --home-muted: var(--color-text-muted);
+  --home-charcoal: var(--color-ink);
+  --home-charcoal-deep: var(--color-ink);
+  --home-brass: var(--color-accent);
+  --home-olive: var(--color-surface);
+  --home-sand: var(--color-cream);
+  --home-walnut: var(--color-surface);
+  --home-brass-wash: var(--color-accent-tint);
+  --home-border: var(--color-border);
   --home-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
   --home-font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --home-font-body: "DM Sans", Arial, Helvetica, sans-serif;
 
   font-family: var(--home-font-body);
-  --color-ink: var(--home-ink);
-  --color-cream: var(--home-ivory);
-  --color-cream-light: #f3e8d2;
-  --color-text: var(--home-ivory);
-  --color-text-muted: var(--home-muted);
-  --color-text-subtle: rgba(243, 232, 210, 0.64);
-  --color-text-soft: rgba(243, 232, 210, 0.76);
-  --color-border: var(--home-border);
-  --color-accent: var(--home-brass);
-  --color-accent-light: var(--home-brass);
-  --color-accent-soft: var(--home-brass);
-  --color-accent-bright: var(--home-brass);
-  --color-accent-bright-hover: #d6b56e;
-  --color-accent-orange: var(--home-brass);
-  --color-accent-tint: var(--home-brass-wash);
-  --color-accent-tint-soft: var(--home-brass-wash);
+
   --color-primary: var(--home-charcoal);
   --color-primary-light: var(--home-olive);
   --color-bg-main: var(--home-charcoal);
   --color-bg-card: var(--home-white);
-  --color-bg-hover: #34302a;
+  --color-bg-hover: var(--color-surface-hover);
   --color-text-primary: var(--home-ivory);
   --color-text-secondary: var(--home-muted);
+  --color-text-subtle: var(--color-text-subtle-strong);
 
   background: var(--home-charcoal);
   color: var(--home-ivory);
@@ -1753,7 +1741,7 @@ body.home-page .footer-brand-highlight {
 }
 
 body.home-page .navigation-link {
-  color: rgba(243, 232, 210, 0.82);
+  color: rgba(var(--color-text-rgb), 0.82);
 }
 
 body.home-page .navigation-link:hover,
@@ -1810,7 +1798,7 @@ body.home-page .offer-button:hover {
 
 body.home-page .button-secondary,
 body.home-page .hero-content .button-secondary {
-  border-color: rgba(243, 232, 210, 0.44);
+  border-color: rgba(var(--color-text-rgb), 0.44);
   background: transparent;
   color: var(--home-ivory);
 }
@@ -1872,7 +1860,7 @@ body.home-page .hero-description {
 }
 
 body.home-page .hero-content .button-secondary {
-  border-color: rgba(243, 232, 210, 0.48);
+  border-color: rgba(var(--color-text-rgb), 0.48);
   color: var(--home-ivory);
 }
 
@@ -1889,11 +1877,11 @@ body.home-page .hero-visual {
   background-image:
     linear-gradient(
       90deg,
-      rgba(16, 16, 16, 0.94) 0%,
-      rgba(16, 16, 16, 0.76) 42%,
-      rgba(16, 16, 16, 0.28) 100%
+      rgba(var(--color-ink-rgb), 0.94) 0%,
+      rgba(var(--color-ink-rgb), 0.76) 42%,
+      rgba(var(--color-ink-rgb), 0.28) 100%
     ),
-    linear-gradient(0deg, rgba(16, 16, 16, 0.38), transparent 55%),
+    linear-gradient(0deg, rgba(var(--color-ink-rgb), 0.38), transparent 55%),
     url("../../assets/images/hero/hero.png");
   background-position: center, center, center 56%;
   background-size: cover;
@@ -1903,7 +1891,11 @@ body.home-page .hero-visual {
 body.home-page .hero-visual::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(16, 16, 16, 0.2), transparent 72%);
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-ink-rgb), 0.2),
+    transparent 72%
+  );
   content: "";
 }
 
@@ -1981,14 +1973,14 @@ body.home-page .popular-section .food-card:hover,
 body.home-page .testimonial-card:hover {
   transform: translateY(-3px);
   border-color: var(--home-brass);
-  background: #34302a;
+  background: var(--color-surface-hover);
   box-shadow: var(--home-shadow);
 }
 
 body.home-page .why-card:hover {
   transform: translateY(-3px);
   border-color: var(--home-brass);
-  background: #34302a;
+  background: var(--color-surface-hover);
   box-shadow: var(--home-shadow);
 }
 
@@ -2045,7 +2037,7 @@ body.home-page .special-offers {
 }
 
 body.home-page .special-offers .offer-label {
-  border-color: rgba(197, 161, 90, 0.72);
+  border-color: rgba(var(--color-accent-rgb), 0.72);
   background: var(--home-brass-wash);
   color: var(--home-ivory);
 }
@@ -2082,15 +2074,15 @@ body.home-page .footer-column h2 {
 }
 
 body.home-page .footer-logo img {
-  border-color: rgba(197, 161, 90, 0.64);
-  background: #090909;
+  border-color: rgba(var(--color-accent-rgb), 0.64);
+  background: var(--color-ink);
 }
 
 body.home-page .footer-brand p,
 body.home-page .footer-social-text,
 body.home-page .footer-links a,
 body.home-page .footer-bottom p {
-  color: rgba(243, 232, 210, 0.78);
+  color: rgba(var(--color-text-rgb), 0.78);
 }
 
 body.home-page .footer-links a:hover,
@@ -2099,7 +2091,7 @@ body.home-page .footer-social-link {
 }
 
 body.home-page .footer-bottom {
-  border-top-color: rgba(243, 232, 210, 0.22);
+  border-top-color: rgba(var(--color-text-rgb), 0.22);
 }
 
 @media (max-width: 1024px) {
@@ -2152,11 +2144,11 @@ body.home-page .footer-bottom {
     background-image:
       linear-gradient(
         90deg,
-        rgba(16, 16, 16, 0.88) 0%,
-        rgba(16, 16, 16, 0.7) 55%,
-        rgba(16, 16, 16, 0.34) 100%
+        rgba(var(--color-ink-rgb), 0.88) 0%,
+        rgba(var(--color-ink-rgb), 0.7) 55%,
+        rgba(var(--color-ink-rgb), 0.34) 100%
       ),
-      linear-gradient(0deg, rgba(16, 16, 16, 0.36), transparent 60%),
+      linear-gradient(0deg, rgba(var(--color-ink-rgb), 0.36), transparent 60%),
       url("../../assets/images/hero/hero.png");
     background-position: center, center, 58% center;
   }
@@ -2261,5 +2253,21 @@ body.home-page .footer-bottom {
   body.home-page .why-card:hover,
   body.home-page .testimonial-card:hover {
     transform: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  body.home-page .category-card:hover,
+  body.home-page .popular-section .food-card:hover,
+  body.home-page .why-card:hover,
+  body.home-page .testimonial-card:hover {
+    transform: none;
+  }
+
+  body.home-page .categories-section .category-card:hover .category-image img,
+  body.home-page .popular-section .food-card:hover .food-image,
+  body.home-page .offer-visual:hover img {
+    transform: scale(1.035);
+    filter: none;
   }
 }

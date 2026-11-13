@@ -31,7 +31,11 @@
 
   .menu-page .menu-hero-image {
     background-image:
-      linear-gradient(90deg, rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.56)),
+      linear-gradient(
+        90deg,
+        rgba(var(--color-ink-rgb), 0.9),
+        rgba(var(--color-ink-rgb), 0.56)
+      ),
       url("../../assets/images/backgrounds/menu-hero.png");
     background-position:
       center,

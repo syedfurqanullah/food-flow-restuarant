@@ -24,7 +24,7 @@
 }
 
 .signup-panel .form-group input:invalid:not(:placeholder-shown) {
-  border-color: #c87970;
+  border-color: var(--color-danger);
 }
 
 .signup-panel .field-hint {

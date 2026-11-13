@@ -1,23 +1,4 @@
 /* Responsive rules for the admin area and admin sign-in page. */
-@media (max-width: 850px) {
-}
-
-@media (max-width: 650px) {
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 380px) {
-}
-
-@media (prefers-reduced-motion: reduce) {
-}
-
-/* =========================================================
-   ADD THIS BELOW THE LOGIN SNIPPET IN css/admin-responsive.css
-   ========================================================= */
-
 /* Tablet: sidebar becomes a top bar with scrollable links */
 @media (max-width: 900px) {
   .admin-layout {
@@ -379,14 +360,7 @@
 
 }
 
-@media (prefers-reduced-motion: reduce) {
-}
-
-/* ---------- Customers page responsive layout ---------- */
-@media (max-width: 600px) {
-}
-
-/* Admin responsive rules moved from admin.css */
+/* Admin layout adjustments */
 @media (max-width: 700px) {
   .page-header {
     align-items: stretch;

@@ -76,11 +76,7 @@
   box-shadow: 0 0 0 3px var(--admin-accent-soft-ring);
 }
 
-/* =========================================================
-   ADD THIS BELOW THE LOGIN STYLES IN css/admin.css
-   It uses the variables and .btn / .form-group styles
-   from the login snippet, so paste that one first.
-   ========================================================= */
+/* Shared admin layout and form styles */
 
 /* ---------- Extra buttons ---------- */
 .btn-secondary {
@@ -130,12 +126,6 @@
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-}
-
-.sidebar-brand small {
-  font-size: 12px;
-  font-weight: 400;
-  color: #9ca3af;
 }
 
 .sidebar-nav {
@@ -349,8 +339,6 @@
   object-fit: cover;
 }
 
-/* Placeholder colors until real food photos are added */
-
 /* ---------- Status badges ---------- */
 .badge {
   display: inline-block;
@@ -452,24 +440,6 @@
   padding: 4px;
   border-radius: 50%;
   object-fit: contain;
-}
-.admin-brand-name {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
-  color: var(--color-cream);
-  font-family: var(--font-display);
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.admin-brand-name span {
-  color: var(--color-accent-light);
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 .page-eyebrow {
   color: var(--color-accent);
@@ -855,9 +825,9 @@
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(16, 16, 16, 0.95) 0%,
-    rgba(16, 16, 16, 0.77) 65%,
-    rgba(16, 16, 16, 0.62) 100%
+    rgba(var(--admin-dark-rgb), 0.95) 0%,
+    rgba(var(--admin-dark-rgb), 0.77) 65%,
+    rgba(var(--admin-dark-rgb), 0.62) 100%
   );
   content: "";
 }
@@ -896,8 +866,8 @@
   height: 50px;
   flex: 0 0 50px;
   padding: 7px;
-  border: 1px solid rgba(197, 161, 90, 0.64);
-  background: #090909;
+  border: 1px solid rgba(var(--admin-accent-rgb), 0.64);
+  background: var(--admin-dark);
   border-radius: 50%;
   object-fit: contain;
   mix-blend-mode: screen;

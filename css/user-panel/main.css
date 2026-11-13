@@ -262,7 +262,7 @@
 }
 .status-delivered {
   background: rgba(105, 166, 119, 0.16);
-  color: #91c99d;
+  color: var(--color-success);
 }
 .status-preparing {
   background: var(--overlay-gold-16);

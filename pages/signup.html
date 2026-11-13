@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="../assets/icons/favicon.png?v=5" />
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png?v=6" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../css/admin/login/responsive.css" />
     <link rel="stylesheet" href="../css/signup/main.css" />
     <link rel="stylesheet" href="../css/signup/responsive.css" />
-    <link rel="stylesheet" href="../css/animations.css" />
   </head>
   <body class="signup-body">
     <a class="skip-link" href="#signup-form">Skip to create account</a>
@@ -114,7 +113,8 @@
             <label class="remember-me terms-consent" for="terms">
               <input type="checkbox" id="terms" name="terms" required />
               <span
-                >I agree to the <a href="#terms">Terms &amp; Conditions</a> and
+                >I agree to the
+                <a href="#terms-notice">Terms &amp; Conditions</a> and
                 <a href="#privacy">Privacy Policy</a>.</span
               >
             </label>
@@ -123,9 +123,13 @@
             </button>
           </form>
 
-          <p class="login-demo-note">
+          <p class="login-demo-note" id="terms-notice">
             This is a front-end demonstration. Account creation and
             authentication are not connected.
+          </p>
+          <p class="login-demo-note" id="privacy">
+            Information entered on this page is not collected or stored. Do not
+            enter real personal information.
           </p>
           <p class="auth-switch">
             Already have an account? <a href="signin.html">Sign in</a>

@@ -139,9 +139,11 @@
   color: var(--color-cream);
 }
 
-.cart-page .continue-shopping:hover {
-  background: var(--color-accent-bright);
-  color: var(--color-ink);
+@media (hover: hover) and (pointer: fine) {
+  .cart-page .continue-shopping:hover {
+    background: var(--color-accent-bright);
+    color: var(--color-ink);
+  }
 }
 
 .cart-page .cart-quantity button:disabled,
@@ -169,8 +171,10 @@
   color: var(--color-ink);
 }
 
-.cart-page .checkout-btn:hover {
-  background: var(--color-accent-bright-hover);
+@media (hover: hover) and (pointer: fine) {
+  .cart-page .checkout-btn:hover {
+    background: var(--color-accent-bright-hover);
+  }
 }
 
 .menu-page .food-info button:disabled {

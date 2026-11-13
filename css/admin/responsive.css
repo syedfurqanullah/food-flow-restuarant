@@ -14,9 +14,9 @@
   height: 50px;
   flex: 0 0 50px;
   padding: 7px;
-  border: 1px solid rgba(197, 161, 90, 0.64);
+  border: 1px solid rgba(var(--admin-accent-rgb), 0.64);
   border-radius: 50%;
-  background: #090909;
+  background: var(--admin-dark);
   object-fit: contain;
   mix-blend-mode: screen;
 }
@@ -203,6 +203,15 @@
 
   .admin-layout .page-header {
     margin: 25px 0 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .admin-layout > .sidebar > .sidebar-nav {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-bottom: 0;
+    overflow: visible;
   }
 }
 

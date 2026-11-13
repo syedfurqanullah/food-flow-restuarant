@@ -74,11 +74,7 @@
   box-shadow: 0 0 0 3px var(--admin-accent-soft-ring);
 }
 
-/* =========================================================
-   ADD THIS BELOW THE LOGIN STYLES IN css/admin.css
-   It uses the variables and .btn / .form-group styles
-   from the login snippet, so paste that one first.
-   ========================================================= */
+/* Shared admin layout and form styles */
 
 /* ---------- Extra buttons ---------- */
 .btn-secondary {
@@ -128,12 +124,6 @@
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-}
-
-.sidebar-brand small {
-  font-size: 12px;
-  font-weight: 400;
-  color: #9ca3af;
 }
 
 .sidebar-nav {
@@ -342,8 +332,6 @@
   object-fit: cover;
 }
 
-/* Placeholder colors until real food photos are added */
-
 /* ---------- Status badges ---------- */
 .badge {
   display: inline-block;
@@ -445,24 +433,6 @@
   padding: 4px;
   border-radius: 50%;
   object-fit: contain;
-}
-.admin-brand-name {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
-  color: var(--color-cream);
-  font-family: var(--font-display);
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.admin-brand-name span {
-  color: var(--color-accent-light);
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 .page-eyebrow {
   color: var(--color-accent);
@@ -922,25 +892,6 @@
   color: #938d82;
   font-size: 12px;
 }
-.pagination {
-  display: flex;
-  gap: 5px;
-}
-.pagination a {
-  display: grid;
-  place-items: center;
-  min-width: 32px;
-  height: 32px;
-  border: 1px solid var(--admin-border);
-  border-radius: 8px;
-  color: #c9c2b6;
-  text-decoration: none;
-}
-.pagination a.current {
-  background: var(--color-accent);
-  color: var(--color-ink);
-}
-
 .customer-meta {
   display: block;
   margin: 5px 0 0;

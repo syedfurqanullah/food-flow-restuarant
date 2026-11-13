@@ -137,12 +137,14 @@
   font-size: 1.15rem;
   line-height: 1;
 }
-.about-page .hero-btn:hover,
-.about-page .chef-btn:hover,
-.about-page .about-cta-button:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-accent-soft);
-  background: var(--color-accent-soft);
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .about-page .hero-btn:hover,
+  .about-page .chef-btn:hover,
+  .about-page .about-cta-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent-soft);
+    background: var(--color-accent-soft);
+  }
 }
 .about-page .story-section,
 .about-page .chef-section {
@@ -315,10 +317,16 @@
   font-size: 0.9rem;
   line-height: 1.65;
 }
-.about-page .special-card:hover img {
-  transform: scale(1.08);
-  opacity: 0.7;
-  filter: saturate(1);
+@media (hover: hover) and (pointer: fine) {
+  .about-page .about-hero:hover .about-hero-image {
+    transform: scale(1.035);
+  }
+
+  .about-page .special-card:hover img {
+    transform: scale(1.045);
+    opacity: 0.7;
+    filter: saturate(1);
+  }
 }
 .about-page .chef-section {
   grid-template-columns: minmax(300px, 0.93fr) minmax(0, 1.07fr);

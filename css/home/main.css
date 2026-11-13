@@ -22,6 +22,24 @@ img {
   max-width: 100%;
 }
 
+/* Add a restrained hover zoom to photography, not brand marks. */
+img[src*="assets/images/"]:not([src*="assets/images/logo/"]) {
+  transform-origin: center;
+  transition: transform 420ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  img[src*="assets/images/"]:not([src*="assets/images/logo/"]):hover {
+    transform: scale(1.035);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img[src*="assets/images/"]:not([src*="assets/images/logo/"]) {
+    transition: none !important;
+  }
+}
+
 a:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 4px;
@@ -365,9 +383,9 @@ ul {
   height: 50px;
   flex: 0 0 50px;
   padding: 7px;
-  border: 1px solid rgba(197, 161, 90, 0.64);
+  border: 1px solid rgba(var(--color-accent-rgb), 0.64);
   border-radius: 50%;
-  background: #090909;
+  background: var(--color-ink);
   object-fit: contain;
   mix-blend-mode: screen;
 }
@@ -1818,63 +1836,6 @@ body.menu-page {
   font-family: inherit;
 }
 
-/* ================= NAVBAR ================= */
-
-.menu-page .header {
-  width: 100%;
-  min-height: 65px;
-  background: #090807;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 35px;
-  border-bottom: 1px solid #393024;
-  position: relative;
-  z-index: 10;
-}
-
-.menu-page .logo {
-  font-size: 23px;
-  font-weight: bold;
-  color: #ffc64b;
-}
-
-.menu-page .header nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.menu-page .header nav a {
-  color: #ffffff;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.menu-page .header nav a:hover {
-  color: #ffc64b;
-}
-
-.menu-page .header-buttons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.menu-page .header-buttons a {
-  color: #ffffff;
-  font-size: 14px;
-  border: 1px solid #dcae4b;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-.menu-page .header-buttons a:hover {
-  background: #ffc64b;
-  color: #17110a;
-}
-
 /* ================= TOP BANNER ================= */
 
 .menu-page .menu-hero {
@@ -1882,47 +1843,6 @@ body.menu-page {
   height: 180px;
   overflow: hidden;
   position: relative;
-}
-
-.menu-page .banner-content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.menu-page .banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.menu-page .banner-content::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.menu-page .banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  z-index: 2;
-}
-
-.menu-page .banner-text h1 {
-  color: #ffffff;
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.menu-page .banner-text p {
-  color: #f5e9d6;
-  font-size: 14px;
 }
 
 /* ================= MENU SECTION ================= */
@@ -2103,33 +2023,7 @@ body.menu-page {
   color: var(--color-ink-contrast);
 }
 
-/* ================= FOOTER ================= */
-
-.menu-page .footer {
-  background: #080706;
-  padding: 35px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 30px;
-  border-top: 1px solid #453725;
-}
-
-.menu-page .footer-logo h2 {
-  color: #ffc64b;
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-
-.menu-page .footer-logo p {
-  color: #bcb3a6;
-  font-size: 13px;
-}
-
-.menu-page .footer h3 {
-  color: #ffc64b;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
+/* ================= FOOTER LINKS ================= */
 
 .menu-page .footer-links {
   display: flex;
@@ -2149,23 +2043,6 @@ body.menu-page {
 .menu-page .footer-social a:hover {
   color: var(--color-accent-bright);
 }
-
-.menu-page .footer-social {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.menu-page .copyright {
-  grid-column: 1 / -1;
-  border-top: 1px solid #393024;
-  padding-top: 18px;
-  text-align: center;
-  color: #a9a095;
-  font-size: 12px;
-}
-
-/* ================= END ================= */
 
 /* ========================================
    TESTIMONIALS SECTION
@@ -2335,8 +2212,8 @@ body.menu-page {
   height: 50px;
   flex: 0 0 50px;
   padding: 7px;
-  border: 1px solid rgba(197, 161, 90, 0.64);
-  background: #090909;
+  border: 1px solid rgba(var(--color-accent-rgb), 0.64);
+  background: var(--color-ink);
   object-fit: contain;
   border-radius: 50%;
   mix-blend-mode: screen;
@@ -2771,6 +2648,12 @@ body.menu-page {
     var(--overlay-ink-20) 100%
   );
   pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .order-page-hero:hover .order-page-hero-image img {
+    transform: scale(1.035);
+  }
 }
 
 .cart-page .cart-hero.order-page-hero > .cart-hero-content,

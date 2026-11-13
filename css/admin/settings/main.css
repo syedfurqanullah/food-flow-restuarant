@@ -79,16 +79,6 @@ textarea {
   object-fit: contain;
 }
 
-.admin-brand-name span {
-  display: block;
-  margin-top: 3px;
-  color: var(--admin-accent);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
 .sidebar-nav {
   display: flex;
   flex-direction: column;

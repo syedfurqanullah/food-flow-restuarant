@@ -133,10 +133,12 @@
     border-color var(--transition-fast),
     background-color var(--transition-fast);
 }
-.contact-page .contact-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--overlay-gold-55);
-  background: var(--color-surface-hover);
+@media (hover: hover) and (pointer: fine) {
+  .contact-page .contact-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--overlay-gold-55);
+    background: var(--color-surface-hover);
+  }
 }
 .contact-page .contact-icon {
   display: grid;
@@ -313,9 +315,11 @@
     transform var(--transition-base),
     background-color var(--transition-fast);
 }
-.contact-page .message-submit:hover {
-  transform: translateY(-3px);
-  background: var(--color-accent-soft);
+@media (hover: hover) and (pointer: fine) {
+  .contact-page .message-submit:hover {
+    transform: translateY(-2px);
+    background: var(--color-accent-soft);
+  }
 }
 .contact-page .map-section {
   padding-block: clamp(72px, 9vw, 124px);

@@ -74,11 +74,7 @@
   box-shadow: 0 0 0 3px var(--admin-accent-soft-ring);
 }
 
-/* =========================================================
-   ADD THIS BELOW THE LOGIN STYLES IN css/admin.css
-   It uses the variables and .btn / .form-group styles
-   from the login snippet, so paste that one first.
-   ========================================================= */
+/* Shared admin layout and form styles */
 
 /* ---------- Extra buttons ---------- */
 .btn-secondary {
@@ -128,12 +124,6 @@
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-}
-
-.sidebar-brand small {
-  font-size: 12px;
-  font-weight: 400;
-  color: #9ca3af;
 }
 
 .sidebar-nav {
@@ -343,8 +333,6 @@
   object-fit: cover;
 }
 
-/* Placeholder colors until real food photos are added */
-
 /* ---------- Status badges ---------- */
 .badge {
   display: inline-block;
@@ -369,16 +357,24 @@
   display: inline-block;
   padding: 7px 14px;
   margin-left: 6px;
+  border: 0;
   border-radius: 8px;
   color: #fff;
+  font-family: inherit;
   font-size: 13px;
   font-weight: 500;
+  cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .icon-btn:hover {
   opacity: 0.88;
+}
+
+.icon-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .icon-btn:focus-visible {
@@ -453,25 +449,6 @@
   object-fit: contain;
 }
 
-.admin-brand-name {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
-  color: var(--color-cream);
-  font-family: var(--font-display);
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-.admin-brand-name span {
-  color: var(--color-accent-light);
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
 
 .page-eyebrow {
   color: var(--color-accent);
