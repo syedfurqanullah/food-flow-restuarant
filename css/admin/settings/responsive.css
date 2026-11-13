@@ -77,11 +77,6 @@
     padding: 21px;
   }
 
-  .business-day {
-    grid-template-columns: 110px minmax(200px, 1fr) 65px;
-    gap: 12px;
-  }
-
 }
 
 /* ---------- Mobile ---------- */
@@ -230,32 +225,6 @@
     font-size: 12px;
   }
 
-  /* Business hours */
-  .business-day {
-    grid-template-columns: 1fr auto;
-    gap: 13px;
-    padding: 15px 0;
-  }
-
-  .business-day-name {
-    grid-column: 1;
-  }
-
-  .business-time-fields {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
-
-  .day-status {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .business-time-fields input {
-    padding: 9px;
-    font-size: 11px;
-  }
-
   /* Notification preferences */
   .notification-item {
     min-height: 80px;
@@ -318,10 +287,6 @@
   .settings-nav-link {
     padding: 9px;
     font-size: 9px;
-  }
-
-  .business-time-fields {
-    gap: 8px;
   }
 
   .settings-actions {

@@ -168,11 +168,6 @@
   box-shadow: inset 4px 0 0 var(--admin-accent);
 }
 
-/* keep the active link readable when hovered */
-.sidebar-link.active:hover {
-  background: var(--admin-accent);
-}
-
 .sidebar-link:focus-visible {
   outline: 3px solid rgba(249, 115, 22, 0.5);
   outline-offset: 2px;
@@ -514,42 +509,8 @@
   background: var(--color-accent-bright-hover);
 }
 
-.insight-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.insight-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  min-width: 0;
-  margin: 0;
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
-}
-
-.insight-icon {
-  display: grid;
-  place-items: center;
-  flex: 0 0 42px;
-  height: 42px;
-  border: 1px solid var(--color-border);
-  border-radius: 13px;
-  color: var(--color-accent);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.insight-note {
-  display: block;
-  margin: 5px 0 0;
-  color: #938d82;
-  font-size: 12px;
+.menu-insights > .stat-card {
+  margin-bottom: 0;
 }
 
 .directory-card,

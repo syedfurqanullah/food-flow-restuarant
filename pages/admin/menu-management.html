@@ -81,15 +81,6 @@
       <!-- ========== MAIN CONTENT ========== -->
       <main class="admin-main" id="main-content">
         <header class="admin-topbar">
-          <a
-            class="admin-topbar-brand"
-            href="dashboard.html"
-            aria-label="FoodFlow Admin home"
-          >
-           <img class="admin-brand-logo" src="../../assets/images/logo/logo.jpg" alt="" width="50" height="50" />
-            <span class="admin-topbar-wordmark">Food<span>Flow.</span></span>
-            <span class="admin-topbar-label">ADMIN</span>
-          </a>
           <a class="admin-topbar-site" href="../../index.html"
             >View customer site <span aria-hidden="true">&#8599;</span></a
           >
@@ -106,30 +97,42 @@
           <a href="#food-form" class="btn btn-primary">+ Add menu item</a>
         </header>
 
-        <section class="insight-grid menu-insights" aria-label="Menu overview">
-          <article class="card insight-card">
-            <span class="insight-icon">01</span>
-            <div>
-              <p class="summary-label">Menu items</p>
-              <p class="summary-value">05</p>
-              <p class="insight-note">Across 5 categories</p>
+        <section class="stats-grid menu-insights" aria-label="Menu overview">
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Total menu items</span>
+              <span class="stat-icon" aria-hidden="true">&#9776;</span>
             </div>
+            <p class="stat-value">05</p>
+            <p class="stat-note">Across 5 menu categories</p>
           </article>
-          <article class="card insight-card">
-            <span class="insight-icon">02</span>
-            <div>
-              <p class="summary-label">Available today</p>
-              <p class="summary-value">04</p>
-              <p class="insight-note">Ready to order</p>
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Available today</span>
+              <span class="stat-icon" aria-hidden="true">&#10003;</span>
             </div>
+            <p class="stat-value">04</p>
+            <p class="stat-note">
+              <span class="stat-positive">Ready for service</span>
+            </p>
           </article>
-          <article class="card insight-card">
-            <span class="insight-icon">03</span>
-            <div>
-              <p class="summary-label">Out of stock</p>
-              <p class="summary-value">01</p>
-              <p class="insight-note">Update before service</p>
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Out of stock</span>
+              <span class="stat-icon" aria-hidden="true">!</span>
             </div>
+            <p class="stat-value">01</p>
+            <p class="stat-note">
+              <span class="stat-warning">Review before service</span>
+            </p>
+          </article>
+          <article class="card stat-card">
+            <div class="stat-card-top">
+              <span class="stat-label">Average item price</span>
+              <span class="stat-icon" aria-hidden="true">Rs</span>
+            </div>
+            <p class="stat-value">Rs. 590</p>
+            <p class="stat-note">Across 5 preview dishes</p>
           </article>
         </section>
 

@@ -2021,11 +2021,6 @@ body.home-page .popular-section .food-price {
   color: var(--home-brass);
 }
 
-body.home-page .food-tag {
-  background: var(--home-sand);
-  color: var(--home-ink);
-}
-
 body.home-page .testimonial-stars {
   color: var(--home-brass);
 }

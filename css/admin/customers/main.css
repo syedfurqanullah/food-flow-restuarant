@@ -168,11 +168,6 @@
   box-shadow: inset 4px 0 0 var(--admin-accent);
 }
 
-/* keep the active link readable when hovered */
-.sidebar-link.active:hover {
-  background: var(--admin-accent);
-}
-
 .sidebar-link:focus-visible {
   outline: 3px solid rgba(249, 115, 22, 0.5);
   outline-offset: 2px;
@@ -499,7 +494,7 @@
 }
 .insight-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   margin-bottom: 24px;
 }

@@ -1543,16 +1543,14 @@ ul {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
-  margin-bottom: 11px;
-  padding: 5px 9px;
-  border: 1px solid var(--overlay-gold-40);
-  border-radius: var(--radius-pill);
-  background: var(--overlay-gold-12);
-  color: var(--color-accent-pale);
-  font-size: 0.68rem;
+  margin-bottom: 8px;
+  padding: 0;
+  color: var(--color-accent-light);
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.13em;
   line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .popular-section .food-info h3 {

@@ -468,100 +468,7 @@ textarea {
   outline-offset: 3px;
 }
 
-/* ---------- 10. Business Hours ---------- */
-
-.business-hours-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.business-day {
-  display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(230px, 1.5fr) 75px;
-  align-items: center;
-  gap: 20px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--admin-border);
-}
-
-.business-day:last-child {
-  border-bottom: 0;
-}
-
-.business-day-name strong,
-.business-day-name small {
-  display: block;
-}
-
-.business-day-name strong {
-  color: var(--admin-text);
-  font-size: 13px;
-}
-
-.business-day-name small {
-  margin-top: 5px;
-  color: var(--admin-muted);
-  font-size: 10px;
-}
-
-.business-time-fields {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.business-time-fields label {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  color: var(--admin-muted);
-  font-size: 10px;
-}
-
-.business-time-fields input {
-  width: 100%;
-  min-width: 0;
-  padding: 10px;
-  border: 1px solid var(--admin-border);
-  border-radius: 7px;
-  outline: none;
-  background: var(--admin-dark);
-  color: var(--admin-text);
-  font-size: 12px;
-  color-scheme: dark;
-}
-
-.business-time-fields input:focus {
-  border-color: var(--admin-accent);
-}
-
-.business-time-fields input:disabled {
-  opacity: 0.4;
-}
-
-.day-status {
-  justify-self: end;
-  padding: 7px 11px;
-  border-radius: 20px;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.open-status {
-  background: rgba(119, 189, 131, 0.13);
-  color: #8bd39a;
-}
-
-.closed-status {
-  background: rgba(190, 105, 90, 0.13);
-  color: #dc9285;
-}
-
-.business-day-closed {
-  opacity: 0.65;
-}
-
-/* ---------- 11. Notification Preferences ---------- */
+/* ---------- 10. Notification Preferences ---------- */
 
 .notification-list {
   display: flex;
@@ -648,7 +555,7 @@ textarea {
   outline-offset: 3px;
 }
 
-/* ---------- 12. Security Information ---------- */
+/* ---------- 11. Security Information ---------- */
 
 .security-hint {
   margin: 18px 0 0;
@@ -661,7 +568,7 @@ textarea {
   line-height: 1.6;
 }
 
-/* ---------- 13. Footer ---------- */
+/* ---------- 12. Footer ---------- */
 
 .admin-footer {
   display: flex;
@@ -675,7 +582,7 @@ textarea {
   font-size: 11px;
 }
 
-/* ---------- 14. Accessibility ---------- */
+/* ---------- 13. Accessibility ---------- */
 
 ::selection {
   background: var(--admin-accent);

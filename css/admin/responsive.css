@@ -45,58 +45,12 @@
 .admin-layout .admin-topbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
   min-height: 76px;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid var(--admin-border);
-}
-
-.admin-layout .admin-topbar-brand {
-  display: inline-flex;
-  align-items: center;
-  flex: 0 0 auto;
-  gap: 10px;
-  color: var(--admin-text);
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
-  text-decoration: none;
-}
-
-.admin-layout .admin-topbar-wordmark {
-  display: block;
-  margin: 0;
-  color: var(--admin-text);
-  font-family: var(--admin-font);
-  font-size: 1.4rem;
-  font-weight: 800;
-  line-height: 1.1;
-  text-transform: none;
-}
-
-.admin-layout .admin-topbar-brand .admin-topbar-wordmark > span {
-  margin: 0;
-  color: var(--admin-accent);
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: none;
-}
-
-.admin-layout .admin-topbar-brand .admin-topbar-label {
-  padding: 4px 7px;
-  border: 1px solid var(--admin-border);
-  border-radius: 999px;
-  color: var(--admin-muted);
-  font-family: var(--admin-font);
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .admin-layout .admin-topbar-site {
