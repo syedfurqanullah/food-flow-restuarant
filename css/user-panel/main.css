@@ -1,6 +1,6 @@
 /* Customer account page layout and shared panel styles. */
 .user-panel-page {
-  min-width: 320px;
+  min-width: 0;
   background: var(--color-ink);
   color: var(--color-cream);
   font-family: var(--font-body);

@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=5" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -22,6 +22,7 @@
       href="../../css/admin/menu-management/responsive.css"
     />
     <link rel="stylesheet" href="../../css/admin/responsive.css" />
+    <link rel="stylesheet" href="../../css/admin/admin-animations.css" />
   </head>
 
   <body class="admin-body">
@@ -29,13 +30,19 @@
     <div class="admin-layout">
       <!-- ========== SIDEBAR (same on every admin page) ========== -->
       <aside class="sidebar">
-        <a href="dashboard.html" class="sidebar-brand">
+        <a
+          href="dashboard.html"
+          class="sidebar-brand"
+          aria-label="FoodFlow admin dashboard"
+        >
           <img
             class="admin-brand-logo"
             src="../../assets/images/logo/logo.jpg"
             alt=""
+            width="48"
+            height="48"
           />
-          <span class="admin-brand-name">FoodFlow<span>Admin</span></span>
+          <span class="admin-brand-wordmark">Food<span>Flow.</span></span>
         </a>
 
         <nav class="sidebar-nav" aria-label="Admin navigation">
@@ -74,15 +81,15 @@
       <!-- ========== MAIN CONTENT ========== -->
       <main class="admin-main" id="main-content">
         <header class="admin-topbar">
-          <a class="admin-topbar-brand" href="menu-management.html"
-            >FoodFlow <span>Admin</span></a
+          <a
+            class="admin-topbar-brand"
+            href="dashboard.html"
+            aria-label="FoodFlow Admin home"
           >
-          <nav class="admin-topbar-nav" aria-label="Quick admin navigation">
-            <a href="menu-management.html" aria-current="page"
-              >Menu management</a
-            >
-            <a href="customers.html">Customers</a>
-          </nav>
+           <img class="admin-brand-logo" src="../../assets/images/logo/logo.jpg" alt="" width="50" height="50" />
+            <span class="admin-topbar-wordmark">Food<span>Flow.</span></span>
+            <span class="admin-topbar-label">ADMIN</span>
+          </a>
           <a class="admin-topbar-site" href="../../index.html"
             >View customer site <span aria-hidden="true">&#8599;</span></a
           >

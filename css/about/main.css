@@ -120,7 +120,7 @@
   margin-top: 34px;
   padding: 12px 21px;
   border: 1px solid var(--color-accent-bright);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-control);
   background: var(--color-accent-bright);
   color: var(--color-ink);
   font-size: 0.88rem;
@@ -239,6 +239,7 @@
   line-height: 1.4;
 }
 .about-page .special-section {
+  width: 100%;
   padding: clamp(76px, 10vw, 132px) max(var(--page-gutter), 3vw);
   background: var(--color-ink-soft);
 }
@@ -257,7 +258,7 @@
 }
 .about-page .special-container {
   display: grid;
-  width: min(100%, 1380px);
+  width: min(100%, var(--container-width));
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   margin-inline: auto;

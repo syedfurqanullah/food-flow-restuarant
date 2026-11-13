@@ -127,7 +127,7 @@ body {
     background: var(--color-surface);
     color: var(--color-cream);
     padding: 11px 22px;
-    border-radius: 30px;
+    border-radius: var(--radius-control);
     cursor: pointer;
     font-size: 14px;
     transition: 0.3s;

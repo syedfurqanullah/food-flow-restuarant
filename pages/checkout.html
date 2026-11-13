@@ -10,12 +10,14 @@
     />
 
     <title>Checkout | FoodFlow</title>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png?v=5" />
 
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/checkout/main.css" />
     <link rel="stylesheet" href="../css/checkout/responsive.css" />
     <link rel="stylesheet" href="../css/home/main.css" />
     <link rel="stylesheet" href="../css/home/responsive.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
   </head>
 
   <body class="checkout-page">
@@ -116,11 +118,14 @@
       <div class="order-page-hero-overlay"></div>
 
       <div class="container checkout-hero-content order-page-hero-content">
-        <span class="checkout-eyebrow">FOODFLOW RESTAURANT</span>
+        <span class="checkout-eyebrow">FOODFLOW ONLINE ORDERING</span>
 
-        <h1 id="checkout-title">Checkout</h1>
+        <h1 id="checkout-title">Complete Your Order</h1>
 
-        <p>Complete your order details</p>
+        <p>
+          Review your selections, enter your delivery details, and choose a
+          payment method.
+        </p>
       </div>
     </section>
 
@@ -242,7 +247,7 @@
                 </label>
 
                 <label class="payment-option">
-                  <input type="radio" name="payment" value="card" disabled />
+                  <input type="radio" name="payment" value="card" />
                   <span class="payment-icon">💳</span>
                   <span class="payment-text">
                     <strong>Credit / Debit Card</strong>
@@ -251,7 +256,7 @@
                 </label>
 
                 <label class="payment-option">
-                  <input type="radio" name="payment" value="online" disabled />
+                  <input type="radio" name="payment" value="online" />
                   <span class="payment-icon">📱</span>
                   <span class="payment-text">
                     <strong>Online Payment</strong>

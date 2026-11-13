@@ -56,7 +56,7 @@
 }
 
 .checkout-page .site-navigation {
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .checkout-page .navigation-list {
@@ -202,12 +202,12 @@
     }
 
     .checkout-page .brand-logo {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     .checkout-page .brand-wordmark {
-        font-size: 17px;
+        font-size: 1.4rem;
     }
 
     .checkout-page .checkout-hero-content h1 {
@@ -324,12 +324,12 @@
     }
 
     .checkout-page .brand-logo {
-        width: 39px;
-        height: 39px;
+        width: 50px;
+        height: 50px;
     }
 
     .checkout-page .brand-wordmark {
-        font-size: 19px;
+        font-size: 1.4rem;
     }
 
     .checkout-page .checkout-hero-content h1 {
@@ -648,7 +648,7 @@
     }
 
     .checkout-page .brand-wordmark {
-        font-size: 28px;
+        font-size: 1.4rem;
     }
 
     .checkout-page .navigation-link {
@@ -715,12 +715,12 @@
     }
 
     .checkout-page .brand-logo {
-        width: 65px;
-        height: 65px;
+        width: 50px;
+        height: 50px;
     }
 
     .checkout-page .brand-wordmark {
-        font-size: 34px;
+        font-size: 1.4rem;
     }
 
     .checkout-page .navigation-link {
@@ -1007,4 +1007,31 @@ and (orientation: landscape) {
 @media screen and (max-width: 380px) {
     .checkout-page .footer-container { grid-template-columns: 1fr; }
     .checkout-page .footer-brand { grid-column: auto; }
+}
+
+.checkout-page .header-container,
+.checkout-page .home-footer .footer-container,
+.checkout-page .home-footer .footer-bottom .container {
+    width: min(var(--container-width), calc(100% - (var(--page-gutter) * 2)));
+    max-width: var(--container-width);
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .checkout-page .header-container {
+        min-height: 72px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .checkout-page .header-container {
+        width: calc(100% - 24px);
+        min-height: 64px;
+        padding-inline: 0;
+    }
+
+    .checkout-page .home-footer .footer-container,
+    .checkout-page .home-footer .footer-bottom .container {
+        width: calc(100% - 24px);
+    }
 }

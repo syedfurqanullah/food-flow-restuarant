@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=5" />
     <!-- ==========================================
        DOCUMENT CONFIGURATION
        Page metadata and responsive viewport.
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../../css/admin/settings/responsive.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
     <link rel="stylesheet" href="../../css/admin/responsive.css" />
+    <link rel="stylesheet" href="../../css/admin/admin-animations.css" />
   </head>
 
   <body class="admin-body">
@@ -39,17 +40,19 @@
     ========================================= -->
       <aside class="sidebar">
         <!-- FoodFlow admin branding -->
-        <a href="dashboard.html" class="sidebar-brand">
+        <a
+          href="dashboard.html"
+          class="sidebar-brand"
+          aria-label="FoodFlow admin dashboard"
+        >
           <img
-            src="../../assets/images/logo/logo.jpg"
-            alt="FoodFlow logo"
             class="admin-brand-logo"
+            src="../../assets/images/logo/logo.jpg"
+            alt=""
+            width="48"
+            height="48"
           />
-
-          <span class="admin-brand-name">
-            FoodFlow
-            <span>Admin</span>
-          </span>
+          <span class="admin-brand-wordmark">Food<span>Flow.</span></span>
         </a>
 
         <!-- Admin navigation links -->
@@ -103,15 +106,15 @@
       <main class="admin-main" id="main-content">
         <!-- Top navigation -->
         <header class="admin-topbar">
-          <a href="dashboard.html" class="admin-topbar-brand">
-            FoodFlow <span>Admin</span>
+          <a
+            href="dashboard.html"
+            class="admin-topbar-brand"
+            aria-label="FoodFlow Admin home"
+          >
+           <img class="admin-brand-logo" src="../../assets/images/logo/logo.jpg" alt="" width="50" height="50" />
+            <span class="admin-topbar-wordmark">Food<span>Flow.</span></span>
+            <span class="admin-topbar-label">ADMIN</span>
           </a>
-
-          <nav class="admin-topbar-nav" aria-label="Quick navigation">
-            <a href="orders.html">Orders</a>
-            <a href="menu-management.html">Menu Management</a>
-            <a href="customers.html">Customers</a>
-          </nav>
 
           <a href="../../index.html" class="admin-topbar-site">
             View Customer Site &#8599;

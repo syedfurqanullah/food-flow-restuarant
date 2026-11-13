@@ -459,9 +459,9 @@
 
 .checkout-page .checkout-form-section,
 .checkout-page .checkout-summary {
-    border-radius: 2px;
-    border-color: #ded1bf;
-    box-shadow: none;
+    border-radius: var(--radius-card);
+    border-color: var(--color-border);
+    box-shadow: var(--shadow-card);
 }
 
 .checkout-page .checkout-form-section {
@@ -474,27 +474,22 @@
 }
 
 .checkout-page .checkout-step {
-    border-radius: 2px;
-    background: #211b14;
-    color: #f8dfad;
+    border-radius: var(--radius-pill);
+    background: var(--color-accent-tint);
+    color: var(--color-accent);
 }
 
 .checkout-page .payment-option {
-    border-radius: 2px;
-}
-
-.checkout-page .payment-option:has(input:disabled) {
-    opacity: 0.52;
-    cursor: not-allowed;
+    border-radius: var(--radius-control);
 }
 
 .checkout-page .place-order-btn {
-    border-radius: 2px;
-    box-shadow: 7px 7px 0 rgba(83, 49, 14, 0.2);
+    border-radius: var(--radius-control);
+    box-shadow: none;
 }
 
 .checkout-page .summary-item-count {
-    border-radius: 2px;
+    border-radius: var(--radius-pill);
 }
 
 
@@ -641,6 +636,8 @@
 .checkout-page .checkout-main { background: var(--color-ink); }
 .checkout-page .checkout-hero { border-bottom: 1px solid var(--color-border); }
 .checkout-page .checkout-eyebrow, .checkout-page .checkout-step, .checkout-page .summary-item-count, .checkout-page .checkout-product > strong, .checkout-page .checkout-total strong:last-child { color: var(--color-accent); }
+.checkout-page .checkout-hero h1 { color: var(--color-cream); font-family: var(--font-display); font-weight: 500; letter-spacing: -0.04em; line-height: 1.05; }
+.checkout-page .checkout-hero p { max-width: 620px; margin-top: 10px; color: var(--color-text-soft); font-size: 1rem; line-height: 1.65; }
 .checkout-page .checkout-step, .checkout-page .summary-item-count { background: var(--color-accent-tint); }
 .checkout-page .checkout-form-section, .checkout-page .checkout-summary { background: var(--color-surface); border-color: var(--color-border); }
 .checkout-page .checkout-section-heading h2, .checkout-page .summary-heading h2, .checkout-page .checkout-product-info h3, .checkout-page .checkout-total strong { color: var(--color-cream); }
@@ -649,7 +646,7 @@
 .checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea, .checkout-page .payment-option { border-color: var(--color-border); background: var(--color-ink); color: var(--color-cream); }
 .checkout-page .checkout-form-group input:focus, .checkout-page .checkout-form-group textarea:focus, .checkout-page .payment-option:has(input:checked) { border-color: var(--color-accent); background: var(--color-surface); }
 .checkout-page .checkout-payment-section, .checkout-page .checkout-product, .checkout-page .checkout-price-details { border-color: var(--color-border); }
-.checkout-page .continue-shopping { border-color: var(--color-border); border-radius: 2px; color: var(--color-cream); }
+.checkout-page .continue-shopping { border-color: var(--color-border); border-radius: var(--radius-control); color: var(--color-cream); }
 
 .checkout-page .home-footer { background: linear-gradient(135deg, var(--color-ink) 0%, var(--color-surface) 100%); border-top-color: var(--color-border); }
 .checkout-page .footer-container { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px; }
@@ -664,3 +661,7 @@
 .checkout-page .cart-link > span:first-of-type:not(.cart-label) { display: none; }
 .checkout-page .continue-shopping { font-size: 0; }
 .checkout-page .continue-shopping::after { content: "← Back to Cart Preview"; font-size: 0.87rem; }
+.checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea { border-radius: var(--radius-control); }
+.checkout-page .payment-option:hover { background: var(--color-surface-hover); }
+.checkout-page .payment-text strong, .checkout-page .checkout-price-row strong { color: var(--color-cream); }
+.checkout-page .checkout-form-group input::placeholder, .checkout-page .checkout-form-group textarea::placeholder { color: var(--color-text-subtle); }

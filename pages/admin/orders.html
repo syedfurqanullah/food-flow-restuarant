@@ -1,14 +1,14 @@
 ﻿<!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=4" />
+    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png?v=5" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Review example orders and their status in the FoodFlow admin preview."
     />
-    <title>FoodFlow | Admin Orders</title>
+    <title>Orders | FoodFlow Admin</title>
 
     <link rel="stylesheet" href="../../css/variables.css" />
     <link rel="stylesheet" href="../../css/admin/variables-admin.css" />
@@ -17,19 +17,26 @@
     <link rel="stylesheet" href="../../css/admin/orders/responsive.css" />
     <link rel="stylesheet" href="../../css/admin/dashboard/main.css" />
     <link rel="stylesheet" href="../../css/admin/responsive.css" />
+    <link rel="stylesheet" href="../../css/admin/admin-animations.css" />
   </head>
-  <body>
+  <body class="admin-body">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="admin-layout">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <a href="dashboard.html" class="sidebar-brand">
+        <a
+          href="dashboard.html"
+          class="sidebar-brand"
+          aria-label="FoodFlow admin dashboard"
+        >
           <img
             class="admin-brand-logo"
             src="../../assets/images/logo/logo.jpg"
-            alt="FoodFlow logo"
+            alt=""
+            width="48"
+            height="48"
           />
-          <span class="admin-brand-name"> FoodFlow <span>Admin</span> </span>
+          <span class="admin-brand-wordmark">Food<span>Flow.</span></span>
         </a>
 
         <nav class="sidebar-nav" aria-label="Admin navigation">
@@ -64,25 +71,41 @@
           </a>
         </nav>
 
-        <a href="login.html" class="logout">Logout</a>
       </aside>
 
       <!-- Main Content -->
       <main class="main-content" id="main-content">
-        <header class="topbar">
-          <div>
-            <h1>Order management</h1>
-            <p>Review example orders and their current status.</p>
-          </div>
+        <header class="admin-topbar">
+          <a
+            class="admin-topbar-brand"
+            href="dashboard.html"
+            aria-label="FoodFlow Admin home"
+          >
+           <img class="admin-brand-logo" src="../../assets/images/logo/logo.jpg" alt="" width="50" height="50" />
+            <span class="admin-topbar-wordmark">Food<span>Flow.</span></span>
+            <span class="admin-topbar-label">ADMIN</span>
+          </a>
+          <a class="admin-topbar-site" href="../../index.html">
+            View customer site <span aria-hidden="true">&#8599;</span>
+          </a>
+        </header>
 
-          <div class="admin-profile">
+        <section class="page-header orders-page-header">
+          <div>
+            <p class="page-eyebrow">ORDER ACTIVITY</p>
+            <h1 class="page-title">Order management</h1>
+            <p class="page-description">
+              Review example orders and their current status.
+            </p>
+          </div>
+          <div class="admin-profile" aria-label="Signed in as administrator">
             <div class="avatar">A</div>
             <div>
               <strong>Admin</strong>
               <small>Administrator</small>
             </div>
           </div>
-        </header>
+        </section>
 
         <!-- Statistics -->
         <section class="stats-grid">
