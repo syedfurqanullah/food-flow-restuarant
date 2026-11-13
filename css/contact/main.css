@@ -154,6 +154,10 @@
   font-weight: 800;
   letter-spacing: 0.08em;
 }
+.contact-page .contact-icon img {
+  width: 22px;
+  height: 22px;
+}
 .contact-page .contact-card h3 {
   margin: 0 0 9px;
   color: var(--color-cream);
@@ -220,6 +224,10 @@
   color: var(--color-accent-soft);
   font-size: 0.7rem;
   font-weight: 700;
+}
+.contact-page .detail-icon img {
+  width: 17px;
+  height: 17px;
 }
 .contact-page .message-detail h4 {
   margin: 0 0 4px;

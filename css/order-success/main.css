@@ -69,10 +69,9 @@ body.order-success-page {
     align-items: center;
 }
 
-.success-icon svg {
+.success-icon img {
     width: 43px;
     height: 43px;
-    color: var(--color-success);
 }
 
 /* HEADING */

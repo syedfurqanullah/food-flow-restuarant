@@ -109,11 +109,10 @@ textarea {
 }
 
 .nav-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 20px;
-  font-size: 19px;
+  height: 20px;
+  flex: 0 0 20px;
 }
 
 .sidebar-bottom {
@@ -312,6 +311,11 @@ textarea {
   background: rgba(var(--admin-accent-rgb), 0.1);
   color: var(--admin-accent-hover);
   font-size: 20px;
+}
+
+.settings-heading-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 .settings-card-title {

@@ -116,11 +116,10 @@
 }
 
 .nav-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 20px;
-  font-size: 19px;
+  height: 20px;
+  flex: 0 0 20px;
 }
 
 .sidebar-bottom {
@@ -318,6 +317,11 @@
   color: var(--admin-accent-hover);
   font-size: 17px;
   font-weight: 700;
+}
+
+.stat-icon-image {
+  width: 18px;
+  height: 18px;
 }
 
 .stat-value {

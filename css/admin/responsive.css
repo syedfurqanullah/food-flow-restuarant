@@ -236,8 +236,9 @@
   }
 
   .admin-layout > .sidebar .nav-icon {
-    width: auto;
-    font-size: 15px;
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
   }
 
   .admin-layout > :is(.admin-main, .main-content) {

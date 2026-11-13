@@ -269,39 +269,37 @@
 }
 
 .payment-icon {
-    font-size: 1.45rem;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    place-items: center;
 }
 
-/* Keep the HTML-only payment preview clear and free of legacy icon glyphs. */
-.payment-icon {
-    font-size: 0;
+.payment-icon img {
+    width: 22px;
+    height: 22px;
 }
-
-.payment-option:nth-child(1) .payment-icon::before,
-.payment-option:nth-child(2) .payment-icon::before,
-.payment-option:nth-child(3) .payment-icon::before {
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-}
-
-.payment-option:nth-child(1) .payment-icon::before { content: "COD"; }
-.payment-option:nth-child(2) .payment-icon::before { content: "CARD"; }
-.payment-option:nth-child(3) .payment-icon::before { content: "ONLINE"; }
 
 .place-order-btn span,
 .checkout-secure-note {
     font-size: 0;
 }
 
-.place-order-btn span::after {
-    content: "→";
-    font-size: 1em;
+.place-order-btn .inline-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
 }
 
 .checkout-secure-note::before {
     content: "Preview only: your information is not collected or sent.";
     font-size: 0.85rem;
+}
+
+.checkout-secure-note .inline-icon {
+    width: 16px;
+    height: 16px;
 }
 
 .payment-text {
@@ -665,8 +663,9 @@
 .checkout-page .footer-bottom p { color: var(--color-text-subtle); }
 
 .checkout-page .cart-link > span:first-of-type:not(.cart-label) { display: none; }
-.checkout-page .continue-shopping { font-size: 0; }
-.checkout-page .continue-shopping::after { content: "← Back to Cart Preview"; font-size: 0.87rem; }
+.checkout-page .continue-shopping {
+    font-size: 0.87rem;
+}
 .checkout-page .checkout-form-group input, .checkout-page .checkout-form-group textarea { border-radius: var(--radius-control); }
 .checkout-page .payment-option:hover { background: var(--color-surface-hover); }
 .checkout-page .payment-text strong, .checkout-page .checkout-price-row strong { color: var(--color-cream); }

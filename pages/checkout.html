@@ -44,7 +44,7 @@
           aria-label="Toggle navigation menu"
         />
         <label class="nav-toggle-label" for="nav-toggle">
-          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="menu-icon" aria-hidden="true"><img class="menu-icon-image" src="../assets/icons/menu.svg" alt="" aria-hidden="true"><img class="menu-close-image" src="../assets/icons/x.svg" alt="" aria-hidden="true"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </label>
 
@@ -81,11 +81,7 @@
             href="cart.html"
             aria-label="Shopping cart, 0 items"
           >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
-              />
-            </svg>
+            <img class="cart-link-icon" src="../assets/icons/shopping-cart.svg" alt="" aria-hidden="true">
             <span class="cart-label">Cart</span
             ><span class="cart-count" aria-hidden="true">0</span>
           </a>
@@ -238,7 +234,7 @@
               <div class="payment-options">
                 <label class="payment-option">
                   <input type="radio" name="payment" value="cash" checked />
-                  <span class="payment-icon">💵</span>
+                  <span class="payment-icon"><img class="site-icon" src="../assets/icons/banknote.svg" alt="" aria-hidden="true"></span>
                   <span class="payment-text">
                     <strong>Cash on Delivery</strong>
                     <small>Pay when your order arrives</small>
@@ -247,7 +243,7 @@
 
                 <label class="payment-option">
                   <input type="radio" name="payment" value="card" />
-                  <span class="payment-icon">💳</span>
+                  <span class="payment-icon"><img class="site-icon" src="../assets/icons/credit-card.svg" alt="" aria-hidden="true"></span>
                   <span class="payment-text">
                     <strong>Credit / Debit Card</strong>
                     <small>Card payment option</small>
@@ -256,7 +252,7 @@
 
                 <label class="payment-option">
                   <input type="radio" name="payment" value="online" />
-                  <span class="payment-icon">📱</span>
+                  <span class="payment-icon"><img class="site-icon" src="../assets/icons/smartphone.svg" alt="" aria-hidden="true"></span>
                   <span class="payment-text">
                     <strong>Online Payment</strong>
                     <small>Online payment option</small>
@@ -266,12 +262,10 @@
             </div>
 
             <button type="submit" class="button place-order-btn">
-              Place Order <span>→</span>
+              Place Order <img class="inline-icon" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true">
             </button>
 
-            <p class="checkout-secure-note">
-              🔒 Your information is kept private.
-            </p>
+            <p class="checkout-secure-note"><img class="inline-icon" src="../assets/icons/lock-keyhole.svg" alt="" aria-hidden="true"> Your information is kept private.</p>
           </form>
         </section>
 
@@ -349,7 +343,7 @@
             </div>
           </div>
 
-          <a href="cart.html" class="continue-shopping"> ← Back to Cart </a>
+          <a href="cart.html" class="continue-shopping"><img class="inline-icon inline-icon-reversed" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true"> Back to Cart Preview</a>
         </aside>
       </div>
     </main>

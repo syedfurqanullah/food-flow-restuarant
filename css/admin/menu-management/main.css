@@ -213,7 +213,9 @@
   max-width: 380px;
 }
 
-.search-box svg {
+.search-box .search-icon {
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: 50%;
   left: 14px;

@@ -143,9 +143,10 @@
   background: var(--overlay-gold-12);
   color: var(--color-accent-light);
 }
-.account-nav a span {
-  color: var(--color-accent);
-  font-size: 0.64rem;
+.account-nav-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
 }
 .account-signout {
   justify-content: space-between;
@@ -233,6 +234,10 @@
 }
 .order-icon.pending {
   color: var(--color-accent-bright);
+}
+.order-icon img {
+  width: 17px;
+  height: 17px;
 }
 .order-main strong,
 .order-main span {

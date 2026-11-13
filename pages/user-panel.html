@@ -38,8 +38,7 @@
           aria-label="Toggle navigation menu"
         />
         <label class="nav-toggle-label" for="nav-toggle"
-          ><span class="menu-icon" aria-hidden="true"></span
-          ><span class="visually-hidden">Toggle navigation</span></label
+          ><span class="menu-icon" aria-hidden="true"><img class="menu-icon-image" src="../assets/icons/menu.svg" alt="" aria-hidden="true"><img class="menu-close-image" src="../assets/icons/x.svg" alt="" aria-hidden="true"></span><span class="visually-hidden">Toggle navigation</span></label
         >
         <nav
           class="site-navigation"
@@ -62,11 +61,7 @@
             class="cart-link"
             href="cart.html"
             aria-label="Shopping cart, 0 items"
-            ><svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 8H6M10 20h.01M18 20h.01"
-              /></svg
-            ><span class="cart-label">Cart</span
+            ><img class="cart-link-icon" src="../assets/icons/shopping-cart.svg" alt="" aria-hidden="true"><span class="cart-label">Cart</span
             ><span class="cart-count" aria-hidden="true">0</span></a
           ><a class="account-chip" href="#profile"
             ><span class="account-avatar" aria-hidden="true">AK</span
@@ -94,7 +89,7 @@
             </p>
           </div>
           <a class="button button-primary" href="menu/menu.html"
-            >Browse the menu <span aria-hidden="true">&rarr;</span></a
+            >Browse the menu <img class="inline-icon" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true"></a
           >
         </section>
 
@@ -108,17 +103,17 @@
             </div>
             <nav class="account-nav">
               <a class="is-active" href="#overview"
-                ><span aria-hidden="true">&#9632;</span> Overview</a
+                ><img class="account-nav-icon" src="../assets/icons/layout-dashboard.svg" alt="" aria-hidden="true"> Overview</a
               ><a href="#orders"
-                ><span aria-hidden="true">&#9783;</span> My Orders</a
+                ><img class="account-nav-icon" src="../assets/icons/clipboard-list.svg" alt="" aria-hidden="true"> My Orders</a
               ><a href="#addresses"
-                ><span aria-hidden="true">&#8962;</span> Saved Addresses</a
+                ><img class="account-nav-icon" src="../assets/icons/map-pin.svg" alt="" aria-hidden="true"> Saved Addresses</a
               ><a href="#profile"
-                ><span aria-hidden="true">&#9787;</span> Profile Settings</a
+                ><img class="account-nav-icon" src="../assets/icons/user-round.svg" alt="" aria-hidden="true"> Profile Settings</a
               >
             </nav>
             <a class="account-signout" href="signin.html"
-              >Sign out <span aria-hidden="true">&rarr;</span></a
+              >Sign out <img class="inline-icon" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true"></a
             >
           </aside>
 
@@ -151,11 +146,11 @@
                   <h2 id="orders-title">Your recent orders</h2>
                 </div>
                 <a href="my-order.html"
-                  >View all orders <span aria-hidden="true">&rarr;</span></a
+                  >View all orders <img class="inline-icon" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true"></a
                 >
               </div>
               <div class="order-row">
-                <div class="order-icon" aria-hidden="true">&#10003;</div>
+                <div class="order-icon" aria-hidden="true"><img class="site-icon" src="../assets/icons/circle-check.svg" alt="" aria-hidden="true"></div>
                 <div class="order-main">
                   <strong>Order #FF-2048</strong
                   ><span>Classic Cheeseburger, Berry Cooler + 1 more</span>
@@ -167,7 +162,7 @@
                 <a class="text-action" href="my-order.html">Details</a>
               </div>
               <div class="order-row">
-                <div class="order-icon pending" aria-hidden="true">&#9679;</div>
+                <div class="order-icon pending" aria-hidden="true"><img class="site-icon" src="../assets/icons/clock.svg" alt="" aria-hidden="true"></div>
                 <div class="order-main">
                   <strong>Order #FF-2019</strong
                   ><span>Margherita Pizza, Fresh Orange Juice</span>
